@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Carburanti Verbania</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg: #f5f4f0;
+      --surface: #ffffff;
+      --surface2: #f0ede8;
+      --border: #e2ddd8;
+      --text: #1a1816;
+      --text-muted: #8a8480;
+      --text-light: #b0aba6;
+      --accent-b: #1a6b3a;
+      --accent-b-light: #e8f5ee;
+      --accent-d: #1a3f6b;
+      --accent-d-light: #e8eef5;
+      --accent-cheap: #1a6b3a;
+      --accent-expensive: #b84a2a;
+      --radius: 16px;
+      --radius-sm: 10px;
+      --shadow: 0 2px 12px rgba(0,0,0,0.06);
+      --shadow-lg: 0 8px 32px rgba(0,0,0,0.10);
+    }
+
+    body {
+      font-family: 'DM Sans', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* ── HEADER ── */
+    .header {
+      background: var(--surface);
+      border-bottom: 1px solid var(--border);
+      padding: 20px 20px 0;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: var(--shadow);
+    }
+    .header-top {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      margin-bottom: 16px;
+    }
+    .app-title {
+      font-size: 22px;
+      font-weight: 600;
+      letter-spacing: -0.5px;
+      line-height: 1.2;
+    }
+    .app-subtitle {
+      font-size: 13px;
+      color: var(--text-muted);
+      margin-top: 2px;
+    }
+    .meta-badge {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 3px;
+    }
+    .meta-date {
+      font-family: 'DM Mono', monospace;
+      font-size: 11px;
+      color: var(--text-muted);
+      background: var(--surface2);
+      padding: 3px 8px;
+      border-radius: 6px;
+    }
+    .meta-source {
+      font-size: 10px;
+      color: var(--text-light);
+    }
+
+    /* ── FUEL TOGGLE ── */
+    .fuel-toggle {
+      display: flex;
+      gap: 8px;
+      padding-bottom: 16px;
+    }
+    .toggle-btn {
+      flex: 1;
+      padding: 10px 0;
+      border: none;
+      border-radius: var(--radius-sm);
+      font-family: 'DM Sans', sans-serif;
+      font-size: 14px;
+      font-weight: 500;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      background: var(--surface2);
+      color: var(--text-muted);
+    }
+    .toggle-btn.active[data-fuel="benzina"] {
+      background: var(--accent-b);
+      color: white;
+    }
+    .toggle-btn.active[data-fuel="gasolio"] {
+      background: var(--accent-d);
+      color: white;
+    }
+    .toggle-btn:not(.active):hover {
+      background: var(--border);
+      color: var(--text);
+    }
+
+    /* ── MAIN ── */
+    main {
+      padding: 20px 16px;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    /* ── STATS BAR ── */
+    .stats-bar {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+    .stat-chip {
+      flex: 1;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      padding: 12px;
+      text-align: center;
+    }
+    .stat-chip .val {
+      font-family: 'DM Mono', monospace;
+      font-size: 18px;
+      font-weight: 500;
+    }
+    .stat-chip .lbl {
+      font-size: 10px;
+      color: var(--text-muted);
+      margin-top: 2px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    .stat-chip.best .val { color: var(--accent-cheap); }
+    .stat-chip.worst .val { color: var(--accent-expensive); }
+
+    /* ── LIST ── */
+    .list {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 16px;
+      cursor: pointer;
+      transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      text-decoration: none;
+      color: inherit;
+      position: relative;
+      overflow: hidden;
+    }
+    .card:active { transform: scale(0.98); }
+    .card:hover { box-shadow: var(--shadow-lg); border-color: #ccc; }
+
+    .rank {
+      font-family: 'DM Mono', monospace;
+      font-size: 11px;
+      color: var(--text-light);
+      min-width: 24px;
+      text-align: center;
+    }
+    .rank-1 { color: #c8960c; font-weight: 500; font-size: 14px; }
+    .rank-2 { color: #9ea5ad; font-weight: 500; font-size: 13px; }
+    .rank-3 { color: #9e6c3a; font-weight: 500; font-size: 13px; }
+
+    .card-body {
+      flex: 1;
+      min-width: 0;
+    }
+    .card-name {
+      font-size: 15px;
+      font-weight: 600;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      margin-bottom: 3px;
+    }
+    .card-info {
+      font-size: 12px;
+      color: var(--text-muted);
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .card-comune {
+      display: inline-block;
+      background: var(--surface2);
+      padding: 1px 6px;
+      border-radius: 4px;
+      font-size: 10px;
+      color: var(--text-muted);
+      margin-top: 4px;
+    }
+
+    .card-price {
+      text-align: right;
+      flex-shrink: 0;
+    }
+    .price-self {
+      font-family: 'DM Mono', monospace;
+      font-size: 22px;
+      font-weight: 500;
+      line-height: 1;
+    }
+    .price-label {
+      font-size: 9px;
+      color: var(--text-light);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-top: 2px;
+    }
+    .price-servito {
+      font-size: 11px;
+      color: var(--text-muted);
+      margin-top: 4px;
+    }
+
+    /* Color coding */
+    .card[data-tier="cheap"] .price-self { color: var(--accent-cheap); }
+    .card[data-tier="mid"] .price-self { color: var(--text); }
+    .card[data-tier="expensive"] .price-self { color: var(--accent-expensive); }
+    .card[data-tier="cheap"] { border-left: 3px solid var(--accent-cheap); }
+    .card[data-tier="expensive"] { border-left: 3px solid var(--accent-expensive); }
+
+    .chevron {
+      color: var(--text-light);
+      font-size: 16px;
+      flex-shrink: 0;
+    }
+
+    /* ── NO PRICE ── */
+    .no-price { color: var(--text-light); font-size: 14px; }
+
+    /* ── LOADING ── */
+    .loading {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 60px 20px;
+      gap: 16px;
+    }
+    .spinner {
+      width: 36px; height: 36px;
+      border: 3px solid var(--border);
+      border-top-color: var(--accent-b);
+      border-radius: 50%;
+      animation: spin 0.8s linear infinite;
+    }
+    @keyframes spin { to { transform: rotate(360deg); } }
+    .loading-text { font-size: 14px; color: var(--text-muted); }
+
+    /* ── ERROR ── */
+    .error-box {
+      background: #fff5f5;
+      border: 1px solid #fcc;
+      border-radius: var(--radius);
+      padding: 24px;
+      text-align: center;
+      margin-top: 20px;
+    }
+    .error-box p { color: #c0392b; font-size: 14px; }
+    .retry-btn {
+      margin-top: 14px;
+      padding: 10px 20px;
+      background: var(--accent-b);
+      color: white;
+      border: none;
+      border-radius: var(--radius-sm);
+      font-family: 'DM Sans', sans-serif;
+      font-size: 14px;
+      cursor: pointer;
+    }
+
+    /* ── NO DATA ── */
+    .no-data {
+      text-align: center;
+      padding: 40px 20px;
+      color: var(--text-muted);
+      font-size: 14px;
+    }
+
+    /* ── DETAIL PANEL ── */
+    .detail-overlay {
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,0.35);
+      z-index: 200;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.25s ease;
+    }
+    .detail-overlay.open {
+      opacity: 1;
+      pointer-events: all;
+    }
+    .detail-panel {
+      position: fixed;
+      bottom: 0; left: 0; right: 0;
+      background: var(--surface);
+      border-radius: 24px 24px 0 0;
+      padding: 24px 20px 40px;
+      z-index: 201;
+      max-height: 85vh;
+      overflow-y: auto;
+      transform: translateY(100%);
+      transition: transform 0.3s cubic-bezier(0.32,0.72,0,1);
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    .detail-panel.open {
+      transform: translateY(0);
+    }
+    .detail-handle {
+      width: 40px; height: 4px;
+      background: var(--border);
+      border-radius: 2px;
+      margin: 0 auto 20px;
+    }
+    .detail-header {
+      margin-bottom: 20px;
+    }
+    .detail-bandiera {
+      font-size: 11px;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: var(--text-muted);
+      margin-bottom: 4px;
+    }
+    .detail-name {
+      font-size: 20px;
+      font-weight: 600;
+      letter-spacing: -0.3px;
+      margin-bottom: 6px;
+    }
+    .detail-addr {
+      font-size: 13px;
+      color: var(--text-muted);
+      line-height: 1.5;
+    }
+
+    .detail-section-title {
+      font-size: 11px;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: var(--text-light);
+      margin: 20px 0 10px;
+    }
+    .price-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+    }
+    .price-cell {
+      background: var(--surface2);
+      border-radius: var(--radius-sm);
+      padding: 14px;
+    }
+    .price-cell .fuel-name {
+      font-size: 11px;
+      color: var(--text-muted);
+      margin-bottom: 6px;
+      text-transform: capitalize;
+    }
+    .price-cell .fuel-mode {
+      font-size: 9px;
+      color: var(--text-light);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    .price-cell .fuel-val {
+      font-family: 'DM Mono', monospace;
+      font-size: 20px;
+      font-weight: 500;
+    }
+    .price-cell .fuel-val.na { font-size: 14px; color: var(--text-light); }
+
+    .detail-info-row {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 12px 0;
+      border-bottom: 1px solid var(--border);
+      font-size: 14px;
+    }
+    .detail-info-row:last-child { border-bottom: none; }
+    .detail-info-label {
+      color: var(--text-muted);
+      min-width: 90px;
+      font-size: 13px;
+    }
+    .detail-info-val { font-weight: 500; }
+
+    .maps-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      width: 100%;
+      margin-top: 20px;
+      padding: 14px;
+      background: var(--text);
+      color: white;
+      border: none;
+      border-radius: var(--radius);
+      font-family: 'DM Sans', sans-serif;
+      font-size: 15px;
+      font-weight: 500;
+      cursor: pointer;
+      text-decoration: none;
+    }
+
+    /* ── FOOTER ── */
+    .footer {
+      text-align: center;
+      padding: 30px 20px;
+      font-size: 11px;
+      color: var(--text-light);
+    }
+
+    /* ── FADE IN ANIMATION ── */
+    .card {
+      animation: fadeUp 0.3s ease both;
+    }
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(12px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+
+<div class="header">
+  <div class="header-top">
+    <div>
+      <div class="app-title">⛽ Carburanti VCO</div>
+      <div class="app-subtitle">Provincia di Verbania</div>
+    </div>
+    <div class="meta-badge">
+      <div class="meta-date" id="meta-date">—</div>
+      <div class="meta-source">Fonte: MIMIT Open Data</div>
+    </div>
+  </div>
+  <div class="fuel-toggle">
+    <button class="toggle-btn active" data-fuel="benzina" onclick="switchFuel('benzina')">🟢 Benzina</button>
+    <button class="toggle-btn" data-fuel="gasolio" onclick="switchFuel('gasolio')">🔵 Gasolio</button>
+  </div>
+</div>
+
+<main>
+  <div id="app-content">
+    <div class="loading">
+      <div class="spinner"></div>
+      <div class="loading-text">Caricamento prezzi in corso…</div>
+    </div>
+  </div>
+  <div class="footer">
+    Dati aggiornati quotidianamente alle 08:00<br>
+    Ministero delle Imprese e del Made in Italy
+  </div>
+</main>
+
+<!-- Detail panel -->
+<div class="detail-overlay" id="overlay" onclick="closeDetail()"></div>
+<div class="detail-panel" id="detail-panel">
+  <div class="detail-handle"></div>
+  <div id="detail-content"></div>
+</div>
+
+<script>
+  let allData = null;
+  let currentFuel = 'benzina';
+
+  const API_URL = '/api/carburanti';
+
+  async function loadData() {
+    try {
+      const res = await fetch(API_URL);
+      if (!res.ok) throw new Error('HTTP ' + res.status);
+      allData = await res.json();
+      if (allData.extractionDate) {
+        const d = new Date(allData.extractionDate);
+        document.getElementById('meta-date').textContent =
+          d.toLocaleDateString('it-IT', { day: '2-digit', month: 'short', year: 'numeric' });
+      }
+      renderList();
+    } catch (e) {
+      document.getElementById('app-content').innerHTML = `
+        <div class="error-box">
+          <p>Impossibile caricare i dati.<br>${e.message}</p>
+          <button class="retry-btn" onclick="loadData()">Riprova</button>
+        </div>`;
+    }
+  }
+
+  function switchFuel(fuel) {
+    currentFuel = fuel;
+    document.querySelectorAll('.toggle-btn').forEach(b => {
+      b.classList.toggle('active', b.dataset.fuel === fuel);
+    });
+    renderList();
+  }
+
+  function fmt(val) {
+    if (val === null || val === undefined || isNaN(val)) return null;
+    return val.toFixed(3);
+  }
+
+  function renderList() {
+    if (!allData) return;
+
+    const selfKey = currentFuel + '_self';
+    const servitoKey = currentFuel + '_servito';
+
+    // Filter distributors that have at least self or servito price
+    let list = allData.distributori.filter(d =>
+      d[selfKey] !== null || d[servitoKey] !== null
+    );
+
+    // Sort by self (preferred), fallback to servito
+    list.sort((a, b) => {
+      const pa = a[selfKey] ?? a[servitoKey] ?? 9999;
+      const pb = b[selfKey] ?? b[servitoKey] ?? 9999;
+      return pa - pb;
+    });
+
+    if (list.length === 0) {
+      document.getElementById('app-content').innerHTML =
+        '<div class="no-data">Nessun dato disponibile per questo carburante.</div>';
+      return;
+    }
+
+    // Compute stats
+    const prices = list.map(d => d[selfKey] ?? d[servitoKey]);
+    const minP = Math.min(...prices);
+    const maxP = Math.max(...prices);
+    const avgP = prices.reduce((a, b) => a + b, 0) / prices.length;
+    const midThresh = avgP + (maxP - avgP) * 0.4;
+
+    // Stats bar
+    let html = `
+      <div class="stats-bar">
+        <div class="stat-chip best">
+          <div class="val">${fmt(minP)}</div>
+          <div class="lbl">Min €/L</div>
+        </div>
+        <div class="stat-chip">
+          <div class="val">${fmt(avgP)}</div>
+          <div class="lbl">Media €/L</div>
+        </div>
+        <div class="stat-chip worst">
+          <div class="val">${fmt(maxP)}</div>
+          <div class="lbl">Max €/L</div>
+        </div>
+      </div>
+      <div class="list">`;
+
+    list.forEach((d, i) => {
+      const selfVal = d[selfKey];
+      const servitoVal = d[servitoKey];
+      const mainPrice = selfVal ?? servitoVal;
+      const isSelfOnly = selfVal !== null && servitoVal === null;
+
+      const tier = mainPrice <= minP + 0.01 ? 'cheap'
+                 : mainPrice >= midThresh ? 'expensive'
+                 : 'mid';
+
+      const rankClass = i === 0 ? 'rank-1' : i === 1 ? 'rank-2' : i === 2 ? 'rank-3' : '';
+      const rankSymbol = i === 0 ? '🥇' : i === 1 ? '🥈' : i === 2 ? '🥉' : `${i+1}`;
+
+      const nomePulito = d.nome
+        .replace(/\b(SRL|SAS|SNC|SPA|S\.R\.L\.|S\.A\.S\.|S\.N\.C\.)\b/gi, '')
+        .trim();
+
+      html += `
+        <div class="card" data-tier="${tier}" data-id="${d.id}"
+             onclick="openDetail('${d.id}')"
+             style="animation-delay:${Math.min(i * 30, 300)}ms">
+          <div class="rank ${rankClass}">${rankSymbol}</div>
+          <div class="card-body">
+            <div class="card-name">${escHtml(nomePulito || d.bandiera)}</div>
+            <div class="card-info">${escHtml(d.indirizzo)}</div>
+            <span class="card-comune">${escHtml(d.comune)}</span>
+          </div>
+          <div class="card-price">
+            <div class="price-self">${fmt(mainPrice) ?? '<span class="no-price">—</span>'}</div>
+            <div class="price-label">${selfVal !== null ? 'self' : 'servito'} €/L</div>
+            ${servitoVal !== null && selfVal !== null
+              ? `<div class="price-servito">Servito: ${fmt(servitoVal)}</div>`
+              : ''}
+          </div>
+          <div class="chevron">›</div>
+        </div>`;
+    });
+
+    html += '</div>';
+    document.getElementById('app-content').innerHTML = html;
+  }
+
+  function openDetail(id) {
+    const d = allData.distributori.find(x => x.id === id);
+    if (!d) return;
+
+    const fuelMap = {
+      'Benzina': ['benzina_self', 'benzina_servito'],
+      'Gasolio': ['gasolio_self', 'gasolio_servito'],
+      'GPL': ['gpl_self', 'gpl_servito'],
+      'Metano': ['metano_self', 'metano_servito'],
+    };
+
+    let priceGrid = '<div class="price-grid">';
+    for (const [label, [sk, sv]] of Object.entries(fuelMap)) {
+      const selfVal = d[sk];
+      const servitoVal = d[sv];
+      if (selfVal !== null || servitoVal !== null) {
+        if (selfVal !== null) {
+          priceGrid += `<div class="price-cell">
+            <div class="fuel-mode">Self</div>
+            <div class="fuel-name">${label}</div>
+            <div class="fuel-val">${fmt(selfVal)}</div>
+          </div>`;
+        }
+        if (servitoVal !== null) {
+          priceGrid += `<div class="price-cell">
+            <div class="fuel-mode">Servito</div>
+            <div class="fuel-name">${label}</div>
+            <div class="fuel-val">${fmt(servitoVal)}</div>
+          </div>`;
+        }
+      }
+    }
+    priceGrid += '</div>';
+
+    const mapsUrl = (d.lat && d.lng)
+      ? `https://maps.google.com/?q=${d.lat},${d.lng}`
+      : `https://maps.google.com/?q=${encodeURIComponent(d.indirizzo + ' ' + d.comune)}`;
+
+    const aggiornato = d.aggiornato
+      ? new Date(d.aggiornato.split(' ')[0].split('/').reverse().join('-'))
+          .toLocaleDateString('it-IT', { day: '2-digit', month: 'short', year: 'numeric' })
+      : '—';
+
+    document.getElementById('detail-content').innerHTML = `
+      <div class="detail-header">
+        <div class="detail-bandiera">${escHtml(d.bandiera)}</div>
+        <div class="detail-name">${escHtml(d.nome)}</div>
+        <div class="detail-addr">${escHtml(d.indirizzo)}<br>${escHtml(d.comune)}</div>
+      </div>
+
+      <div class="detail-section-title">Prezzi praticati</div>
+      ${priceGrid}
+
+      <div class="detail-section-title">Dettagli impianto</div>
+      <div class="detail-info-row">
+        <span class="detail-info-label">Gestore</span>
+        <span class="detail-info-val">${escHtml(d.gestore)}</span>
+      </div>
+      <div class="detail-info-row">
+        <span class="detail-info-label">Bandiera</span>
+        <span class="detail-info-val">${escHtml(d.bandiera)}</span>
+      </div>
+      <div class="detail-info-row">
+        <span class="detail-info-label">Comune</span>
+        <span class="detail-info-val">${escHtml(d.comune)}</span>
+      </div>
+      <div class="detail-info-row">
+        <span class="detail-info-label">Aggiornato</span>
+        <span class="detail-info-val">${aggiornato}</span>
+      </div>
+
+      <a class="maps-btn" href="${mapsUrl}" target="_blank" rel="noopener">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/>
+        </svg>
+        Apri in Maps
+      </a>
+    `;
+
+    document.getElementById('overlay').classList.add('open');
+    document.getElementById('detail-panel').classList.add('open');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeDetail() {
+    document.getElementById('overlay').classList.remove('open');
+    document.getElementById('detail-panel').classList.remove('open');
+    document.body.style.overflow = '';
+  }
+
+  // Swipe down to close
+  let touchStartY = 0;
+  document.getElementById('detail-panel').addEventListener('touchstart', e => {
+    touchStartY = e.touches[0].clientY;
+  }, { passive: true });
+  document.getElementById('detail-panel').addEventListener('touchend', e => {
+    if (e.changedTouches[0].clientY - touchStartY > 80) closeDetail();
+  }, { passive: true });
+
+  function escHtml(s) {
+    return String(s ?? '').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+  }
+
+  loadData();
+</script>
+</body>
+</html>
