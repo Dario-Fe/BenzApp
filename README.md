@@ -1,4 +1,4 @@
-# ⛽ Carburanti VCO
+# ⛽ BenzApp
 
 Web app per confrontare i prezzi di benzina e gasolio nella provincia di Verbania (VCO), ordinati dal più conveniente al meno conveniente.
 
