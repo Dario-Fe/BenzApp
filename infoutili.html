@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Info Utili - BenzUp</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg: #f5f4f0;
+      --surface: #ffffff;
+      --surface2: #f0ede8;
+      --border: #e2ddd8;
+      --text: #1a1816;
+      --text-muted: #8a8480;
+      --text-light: #b0aba6;
+      --accent-b: #1a6b3a;
+      --radius: 16px;
+      --radius-sm: 10px;
+      --shadow: 0 2px 12px rgba(0,0,0,0.06);
+    }
+
+    body {
+      font-family: 'DM Sans', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+      -webkit-font-smoothing: antialiased;
+      line-height: 1.6;
+    }
+
+    .header {
+      background: var(--surface);
+      border-bottom: 1px solid var(--border);
+      padding: 20px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: var(--shadow);
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+
+    .back-btn {
+      text-decoration: none;
+      color: var(--text);
+      font-size: 24px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: var(--surface2);
+      transition: background 0.2s;
+    }
+
+    .back-btn:hover {
+      background: var(--border);
+    }
+
+    .app-title {
+      font-size: 20px;
+      font-weight: 600;
+      letter-spacing: -0.5px;
+    }
+
+    main {
+      padding: 30px 20px;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .content-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 24px;
+      box-shadow: var(--shadow);
+    }
+
+    h1 {
+      font-size: 24px;
+      margin-bottom: 20px;
+      letter-spacing: -0.5px;
+    }
+
+    p {
+      margin-bottom: 16px;
+      font-size: 15px;
+      color: var(--text);
+    }
+
+    .footer {
+      text-align: center;
+      padding: 30px 20px;
+      font-size: 11px;
+      color: var(--text-light);
+    }
+  </style>
+</head>
+<body>
+
+<div class="header">
+  <a href="index.html" class="back-btn">‹</a>
+  <div class="app-title">Info Utili</div>
+</div>
+
+<main>
+  <div class="content-card">
+    <p>I prezzi visualizzati in questa applicazione provengono dal portale Open Data del Ministero delle Imprese e del Made in Italy (MIMIT), la fonte ufficiale nazionale per la rilevazione dei prezzi dei carburanti.</p>
+
+    <p>I dati vengono pubblicati ogni mattina e si riferiscono ai prezzi in vigore alle ore 8:00 del giorno precedente.</p>
+
+    <p>Si precisa che i gestori degli impianti sono tenuti per legge a comunicare ogni variazione di prezzo (aumento o diminuzione) rispetto all'ultimo invio, in modo preventivo o contestuale all'applicazione, e anche in assenza di variazioni di prezzo, è obbligatorio inviare una comunicazione almeno una volta a settimana, entro l'ottavo giorno dall'ultima comunicazione effettuata.</p>
+
+    <p>Tuttavia non tutti lo fanno con cadenza regolare. È quindi possibile che alcuni distributori non abbiano aggiornato i propri prezzi di recente.</p>
+
+    <p>Per verificare la data dell'ultimo aggiornamento di un singolo impianto, è sufficiente aprire la scheda di dettaglio toccando il distributore desiderato: al suo interno è indicata la data dell'ultima comunicazione inviata al Ministero.</p>
+
+    <p>Questa applicazione non è affiliata né approvata dal Ministero delle Imprese e del Made in Italy, ma è un'iniziativa privata, volontaria e gratuita a favore degli automobilisti del VCO.</p>
+  </div>
+</main>
+
+<div class="footer">
+  BenzUp - Iniziativa privata VCO
+</div>
+
+</body>
+</html>
