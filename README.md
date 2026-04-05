@@ -1,70 +1,54 @@
-# ⛽ BenzUp
+# ⛽ BenzUp - VCO
 
-Web app per confrontare i prezzi di benzina e gasolio nella provincia di Verbania (VCO), ordinati dal più conveniente al meno conveniente.
+Web app per confrontare i prezzi di benzina e gasolio nella provincia del **Verbano-Cusio-Ossola (VCO)**, ordinati dal più conveniente al meno conveniente.
 
 **Fonte dati:** Ministero delle Imprese e del Made in Italy (MIMIT) — Open Data ufficiali  
-**Aggiornamento:** quotidiano alle ore 08:00
-
----
-
-## 🚀 Deploy su Netlify (passo per passo)
-
-### 1. Carica su GitHub
-
-```bash
-git init
-git add .
-git commit -m "first commit"
-git branch -M main
-git remote add origin https://github.com/TUO-USERNAME/carburanti-vb.git
-git push -u origin main
-```
-
-### 2. Collega a Netlify
-
-1. Vai su [netlify.com](https://netlify.com) → **Add new site → Import from Git**
-2. Seleziona il tuo repository GitHub
-3. Lascia le impostazioni di build vuote (non serve build step)
-4. Clicca **Deploy site**
-
-Netlify rileverà automaticamente il file `netlify.toml` e configurerà la funzione serverless.
-
-### 3. Pronto!
-
-L'app sarà disponibile su `https://nome-sito.netlify.app`
+**Aggiornamento:** quotidiano alle ore 08:00  
+**Caratteristiche:** Ultra-leggera, installabile come App (PWA), privacy-first.
 
 ---
 
 ## 📁 Struttura del progetto
 
 ```
-carburanti-vb/
-├── index.html                    # Frontend (unico file HTML/CSS/JS)
-├── netlify.toml                  # Configurazione Netlify
+benzup-vco/
+├── index.html            # App principale (Classifica prezzi)
+├── infoutili.html        # Pagina informativa (Fonte dati e disclaimers)
+├── icon.svg              # Logo personalizzato (SVG ultra-leggero)
+├── manifest.json         # Configurazione per installazione Web App (PWA)
+├── netlify.toml          # Configurazione Netlify (Redirect API)
 └── netlify/
     └── functions/
-        └── carburanti.js         # Funzione serverless (proxy MIMIT)
+        └── carburanti.js # Funzione serverless (Proxy CSV MIMIT → JSON)
 ```
 
 ## ⚙️ Come funziona
 
-1. Il browser carica `index.html`
-2. La pagina chiama `/api/carburanti` (→ `netlify/functions/carburanti.js`)
-3. La funzione serverless scarica i due CSV dal MIMIT, filtra per provincia VB, unisce i dati
-4. Restituisce un JSON leggero al browser
-5. Il frontend ordina e mostra i distributori
+1. **Accesso**: L'utente apre `index.html` (o l'app installata sulla home).
+2. **Dati**: La pagina chiama l'endpoint `/api/carburanti`.
+3. **Serverless**: La funzione Netlify scarica i CSV ufficiali dal MIMIT, filtra i dati per la provincia del VCO e li unisce.
+4. **Visualizzazione**: Il frontend riceve un JSON leggero, ordina i distributori dal più economico e applica una codifica a colori (verde per i più convenienti, rosso per i più cari).
 
-**Cache:** i CSV MIMIT vengono riscaricati al massimo una volta per cold start della funzione — il consumo di banda su Netlify è minimo.
+### ✨ Novità: PWA Support
+BenzUp è ora una **Progressive Web App**. Grazie al file `manifest.json` e all'icona `icon.svg` (un'emoji ⛽ perfettamente centrata), puoi aggiungere l'app alla schermata home del tuo smartphone per aprirla istantaneamente come se fosse un'app nativa.
 
 ---
 
-## 🔧 Sviluppo locale
+## 🚀 Sviluppo e Deploy su Netlify
 
-Per testare in locale installa [Netlify CLI](https://docs.netlify.com/cli/get-started/):
+### Sviluppo locale
+Per testare in locale installa la [Netlify CLI](https://docs.netlify.com/cli/get-started/):
 
 ```bash
 npm install -g netlify-cli
 netlify dev
 ```
+L'app sarà disponibile su `http://localhost:8888`.
 
-L'app sarà disponibile su `http://localhost:8888`
+### Deploy
+Basta collegare il repository a Netlify. Il file `netlify.toml` configurerà automaticamente i redirect e la funzione serverless.
+
+---
+
+## ⚖️ Note Legali
+Tutti i prezzi provengono dal portale ufficiale del Ministero delle Imprese e del Made in Italy. L'app è un'iniziativa privata, gratuita e dedicata alla comunità degli automobilisti del VCO.
