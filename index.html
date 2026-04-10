@@ -278,18 +278,20 @@
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      padding: 60px 20px;
-      gap: 16px;
+      padding: 80px 20px;
+      gap: 20px;
     }
-    .spinner {
-      width: 36px; height: 36px;
-      border: 3px solid var(--border);
-      border-top-color: var(--accent-b);
-      border-radius: 50%;
-      animation: spin 0.8s linear infinite;
+    .loading-logo {
+      width: 64px;
+      height: 64px;
+      animation: pumpPulse 1.5s ease-in-out infinite;
     }
-    @keyframes spin { to { transform: rotate(360deg); } }
-    .loading-text { font-size: 14px; color: var(--text-muted); }
+    @keyframes pumpPulse {
+      0% { transform: scale(1); opacity: 0.8; }
+      50% { transform: scale(1.15); opacity: 1; }
+      100% { transform: scale(1); opacity: 0.8; }
+    }
+    .loading-text { font-size: 14px; color: var(--text-muted); font-weight: 500; }
 
     /* ── ERROR ── */
     .error-box {
@@ -494,7 +496,7 @@
 <main>
   <div id="app-content">
     <div class="loading">
-      <div class="spinner"></div>
+      <img src="icon.svg" class="loading-logo" alt="Caricamento...">
       <div class="loading-text">Caricamento prezzi in corso…</div>
     </div>
   </div>
