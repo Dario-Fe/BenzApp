@@ -50,7 +50,10 @@ function parsePrezzi(text) {
     const cols = lines[i].split("|");
     if (cols.length >= 5) {
       const id = cols[0]?.trim();
-      const carburante = cols[1]?.trim().toLowerCase();
+      let carburante = cols[1]?.trim().toLowerCase();
+      if (carburante.includes("gpl")) carburante = "gpl";
+      if (carburante.includes("metano")) carburante = "metano";
+
       const prezzo = parseFloat(cols[2]?.trim());
       const isSelf = cols[3]?.trim() === "1";
       const dtComu = cols[4]?.trim();
