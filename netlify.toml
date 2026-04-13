@@ -2,6 +2,9 @@
   publish = "."
   functions = "netlify/functions"
 
+[functions]
+  included_files = ["annunci_vco.json"]
+
 [[redirects]]
   from = "/api/*"
   to = "/.netlify/functions/:splat"
