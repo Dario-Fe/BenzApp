@@ -229,7 +229,20 @@
       overflow: hidden;
       text-overflow: ellipsis;
       margin-bottom: 3px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
     }
+
+    .reliability-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      flex-shrink: 0;
+    }
+    .dot-green { background: #2ecc71; box-shadow: 0 0 6px rgba(46,204,113,0.4); }
+    .dot-yellow { background: #f1c40f; box-shadow: 0 0 6px rgba(241,196,15,0.4); }
+    .dot-red { background: #e74c3c; box-shadow: 0 0 6px rgba(231,76,60,0.4); }
     .card-info {
       font-size: 12px;
       color: var(--text-muted);
@@ -572,6 +585,9 @@
   function renderList() {
     if (!allData) return;
 
+    const refDate = allData.extractionDate ? new Date(allData.extractionDate) : new Date();
+    refDate.setHours(0, 0, 0, 0);
+
     const selfKey = currentFuel + '_self';
     const servitoKey = currentFuel + '_servito';
 
@@ -635,13 +651,33 @@
         .replace(/\b(SRL|SAS|SNC|SPA|S\.R\.L\.|S\.A\.S\.|S\.N\.C\.)\b/gi, '')
         .trim();
 
+      // Reliability dot calculation
+      let dotClass = 'dot-red';
+      if (d.aggiornato) {
+        try {
+          // Input format: DD/MM/YYYY HH:MM:SS
+          const parts = d.aggiornato.split(' ')[0].split('/');
+          const updateDate = new Date(parts[2], parts[1] - 1, parts[0]);
+          updateDate.setHours(0, 0, 0, 0);
+
+          const diffDays = Math.round((refDate - updateDate) / (1000 * 60 * 60 * 24));
+
+          if (diffDays <= 0) dotClass = 'dot-green';
+          else if (diffDays === 1) dotClass = 'dot-yellow';
+          else dotClass = 'dot-red';
+        } catch (e) { dotClass = 'dot-red'; }
+      }
+
       html += `
         <div class="card" data-tier="${tier}" data-id="${d.id}"
              onclick="openDetail('${d.id}')"
              style="animation-delay:${Math.min(i * 30, 300)}ms">
           <div class="rank ${rankClass}">${rankSymbol}</div>
           <div class="card-body">
-            <div class="card-name">${escHtml(nomePulito || d.bandiera)}</div>
+            <div class="card-name">
+              <span class="reliability-dot ${dotClass}"></span>
+              ${escHtml(nomePulito || d.bandiera)}
+            </div>
             <div class="card-info">${escHtml(d.indirizzo)}</div>
             <span class="card-comune">${escHtml(d.comune)}</span>
           </div>
