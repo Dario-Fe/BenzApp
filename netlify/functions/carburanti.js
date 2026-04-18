@@ -1,8 +1,7 @@
 const https = require("https");
 
-// Simple in-memory cache: resets on cold start (fine for daily data)
-let cache = null;
-let cacheDate = null;
+// Simple in-memory cache per province: resets on cold start (fine for daily data)
+let cache = {}; // Format: { "VB": { data, date }, "TO": { data, date }, ... }
 
 function fetchCSV(url) {
   return new Promise((resolve, reject) => {
@@ -80,11 +79,12 @@ exports.handler = async function (event) {
   };
 
   try {
+    const province = event.queryStringParameters.provincia || "VB";
     const today = new Date().toISOString().split("T")[0];
 
-    // Use cache if same day
-    if (cache && cacheDate === today) {
-      return { statusCode: 200, headers, body: JSON.stringify(cache) };
+    // Use cache if same day for the specific province
+    if (cache[province] && cache[province].date === today) {
+      return { statusCode: 200, headers, body: JSON.stringify(cache[province].data) };
     }
 
     const [anagraficaText, prezziText] = await Promise.all([
@@ -95,11 +95,11 @@ exports.handler = async function (event) {
     const { rows: impianti, extractionDate } = parseCSV(anagraficaText);
     const prezzi = parsePrezzi(prezziText);
 
-    // Filter only VB province
-    const impiantiVB = impianti.filter((i) => i.provincia === "VB");
+    // Filter based on province parameter
+    const impiantiProv = impianti.filter((i) => i.provincia === province);
 
     // Merge with prices
-    const distributori = impiantiVB.map((imp) => {
+    const distributori = impiantiProv.map((imp) => {
       const p = prezzi[imp.idImpianto] || {};
       return {
         id: imp.idImpianto,
@@ -129,8 +129,7 @@ exports.handler = async function (event) {
       distributori,
     };
 
-    cache = result;
-    cacheDate = today;
+    cache[province] = { data: result, date: today };
 
     return { statusCode: 200, headers, body: JSON.stringify(result) };
   } catch (err) {

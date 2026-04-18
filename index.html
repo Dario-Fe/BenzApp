@@ -61,6 +61,7 @@
       align-items: flex-start;
       justify-content: space-between;
       margin-bottom: 16px;
+      gap: 12px;
     }
     .app-title {
       font-size: 22px;
@@ -98,6 +99,21 @@
     .meta-source {
       font-size: 10px;
       color: var(--text-light);
+    }
+
+    /* ── PROVINCE SELECT ── */
+    .province-select {
+      margin-top: 8px;
+      padding: 6px 10px;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      background: var(--surface2);
+      font-family: inherit;
+      font-size: 12px;
+      color: var(--text);
+      cursor: pointer;
+      width: 100%;
+      outline: none;
     }
 
     /* ── FUEL TOGGLE ── */
@@ -506,7 +522,17 @@
   <div class="header-top">
     <div>
       <div class="app-title"><img src="icon.svg" class="app-logo" alt="Logo BenzUp"> BenzUp</div>
-      <div class="app-subtitle">Classifica prezzi carburanti VCO</div>
+      <div class="app-subtitle" id="app-subtitle">Classifica prezzi carburanti</div>
+      <select class="province-select" id="province-select" onchange="changeProvince(this.value)">
+        <option value="AL">Alessandria (AL)</option>
+        <option value="AT">Asti (AT)</option>
+        <option value="BI">Biella (BI)</option>
+        <option value="CN">Cuneo (CN)</option>
+        <option value="NO">Novara (NO)</option>
+        <option value="TO">Torino (TO)</option>
+        <option value="VB">Verbano-Cusio-Ossola (VB)</option>
+        <option value="VC">Vercelli (VC)</option>
+      </select>
     </div>
     <div class="meta-badge">
       <div class="meta-date" id="meta-date">—</div>
@@ -546,12 +572,26 @@
 <script>
   let allData = null;
   let currentFuel = 'benzina';
+  let currentProvince = localStorage.getItem('selectedProvince') || 'VB';
 
   const API_URL = '/api/carburanti';
 
+  function updateHeader() {
+    const select = document.getElementById('province-select');
+    const option = select.options[select.selectedIndex];
+    document.getElementById('app-subtitle').textContent = `Classifica prezzi ${option.text}`;
+  }
+
+  function changeProvince(prov) {
+    currentProvince = prov;
+    localStorage.setItem('selectedProvince', prov);
+    updateHeader();
+    loadData();
+  }
+
   async function loadData() {
     try {
-      const res = await fetch(API_URL);
+      const res = await fetch(`${API_URL}?provincia=${currentProvince}`);
       if (!res.ok) throw new Error('HTTP ' + res.status);
       allData = await res.json();
       if (allData.extractionDate) {
@@ -799,6 +839,9 @@
     return String(s ?? '').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
   }
 
+  // Set initial province select value and header
+  document.getElementById('province-select').value = currentProvince;
+  updateHeader();
   loadData();
 </script>
 </body>
