@@ -329,6 +329,9 @@
       height: 64px;
       animation: pumpPulse 1.5s ease-in-out infinite;
     }
+    .pulsing {
+      animation: pumpPulse 1.5s ease-in-out infinite;
+    }
     @keyframes pumpPulse {
       0% { transform: scale(1); opacity: 0.8; }
       50% { transform: scale(1.15); opacity: 1; }
@@ -590,6 +593,17 @@
   }
 
   async function loadData() {
+    const content = document.getElementById('app-content');
+    const logo = document.querySelector('.app-logo');
+
+    // Mostra stato di caricamento
+    content.innerHTML = `
+      <div class="loading">
+        <img src="icon.svg" class="loading-logo" alt="Caricamento...">
+        <div class="loading-text">Aggiornamento prezzi per ${currentProvince}…</div>
+      </div>`;
+    logo.classList.add('pulsing');
+
     try {
       const res = await fetch(`${API_URL}?provincia=${currentProvince}`);
       if (!res.ok) throw new Error('HTTP ' + res.status);
@@ -601,11 +615,13 @@
       }
       renderList();
     } catch (e) {
-      document.getElementById('app-content').innerHTML = `
+      content.innerHTML = `
         <div class="error-box">
           <p>Impossibile caricare i dati.<br>${e.message}</p>
           <button class="retry-btn" onclick="loadData()">Riprova</button>
         </div>`;
+    } finally {
+      logo.classList.remove('pulsing');
     }
   }
 
