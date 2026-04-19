@@ -1,9 +1,10 @@
-# ⛽ BenzUp - VCO
+# ⛽ BenzUp - Piemonte
 
-Web app per confrontare i prezzi di benzina e gasolio nella provincia del **Verbano-Cusio-Ossola (VCO)**, ordinati dal più conveniente al meno conveniente.
+Web app per confrontare i prezzi dei carburanti nelle province del **Piemonte**, ordinati dal più conveniente al meno conveniente.
 
 **Fonte dati:** Ministero delle Imprese e del Made in Italy (MIMIT) — Open Data ufficiali  
-**Aggiornamento:** quotidiano alle ore 08:00
+**Aggiornamento:** Quotidiano alle ore 08:00
+**Province supportate:** VCO, Novara, Torino, Vercelli, Biella, Alessandria, Asti, Cuneo.
 **Caratteristiche:** Ultra-leggera, installabile come App (PWA), privacy-first.
 
 ---
@@ -11,7 +12,7 @@ Web app per confrontare i prezzi di benzina e gasolio nella provincia del **Verb
 ## 📁 Struttura del progetto
 
 ```
-benzup-vco/
+benzup/
 ├── index.html            # App principale (Classifica prezzi)
 ├── infoutili.html        # Pagina informativa (Fonte dati e disclaimers)
 ├── icon.svg              # Logo personalizzato (SVG ultra-leggero)
@@ -24,13 +25,20 @@ benzup-vco/
 
 ## ⚙️ Come funziona
 
-1. **Accesso**: L'utente apre `index.html` (o l'app installata sulla home).
-2. **Dati**: La pagina chiama l'endpoint `/api/carburanti`.
-3. **Serverless**: La funzione Netlify scarica i CSV ufficiali dal MIMIT, filtra i dati per la provincia del VCO e li unisce.
-4. **Visualizzazione**: Il frontend riceve un JSON leggero, ordina i distributori dal più economico e applica una codifica a colori (verde per i più convenienti, rosso per i più cari).
+1. **Accesso**: L'utente apre `index.html`. La provincia preferita viene salvata nel browser (`localStorage`).
+2. **Dati**: La pagina chiama l'endpoint `/api/carburanti?provincia=XX`.
+3. **Serverless**: La funzione Netlify scarica i CSV ufficiali dal MIMIT, filtra i dati per la provincia richiesta e li unisce in un JSON ottimizzato. Implementa un sistema di **caching per provincia** per garantire risposte istantanee.
+4. **Visualizzazione**: Il frontend riceve i dati, calcola le statistiche (min/media/max) e ordina i distributori dal più economico.
 
-### ✨ Novità: PWA Support
-BenzUp è ora una **Progressive Web App**. Grazie al file `manifest.json` e all'icona `icon.svg` (un'emoji ⛽ perfettamente centrata), puoi aggiungere l'app alla schermata home del tuo smartphone per aprirla istantaneamente come se fosse un'app nativa.
+### ✨ Caratteristiche Avanzate
+
+- **PWA Support**: Installabile su smartphone come app nativa grazie a `manifest.json`.
+- **4 Carburanti**: Supporto completo per **Benzina**, **Gasolio**, **GPL** e **Metano**.
+- **Indicatore Attendibilità (Semaforo)**: Un sistema a colori accanto al nome del distributore indica la freschezza del dato comunicato al Ministero:
+  - 🟢 **Verde**: Aggiornato oggi.
+  - 🟡 **Giallo**: Aggiornato ieri.
+  - 🔴 **Rosso**: Non aggiornato da 2 o più giorni.
+- **UX Reattiva**: Animazione dell'icona (pulsing) e messaggi di stato durante il caricamento tra province.
 
 ---
 
@@ -51,4 +59,4 @@ Basta collegare il repository a Netlify. Il file `netlify.toml` configurerà aut
 ---
 
 ## ⚖️ Note Legali
-Tutti i prezzi provengono dal portale ufficiale del Ministero delle Imprese e del Made in Italy. L'app è un'iniziativa privata, gratuita e dedicata alla comunità degli automobilisti del VCO.
+Tutti i prezzi provengono dal portale ufficiale del Ministero delle Imprese e del Made in Italy. L'app è un'iniziativa privata, gratuita e dedicata alla comunità degli automobilisti del Piemonte.
