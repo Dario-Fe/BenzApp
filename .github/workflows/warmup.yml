@@ -25,46 +25,40 @@ jobs:
             const mimitCsvUrl = 'https://www.mimit.gov.it/images/exportCSV/anagrafica_impianti_attivi.csv';
             const provinces = ['AL', 'AT', 'BI', 'CN', 'NO', 'TO', 'VB', 'VC'];
 
-            async function checkUpdate() {
-              console.log('Controllo aggiornamento dati MIMIT...');
+            async function checkMimitUpdate() {
+              console.log('Controllo data di pubblicazione MIMIT...');
               const today = new Date().toISOString().split('T')[0];
 
-              // 1. HEAD a MIMIT per Last-Modified
-              const mimitRes = await fetch(mimitCsvUrl, { method: 'HEAD' });
-              const lastModified = mimitRes.headers.get('last-modified');
-              const mimitDate = lastModified ? new Date(lastModified).toISOString().split('T')[0] : null;
+              try {
+                // HEAD a MIMIT per leggere Last-Modified senza scaricare il file
+                const res = await fetch(mimitCsvUrl, { method: 'HEAD' });
+                const lastModified = res.headers.get('last-modified');
+                const mimitDate = lastModified ? new Date(lastModified).toISOString().split('T')[0] : null;
 
-              // 2. GET all'App per extractionDate (usiamo VB come campione)
-              const appRes = await fetch(\`\${cleanBaseUrl}/api/carburanti?provincia=VB\`);
-              const appData = await appRes.json();
-              const appDate = appData.extractionDate;
+                console.log(\`Data MIMIT: \${mimitDate}\`);
+                console.log(\`Data di oggi (UTC): \${today}\`);
 
-              console.log(\`Data MIMIT (Last-Modified): \${mimitDate}\`);
-              console.log(\`Data App (ExtractionDate): \${appDate}\`);
-              console.log(\`Data di oggi: \${today}\`);
-
-              // Logica: il warm-up procede se MIMIT ha pubblicato dati nuovi (mimitDate è oggi)
-              // e diversi da quelli che l'app sta servendo.
-              // Nota: MIMIT pubblica oggi (X) i dati di ieri (X-1).
-              const updated = (mimitDate === today && mimitDate !== appDate);
-
-              return { updated, mimitDate, appDate };
+                return { updated: mimitDate === today, mimitDate };
+              } catch (err) {
+                console.error('Errore durante il controllo MIMIT:', err.message);
+                return { updated: false, error: true };
+              }
             }
 
-            let check = await checkUpdate();
+            let check = await checkMimitUpdate();
 
             if (!check.updated) {
-              console.log('Dati non ancora aggiornati o già allineati. Attendo 30 minuti per il secondo tentativo...');
+              console.log('MIMIT non ancora aggiornato. Attendo 30 minuti per il secondo tentativo...');
               await new Promise(r => setTimeout(r, 30 * 60 * 1000));
-              check = await checkUpdate();
+              check = await checkMimitUpdate();
             }
 
             if (!check.updated) {
-              console.log('MIMIT non aggiornato, warm-up non eseguito. Gli utenti riceveranno i dati precedenti fino al prossimo aggiornamento naturale della cache.');
+              console.log('MIMIT non aggiornato dopo il secondo tentativo, warm-up annullato. Il sistema si aggiornerà naturalmente al primo accesso utente post-pubblicazione.');
               return;
             }
 
-            console.log('Dati aggiornati rilevati. Inizio warm-up delle province...');
+            console.log('Dati freschi rilevati. Inizio warm-up delle province...');
             let successCount = 0;
             let failedProvinces = [];
 
@@ -94,15 +88,14 @@ jobs:
             }
 
             console.log('\n--- Riepilogo Warm-up ---');
-            console.log(\`Esito controllo MIMIT: Aggiornato\`);
-            console.log(\`Date confrontate: MIMIT (\${check.mimitDate}) vs App (\${check.appDate})\`);
+            console.log(\`Data MIMIT rilevata: \${check.mimitDate}\`);
             console.log(\`Province scaldate con successo: \${successCount}\`);
             if (failedProvinces.length > 0) {
               console.log(\`Province fallite: \${failedProvinces.join(', ')}\`);
             }
           }
           run().catch(err => {
-            console.error('Errore critico durante il warm-up:', err);
+            console.error('Errore critico durante il workflow:', err);
             process.exit(1);
           });
           "

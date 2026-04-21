@@ -5,17 +5,21 @@ export default async (request, context) => {
   // In Netlify Dev, context.geo is usually empty and x-nf-edge header is missing
   const isLocal = !request.headers.get("x-nf-edge") && (!context.geo || !context.geo.city);
 
-  // Default to VB if provincia is missing, and preserve all other query parameters
-  if (!url.searchParams.has("provincia")) {
-    url.searchParams.set("provincia", "VB");
-  }
+  // Extract only the provincia parameter, defaulting to VB
+  // This prevents cache fragmentation from unknown query parameters
+  const provincia = url.searchParams.get("provincia") || "VB";
 
-  // Construct internal URL for the serverless function using URL object
-  const functionUrl = new URL(`/.netlify/functions/carburanti${url.search}`, url.origin);
+  // Construct internal URL for the serverless function
+  const functionUrl = new URL(`/.netlify/functions/carburanti`, url.origin);
+  functionUrl.searchParams.set("provincia", provincia);
 
   if (isLocal) {
+    const response = await fetch(functionUrl.toString());
+    const newResponse = new Response(response.body, response);
+    newResponse.headers.set("Access-Control-Allow-Origin", "*");
+    newResponse.headers.set("Content-Type", "application/json");
     console.log(`[Edge Function] Local dev detected, proxying to ${functionUrl.toString()}`);
-    return fetch(functionUrl.toString());
+    return newResponse;
   }
 
   // Calculate TTL until 08:00 UTC
