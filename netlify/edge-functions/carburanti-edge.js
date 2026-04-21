@@ -14,10 +14,10 @@ export default async (request, context) => {
     return fetch(functionUrl);
   }
 
-  // Calculate TTL until 10:00 UTC
+  // Calculate TTL until 08:00 UTC
   const now = new Date();
   const target = new Date(now);
-  target.setUTCHours(10, 0, 0, 0);
+  target.setUTCHours(8, 0, 0, 0);
 
   if (now >= target) {
     target.setUTCDate(target.getUTCDate() + 1);
