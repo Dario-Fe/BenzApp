@@ -1,0 +1,101 @@
+name: CDN Cache Warm-up
+
+on:
+  schedule:
+    - cron: '5 8 * * *' # 08:05 UTC ogni giorno
+  workflow_dispatch: # Permette l'avvio manuale per test
+
+jobs:
+  warmup:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Warm-up script
+        env:
+          BENZUP_URL: ${{ secrets.BENZUP_URL }}
+        run: |
+          node -e "
+          async function run() {
+            const baseUrl = process.env.BENZUP_URL;
+            if (!baseUrl) {
+              console.error('ERRORE: Variabile BENZUP_URL non configurata nei Secrets.');
+              process.exit(1);
+            }
+
+            const cleanBaseUrl = baseUrl.replace(/\/$/, '');
+            const mimitCsvUrl = 'https://www.mimit.gov.it/images/exportCSV/anagrafica_impianti_attivi.csv';
+            const provinces = ['AL', 'AT', 'BI', 'CN', 'NO', 'TO', 'VB', 'VC'];
+
+            async function checkMimitUpdate() {
+              console.log('Controllo data di pubblicazione MIMIT...');
+              const today = new Date().toISOString().split('T')[0];
+              
+              try {
+                // HEAD a MIMIT per leggere Last-Modified senza scaricare il file
+                const res = await fetch(mimitCsvUrl, { method: 'HEAD' });
+                const lastModified = res.headers.get('last-modified');
+                const mimitDate = lastModified ? new Date(lastModified).toISOString().split('T')[0] : null;
+
+                console.log(\`Data MIMIT: \${mimitDate}\`);
+                console.log(\`Data di oggi (UTC): \${today}\`);
+
+                return { updated: mimitDate === today, mimitDate };
+              } catch (err) {
+                console.error('Errore durante il controllo MIMIT:', err.message);
+                return { updated: false, error: true };
+              }
+            }
+
+            let check = await checkMimitUpdate();
+            
+            if (!check.updated) {
+              console.log('MIMIT non ancora aggiornato. Attendo 30 minuti per il secondo tentativo...');
+              await new Promise(r => setTimeout(r, 30 * 60 * 1000));
+              check = await checkMimitUpdate();
+            }
+
+            if (!check.updated) {
+              console.log('MIMIT non aggiornato dopo il secondo tentativo, warm-up annullato. Il sistema si aggiornerà naturalmente al primo accesso utente post-pubblicazione.');
+              return;
+            }
+
+            console.log('Dati freschi rilevati. Inizio warm-up delle province...');
+            let successCount = 0;
+            let failedProvinces = [];
+
+            for (const prov of provinces) {
+              const url = \`\${cleanBaseUrl}/api/carburanti?provincia=\${prov}\`;
+              console.log(\`Scaldando \${prov}... (\${url})\`);
+              
+              try {
+                const controller = new AbortController();
+                const timeoutId = setTimeout(() => controller.abort(), 30000);
+                
+                const res = await fetch(url, { signal: controller.signal });
+                clearTimeout(timeoutId);
+
+                if (res.ok) {
+                  console.log(\`✓ \${prov} completata con successo.\`);
+                  successCount++;
+                } else {
+                  throw new Error(\`Status \${res.status}\`);
+                }
+              } catch (err) {
+                console.error(\`✗ Errore scaldando \${prov}: \${err.message}\`);
+                failedProvinces.push(prov);
+              }
+              
+              await new Promise(r => setTimeout(r, 2000)); // Attesa 2 secondi tra richieste
+            }
+
+            console.log('\n--- Riepilogo Warm-up ---');
+            console.log(\`Data MIMIT rilevata: \${check.mimitDate}\`);
+            console.log(\`Province scaldate con successo: \${successCount}\`);
+            if (failedProvinces.length > 0) {
+              console.log(\`Province fallite: \${failedProvinces.join(', ')}\`);
+            }
+          }
+          run().catch(err => {
+            console.error('Errore critico durante il workflow:', err);
+            process.exit(1);
+          });
+          "
