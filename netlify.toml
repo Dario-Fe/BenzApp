@@ -3,13 +3,13 @@
   functions = "netlify/functions"
   edge_functions = "netlify/edge-functions"
 
-[[edge_functions]]
-  path = "/api/carburanti"
-  function = "carburanti-edge"
+# [[edge_functions]]
+#   path = "/api/carburanti"
+#   function = "carburanti-edge"
 
 # Redirect for other /api/* calls (like jobs for VCO) 
 # /api/carburanti is intercepted by the Edge Function above
-[[redirects]]
-  from = "/api/*"
-  to = "/.netlify/functions/:splat"
-  status = 200
+# [[redirects]]
+#   from = "/api/*"
+#   to = "/.netlify/functions/:splat"
+#   status = 200
