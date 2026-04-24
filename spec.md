@@ -1,69 +1,58 @@
 # ⛽ BenzUp - Project Specification
 
 ## 1. Overview
-**BenzUp** is a Progressive Web App (PWA) designed to provide real-time fuel price rankings for the Piedmont region in Italy. It aggregates data from the official Open Data portal of the Ministry of Business and Made in Italy (MIMIT) and presents it in a user-friendly, performance-optimized interface.
+**BenzUp** is a Progressive Web App (PWA) designed to provide real-time fuel price rankings for the Piedmont region in Italy. It aggregates data from the official Open Data portal of the Ministry of Business and Made in Italy (MIMIT) and serves it via static JSON files for maximum performance and reliability.
 
 ### Key Goals
-- **Performance**: Sub-second response times using Netlify Edge Functions and CDN caching.
-- **Accuracy**: Daily updates with reliability indicators based on data freshness.
+- **Performance**: Instant data loading using static JSON files served via Netlify CDN.
+- **Accuracy**: Daily updates triggered by a GitHub Action after MIMIT publication.
 - **Portability**: PWA support for native-like experience on mobile devices.
-- **Privacy**: No client-side tracking, server-side data processing.
+- **Privacy**: Privacy-first approach with no client-side tracking.
 
 ---
 
 ## 2. Architecture
 
 ### Frontend (SPA)
-- **Tech Stack**: HTML5, CSS3 (Custom Variables), Vanilla JavaScript.
+- **Tech Stack**: HTML5, CSS3, Vanilla JavaScript.
+- **Data Loading**: Fetches static JSON files from `/data/{PROVINCIA}.json`.
+- **Cache Busting**: Uses a `?v=YYYY-MM-DD` (UTC) query parameter to ensure daily freshness.
 - **Pages**:
   - `index.html`: Main interface for ranking and details.
-  - `infoutili.html`: Legal disclaimers, data source info, and reliability explanation.
-- **Assets**:
-  - `icon.svg`: Vector logo and loading indicator.
-  - `manifest.json`: PWA configuration.
+  - `infoutili.html`: Legal disclaimers and information.
 
-### Backend (Netlify)
-- **Edge Layer** (`netlify/edge-functions/carburanti-edge.js`):
-    - Intercepts `/api/carburanti`.
-    - Manages CDN caching via `Netlify-CDN-Cache-Control`.
-    - Implements dynamic TTL (expires daily at 08:00 UTC).
-    - Local development detection for seamless proxying.
-- **Serverless Layer** (`netlify/functions/carburanti.js`):
-    - Fetches CSVs from MIMIT (`anagrafica_impianti_attivi.csv`, `prezzo_alle_8.csv`).
-    - Parses and merges data.
-    - Filters by province (`provincia` query parameter).
-    - Implements secondary in-memory cache.
-
-### Automation
+### Data Generation (DevOps)
 - **GitHub Action** (`.github/workflows/warmup.yml`):
-    - Scheduled daily at 08:05 UTC.
-    - Monitors MIMIT for new data (via `Last-Modified` header).
-    - Triggers sequential warm-up requests for all 8 Piedmontese provinces.
+    - **Schedule**: Every 30 minutes from 08:00 to 14:00 UTC.
+    - **Logic**:
+        1. Checks MIMIT `Last-Modified` header.
+        2. If updated today and not yet processed, downloads CSVs.
+        3. Parses CSVs and generates one JSON file per Piedmont province.
+        4. Commits and pushes the JSON files to the `data/` directory in the main branch.
+- **Storage**: JSON files are stored in the `data/` directory at the root of the repository.
+
+### Backend (Netlify - Legacy/Inactive)
+- **Edge Functions** & **Serverless Functions**: Remains in the repository but disabled in `netlify.toml`. Replaced by static JSON delivery.
 
 ---
 
 ## 3. Technical Specifications
 
-### API Endpoint: `/api/carburanti`
-- **Method**: `GET`
-- **Parameters**:
-  - `provincia` (required, defaults to `VB`): Two-letter province code (AL, AT, BI, CN, NO, TO, VB, VC).
-- **Response**: JSON object containing:
-  - `extractionDate`: The date the data was extracted from MIMIT.
-  - `totale`: Number of stations found.
-  - `distributori`: Array of station objects (id, name, address, prices for Benzina/Gasolio/GPL/Metano, etc.).
-
-### Caching Strategy
-1. **CDN Level (Edge)**:
-   - TTL calculated as seconds remaining until 08:00 UTC.
-   - Cache key based on URL (path + `provincia` param).
-   - Only successful (200 OK) responses are cached.
-2. **Function Level**:
-   - Simple in-memory cache indexed by province and current date.
-   - Resets on cold start.
+### Static Data Files: `/data/{PROVINCIA}.json`
+- **Format**: JSON
+- **Structure**:
+    ```json
+    {
+      "extractionDate": "YYYY-MM-DD",
+      "generatedAt": "ISO timestamp UTC",
+      "totale": 123,
+      "distributori": [...]
+    }
+    ```
+- **Provinces**: AL, AT, BI, CN, NO, TO, VB, VC.
 
 ### Reliability Indicator (Traffic Light System)
-Calculated by comparing the current date with the `aggiornato` field of each station:
+Calculated in the frontend by comparing the `extractionDate` from the JSON with the `aggiornato` field of each station:
 - 🟢 **Green**: Updated today.
 - 🟡 **Yellow**: Updated yesterday.
 - 🔴 **Red**: Updated 2 or more days ago.
@@ -72,26 +61,19 @@ Calculated by comparing the current date with the `aggiornato` field of each sta
 
 ## 4. UI/UX Standards
 - **Typography**: 'DM Sans' for general text, 'DM Mono' for prices and dates.
-- **Color Palette**:
-  - Background: `#f5f4f0`
-  - Accent (Benzina/Success): `#1a6b3a`
-  - Accent (Gasolio): `#1a3f6b`
-  - Accent (GPL): `#8e44ad`
-  - Accent (Metano): `#f39c12`
-- **Loading State**: Pulsing ⛽ logo animation.
-- **Responsiveness**: Horizontal scroll for fuel toggles on mobile, card-based layout for listings.
+- **Loading State**: Pulsing ⛽ logo animation during data fetch.
+- **Responsiveness**: Optimized for mobile devices with horizontal fuel toggles.
 
 ---
 
 ## 5. Deployment Configuration
 - **Host**: Netlify.
-- **Redirects**: Handled via `netlify.toml`.
-- **Environment Variables**:
-  - `BENZUP_URL`: Public URL of the app (required for GitHub Action warm-up).
+- **Publish Directory**: `.` (Root).
+- **Automation**: GitHub Actions for data updates and Netlify for static site hosting.
 
 ---
 
 ## 6. Future Roadmap
 - [ ] Integration with maps for proximity-based search.
-- [ ] Historical price trends for each station.
-- [ ] User alerts for price drops in preferred provinces.
+- [ ] Historical price trends using Git history of JSON files.
+- [ ] User alerts for price drops.

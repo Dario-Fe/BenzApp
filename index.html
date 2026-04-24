@@ -579,8 +579,6 @@
   let currentFuel = 'benzina';
   let currentProvince = localStorage.getItem('selectedProvince') || 'VB';
 
-  const API_URL = '/api/carburanti';
-
   function updateHeader() {
     const select = document.getElementById('province-select');
     const option = select.options[select.selectedIndex];
@@ -607,9 +605,13 @@
     logo.classList.add('pulsing');
 
     try {
-      const res = await fetch(`${API_URL}?provincia=${currentProvince}`);
+      // Cache-busting: aggiunge il parametro ?v=YYYY-MM-DD (UTC)
+      const todayUTC = new Date().toISOString().split('T')[0];
+      const res = await fetch(`/data/${currentProvince}.json?v=${todayUTC}`);
+
       if (!res.ok) throw new Error('HTTP ' + res.status);
       allData = await res.json();
+
       if (allData.extractionDate) {
         const d = new Date(allData.extractionDate);
         document.getElementById('meta-date').textContent =
