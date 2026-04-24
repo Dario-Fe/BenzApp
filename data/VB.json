@@ -1,6 +1,2756 @@
 {
-  "extractionDate": "1970-01-01",
-  "generatedAt": "2026-04-24T18:51:22.362Z",
-  "totale": 0,
-  "distributori": []
+  "extractionDate": "2026-04-23",
+  "generatedAt": "2026-04-24T19:33:12.220Z",
+  "totale": 64,
+  "distributori": [
+    {
+      "id": "62431",
+      "nome": "OTTO CARBURANTI BANNIO ANZINO",
+      "gestore": "DFF S.R.L.",
+      "bandiera": "Otto",
+      "indirizzo": "Via Monte Rosa SNC 28871",
+      "comune": "BANNIO ANZINO",
+      "lat": 45.989959023127426,
+      "lng": 8.142591733560174,
+      "benzina_self": 1.915,
+      "benzina_servito": null,
+      "gasolio_self": 2.194,
+      "gasolio_servito": null,
+      "gpl_self": null,
+      "gpl_servito": null,
+      "metano_self": null,
+      "metano_servito": null,
+      "aggiornato": "22/04/2026 22:04:00",
+      "prezziDettaglio": [
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.915,
+          "isSelf": true,
+          "dtComu": "22/04/2026 22:04:00"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.194,
+          "isSelf": true,
+          "dtComu": "22/04/2026 22:04:00"
+        }
+      ]
+    },
+    {
+      "id": "38726",
+      "nome": "DISTRIBUTORE ENI Galasso Adriano",
+      "gestore": "GALASSO ADRIANO",
+      "bandiera": "Agip Eni",
+      "indirizzo": "Statale 33 del Sempione, Km. 89, dir. Baveno - 28831",
+      "comune": "BAVENO",
+      "lat": 45.92710918460577,
+      "lng": 8.47368836402893,
+      "benzina_self": 1.725,
+      "benzina_servito": 1.745,
+      "gasolio_self": 2.059,
+      "gasolio_servito": 2.079,
+      "gpl_self": null,
+      "gpl_servito": null,
+      "metano_self": null,
+      "metano_servito": null,
+      "aggiornato": "23/04/2026 07:48:19",
+      "prezziDettaglio": [
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.745,
+          "isSelf": false,
+          "dtComu": "23/04/2026 07:48:19"
+        },
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.725,
+          "isSelf": true,
+          "dtComu": "22/04/2026 23:40:08"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.079,
+          "isSelf": false,
+          "dtComu": "23/04/2026 07:48:19"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.059,
+          "isSelf": true,
+          "dtComu": "22/04/2026 23:40:08"
+        },
+        {
+          "carburante": "Blue Super",
+          "prezzo": 1.895,
+          "isSelf": false,
+          "dtComu": "23/04/2026 07:48:19"
+        },
+        {
+          "carburante": "Blue Super",
+          "prezzo": 1.875,
+          "isSelf": true,
+          "dtComu": "22/04/2026 23:40:08"
+        },
+        {
+          "carburante": "Blue Diesel",
+          "prezzo": 2.179,
+          "isSelf": false,
+          "dtComu": "23/04/2026 07:48:19"
+        },
+        {
+          "carburante": "Blue Diesel",
+          "prezzo": 2.159,
+          "isSelf": true,
+          "dtComu": "22/04/2026 23:40:08"
+        }
+      ]
+    },
+    {
+      "id": "58607",
+      "nome": "IP - Feriolo",
+      "gestore": "VCO CARBURANTI DI NOEMI ALO'",
+      "bandiera": "Api-Ip",
+      "indirizzo": "NAZIONALE 4 28831",
+      "comune": "BAVENO",
+      "lat": 45.92486036319141,
+      "lng": 8.487935382492706,
+      "benzina_self": 1.769,
+      "benzina_servito": 1.769,
+      "gasolio_self": 2.089,
+      "gasolio_servito": 2.089,
+      "gpl_self": null,
+      "gpl_servito": null,
+      "metano_self": null,
+      "metano_servito": null,
+      "aggiornato": "22/04/2026 16:53:01",
+      "prezziDettaglio": [
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.769,
+          "isSelf": false,
+          "dtComu": "22/04/2026 16:53:01"
+        },
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.769,
+          "isSelf": true,
+          "dtComu": "22/04/2026 16:53:01"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.089,
+          "isSelf": false,
+          "dtComu": "22/04/2026 16:53:01"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.089,
+          "isSelf": true,
+          "dtComu": "22/04/2026 16:53:01"
+        }
+      ]
+    },
+    {
+      "id": "58176",
+      "nome": "ITALIANA PETROLI DI TUROLLA MAURO",
+      "gestore": "TUROLLA MAURO",
+      "bandiera": "Api-Ip",
+      "indirizzo": "S.S. 33 KM. 90+476 SNC 28831",
+      "comune": "BAVENO",
+      "lat": 45.92533,
+      "lng": 8.46025,
+      "benzina_self": 1.789,
+      "benzina_servito": 2.039,
+      "gasolio_self": 2.089,
+      "gasolio_servito": 2.339,
+      "gpl_self": null,
+      "gpl_servito": null,
+      "metano_self": null,
+      "metano_servito": null,
+      "aggiornato": "23/04/2026 07:52:14",
+      "prezziDettaglio": [
+        {
+          "carburante": "Benzina",
+          "prezzo": 2.039,
+          "isSelf": false,
+          "dtComu": "23/04/2026 07:52:14"
+        },
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.789,
+          "isSelf": true,
+          "dtComu": "23/04/2026 07:52:14"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.339,
+          "isSelf": false,
+          "dtComu": "23/04/2026 07:52:14"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.089,
+          "isSelf": true,
+          "dtComu": "23/04/2026 07:52:14"
+        }
+      ]
+    },
+    {
+      "id": "22089",
+      "nome": "Stazione di servizio Eni Bellani Giorgio",
+      "gestore": "BELLANI GIORGIO",
+      "bandiera": "Agip Eni",
+      "indirizzo": "GARIBALDI 46 28831",
+      "comune": "BAVENO",
+      "lat": 45.910965757600614,
+      "lng": 8.504168454220007,
+      "benzina_self": null,
+      "benzina_servito": 1.73,
+      "gasolio_self": null,
+      "gasolio_servito": 2.064,
+      "gpl_self": null,
+      "gpl_servito": null,
+      "metano_self": null,
+      "metano_servito": null,
+      "aggiornato": "23/04/2026 07:28:05",
+      "prezziDettaglio": [
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.73,
+          "isSelf": false,
+          "dtComu": "23/04/2026 07:28:05"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.064,
+          "isSelf": false,
+          "dtComu": "23/04/2026 07:28:05"
+        },
+        {
+          "carburante": "Blue Diesel",
+          "prezzo": 2.164,
+          "isSelf": false,
+          "dtComu": "23/04/2026 07:28:05"
+        }
+      ]
+    },
+    {
+      "id": "9540",
+      "nome": "Italiana Petroli",
+      "gestore": "GARAGE ALTO VERBANO S.N.C. DI GANZI FLAVIO & C.",
+      "bandiera": "Api-Ip",
+      "indirizzo": "Statale 34 del Lago Maggiore, Km. 34+044, dir. SVIZZERA  28822",
+      "comune": "CANNOBIO",
+      "lat": 46.05921738870889,
+      "lng": 8.698983192443848,
+      "benzina_self": 1.779,
+      "benzina_servito": 1.979,
+      "gasolio_self": 2.179,
+      "gasolio_servito": 2.379,
+      "gpl_self": null,
+      "gpl_servito": null,
+      "metano_self": null,
+      "metano_servito": null,
+      "aggiornato": "22/04/2026 09:41:05",
+      "prezziDettaglio": [
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.979,
+          "isSelf": false,
+          "dtComu": "22/04/2026 09:41:05"
+        },
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.779,
+          "isSelf": true,
+          "dtComu": "22/04/2026 09:41:05"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.379,
+          "isSelf": false,
+          "dtComu": "22/04/2026 09:41:05"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.179,
+          "isSelf": true,
+          "dtComu": "22/04/2026 09:41:05"
+        }
+      ]
+    },
+    {
+      "id": "61392",
+      "nome": "CREVOLADOSSOLA VIA SEMPIONE 220",
+      "gestore": "SERVIZI & GESTIONI ITALIA S.R.L.",
+      "bandiera": "Q8",
+      "indirizzo": "VIA SEMPIONE 220 28865",
+      "comune": "CREVOLADOSSOLA",
+      "lat": 46.1319621,
+      "lng": 8.2942174,
+      "benzina_self": 1.699,
+      "benzina_servito": null,
+      "gasolio_self": 2.049,
+      "gasolio_servito": null,
+      "gpl_self": null,
+      "gpl_servito": null,
+      "metano_self": null,
+      "metano_servito": null,
+      "aggiornato": "22/04/2026 07:33:45",
+      "prezziDettaglio": [
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.699,
+          "isSelf": true,
+          "dtComu": "22/04/2026 07:33:45"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.049,
+          "isSelf": true,
+          "dtComu": "22/04/2026 07:33:45"
+        },
+        {
+          "carburante": "Gasolio artico",
+          "prezzo": 2.069,
+          "isSelf": true,
+          "dtComu": "28/03/2026 07:45:19"
+        }
+      ]
+    },
+    {
+      "id": "47561",
+      "nome": "2645",
+      "gestore": "T.D.M. S.R.L.",
+      "bandiera": "Tamoil",
+      "indirizzo": "FRAZ. MOLINETTO - 28862",
+      "comune": "CRODO",
+      "lat": 46.2066218117187,
+      "lng": 8.319039132648305,
+      "benzina_self": 1.769,
+      "benzina_servito": null,
+      "gasolio_self": 2.079,
+      "gasolio_servito": null,
+      "gpl_self": null,
+      "gpl_servito": null,
+      "metano_self": null,
+      "metano_servito": null,
+      "aggiornato": "22/04/2026 23:48:28",
+      "prezziDettaglio": [
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.769,
+          "isSelf": true,
+          "dtComu": "22/04/2026 23:48:28"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.079,
+          "isSelf": true,
+          "dtComu": "22/04/2026 12:40:09"
+        }
+      ]
+    },
+    {
+      "id": "61009",
+      "nome": "53196 DOMODOSSOLA",
+      "gestore": "ENIMOOV S.P.A.",
+      "bandiera": "Agip Eni",
+      "indirizzo": "Regione alle Nosere 2  28845",
+      "comune": "DOMODOSSOLA",
+      "lat": 46.10483,
+      "lng": 8.296866,
+      "benzina_self": 1.697,
+      "benzina_servito": 1.917,
+      "gasolio_self": 2.049,
+      "gasolio_servito": 2.269,
+      "gpl_self": null,
+      "gpl_servito": null,
+      "metano_self": null,
+      "metano_servito": null,
+      "aggiornato": "22/04/2026 23:16:10",
+      "prezziDettaglio": [
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.917,
+          "isSelf": false,
+          "dtComu": "22/04/2026 23:16:10"
+        },
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.697,
+          "isSelf": true,
+          "dtComu": "22/04/2026 23:16:10"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.269,
+          "isSelf": false,
+          "dtComu": "22/04/2026 23:16:10"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.049,
+          "isSelf": true,
+          "dtComu": "22/04/2026 23:16:10"
+        },
+        {
+          "carburante": "Blue Super",
+          "prezzo": 1.847,
+          "isSelf": true,
+          "dtComu": "22/04/2026 23:16:10"
+        },
+        {
+          "carburante": "Blue Diesel",
+          "prezzo": 2.369,
+          "isSelf": false,
+          "dtComu": "22/04/2026 23:16:10"
+        },
+        {
+          "carburante": "Blue Diesel",
+          "prezzo": 2.149,
+          "isSelf": true,
+          "dtComu": "22/04/2026 23:16:10"
+        }
+      ]
+    },
+    {
+      "id": "39378",
+      "nome": "AREA DI SERVIZIO TOTAL ERG OSSOLA TOP CAR S.A.S.",
+      "gestore": "OSSOLA TOP CAR S.A.S. DI PAPA GIANLUCA & C.",
+      "bandiera": "Api-Ip",
+      "indirizzo": "REGIONE NOSERE 12 28845",
+      "comune": "DOMODOSSOLA",
+      "lat": 46.102160373904965,
+      "lng": 8.296654745755404,
+      "benzina_self": 1.759,
+      "benzina_servito": 2.109,
+      "gasolio_self": 2.159,
+      "gasolio_servito": 2.509,
+      "gpl_self": null,
+      "gpl_servito": null,
+      "metano_self": null,
+      "metano_servito": null,
+      "aggiornato": "23/04/2026 07:43:31",
+      "prezziDettaglio": [
+        {
+          "carburante": "Benzina",
+          "prezzo": 2.109,
+          "isSelf": false,
+          "dtComu": "23/04/2026 07:43:31"
+        },
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.759,
+          "isSelf": true,
+          "dtComu": "23/04/2026 07:43:31"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.509,
+          "isSelf": false,
+          "dtComu": "23/04/2026 07:43:31"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.159,
+          "isSelf": true,
+          "dtComu": "23/04/2026 07:43:31"
+        }
+      ]
+    },
+    {
+      "id": "18351",
+      "nome": "DOMODOSSOLA VIA GENTINETTA 39",
+      "gestore": "SERVIZI & GESTIONI ITALIA S.R.L.",
+      "bandiera": "Q8",
+      "indirizzo": "VIA GENTINETTA 39 28845",
+      "comune": "DOMODOSSOLA",
+      "lat": 46.1076374789956,
+      "lng": 8.295662879751262,
+      "benzina_self": 1.689,
+      "benzina_servito": null,
+      "gasolio_self": 2.029,
+      "gasolio_servito": null,
+      "gpl_self": null,
+      "gpl_servito": null,
+      "metano_self": null,
+      "metano_servito": null,
+      "aggiornato": "23/04/2026 01:04:26",
+      "prezziDettaglio": [
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.689,
+          "isSelf": true,
+          "dtComu": "23/04/2026 01:04:26"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.029,
+          "isSelf": true,
+          "dtComu": "23/04/2026 01:04:26"
+        },
+        {
+          "carburante": "Gasolio artico",
+          "prezzo": 2.029,
+          "isSelf": true,
+          "dtComu": "28/03/2026 01:41:16"
+        }
+      ]
+    },
+    {
+      "id": "61379",
+      "nome": "Enercoop Domodossola",
+      "gestore": "NOVA COOP SOCIETA' COOPERATIVA",
+      "bandiera": "Enercoop",
+      "indirizzo": "Via Piave 114  28845",
+      "comune": "DOMODOSSOLA",
+      "lat": 46.123342340966566,
+      "lng": 8.297390063476557,
+      "benzina_self": 1.669,
+      "benzina_servito": null,
+      "gasolio_self": 1.999,
+      "gasolio_servito": null,
+      "gpl_self": null,
+      "gpl_servito": 0.829,
+      "metano_self": null,
+      "metano_servito": 1.45,
+      "aggiornato": "23/04/2026 01:09:57",
+      "prezziDettaglio": [
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.669,
+          "isSelf": true,
+          "dtComu": "23/04/2026 01:09:57"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 1.999,
+          "isSelf": true,
+          "dtComu": "23/04/2026 01:09:56"
+        },
+        {
+          "carburante": "Metano",
+          "prezzo": 1.45,
+          "isSelf": false,
+          "dtComu": "22/04/2026 11:26:41"
+        },
+        {
+          "carburante": "GPL",
+          "prezzo": 0.829,
+          "isSelf": false,
+          "dtComu": "23/04/2026 01:06:43"
+        }
+      ]
+    },
+    {
+      "id": "43763",
+      "nome": "Esso Domodossola",
+      "gestore": "F.LLI DINI S.N.C. DI EDOARDO E ENNIO DINI",
+      "bandiera": "Esso",
+      "indirizzo": "Via Generale dalla Chiesa  1 28845",
+      "comune": "DOMODOSSOLA",
+      "lat": 46.116353792935016,
+      "lng": 8.28466152476392,
+      "benzina_self": 1.709,
+      "benzina_servito": 1.919,
+      "gasolio_self": 2.099,
+      "gasolio_servito": 2.309,
+      "gpl_self": null,
+      "gpl_servito": null,
+      "metano_self": null,
+      "metano_servito": null,
+      "aggiornato": "22/04/2026 07:58:10",
+      "prezziDettaglio": [
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.919,
+          "isSelf": false,
+          "dtComu": "22/04/2026 07:58:10"
+        },
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.709,
+          "isSelf": true,
+          "dtComu": "22/04/2026 07:58:10"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.309,
+          "isSelf": false,
+          "dtComu": "22/04/2026 07:58:10"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.099,
+          "isSelf": true,
+          "dtComu": "22/04/2026 07:58:10"
+        },
+        {
+          "carburante": "Supreme Diesel",
+          "prezzo": 2.509,
+          "isSelf": false,
+          "dtComu": "22/04/2026 07:58:10"
+        },
+        {
+          "carburante": "Supreme Diesel",
+          "prezzo": 2.299,
+          "isSelf": true,
+          "dtComu": "22/04/2026 07:58:10"
+        }
+      ]
+    },
+    {
+      "id": "48368",
+      "nome": "EUROPAM - DOMODOSSOLA",
+      "gestore": "EUROPAM - DOMODOSSOLA",
+      "bandiera": "Europam",
+      "indirizzo": "VIA SEMPIONE 45 28845",
+      "comune": "DOMODOSSOLA",
+      "lat": 46.126652564247884,
+      "lng": 8.293568686933197,
+      "benzina_self": null,
+      "benzina_servito": null,
+      "gasolio_self": null,
+      "gasolio_servito": null,
+      "gpl_self": null,
+      "gpl_servito": null,
+      "metano_self": null,
+      "metano_servito": null,
+      "aggiornato": null,
+      "prezziDettaglio": []
+    },
+    {
+      "id": "62413",
+      "nome": "EUROPAM - DOMODOSSOLA",
+      "gestore": "EUROPAM S.P.A.",
+      "bandiera": "Europam",
+      "indirizzo": "Via Sempione 45 28845",
+      "comune": "DOMODOSSOLA",
+      "lat": 46.1266927,
+      "lng": 8.293467,
+      "benzina_self": 1.677,
+      "benzina_servito": null,
+      "gasolio_self": 2.027,
+      "gasolio_servito": null,
+      "gpl_self": null,
+      "gpl_servito": null,
+      "metano_self": null,
+      "metano_servito": null,
+      "aggiornato": "22/04/2026 12:11:58",
+      "prezziDettaglio": [
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.677,
+          "isSelf": true,
+          "dtComu": "22/04/2026 12:11:58"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.027,
+          "isSelf": true,
+          "dtComu": "22/04/2026 15:06:43"
+        }
+      ]
+    },
+    {
+      "id": "48713",
+      "nome": "SOMMESE DOMODOSSOLA",
+      "gestore": "SOMMESE CARBURANTE S.R.L.",
+      "bandiera": "Sommese Petroli",
+      "indirizzo": "Borgata delle Rane 9 28845",
+      "comune": "DOMODOSSOLA",
+      "lat": 46.098739910708915,
+      "lng": 8.293391023313541,
+      "benzina_self": 1.679,
+      "benzina_servito": null,
+      "gasolio_self": 2.019,
+      "gasolio_servito": null,
+      "gpl_self": null,
+      "gpl_servito": null,
+      "metano_self": null,
+      "metano_servito": null,
+      "aggiornato": "22/04/2026 01:14:08",
+      "prezziDettaglio": [
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.679,
+          "isSelf": true,
+          "dtComu": "22/04/2026 01:14:08"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.019,
+          "isSelf": true,
+          "dtComu": "22/04/2026 01:14:08"
+        }
+      ]
+    },
+    {
+      "id": "59035",
+      "nome": "Fabio Squizzi",
+      "gestore": "SQUIZZI FABIO",
+      "bandiera": "Pompe Bianche",
+      "indirizzo": "VIA DOMODOSSOLA 54 28853",
+      "comune": "DRUOGNO",
+      "lat": 46.13424312438525,
+      "lng": 8.432155443591322,
+      "benzina_self": 1.759,
+      "benzina_servito": null,
+      "gasolio_self": 2.169,
+      "gasolio_servito": null,
+      "gpl_self": null,
+      "gpl_servito": null,
+      "metano_self": null,
+      "metano_servito": null,
+      "aggiornato": "23/04/2026 07:27:02",
+      "prezziDettaglio": [
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.759,
+          "isSelf": true,
+          "dtComu": "23/04/2026 07:27:02"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.169,
+          "isSelf": true,
+          "dtComu": "23/04/2026 07:27:02"
+        }
+      ]
+    },
+    {
+      "id": "15364",
+      "nome": "FERRI BARBARA",
+      "gestore": "FERRI BARBARA",
+      "bandiera": "Pompe Bianche",
+      "indirizzo": "VIA DEL GOLF 32 28836",
+      "comune": "GIGNESE",
+      "lat": 45.865476235288675,
+      "lng": 8.513492120376554,
+      "benzina_self": 1.759,
+      "benzina_servito": 1.759,
+      "gasolio_self": 2.119,
+      "gasolio_servito": 2.119,
+      "gpl_self": null,
+      "gpl_servito": null,
+      "metano_self": null,
+      "metano_servito": null,
+      "aggiornato": "20/04/2026 19:23:04",
+      "prezziDettaglio": [
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.759,
+          "isSelf": false,
+          "dtComu": "20/04/2026 19:23:04"
+        },
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.759,
+          "isSelf": true,
+          "dtComu": "20/04/2026 19:23:04"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.119,
+          "isSelf": false,
+          "dtComu": "20/04/2026 19:23:04"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.119,
+          "isSelf": true,
+          "dtComu": "20/04/2026 19:23:04"
+        }
+      ]
+    },
+    {
+      "id": "56151",
+      "nome": "Esso Gravellona Toce",
+      "gestore": "LERA SNC DI PELFINI ROBERTO E POLATO MIRKO",
+      "bandiera": "Esso",
+      "indirizzo": "MILANO 31 28883",
+      "comune": "GRAVELLONA TOCE",
+      "lat": 45.9268105,
+      "lng": 8.4311156,
+      "benzina_self": 1.806,
+      "benzina_servito": 1.806,
+      "gasolio_self": 2.126,
+      "gasolio_servito": 2.126,
+      "gpl_self": null,
+      "gpl_servito": null,
+      "metano_self": null,
+      "metano_servito": null,
+      "aggiornato": "20/04/2026 11:05:51",
+      "prezziDettaglio": [
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.806,
+          "isSelf": false,
+          "dtComu": "20/04/2026 11:05:51"
+        },
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.806,
+          "isSelf": true,
+          "dtComu": "20/04/2026 11:05:51"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.126,
+          "isSelf": false,
+          "dtComu": "20/04/2026 11:05:51"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.126,
+          "isSelf": true,
+          "dtComu": "20/04/2026 11:05:51"
+        },
+        {
+          "carburante": "Supreme Diesel",
+          "prezzo": 2.286,
+          "isSelf": false,
+          "dtComu": "20/04/2026 11:05:51"
+        },
+        {
+          "carburante": "Supreme Diesel",
+          "prezzo": 2.286,
+          "isSelf": true,
+          "dtComu": "20/04/2026 11:05:51"
+        }
+      ]
+    },
+    {
+      "id": "37840",
+      "nome": "IP 46494 di Stoto Massimiliano",
+      "gestore": "STOTO MASSIMILIANO",
+      "bandiera": "Api-Ip",
+      "indirizzo": "229 del Lago d'Orta, Km. 60+446, Omegna - 28883",
+      "comune": "GRAVELLONA TOCE",
+      "lat": 45.926297611343124,
+      "lng": 8.431178033351898,
+      "benzina_self": 1.789,
+      "benzina_servito": 2.039,
+      "gasolio_self": 2.089,
+      "gasolio_servito": 2.339,
+      "gpl_self": null,
+      "gpl_servito": null,
+      "metano_self": null,
+      "metano_servito": null,
+      "aggiornato": "23/04/2026 07:59:37",
+      "prezziDettaglio": [
+        {
+          "carburante": "Benzina",
+          "prezzo": 2.039,
+          "isSelf": false,
+          "dtComu": "23/04/2026 07:59:37"
+        },
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.789,
+          "isSelf": true,
+          "dtComu": "23/04/2026 07:59:37"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.339,
+          "isSelf": false,
+          "dtComu": "23/04/2026 07:59:37"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.089,
+          "isSelf": true,
+          "dtComu": "23/04/2026 07:59:37"
+        }
+      ]
+    },
+    {
+      "id": "47624",
+      "nome": "Economy - Macugnaga",
+      "gestore": "ECONOMY S.R.L.",
+      "bandiera": "Economysrl",
+      "indirizzo": "VIA MONTE ROSA CENTRO ABITATO 351 28876",
+      "comune": "MACUGNAGA",
+      "lat": 45.96045613544991,
+      "lng": 8.015263682209017,
+      "benzina_self": 1.899,
+      "benzina_servito": 1.899,
+      "gasolio_self": 1.999,
+      "gasolio_servito": 1.999,
+      "gpl_self": null,
+      "gpl_servito": null,
+      "metano_self": null,
+      "metano_servito": null,
+      "aggiornato": "19/04/2026 19:26:01",
+      "prezziDettaglio": [
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.899,
+          "isSelf": false,
+          "dtComu": "19/04/2026 19:26:01"
+        },
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.899,
+          "isSelf": true,
+          "dtComu": "19/04/2026 19:26:01"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 1.999,
+          "isSelf": false,
+          "dtComu": "19/04/2026 19:26:01"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 1.999,
+          "isSelf": true,
+          "dtComu": "19/04/2026 19:26:01"
+        }
+      ]
+    },
+    {
+      "id": "62070",
+      "nome": "TAMOIL di DI PIETRO TIZIANO",
+      "gestore": "TAMOIL di DI PIETRO TIZIANO",
+      "bandiera": "Tamoil",
+      "indirizzo": "SS. 337 KM. 18+306, SNC",
+      "comune": "MALESCO",
+      "lat": 46.130355581943505,
+      "lng": 8.486782271519479,
+      "benzina_self": 1.739,
+      "benzina_servito": 1.739,
+      "gasolio_self": 2.139,
+      "gasolio_servito": 2.139,
+      "gpl_self": null,
+      "gpl_servito": null,
+      "metano_self": null,
+      "metano_servito": null,
+      "aggiornato": "23/04/2026 06:06:06",
+      "prezziDettaglio": [
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.739,
+          "isSelf": false,
+          "dtComu": "23/04/2026 06:06:06"
+        },
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.739,
+          "isSelf": true,
+          "dtComu": "22/04/2026 19:18:11"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.139,
+          "isSelf": false,
+          "dtComu": "22/04/2026 23:27:25"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.139,
+          "isSelf": true,
+          "dtComu": "22/04/2026 23:27:25"
+        }
+      ]
+    },
+    {
+      "id": "24666",
+      "nome": "ENI",
+      "gestore": "ERCOLE ROBERTO",
+      "bandiera": "Agip Eni",
+      "indirizzo": "STRADA PROVINCIALE 54 KM.4+850  28802",
+      "comune": "MERGOZZO",
+      "lat": 45.96361899751293,
+      "lng": 8.438782095909119,
+      "benzina_self": 1.737,
+      "benzina_servito": 1.957,
+      "gasolio_self": 2.069,
+      "gasolio_servito": 2.289,
+      "gpl_self": null,
+      "gpl_servito": null,
+      "metano_self": null,
+      "metano_servito": null,
+      "aggiornato": "23/04/2026 07:45:39",
+      "prezziDettaglio": [
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.957,
+          "isSelf": false,
+          "dtComu": "23/04/2026 07:45:39"
+        },
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.737,
+          "isSelf": true,
+          "dtComu": "23/04/2026 07:45:39"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.289,
+          "isSelf": false,
+          "dtComu": "23/04/2026 07:45:40"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.069,
+          "isSelf": true,
+          "dtComu": "23/04/2026 07:45:40"
+        },
+        {
+          "carburante": "Blue Super",
+          "prezzo": 2.107,
+          "isSelf": false,
+          "dtComu": "23/04/2026 07:45:39"
+        },
+        {
+          "carburante": "Blue Super",
+          "prezzo": 1.887,
+          "isSelf": true,
+          "dtComu": "23/04/2026 07:45:39"
+        },
+        {
+          "carburante": "Blue Diesel",
+          "prezzo": 2.389,
+          "isSelf": false,
+          "dtComu": "23/04/2026 07:45:40"
+        },
+        {
+          "carburante": "Blue Diesel",
+          "prezzo": 2.169,
+          "isSelf": true,
+          "dtComu": "23/04/2026 07:45:40"
+        }
+      ]
+    },
+    {
+      "id": "55225",
+      "nome": "IP gruppo api  GBG di Antonio Fava",
+      "gestore": "G.B.G. DI FAVA ANTONIO",
+      "bandiera": "Api-Ip",
+      "indirizzo": "S.S. 33 SEMPIONE KM 94 28802",
+      "comune": "MERGOZZO",
+      "lat": 45.9413297,
+      "lng": 8.4290422,
+      "benzina_self": 1.789,
+      "benzina_servito": 2.039,
+      "gasolio_self": 2.169,
+      "gasolio_servito": 2.419,
+      "gpl_self": null,
+      "gpl_servito": 0.899,
+      "metano_self": null,
+      "metano_servito": null,
+      "aggiornato": "21/04/2026 15:33:14",
+      "prezziDettaglio": [
+        {
+          "carburante": "Benzina",
+          "prezzo": 2.039,
+          "isSelf": false,
+          "dtComu": "21/04/2026 15:33:14"
+        },
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.789,
+          "isSelf": true,
+          "dtComu": "21/04/2026 15:33:14"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.419,
+          "isSelf": false,
+          "dtComu": "21/04/2026 15:33:14"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.169,
+          "isSelf": true,
+          "dtComu": "21/04/2026 15:33:14"
+        },
+        {
+          "carburante": "GPL",
+          "prezzo": 0.899,
+          "isSelf": false,
+          "dtComu": "21/04/2026 15:33:14"
+        }
+      ]
+    },
+    {
+      "id": "60180",
+      "nome": "407 OMEGNA",
+      "gestore": "ENIMOOV S.P.A.",
+      "bandiera": "Agip Eni",
+      "indirizzo": "Via IV Novembre 222  28887",
+      "comune": "OMEGNA",
+      "lat": 45.894234,
+      "lng": 8.412074,
+      "benzina_self": 1.717,
+      "benzina_servito": 1.937,
+      "gasolio_self": 2.049,
+      "gasolio_servito": 2.269,
+      "gpl_self": null,
+      "gpl_servito": null,
+      "metano_self": null,
+      "metano_servito": null,
+      "aggiornato": "22/04/2026 22:48:08",
+      "prezziDettaglio": [
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.937,
+          "isSelf": false,
+          "dtComu": "22/04/2026 22:48:08"
+        },
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.717,
+          "isSelf": true,
+          "dtComu": "22/04/2026 22:48:08"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.269,
+          "isSelf": false,
+          "dtComu": "22/04/2026 22:48:08"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.049,
+          "isSelf": true,
+          "dtComu": "22/04/2026 22:48:08"
+        },
+        {
+          "carburante": "Blue Diesel",
+          "prezzo": 2.369,
+          "isSelf": false,
+          "dtComu": "22/04/2026 22:48:08"
+        },
+        {
+          "carburante": "Blue Diesel",
+          "prezzo": 2.149,
+          "isSelf": true,
+          "dtComu": "22/04/2026 22:48:08"
+        },
+        {
+          "carburante": "HVOlution",
+          "prezzo": 2.049,
+          "isSelf": true,
+          "dtComu": "22/04/2026 22:48:08"
+        }
+      ]
+    },
+    {
+      "id": "60442",
+      "nome": "449 OMEGNA",
+      "gestore": "ENIMOOV S.P.A.",
+      "bandiera": "Agip Eni",
+      "indirizzo": "VIA NOVARA  102",
+      "comune": "OMEGNA",
+      "lat": 45.86222,
+      "lng": 8.411903,
+      "benzina_self": 1.697,
+      "benzina_servito": 1.917,
+      "gasolio_self": 2.049,
+      "gasolio_servito": 2.269,
+      "gpl_self": null,
+      "gpl_servito": null,
+      "metano_self": null,
+      "metano_servito": null,
+      "aggiornato": "22/04/2026 22:38:22",
+      "prezziDettaglio": [
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.917,
+          "isSelf": false,
+          "dtComu": "22/04/2026 22:38:22"
+        },
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.697,
+          "isSelf": true,
+          "dtComu": "22/04/2026 22:38:22"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.269,
+          "isSelf": false,
+          "dtComu": "22/04/2026 22:38:22"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.049,
+          "isSelf": true,
+          "dtComu": "22/04/2026 22:38:21"
+        },
+        {
+          "carburante": "Blue Super",
+          "prezzo": 2.067,
+          "isSelf": false,
+          "dtComu": "22/04/2026 22:38:21"
+        },
+        {
+          "carburante": "Blue Super",
+          "prezzo": 1.847,
+          "isSelf": true,
+          "dtComu": "22/04/2026 22:38:21"
+        },
+        {
+          "carburante": "HVOlution",
+          "prezzo": 2.269,
+          "isSelf": false,
+          "dtComu": "22/04/2026 22:38:22"
+        },
+        {
+          "carburante": "HVOlution",
+          "prezzo": 2.049,
+          "isSelf": true,
+          "dtComu": "22/04/2026 22:38:22"
+        }
+      ]
+    },
+    {
+      "id": "57450",
+      "nome": "Economy - Stazione di servizio IP - Omegna, Via Leonardo da Vinci, 10",
+      "gestore": "ECONOMY S.R.L.",
+      "bandiera": "Api-Ip",
+      "indirizzo": "Via Leonardo Da Vinci 10  28887",
+      "comune": "OMEGNA",
+      "lat": 45.8748,
+      "lng": 8.4021,
+      "benzina_self": 1.768,
+      "benzina_servito": null,
+      "gasolio_self": 2.098,
+      "gasolio_servito": null,
+      "gpl_self": null,
+      "gpl_servito": null,
+      "metano_self": null,
+      "metano_servito": null,
+      "aggiornato": "21/04/2026 21:30:35",
+      "prezziDettaglio": [
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.768,
+          "isSelf": true,
+          "dtComu": "21/04/2026 21:30:35"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.098,
+          "isSelf": true,
+          "dtComu": "21/04/2026 21:30:35"
+        }
+      ]
+    },
+    {
+      "id": "40139",
+      "nome": "IP",
+      "gestore": "LATTUADA VALENTINA",
+      "bandiera": "Api-Ip",
+      "indirizzo": "VIA IV NOVEMBRE  130 28887",
+      "comune": "OMEGNA",
+      "lat": 45.8907350027448,
+      "lng": 8.410233181579997,
+      "benzina_self": 1.789,
+      "benzina_servito": 2.039,
+      "gasolio_self": 2.089,
+      "gasolio_servito": 2.339,
+      "gpl_self": null,
+      "gpl_servito": null,
+      "metano_self": null,
+      "metano_servito": null,
+      "aggiornato": "22/04/2026 16:27:18",
+      "prezziDettaglio": [
+        {
+          "carburante": "Benzina",
+          "prezzo": 2.039,
+          "isSelf": false,
+          "dtComu": "22/04/2026 16:27:18"
+        },
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.789,
+          "isSelf": true,
+          "dtComu": "22/04/2026 16:27:18"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.339,
+          "isSelf": false,
+          "dtComu": "22/04/2026 16:27:18"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.089,
+          "isSelf": true,
+          "dtComu": "22/04/2026 16:27:18"
+        }
+      ]
+    },
+    {
+      "id": "11929",
+      "nome": "OMEGNA FZ. CRUSINALLO-VIA IV NOVEMBRE SS. 229",
+      "gestore": "SERVIZI & GESTIONI ITALIA S.R.L.",
+      "bandiera": "Q8",
+      "indirizzo": "VIA IV NOVEMBRE SS. 229 FZ. CRUSINALLO S/N 28887",
+      "comune": "OMEGNA",
+      "lat": 45.89498506598474,
+      "lng": 8.412210728836044,
+      "benzina_self": 1.719,
+      "benzina_servito": null,
+      "gasolio_self": 2.049,
+      "gasolio_servito": null,
+      "gpl_self": null,
+      "gpl_servito": null,
+      "metano_self": null,
+      "metano_servito": null,
+      "aggiornato": "21/04/2026 07:41:27",
+      "prezziDettaglio": [
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.719,
+          "isSelf": true,
+          "dtComu": "21/04/2026 07:41:27"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.049,
+          "isSelf": true,
+          "dtComu": "21/04/2026 07:41:27"
+        },
+        {
+          "carburante": "Gasolio artico",
+          "prezzo": 2.059,
+          "isSelf": true,
+          "dtComu": "28/03/2026 07:45:20"
+        }
+      ]
+    },
+    {
+      "id": "6416",
+      "nome": "OMEGNA STRADA RER CRUSINALLO",
+      "gestore": "SERVIZI & GESTIONI ITALIA S.R.L.",
+      "bandiera": "Q8",
+      "indirizzo": "STRADA RER CRUSINALLO SNC 28887",
+      "comune": "OMEGNA",
+      "lat": 45.883381745717614,
+      "lng": 8.409241701852352,
+      "benzina_self": 1.699,
+      "benzina_servito": null,
+      "gasolio_self": 2.039,
+      "gasolio_servito": null,
+      "gpl_self": null,
+      "gpl_servito": null,
+      "metano_self": null,
+      "metano_servito": null,
+      "aggiornato": "20/04/2026 15:04:21",
+      "prezziDettaglio": [
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.699,
+          "isSelf": true,
+          "dtComu": "20/04/2026 15:04:21"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.039,
+          "isSelf": true,
+          "dtComu": "20/04/2026 15:04:21"
+        },
+        {
+          "carburante": "Gasolio artico",
+          "prezzo": 2.049,
+          "isSelf": true,
+          "dtComu": "28/03/2026 01:41:16"
+        }
+      ]
+    },
+    {
+      "id": "42621",
+      "nome": "TOP FUEL DI RENNA SIMONE",
+      "gestore": "TOP FUEL DI RENNA SIMONE",
+      "bandiera": "Agip Eni",
+      "indirizzo": "VIA IV NOVEMBRE  222 28887",
+      "comune": "OMEGNA",
+      "lat": 45.89424053589193,
+      "lng": 8.412104270569671,
+      "benzina_self": null,
+      "benzina_servito": null,
+      "gasolio_self": null,
+      "gasolio_servito": null,
+      "gpl_self": null,
+      "gpl_servito": null,
+      "metano_self": null,
+      "metano_servito": null,
+      "aggiornato": null,
+      "prezziDettaglio": []
+    },
+    {
+      "id": "54687",
+      "nome": "EUROPAM - ORNAVASSO",
+      "gestore": "EUROPAM - ORNAVASSO",
+      "bandiera": "Europam",
+      "indirizzo": "Via Alfredo Di Dio 170  28877",
+      "comune": "ORNAVASSO",
+      "lat": 45.9656257629,
+      "lng": 8.418009758,
+      "benzina_self": null,
+      "benzina_servito": null,
+      "gasolio_self": null,
+      "gasolio_servito": null,
+      "gpl_self": null,
+      "gpl_servito": null,
+      "metano_self": null,
+      "metano_servito": null,
+      "aggiornato": null,
+      "prezziDettaglio": []
+    },
+    {
+      "id": "58614",
+      "nome": "EUROPAM - ORNAVASSO",
+      "gestore": "EUROPAM S.P.A.",
+      "bandiera": "Europam",
+      "indirizzo": "Via Alfredo Di Dio 170  28877",
+      "comune": "ORNAVASSO",
+      "lat": 45.965794918899356,
+      "lng": 8.418011089922288,
+      "benzina_self": 1.767,
+      "benzina_servito": null,
+      "gasolio_self": 2.097,
+      "gasolio_servito": null,
+      "gpl_self": null,
+      "gpl_servito": null,
+      "metano_self": null,
+      "metano_servito": null,
+      "aggiornato": "22/04/2026 10:24:37",
+      "prezziDettaglio": [
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.767,
+          "isSelf": true,
+          "dtComu": "22/04/2026 10:24:37"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.097,
+          "isSelf": true,
+          "dtComu": "22/04/2026 10:24:37"
+        }
+      ]
+    },
+    {
+      "id": "11932",
+      "nome": "ORNAVASSO-SS 33 KM 96+460",
+      "gestore": "SERVIZI & GESTIONI ITALIA S.R.L.",
+      "bandiera": "Q8",
+      "indirizzo": "SS 33 KM 96+460 S/N 28877",
+      "comune": "ORNAVASSO",
+      "lat": 45.95966064804371,
+      "lng": 8.422366704368642,
+      "benzina_self": 1.767,
+      "benzina_servito": null,
+      "gasolio_self": 2.097,
+      "gasolio_servito": null,
+      "gpl_self": null,
+      "gpl_servito": null,
+      "metano_self": null,
+      "metano_servito": null,
+      "aggiornato": "23/04/2026 07:34:36",
+      "prezziDettaglio": [
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.767,
+          "isSelf": true,
+          "dtComu": "23/04/2026 07:34:36"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.097,
+          "isSelf": true,
+          "dtComu": "23/04/2026 07:34:36"
+        },
+        {
+          "carburante": "Gasolio artico",
+          "prezzo": 2.089,
+          "isSelf": true,
+          "dtComu": "28/03/2026 07:45:21"
+        }
+      ]
+    },
+    {
+      "id": "34384",
+      "nome": "ENI",
+      "gestore": "BOMA S.N.C. DI MAIONI FABRIZIO E BOLTRIZZI GIOVANNA",
+      "bandiera": "Agip Eni",
+      "indirizzo": "VIA ROMA 157 28885",
+      "comune": "PIEDIMULERA",
+      "lat": 46.02349469814942,
+      "lng": 8.272799534121077,
+      "benzina_self": 1.712,
+      "benzina_servito": 1.922,
+      "gasolio_self": 2.044,
+      "gasolio_servito": 2.254,
+      "gpl_self": null,
+      "gpl_servito": null,
+      "metano_self": null,
+      "metano_servito": 1.541,
+      "aggiornato": "22/04/2026 23:48:53",
+      "prezziDettaglio": [
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.922,
+          "isSelf": false,
+          "dtComu": "22/04/2026 23:48:53"
+        },
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.712,
+          "isSelf": true,
+          "dtComu": "22/04/2026 23:48:53"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.254,
+          "isSelf": false,
+          "dtComu": "22/04/2026 23:48:53"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.044,
+          "isSelf": true,
+          "dtComu": "22/04/2026 23:48:53"
+        },
+        {
+          "carburante": "Metano",
+          "prezzo": 1.541,
+          "isSelf": false,
+          "dtComu": "22/04/2026 23:48:53"
+        },
+        {
+          "carburante": "Blue Diesel",
+          "prezzo": 2.354,
+          "isSelf": false,
+          "dtComu": "22/04/2026 23:48:53"
+        },
+        {
+          "carburante": "Blue Diesel",
+          "prezzo": 2.144,
+          "isSelf": true,
+          "dtComu": "22/04/2026 23:48:53"
+        },
+        {
+          "carburante": "HVOlution",
+          "prezzo": 2.254,
+          "isSelf": false,
+          "dtComu": "22/04/2026 23:48:53"
+        },
+        {
+          "carburante": "HVOlution",
+          "prezzo": 2.044,
+          "isSelf": true,
+          "dtComu": "22/04/2026 23:48:53"
+        }
+      ]
+    },
+    {
+      "id": "37845",
+      "nome": "GO PREMENO",
+      "gestore": "GO S.R.L.",
+      "bandiera": "GO",
+      "indirizzo": "PIAZZA BRIGATA CESARE BATTISTI SNC 28818",
+      "comune": "PREMENO",
+      "lat": 45.97491488285148,
+      "lng": 8.590983375906944,
+      "benzina_self": null,
+      "benzina_servito": null,
+      "gasolio_self": null,
+      "gasolio_servito": null,
+      "gpl_self": null,
+      "gpl_servito": null,
+      "metano_self": null,
+      "metano_servito": null,
+      "aggiornato": null,
+      "prezziDettaglio": []
+    },
+    {
+      "id": "59079",
+      "nome": "P.V. PREMENO",
+      "gestore": "SACED S.R.L.",
+      "bandiera": "SACED",
+      "indirizzo": "PIAZZA BRIGATA ALPINA CESARE BATTISTI SNC 28818",
+      "comune": "PREMENO",
+      "lat": 45.976065807886975,
+      "lng": 8.593984352148452,
+      "benzina_self": 1.818,
+      "benzina_servito": null,
+      "gasolio_self": 2.188,
+      "gasolio_servito": null,
+      "gpl_self": null,
+      "gpl_servito": null,
+      "metano_self": null,
+      "metano_servito": null,
+      "aggiornato": "20/04/2026 10:49:54",
+      "prezziDettaglio": [
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.818,
+          "isSelf": true,
+          "dtComu": "20/04/2026 10:49:54"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.188,
+          "isSelf": true,
+          "dtComu": "20/04/2026 10:49:54"
+        }
+      ]
+    },
+    {
+      "id": "54405",
+      "nome": "DISTRIBUTORE CARBURANTI SIFT SRL",
+      "gestore": "S.I.F.T. - SOCIETA' IDROELETTRICA FIUME TOCE - S.R.L.",
+      "bandiera": "Pompe Bianche",
+      "indirizzo": "STATALE 659 KM 16 105-165 28866",
+      "comune": "PREMIA",
+      "lat": 46.265873,
+      "lng": 8.333421,
+      "benzina_self": 1.83,
+      "benzina_servito": null,
+      "gasolio_self": 2.25,
+      "gasolio_servito": null,
+      "gpl_self": null,
+      "gpl_servito": null,
+      "metano_self": null,
+      "metano_servito": null,
+      "aggiornato": "22/04/2026 07:37:04",
+      "prezziDettaglio": [
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.83,
+          "isSelf": true,
+          "dtComu": "22/04/2026 07:37:04"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.25,
+          "isSelf": true,
+          "dtComu": "22/04/2026 07:37:04"
+        }
+      ]
+    },
+    {
+      "id": "57525",
+      "nome": "SOMMESE SANTA MARIA MAGGIORE",
+      "gestore": "SOMMESE CARBURANTE S.R.L.",
+      "bandiera": "Sommese Petroli",
+      "indirizzo": "Via Domodossola 21 28857",
+      "comune": "SANTA MARIA MAGGIORE",
+      "lat": 46.133937872469126,
+      "lng": 8.455732713793953,
+      "benzina_self": 1.739,
+      "benzina_servito": null,
+      "gasolio_self": 2.139,
+      "gasolio_servito": null,
+      "gpl_self": null,
+      "gpl_servito": null,
+      "metano_self": null,
+      "metano_servito": null,
+      "aggiornato": "22/04/2026 23:00:29",
+      "prezziDettaglio": [
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.739,
+          "isSelf": true,
+          "dtComu": "22/04/2026 23:00:29"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.139,
+          "isSelf": true,
+          "dtComu": "22/04/2026 23:00:29"
+        }
+      ]
+    },
+    {
+      "id": "27807",
+      "nome": "IP - ROSSI ALESSANDRO",
+      "gestore": "ROSSI ALESSANDRO",
+      "bandiera": "Api-Ip",
+      "indirizzo": "CORSO ITALIA 70 28838",
+      "comune": "STRESA",
+      "lat": 45.88319534840409,
+      "lng": 8.543086683166962,
+      "benzina_self": 1.949,
+      "benzina_servito": 1.949,
+      "gasolio_self": 2.219,
+      "gasolio_servito": 2.219,
+      "gpl_self": null,
+      "gpl_servito": null,
+      "metano_self": null,
+      "metano_servito": null,
+      "aggiornato": "21/04/2026 17:03:02",
+      "prezziDettaglio": [
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.949,
+          "isSelf": false,
+          "dtComu": "21/04/2026 17:03:02"
+        },
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.949,
+          "isSelf": true,
+          "dtComu": "21/04/2026 17:03:02"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.219,
+          "isSelf": false,
+          "dtComu": "21/04/2026 17:03:02"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.219,
+          "isSelf": true,
+          "dtComu": "21/04/2026 17:03:02"
+        }
+      ]
+    },
+    {
+      "id": "54337",
+      "nome": "STAZIONE ENI",
+      "gestore": "RUBINETTO STEFANO",
+      "bandiera": "Agip Eni",
+      "indirizzo": "SEMPIONE NORD S.S.33 40 28838",
+      "comune": "STRESA",
+      "lat": 45.9394031,
+      "lng": 8.5709897,
+      "benzina_self": 1.71,
+      "benzina_servito": 1.73,
+      "gasolio_self": 2.044,
+      "gasolio_servito": 2.064,
+      "gpl_self": null,
+      "gpl_servito": null,
+      "metano_self": null,
+      "metano_servito": null,
+      "aggiornato": "23/04/2026 07:22:02",
+      "prezziDettaglio": [
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.73,
+          "isSelf": false,
+          "dtComu": "23/04/2026 07:22:02"
+        },
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.71,
+          "isSelf": true,
+          "dtComu": "22/04/2026 23:56:16"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.064,
+          "isSelf": false,
+          "dtComu": "23/04/2026 07:22:02"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.044,
+          "isSelf": true,
+          "dtComu": "22/04/2026 23:56:16"
+        },
+        {
+          "carburante": "Blue Diesel",
+          "prezzo": 2.164,
+          "isSelf": false,
+          "dtComu": "23/04/2026 07:22:02"
+        },
+        {
+          "carburante": "Blue Diesel",
+          "prezzo": 2.144,
+          "isSelf": true,
+          "dtComu": "22/04/2026 23:56:16"
+        },
+        {
+          "carburante": "HVOlution",
+          "prezzo": 2.064,
+          "isSelf": false,
+          "dtComu": "23/04/2026 07:22:02"
+        },
+        {
+          "carburante": "HVOlution",
+          "prezzo": 2.044,
+          "isSelf": true,
+          "dtComu": "22/04/2026 23:56:16"
+        }
+      ]
+    },
+    {
+      "id": "11931",
+      "nome": "TRONTANO-SS 337 KM 1+182",
+      "gestore": "SERVIZI & GESTIONI ITALIA S.R.L.",
+      "bandiera": "Q8",
+      "indirizzo": "SS 337 KM 1+182 S/N 28859",
+      "comune": "TRONTANO",
+      "lat": 46.11291416423182,
+      "lng": 8.308863683874165,
+      "benzina_self": 1.719,
+      "benzina_servito": null,
+      "gasolio_self": 2.059,
+      "gasolio_servito": null,
+      "gpl_self": null,
+      "gpl_servito": null,
+      "metano_self": null,
+      "metano_servito": null,
+      "aggiornato": "22/04/2026 07:33:47",
+      "prezziDettaglio": [
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.719,
+          "isSelf": true,
+          "dtComu": "22/04/2026 07:33:47"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.059,
+          "isSelf": true,
+          "dtComu": "22/04/2026 07:33:47"
+        },
+        {
+          "carburante": "Gasolio artico",
+          "prezzo": 2.099,
+          "isSelf": true,
+          "dtComu": "28/03/2026 07:45:21"
+        }
+      ]
+    },
+    {
+      "id": "34190",
+      "nome": "DISCAR VARZO",
+      "gestore": "DIS-CAR DI SARRA PAOLO & C. S.N.C.",
+      "bandiera": "DIS-CAR",
+      "indirizzo": "VIA LOCALITA' CAMPAGLIA - VIA DOMODOSSOLA 71 28868, VARZO (VB) 71 28868",
+      "comune": "VARZO",
+      "lat": 46.196981348845014,
+      "lng": 8.268802579623411,
+      "benzina_self": 1.759,
+      "benzina_servito": null,
+      "gasolio_self": 2.059,
+      "gasolio_servito": null,
+      "gpl_self": null,
+      "gpl_servito": null,
+      "metano_self": null,
+      "metano_servito": null,
+      "aggiornato": "22/04/2026 00:34:11",
+      "prezziDettaglio": [
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.759,
+          "isSelf": true,
+          "dtComu": "22/04/2026 00:34:11"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.059,
+          "isSelf": true,
+          "dtComu": "22/04/2026 00:34:11"
+        }
+      ]
+    },
+    {
+      "id": "41961",
+      "nome": "SOMMESE VARZO",
+      "gestore": "FARELLO SERENO",
+      "bandiera": "Sommese Petroli",
+      "indirizzo": "Via Sempione 5 28868",
+      "comune": "VARZO",
+      "lat": 46.2083105,
+      "lng": 8.2396596,
+      "benzina_self": 1.949,
+      "benzina_servito": null,
+      "gasolio_self": 2.399,
+      "gasolio_servito": null,
+      "gpl_self": null,
+      "gpl_servito": null,
+      "metano_self": null,
+      "metano_servito": null,
+      "aggiornato": "18/04/2026 21:30:51",
+      "prezziDettaglio": [
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.949,
+          "isSelf": true,
+          "dtComu": "18/04/2026 21:30:51"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.399,
+          "isSelf": true,
+          "dtComu": "18/04/2026 21:30:51"
+        }
+      ]
+    },
+    {
+      "id": "9598",
+      "nome": "2000 SAS",
+      "gestore": "2000 S.A.S. DI PELLIZZERI DANIELE & C.",
+      "bandiera": "Q8",
+      "indirizzo": "VIA VITTORIO VENETO 133 28922",
+      "comune": "VERBANIA",
+      "lat": 45.930568466124434,
+      "lng": 8.569079156111115,
+      "benzina_self": 1.779,
+      "benzina_servito": 1.989,
+      "gasolio_self": 2.119,
+      "gasolio_servito": 2.329,
+      "gpl_self": null,
+      "gpl_servito": null,
+      "metano_self": null,
+      "metano_servito": null,
+      "aggiornato": "22/04/2026 07:49:49",
+      "prezziDettaglio": [
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.989,
+          "isSelf": false,
+          "dtComu": "22/04/2026 07:49:49"
+        },
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.779,
+          "isSelf": true,
+          "dtComu": "22/04/2026 07:49:49"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.329,
+          "isSelf": false,
+          "dtComu": "22/04/2026 07:49:49"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.119,
+          "isSelf": true,
+          "dtComu": "22/04/2026 07:49:49"
+        },
+        {
+          "carburante": "Hi-Q Diesel",
+          "prezzo": 2.579,
+          "isSelf": false,
+          "dtComu": "22/04/2026 07:49:49"
+        },
+        {
+          "carburante": "Hi-Q Diesel",
+          "prezzo": 2.419,
+          "isSelf": true,
+          "dtComu": "22/04/2026 07:49:49"
+        }
+      ]
+    },
+    {
+      "id": "54635",
+      "nome": "488 VERBANIA",
+      "gestore": "ENIMOOV S.P.A.",
+      "bandiera": "Agip Eni",
+      "indirizzo": "RENCO 71 28923",
+      "comune": "VERBANIA",
+      "lat": 45.9505,
+      "lng": 8.548799,
+      "benzina_self": 1.717,
+      "benzina_servito": 1.937,
+      "gasolio_self": 2.049,
+      "gasolio_servito": 2.269,
+      "gpl_self": null,
+      "gpl_servito": null,
+      "metano_self": null,
+      "metano_servito": null,
+      "aggiornato": "22/04/2026 23:40:20",
+      "prezziDettaglio": [
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.937,
+          "isSelf": false,
+          "dtComu": "22/04/2026 23:40:20"
+        },
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.717,
+          "isSelf": true,
+          "dtComu": "22/04/2026 23:40:20"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.269,
+          "isSelf": false,
+          "dtComu": "22/04/2026 23:40:20"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.049,
+          "isSelf": true,
+          "dtComu": "22/04/2026 23:40:20"
+        },
+        {
+          "carburante": "Blue Diesel",
+          "prezzo": 2.369,
+          "isSelf": false,
+          "dtComu": "22/04/2026 23:40:20"
+        },
+        {
+          "carburante": "Blue Diesel",
+          "prezzo": 2.149,
+          "isSelf": true,
+          "dtComu": "22/04/2026 23:40:20"
+        }
+      ]
+    },
+    {
+      "id": "60955",
+      "nome": "7172",
+      "gestore": "T.D.M. S.R.L.",
+      "bandiera": "Tamoil",
+      "indirizzo": "CORSO NAZIONI UNITE",
+      "comune": "VERBANIA",
+      "lat": 45.9290037,
+      "lng": 8.55170778,
+      "benzina_self": 1.749,
+      "benzina_servito": null,
+      "gasolio_self": 2.049,
+      "gasolio_servito": null,
+      "gpl_self": null,
+      "gpl_servito": null,
+      "metano_self": null,
+      "metano_servito": null,
+      "aggiornato": "22/04/2026 12:22:38",
+      "prezziDettaglio": [
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.749,
+          "isSelf": true,
+          "dtComu": "22/04/2026 12:22:38"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.049,
+          "isSelf": true,
+          "dtComu": "22/04/2026 23:11:48"
+        }
+      ]
+    },
+    {
+      "id": "41608",
+      "nome": "8023",
+      "gestore": "T.D.M. S.R.L.",
+      "bandiera": "Tamoil",
+      "indirizzo": "42 MARTIRI 8/B 28924",
+      "comune": "VERBANIA",
+      "lat": 45.94102079848124,
+      "lng": 8.50666646015361,
+      "benzina_self": 1.749,
+      "benzina_servito": null,
+      "gasolio_self": 2.049,
+      "gasolio_servito": null,
+      "gpl_self": null,
+      "gpl_servito": null,
+      "metano_self": null,
+      "metano_servito": null,
+      "aggiornato": "22/04/2026 15:32:07",
+      "prezziDettaglio": [
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.749,
+          "isSelf": true,
+          "dtComu": "22/04/2026 15:32:07"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.049,
+          "isSelf": true,
+          "dtComu": "22/04/2026 15:32:07"
+        }
+      ]
+    },
+    {
+      "id": "44956",
+      "nome": "area di servizio s.n.c. di cozzi massimo e petrucci marco",
+      "gestore": "AREA DI SERVIZIO S.N.C. DI COZZI MASSIMO E PETRUCCI MARCO",
+      "bandiera": "Agip Eni",
+      "indirizzo": "CORSO GOFFREDO MAMELI 215 28921",
+      "comune": "VERBANIA",
+      "lat": 45.93768000766652,
+      "lng": 8.57905626296997,
+      "benzina_self": 1.717,
+      "benzina_servito": 1.937,
+      "gasolio_self": 2.049,
+      "gasolio_servito": 2.269,
+      "gpl_self": null,
+      "gpl_servito": null,
+      "metano_self": null,
+      "metano_servito": null,
+      "aggiornato": "22/04/2026 22:37:56",
+      "prezziDettaglio": [
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.937,
+          "isSelf": false,
+          "dtComu": "22/04/2026 22:37:56"
+        },
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.717,
+          "isSelf": true,
+          "dtComu": "22/04/2026 22:37:56"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.269,
+          "isSelf": false,
+          "dtComu": "22/04/2026 22:37:56"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.049,
+          "isSelf": true,
+          "dtComu": "22/04/2026 22:37:56"
+        },
+        {
+          "carburante": "Blue Diesel",
+          "prezzo": 2.369,
+          "isSelf": false,
+          "dtComu": "22/04/2026 22:37:56"
+        },
+        {
+          "carburante": "Blue Diesel",
+          "prezzo": 2.149,
+          "isSelf": true,
+          "dtComu": "22/04/2026 22:37:56"
+        }
+      ]
+    },
+    {
+      "id": "53280",
+      "nome": "Brill Car",
+      "gestore": "BRILL CAR DI ROCCO CRISTIANO",
+      "bandiera": "Agip Eni",
+      "indirizzo": "Corso Europa 48 28922",
+      "comune": "VERBANIA",
+      "lat": 45.9374592,
+      "lng": 8.552448,
+      "benzina_self": 1.699,
+      "benzina_servito": 1.937,
+      "gasolio_self": 2.099,
+      "gasolio_servito": 2.319,
+      "gpl_self": null,
+      "gpl_servito": null,
+      "metano_self": null,
+      "metano_servito": null,
+      "aggiornato": "22/04/2026 23:47:00",
+      "prezziDettaglio": [
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.937,
+          "isSelf": false,
+          "dtComu": "22/04/2026 23:47:00"
+        },
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.699,
+          "isSelf": true,
+          "dtComu": "22/04/2026 17:46:06"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.319,
+          "isSelf": false,
+          "dtComu": "22/04/2026 23:47:00"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.099,
+          "isSelf": true,
+          "dtComu": "22/04/2026 23:47:00"
+        },
+        {
+          "carburante": "Blue Super",
+          "prezzo": 1.82,
+          "isSelf": true,
+          "dtComu": "22/04/2026 23:47:00"
+        },
+        {
+          "carburante": "Blue Diesel",
+          "prezzo": 2.419,
+          "isSelf": false,
+          "dtComu": "22/04/2026 23:47:00"
+        },
+        {
+          "carburante": "Blue Diesel",
+          "prezzo": 2.199,
+          "isSelf": true,
+          "dtComu": "22/04/2026 23:47:00"
+        }
+      ]
+    },
+    {
+      "id": "40011",
+      "nome": "Calabrese Giovanna",
+      "gestore": "CALABRESE GIOVANNA",
+      "bandiera": "Agip Eni",
+      "indirizzo": "Statale 33 del Sempione, Km. 5+200, dir. Verbania  - 28924",
+      "comune": "VERBANIA",
+      "lat": 45.94128834492784,
+      "lng": 8.48677285015583,
+      "benzina_self": null,
+      "benzina_servito": null,
+      "gasolio_self": null,
+      "gasolio_servito": null,
+      "gpl_self": null,
+      "gpl_servito": 0.899,
+      "metano_self": null,
+      "metano_servito": null,
+      "aggiornato": "20/04/2026 07:40:31",
+      "prezziDettaglio": [
+        {
+          "carburante": "GPL",
+          "prezzo": 0.899,
+          "isSelf": false,
+          "dtComu": "20/04/2026 07:40:31"
+        }
+      ]
+    },
+    {
+      "id": "48731",
+      "nome": "Carrefour Tamoil Verbania",
+      "gestore": "GS SPA",
+      "bandiera": "Tamoil",
+      "indirizzo": "Corso Benedetto Cairoli 68",
+      "comune": "VERBANIA",
+      "lat": 45.939888485703094,
+      "lng": 8.566197081861953,
+      "benzina_self": 1.719,
+      "benzina_servito": null,
+      "gasolio_self": 2.049,
+      "gasolio_servito": null,
+      "gpl_self": null,
+      "gpl_servito": null,
+      "metano_self": null,
+      "metano_servito": null,
+      "aggiornato": "22/04/2026 16:39:13",
+      "prezziDettaglio": [
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.719,
+          "isSelf": true,
+          "dtComu": "22/04/2026 16:39:13"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.049,
+          "isSelf": true,
+          "dtComu": "22/04/2026 16:39:13"
+        },
+        {
+          "carburante": "Benzina WR 100",
+          "prezzo": 2.199,
+          "isSelf": true,
+          "dtComu": "22/04/2026 16:39:13"
+        }
+      ]
+    },
+    {
+      "id": "9414",
+      "nome": "distributore q8",
+      "gestore": "PIOGGIA MAURO",
+      "bandiera": "Q8",
+      "indirizzo": "corso europa 74 28922",
+      "comune": "VERBANIA",
+      "lat": 45.9274265344619,
+      "lng": 8.561943769454956,
+      "benzina_self": 1.779,
+      "benzina_servito": null,
+      "gasolio_self": 2.119,
+      "gasolio_servito": null,
+      "gpl_self": null,
+      "gpl_servito": null,
+      "metano_self": null,
+      "metano_servito": null,
+      "aggiornato": "22/04/2026 14:52:36",
+      "prezziDettaglio": [
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.779,
+          "isSelf": true,
+          "dtComu": "22/04/2026 14:52:36"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.119,
+          "isSelf": true,
+          "dtComu": "22/04/2026 14:52:36"
+        },
+        {
+          "carburante": "Hi-Q Diesel",
+          "prezzo": 2.449,
+          "isSelf": true,
+          "dtComu": "22/04/2026 14:52:36"
+        },
+        {
+          "carburante": "HiQ Perform+",
+          "prezzo": 2.029,
+          "isSelf": true,
+          "dtComu": "22/04/2026 14:52:36"
+        }
+      ]
+    },
+    {
+      "id": "44785",
+      "nome": "ESSO VERBANIA",
+      "gestore": "F.LLI DINI S.N.C. DI EDOARDO E ENNIO DINI",
+      "bandiera": "Esso",
+      "indirizzo": "CORSO EUROPA 32 28922",
+      "comune": "VERBANIA",
+      "lat": 45.92756217386924,
+      "lng": 8.563047036424297,
+      "benzina_self": 1.719,
+      "benzina_servito": 1.919,
+      "gasolio_self": 2.049,
+      "gasolio_servito": 2.249,
+      "gpl_self": null,
+      "gpl_servito": null,
+      "metano_self": null,
+      "metano_servito": null,
+      "aggiornato": "23/04/2026 07:56:22",
+      "prezziDettaglio": [
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.919,
+          "isSelf": false,
+          "dtComu": "23/04/2026 07:56:22"
+        },
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.719,
+          "isSelf": true,
+          "dtComu": "23/04/2026 07:56:22"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.249,
+          "isSelf": false,
+          "dtComu": "23/04/2026 07:56:22"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.049,
+          "isSelf": true,
+          "dtComu": "23/04/2026 07:56:22"
+        },
+        {
+          "carburante": "Supreme Diesel",
+          "prezzo": 2.449,
+          "isSelf": false,
+          "dtComu": "23/04/2026 07:56:22"
+        },
+        {
+          "carburante": "Supreme Diesel",
+          "prezzo": 2.249,
+          "isSelf": true,
+          "dtComu": "23/04/2026 07:56:22"
+        }
+      ]
+    },
+    {
+      "id": "43949",
+      "nome": "IP PALMIGIANO DAVIDE",
+      "gestore": "PALMIGIANO DAVIDE",
+      "bandiera": "Api-Ip",
+      "indirizzo": "34 del Lago Maggiore, Km. 2+234, Gravellona toce  28924",
+      "comune": "VERBANIA",
+      "lat": 45.938160393851945,
+      "lng": 8.456741906745947,
+      "benzina_self": 1.769,
+      "benzina_servito": 1.999,
+      "gasolio_self": 2.089,
+      "gasolio_servito": 2.319,
+      "gpl_self": null,
+      "gpl_servito": null,
+      "metano_self": null,
+      "metano_servito": 1.577,
+      "aggiornato": "22/04/2026 23:16:09",
+      "prezziDettaglio": [
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.999,
+          "isSelf": false,
+          "dtComu": "22/04/2026 23:16:09"
+        },
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.769,
+          "isSelf": true,
+          "dtComu": "22/04/2026 17:02:11"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.319,
+          "isSelf": false,
+          "dtComu": "22/04/2026 23:16:09"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.089,
+          "isSelf": true,
+          "dtComu": "22/04/2026 17:02:11"
+        },
+        {
+          "carburante": "Metano",
+          "prezzo": 1.577,
+          "isSelf": false,
+          "dtComu": "22/04/2026 23:16:09"
+        }
+      ]
+    },
+    {
+      "id": "18376",
+      "nome": "RE.GI. sas",
+      "gestore": "RE.GI.SAS DI GIORDANO ROSARIO E C.",
+      "bandiera": "Pompe Bianche",
+      "indirizzo": "VIA PER SANTINO SNC 28923",
+      "comune": "VERBANIA",
+      "lat": 45.95457682645336,
+      "lng": 8.539658635854721,
+      "benzina_self": 1.739,
+      "benzina_servito": null,
+      "gasolio_self": 2.099,
+      "gasolio_servito": null,
+      "gpl_self": null,
+      "gpl_servito": null,
+      "metano_self": null,
+      "metano_servito": null,
+      "aggiornato": "21/04/2026 09:00:00",
+      "prezziDettaglio": [
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.739,
+          "isSelf": true,
+          "dtComu": "21/04/2026 09:00:00"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.099,
+          "isSelf": true,
+          "dtComu": "21/04/2026 09:00:00"
+        }
+      ]
+    },
+    {
+      "id": "54401",
+      "nome": "STAZIONE DI SERVIZIO IP",
+      "gestore": "BAR DOLPHINS DI LOI CRISTIAN",
+      "bandiera": "Api-Ip",
+      "indirizzo": "42 MARTIRI 142/A 28924",
+      "comune": "VERBANIA",
+      "lat": 45.94178440382854,
+      "lng": 8.502637793847638,
+      "benzina_self": 1.769,
+      "benzina_servito": 2.009,
+      "gasolio_self": 2.089,
+      "gasolio_servito": 2.219,
+      "gpl_self": null,
+      "gpl_servito": null,
+      "metano_self": null,
+      "metano_servito": null,
+      "aggiornato": "22/04/2026 22:58:13",
+      "prezziDettaglio": [
+        {
+          "carburante": "Benzina",
+          "prezzo": 2.009,
+          "isSelf": false,
+          "dtComu": "22/04/2026 22:58:13"
+        },
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.769,
+          "isSelf": true,
+          "dtComu": "22/04/2026 22:58:13"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.219,
+          "isSelf": false,
+          "dtComu": "22/04/2026 22:58:13"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.089,
+          "isSelf": true,
+          "dtComu": "22/04/2026 22:58:13"
+        }
+      ]
+    },
+    {
+      "id": "48823",
+      "nome": "TM07172",
+      "gestore": "BEMA DI SACCHI ILARIA & C. S.N.C.",
+      "bandiera": "Tamoil",
+      "indirizzo": "CORSO NAZIONI UNITE 4 28925",
+      "comune": "VERBANIA",
+      "lat": 45.929003298377346,
+      "lng": 8.551697752639711,
+      "benzina_self": null,
+      "benzina_servito": null,
+      "gasolio_self": null,
+      "gasolio_servito": null,
+      "gpl_self": null,
+      "gpl_servito": null,
+      "metano_self": null,
+      "metano_servito": null,
+      "aggiornato": null,
+      "prezziDettaglio": []
+    },
+    {
+      "id": "50844",
+      "nome": "A3GRILL Srl - SOMMESE PETROLI",
+      "gestore": "A3GRILL S.R.L.",
+      "bandiera": "Sommese Petroli",
+      "indirizzo": "33 del Sempione, Km. 117+490, Sempione - 28844",
+      "comune": "VILLADOSSOLA",
+      "lat": 46.06474933353263,
+      "lng": 8.276802227950839,
+      "benzina_self": 1.759,
+      "benzina_servito": 1.849,
+      "gasolio_self": 2.159,
+      "gasolio_servito": 2.249,
+      "gpl_self": null,
+      "gpl_servito": 0.849,
+      "metano_self": null,
+      "metano_servito": null,
+      "aggiornato": "21/04/2026 21:30:30",
+      "prezziDettaglio": [
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.849,
+          "isSelf": false,
+          "dtComu": "21/04/2026 21:30:30"
+        },
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.759,
+          "isSelf": true,
+          "dtComu": "21/04/2026 21:30:30"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.249,
+          "isSelf": false,
+          "dtComu": "21/04/2026 21:30:30"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.159,
+          "isSelf": true,
+          "dtComu": "21/04/2026 21:30:30"
+        },
+        {
+          "carburante": "GPL",
+          "prezzo": 0.849,
+          "isSelf": false,
+          "dtComu": "21/04/2026 21:30:30"
+        }
+      ]
+    },
+    {
+      "id": "50001",
+      "nome": "DISTRIBUTORE GPL",
+      "gestore": "BRUNO PIERINO",
+      "bandiera": "Api-Ip",
+      "indirizzo": "VIA PRACASTELLI 8 28844",
+      "comune": "VILLADOSSOLA",
+      "lat": 46.08430288282969,
+      "lng": 8.27945997672459,
+      "benzina_self": null,
+      "benzina_servito": null,
+      "gasolio_self": null,
+      "gasolio_servito": null,
+      "gpl_self": null,
+      "gpl_servito": 0.809,
+      "metano_self": null,
+      "metano_servito": null,
+      "aggiornato": "22/04/2026 10:29:20",
+      "prezziDettaglio": [
+        {
+          "carburante": "GPL",
+          "prezzo": 0.809,
+          "isSelf": false,
+          "dtComu": "22/04/2026 10:29:20"
+        }
+      ]
+    },
+    {
+      "id": "53162",
+      "nome": "EGI-2GO VILLADOSSOLA",
+      "gestore": "EGI-2GO S.R.L.",
+      "bandiera": "Esso",
+      "indirizzo": "SS33 KM 185+52 SNC 28844",
+      "comune": "VILLADOSSOLA",
+      "lat": 46.06538,
+      "lng": 8.27625,
+      "benzina_self": 1.709,
+      "benzina_servito": null,
+      "gasolio_self": 2.079,
+      "gasolio_servito": null,
+      "gpl_self": null,
+      "gpl_servito": null,
+      "metano_self": null,
+      "metano_servito": null,
+      "aggiornato": "22/04/2026 05:32:32",
+      "prezziDettaglio": [
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.709,
+          "isSelf": true,
+          "dtComu": "22/04/2026 05:32:32"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.079,
+          "isSelf": true,
+          "dtComu": "22/04/2026 05:32:32"
+        },
+        {
+          "carburante": "Supreme Diesel",
+          "prezzo": 2.279,
+          "isSelf": true,
+          "dtComu": "22/04/2026 05:32:32"
+        }
+      ]
+    },
+    {
+      "id": "15818",
+      "nome": "MILANI F.lli",
+      "gestore": "MILANI F.LLI SNC DI MILANI CRISTINA E C.",
+      "bandiera": "Tamoil",
+      "indirizzo": "Via domodossola 108 28844",
+      "comune": "VILLADOSSOLA",
+      "lat": 46.081241831363066,
+      "lng": 8.274062767612804,
+      "benzina_self": 1.679,
+      "benzina_servito": 1.679,
+      "gasolio_self": 2.039,
+      "gasolio_servito": 2.039,
+      "gpl_self": null,
+      "gpl_servito": null,
+      "metano_self": null,
+      "metano_servito": null,
+      "aggiornato": "22/04/2026 15:14:21",
+      "prezziDettaglio": [
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.679,
+          "isSelf": false,
+          "dtComu": "22/04/2026 15:14:21"
+        },
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.679,
+          "isSelf": true,
+          "dtComu": "22/04/2026 15:14:21"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.039,
+          "isSelf": false,
+          "dtComu": "22/04/2026 15:14:21"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.039,
+          "isSelf": true,
+          "dtComu": "22/04/2026 15:14:21"
+        },
+        {
+          "carburante": "Benzina WR 100",
+          "prezzo": 1.829,
+          "isSelf": false,
+          "dtComu": "22/04/2026 15:14:22"
+        },
+        {
+          "carburante": "Benzina WR 100",
+          "prezzo": 1.829,
+          "isSelf": true,
+          "dtComu": "22/04/2026 15:14:22"
+        }
+      ]
+    },
+    {
+      "id": "13455",
+      "nome": "SOMMESE PETROLI",
+      "gestore": "MINACCI ROBERTO",
+      "bandiera": "Sommese Petroli",
+      "indirizzo": "VIA BIANCHI NOVELLO 180 28844",
+      "comune": "VILLADOSSOLA",
+      "lat": 46.05656305219208,
+      "lng": 8.261079712071933,
+      "benzina_self": 1.729,
+      "benzina_servito": null,
+      "gasolio_self": 2.099,
+      "gasolio_servito": null,
+      "gpl_self": null,
+      "gpl_servito": null,
+      "metano_self": null,
+      "metano_servito": null,
+      "aggiornato": "23/04/2026 07:57:59",
+      "prezziDettaglio": [
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.729,
+          "isSelf": true,
+          "dtComu": "23/04/2026 07:57:59"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.099,
+          "isSelf": true,
+          "dtComu": "23/04/2026 07:57:59"
+        }
+      ]
+    },
+    {
+      "id": "11930",
+      "nome": "VILLADOSSOLA-BIANCHI NOVELLO 111 S.S. 33",
+      "gestore": "SERVIZI & GESTIONI ITALIA S.R.L.",
+      "bandiera": "Q8",
+      "indirizzo": "BIANCHI NOVELLO S.S. 33 111 28844",
+      "comune": "VILLADOSSOLA",
+      "lat": 46.06175258644753,
+      "lng": 8.261806214583203,
+      "benzina_self": 1.729,
+      "benzina_servito": null,
+      "gasolio_self": 2.099,
+      "gasolio_servito": null,
+      "gpl_self": null,
+      "gpl_servito": null,
+      "metano_self": null,
+      "metano_servito": null,
+      "aggiornato": "22/04/2026 07:33:47",
+      "prezziDettaglio": [
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.729,
+          "isSelf": true,
+          "dtComu": "22/04/2026 07:33:47"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.099,
+          "isSelf": true,
+          "dtComu": "22/04/2026 07:33:47"
+        },
+        {
+          "carburante": "Gasolio artico",
+          "prezzo": 2.129,
+          "isSelf": true,
+          "dtComu": "28/03/2026 07:45:21"
+        }
+      ]
+    }
+  ]
 }

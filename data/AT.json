@@ -1,6 +1,5042 @@
 {
-  "extractionDate": "1970-01-01",
-  "generatedAt": "2026-04-24T18:51:22.358Z",
-  "totale": 0,
-  "distributori": []
+  "extractionDate": "2026-04-23",
+  "generatedAt": "2026-04-24T19:33:12.220Z",
+  "totale": 119,
+  "distributori": [
+    {
+      "id": "6403",
+      "nome": "AGLIANO VIA ASTI MARE N.14",
+      "gestore": "SERVIZI & GESTIONI ITALIA S.R.L.",
+      "bandiera": "Q8",
+      "indirizzo": "VIA ASTI MARE 14 14041",
+      "comune": "AGLIANO TERME",
+      "lat": 44.7894444211859,
+      "lng": 8.261148650926202,
+      "benzina_self": 1.719,
+      "benzina_servito": null,
+      "gasolio_self": 2.049,
+      "gasolio_servito": null,
+      "gpl_self": null,
+      "gpl_servito": null,
+      "metano_self": null,
+      "metano_servito": null,
+      "aggiornato": "23/04/2026 01:04:13",
+      "prezziDettaglio": [
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.719,
+          "isSelf": true,
+          "dtComu": "23/04/2026 01:04:13"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.049,
+          "isSelf": true,
+          "dtComu": "23/04/2026 01:04:13"
+        }
+      ]
+    },
+    {
+      "id": "53623",
+      "nome": "BEYFIN Maschio Simone",
+      "gestore": "MASCHIO SIMONE",
+      "bandiera": "Beyfin",
+      "indirizzo": "PROV. ASTI MARE KM18,100  14041",
+      "comune": "AGLIANO TERME",
+      "lat": 44.8038038,
+      "lng": 8.2541933,
+      "benzina_self": 1.719,
+      "benzina_servito": null,
+      "gasolio_self": 2.059,
+      "gasolio_servito": null,
+      "gpl_self": null,
+      "gpl_servito": 0.809,
+      "metano_self": null,
+      "metano_servito": null,
+      "aggiornato": "22/04/2026 09:25:48",
+      "prezziDettaglio": [
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.719,
+          "isSelf": true,
+          "dtComu": "22/04/2026 09:25:48"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.059,
+          "isSelf": true,
+          "dtComu": "22/04/2026 09:25:48"
+        },
+        {
+          "carburante": "GPL",
+          "prezzo": 0.809,
+          "isSelf": false,
+          "dtComu": "22/04/2026 09:25:48"
+        }
+      ]
+    },
+    {
+      "id": "33220",
+      "nome": "11418 MONTANELLA & C. SNC",
+      "gestore": "MONTANELLA & C. SNC DI MONTANELLA LUIGI & FRANCA & C.",
+      "bandiera": "Agip Eni",
+      "indirizzo": "CORSO ALESSANDRIA 494 14100",
+      "comune": "ASTI",
+      "lat": 44.90653336880364,
+      "lng": 8.251385544180266,
+      "benzina_self": 1.717,
+      "benzina_servito": 1.927,
+      "gasolio_self": 2.069,
+      "gasolio_servito": 2.279,
+      "gpl_self": null,
+      "gpl_servito": 0.777,
+      "metano_self": null,
+      "metano_servito": 1.387,
+      "aggiornato": "23/04/2026 07:44:25",
+      "prezziDettaglio": [
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.927,
+          "isSelf": false,
+          "dtComu": "23/04/2026 07:44:25"
+        },
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.717,
+          "isSelf": true,
+          "dtComu": "23/04/2026 07:44:25"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.279,
+          "isSelf": false,
+          "dtComu": "23/04/2026 07:44:25"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.069,
+          "isSelf": true,
+          "dtComu": "23/04/2026 07:44:25"
+        },
+        {
+          "carburante": "Metano",
+          "prezzo": 1.387,
+          "isSelf": false,
+          "dtComu": "22/04/2026 23:40:47"
+        },
+        {
+          "carburante": "GPL",
+          "prezzo": 0.777,
+          "isSelf": false,
+          "dtComu": "22/04/2026 23:40:47"
+        },
+        {
+          "carburante": "Blue Diesel",
+          "prezzo": 2.379,
+          "isSelf": false,
+          "dtComu": "23/04/2026 07:44:25"
+        },
+        {
+          "carburante": "Blue Diesel",
+          "prezzo": 2.169,
+          "isSelf": true,
+          "dtComu": "23/04/2026 07:44:25"
+        },
+        {
+          "carburante": "GNL",
+          "prezzo": 1.387,
+          "isSelf": false,
+          "dtComu": "22/04/2026 23:40:47"
+        },
+        {
+          "carburante": "HVOlution",
+          "prezzo": 2.279,
+          "isSelf": false,
+          "dtComu": "23/04/2026 07:44:25"
+        },
+        {
+          "carburante": "HVOlution",
+          "prezzo": 2.069,
+          "isSelf": true,
+          "dtComu": "23/04/2026 07:44:25"
+        }
+      ]
+    },
+    {
+      "id": "51724",
+      "nome": "1480 – Asti",
+      "gestore": "ENIMOOV S.P.A.",
+      "bandiera": "Agip Eni",
+      "indirizzo": "Corso Torino, 475  14100",
+      "comune": "ASTI",
+      "lat": 44.90473548863739,
+      "lng": 8.177908306904142,
+      "benzina_self": 1.697,
+      "benzina_servito": 1.917,
+      "gasolio_self": 2.049,
+      "gasolio_servito": 2.269,
+      "gpl_self": null,
+      "gpl_servito": null,
+      "metano_self": null,
+      "metano_servito": 1.546,
+      "aggiornato": "22/04/2026 23:12:07",
+      "prezziDettaglio": [
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.917,
+          "isSelf": false,
+          "dtComu": "22/04/2026 23:12:07"
+        },
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.697,
+          "isSelf": true,
+          "dtComu": "22/04/2026 23:12:07"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.269,
+          "isSelf": false,
+          "dtComu": "22/04/2026 23:12:07"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.049,
+          "isSelf": true,
+          "dtComu": "22/04/2026 23:12:07"
+        },
+        {
+          "carburante": "Metano",
+          "prezzo": 1.546,
+          "isSelf": false,
+          "dtComu": "22/04/2026 23:12:07"
+        },
+        {
+          "carburante": "Blue Super",
+          "prezzo": 2.067,
+          "isSelf": false,
+          "dtComu": "22/04/2026 23:12:07"
+        },
+        {
+          "carburante": "Blue Super",
+          "prezzo": 1.847,
+          "isSelf": true,
+          "dtComu": "22/04/2026 23:12:07"
+        },
+        {
+          "carburante": "Blue Diesel",
+          "prezzo": 2.369,
+          "isSelf": false,
+          "dtComu": "22/04/2026 23:12:07"
+        },
+        {
+          "carburante": "Blue Diesel",
+          "prezzo": 2.149,
+          "isSelf": true,
+          "dtComu": "22/04/2026 23:12:07"
+        },
+        {
+          "carburante": "HVOlution",
+          "prezzo": 2.269,
+          "isSelf": false,
+          "dtComu": "22/04/2026 23:12:07"
+        },
+        {
+          "carburante": "HVOlution",
+          "prezzo": 2.049,
+          "isSelf": true,
+          "dtComu": "22/04/2026 23:12:07"
+        }
+      ]
+    },
+    {
+      "id": "51606",
+      "nome": "2156",
+      "gestore": "T.D.M. S.R.L.",
+      "bandiera": "Tamoil",
+      "indirizzo": "CASALE 322 14100",
+      "comune": "ASTI",
+      "lat": 44.91579679939346,
+      "lng": 8.22214695558197,
+      "benzina_self": 1.729,
+      "benzina_servito": null,
+      "gasolio_self": 2.029,
+      "gasolio_servito": null,
+      "gpl_self": null,
+      "gpl_servito": 0.779,
+      "metano_self": null,
+      "metano_servito": null,
+      "aggiornato": "22/04/2026 06:42:09",
+      "prezziDettaglio": [
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.729,
+          "isSelf": true,
+          "dtComu": "22/04/2026 06:42:09"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.029,
+          "isSelf": true,
+          "dtComu": "22/04/2026 06:42:09"
+        },
+        {
+          "carburante": "GPL",
+          "prezzo": 0.779,
+          "isSelf": false,
+          "dtComu": "23/04/2026 06:46:06"
+        }
+      ]
+    },
+    {
+      "id": "41748",
+      "nome": "4102",
+      "gestore": "T.D.M. S.R.L.",
+      "bandiera": "Tamoil",
+      "indirizzo": "S.S. 10 KM. 55+707 SN 14100",
+      "comune": "ASTI",
+      "lat": 44.905021598248425,
+      "lng": 8.181272747791013,
+      "benzina_self": 1.729,
+      "benzina_servito": null,
+      "gasolio_self": 2.029,
+      "gasolio_servito": null,
+      "gpl_self": null,
+      "gpl_servito": null,
+      "metano_self": null,
+      "metano_servito": null,
+      "aggiornato": "22/04/2026 07:36:12",
+      "prezziDettaglio": [
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.729,
+          "isSelf": true,
+          "dtComu": "22/04/2026 07:36:12"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.029,
+          "isSelf": true,
+          "dtComu": "22/04/2026 07:36:12"
+        },
+        {
+          "carburante": "HVO",
+          "prezzo": 2.029,
+          "isSelf": true,
+          "dtComu": "22/04/2026 23:48:31"
+        }
+      ]
+    },
+    {
+      "id": "61983",
+      "nome": "51065  CORSO SAVONA IMPIANTO ENI",
+      "gestore": "LINDA'S CAFFE' DI LUKAJ LINDITE & C. SOCIETA' IN ACCOMANDITA SEMP LICE",
+      "bandiera": "Agip Eni",
+      "indirizzo": "Corso Savona 527 14100",
+      "comune": "ASTI",
+      "lat": 44.87729070537886,
+      "lng": 8.214701850980388,
+      "benzina_self": 1.717,
+      "benzina_servito": null,
+      "gasolio_self": 2.069,
+      "gasolio_servito": null,
+      "gpl_self": null,
+      "gpl_servito": null,
+      "metano_self": null,
+      "metano_servito": null,
+      "aggiornato": "23/04/2026 06:26:06",
+      "prezziDettaglio": [
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.717,
+          "isSelf": true,
+          "dtComu": "23/04/2026 06:26:06"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.069,
+          "isSelf": true,
+          "dtComu": "23/04/2026 06:26:06"
+        },
+        {
+          "carburante": "Blue Super",
+          "prezzo": 1.847,
+          "isSelf": true,
+          "dtComu": "22/04/2026 22:59:25"
+        },
+        {
+          "carburante": "Blue Diesel",
+          "prezzo": 2.169,
+          "isSelf": true,
+          "dtComu": "23/04/2026 06:26:06"
+        }
+      ]
+    },
+    {
+      "id": "48179",
+      "nome": "51066",
+      "gestore": "GESTIONI INNOVATIVE ITALIA S.R.L.",
+      "bandiera": "Agip Eni",
+      "indirizzo": "1 MAGGIO 28 14100",
+      "comune": "ASTI",
+      "lat": 44.90308000242693,
+      "lng": 8.214526162149584,
+      "benzina_self": 1.697,
+      "benzina_servito": null,
+      "gasolio_self": 2.049,
+      "gasolio_servito": null,
+      "gpl_self": null,
+      "gpl_servito": null,
+      "metano_self": null,
+      "metano_servito": null,
+      "aggiornato": "22/04/2026 23:56:40",
+      "prezziDettaglio": [
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.697,
+          "isSelf": true,
+          "dtComu": "22/04/2026 23:56:40"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.049,
+          "isSelf": true,
+          "dtComu": "22/04/2026 23:56:40"
+        },
+        {
+          "carburante": "Blue Diesel",
+          "prezzo": 2.149,
+          "isSelf": true,
+          "dtComu": "22/04/2026 23:56:39"
+        }
+      ]
+    },
+    {
+      "id": "48180",
+      "nome": "51075",
+      "gestore": "GESTIONI INNOVATIVE ITALIA S.R.L.",
+      "bandiera": "Agip Eni",
+      "indirizzo": "DON MINZONI 54 14100",
+      "comune": "ASTI",
+      "lat": 44.89547549651987,
+      "lng": 8.195135885913851,
+      "benzina_self": 1.697,
+      "benzina_servito": null,
+      "gasolio_self": 2.049,
+      "gasolio_servito": null,
+      "gpl_self": null,
+      "gpl_servito": null,
+      "metano_self": null,
+      "metano_servito": null,
+      "aggiornato": "22/04/2026 22:50:55",
+      "prezziDettaglio": [
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.697,
+          "isSelf": true,
+          "dtComu": "22/04/2026 22:50:55"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.049,
+          "isSelf": true,
+          "dtComu": "22/04/2026 22:50:54"
+        },
+        {
+          "carburante": "Blue Diesel",
+          "prezzo": 2.149,
+          "isSelf": true,
+          "dtComu": "22/04/2026 22:50:54"
+        }
+      ]
+    },
+    {
+      "id": "47796",
+      "nome": "602844.9066758",
+      "gestore": "T.D.M. S.R.L.",
+      "bandiera": "Tamoil",
+      "indirizzo": "VOLTA SN 14100",
+      "comune": "ASTI",
+      "lat": 44.90665870274345,
+      "lng": 8.215005743372958,
+      "benzina_self": 1.729,
+      "benzina_servito": null,
+      "gasolio_self": 2.049,
+      "gasolio_servito": null,
+      "gpl_self": null,
+      "gpl_servito": null,
+      "metano_self": null,
+      "metano_servito": null,
+      "aggiornato": "22/04/2026 14:48:09",
+      "prezziDettaglio": [
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.729,
+          "isSelf": true,
+          "dtComu": "22/04/2026 14:48:09"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.049,
+          "isSelf": true,
+          "dtComu": "22/04/2026 14:48:09"
+        }
+      ]
+    },
+    {
+      "id": "46481",
+      "nome": "8003",
+      "gestore": "T.D.M. S.R.L.",
+      "bandiera": "Tamoil",
+      "indirizzo": "DON MINZONI 142 14100",
+      "comune": "ASTI",
+      "lat": 44.898344674589715,
+      "lng": 8.193208463080055,
+      "benzina_self": 1.739,
+      "benzina_servito": null,
+      "gasolio_self": 2.059,
+      "gasolio_servito": null,
+      "gpl_self": null,
+      "gpl_servito": null,
+      "metano_self": null,
+      "metano_servito": null,
+      "aggiornato": "22/04/2026 23:28:13",
+      "prezziDettaglio": [
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.739,
+          "isSelf": true,
+          "dtComu": "22/04/2026 23:28:13"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.059,
+          "isSelf": true,
+          "dtComu": "22/04/2026 14:52:04"
+        }
+      ]
+    },
+    {
+      "id": "14338",
+      "nome": "agip eni",
+      "gestore": "GAMBINO LUIGI",
+      "bandiera": "Agip Eni",
+      "indirizzo": "CORSO CASALE  237 14100",
+      "comune": "ASTI",
+      "lat": 44.91183783566107,
+      "lng": 8.21991883068847,
+      "benzina_self": 1.717,
+      "benzina_servito": 1.927,
+      "gasolio_self": 2.069,
+      "gasolio_servito": 2.279,
+      "gpl_self": null,
+      "gpl_servito": null,
+      "metano_self": null,
+      "metano_servito": null,
+      "aggiornato": "23/04/2026 07:22:06",
+      "prezziDettaglio": [
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.927,
+          "isSelf": false,
+          "dtComu": "23/04/2026 07:22:06"
+        },
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.717,
+          "isSelf": true,
+          "dtComu": "23/04/2026 07:22:06"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.279,
+          "isSelf": false,
+          "dtComu": "23/04/2026 07:22:06"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.069,
+          "isSelf": true,
+          "dtComu": "23/04/2026 07:22:06"
+        },
+        {
+          "carburante": "Blue Diesel",
+          "prezzo": 2.379,
+          "isSelf": false,
+          "dtComu": "23/04/2026 07:22:06"
+        },
+        {
+          "carburante": "Blue Diesel",
+          "prezzo": 2.169,
+          "isSelf": true,
+          "dtComu": "23/04/2026 07:22:06"
+        },
+        {
+          "carburante": "HVOlution",
+          "prezzo": 2.279,
+          "isSelf": false,
+          "dtComu": "23/04/2026 07:22:06"
+        },
+        {
+          "carburante": "HVOlution",
+          "prezzo": 2.049,
+          "isSelf": true,
+          "dtComu": "22/04/2026 23:39:59"
+        }
+      ]
+    },
+    {
+      "id": "10079",
+      "nome": "ASTI",
+      "gestore": "\"IP SERVICES S.R.L.\"",
+      "bandiera": "Api-Ip",
+      "indirizzo": "Corso Alessandro Volta  14100",
+      "comune": "ASTI",
+      "lat": 44.90774321285039,
+      "lng": 8.21744754910469,
+      "benzina_self": 1.699,
+      "benzina_servito": null,
+      "gasolio_self": 2.049,
+      "gasolio_servito": null,
+      "gpl_self": null,
+      "gpl_servito": null,
+      "metano_self": null,
+      "metano_servito": null,
+      "aggiornato": "22/04/2026 09:15:00",
+      "prezziDettaglio": [
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.699,
+          "isSelf": true,
+          "dtComu": "22/04/2026 09:15:00"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.049,
+          "isSelf": true,
+          "dtComu": "22/04/2026 09:15:00"
+        }
+      ]
+    },
+    {
+      "id": "6401",
+      "nome": "ASTI CORSO ALESSANDRIA 397 S.S.10",
+      "gestore": "SERVIZI & GESTIONI ITALIA S.R.L.",
+      "bandiera": "Q8",
+      "indirizzo": "CORSO ALESSANDRIA - S.S.10 397 14100",
+      "comune": "ASTI",
+      "lat": 44.905684581625096,
+      "lng": 8.233573549073753,
+      "benzina_self": 1.729,
+      "benzina_servito": null,
+      "gasolio_self": 2.049,
+      "gasolio_servito": null,
+      "gpl_self": null,
+      "gpl_servito": null,
+      "metano_self": null,
+      "metano_servito": null,
+      "aggiornato": "22/04/2026 01:05:18",
+      "prezziDettaglio": [
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.729,
+          "isSelf": true,
+          "dtComu": "22/04/2026 01:05:18"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.049,
+          "isSelf": true,
+          "dtComu": "22/04/2026 01:05:18"
+        }
+      ]
+    },
+    {
+      "id": "33176",
+      "nome": "ASTI CORSO DON MINZONI, 89",
+      "gestore": "SERVIZI & GESTIONI ITALIA S.R.L.",
+      "bandiera": "Q8",
+      "indirizzo": "CORSO DON MINZONI 89 14100",
+      "comune": "ASTI",
+      "lat": 44.89638014984264,
+      "lng": 8.19422829080736,
+      "benzina_self": 1.749,
+      "benzina_servito": null,
+      "gasolio_self": 2.069,
+      "gasolio_servito": null,
+      "gpl_self": null,
+      "gpl_servito": null,
+      "metano_self": null,
+      "metano_servito": null,
+      "aggiornato": "21/04/2026 07:41:09",
+      "prezziDettaglio": [
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.749,
+          "isSelf": true,
+          "dtComu": "21/04/2026 07:41:09"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.069,
+          "isSelf": true,
+          "dtComu": "21/04/2026 07:41:09"
+        }
+      ]
+    },
+    {
+      "id": "6546",
+      "nome": "ASTI CORSO VOLTA/STRADA VALMANERA",
+      "gestore": "SERVIZI & GESTIONI ITALIA S.R.L.",
+      "bandiera": "Q8",
+      "indirizzo": "CORSO VOLTA/STRADA VALMANERA SNC 14100",
+      "comune": "ASTI",
+      "lat": 44.90538018592765,
+      "lng": 8.21228235833587,
+      "benzina_self": 1.699,
+      "benzina_servito": null,
+      "gasolio_self": 2.019,
+      "gasolio_servito": null,
+      "gpl_self": null,
+      "gpl_servito": null,
+      "metano_self": null,
+      "metano_servito": null,
+      "aggiornato": "21/04/2026 15:36:11",
+      "prezziDettaglio": [
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.699,
+          "isSelf": true,
+          "dtComu": "21/04/2026 15:36:11"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.019,
+          "isSelf": true,
+          "dtComu": "21/04/2026 15:36:11"
+        }
+      ]
+    },
+    {
+      "id": "6402",
+      "nome": "ASTI FRAZ.S.MARZANOTTO SP 59 KM 5",
+      "gestore": "SERVIZI & GESTIONI ITALIA S.R.L.",
+      "bandiera": "Q8",
+      "indirizzo": "FRAZ.S.MARZANOTTO SP 59 KM 5 SNC 14050",
+      "comune": "ASTI",
+      "lat": 44.85211923799133,
+      "lng": 8.197297301852359,
+      "benzina_self": 1.718,
+      "benzina_servito": null,
+      "gasolio_self": 2.058,
+      "gasolio_servito": null,
+      "gpl_self": null,
+      "gpl_servito": null,
+      "metano_self": null,
+      "metano_servito": null,
+      "aggiornato": "23/04/2026 01:04:12",
+      "prezziDettaglio": [
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.718,
+          "isSelf": true,
+          "dtComu": "23/04/2026 01:04:12"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.058,
+          "isSelf": true,
+          "dtComu": "23/04/2026 01:04:12"
+        }
+      ]
+    },
+    {
+      "id": "22870",
+      "nome": "ASTI SS 10 KM.55+500",
+      "gestore": "SERVIZI & GESTIONI ITALIA S.R.L.",
+      "bandiera": "Q8",
+      "indirizzo": "SS 10 KM.55+500  14100",
+      "comune": "ASTI",
+      "lat": 44.90494660696766,
+      "lng": 8.179809180425991,
+      "benzina_self": 1.728,
+      "benzina_servito": null,
+      "gasolio_self": 2.028,
+      "gasolio_servito": null,
+      "gpl_self": null,
+      "gpl_servito": null,
+      "metano_self": null,
+      "metano_servito": null,
+      "aggiornato": "22/04/2026 01:05:17",
+      "prezziDettaglio": [
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.728,
+          "isSelf": true,
+          "dtComu": "22/04/2026 01:05:17"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.028,
+          "isSelf": true,
+          "dtComu": "22/04/2026 01:05:17"
+        }
+      ]
+    },
+    {
+      "id": "39883",
+      "nome": "Asti SS231",
+      "gestore": "\"IP SERVICES S.R.L.\"",
+      "bandiera": "Api-Ip",
+      "indirizzo": "STRADA STATALE 231 KM.6+0,80  14100",
+      "comune": "ASTI",
+      "lat": 44.865220712606366,
+      "lng": 8.206015974283218,
+      "benzina_self": 1.697,
+      "benzina_servito": null,
+      "gasolio_self": 2.067,
+      "gasolio_servito": null,
+      "gpl_self": null,
+      "gpl_servito": null,
+      "metano_self": null,
+      "metano_servito": null,
+      "aggiornato": "22/04/2026 09:10:31",
+      "prezziDettaglio": [
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.697,
+          "isSelf": true,
+          "dtComu": "22/04/2026 09:10:31"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.067,
+          "isSelf": true,
+          "dtComu": "22/04/2026 09:10:31"
+        },
+        {
+          "carburante": "HVO",
+          "prezzo": 2.067,
+          "isSelf": true,
+          "dtComu": "22/04/2026 09:10:31"
+        }
+      ]
+    },
+    {
+      "id": "11473",
+      "nome": "ASTI-C.SO XXV APRILE 217",
+      "gestore": "SERVIZI & GESTIONI ITALIA S.R.L.",
+      "bandiera": "Q8",
+      "indirizzo": "C.SO XXV APRILE 217 14100",
+      "comune": "ASTI",
+      "lat": 44.90652105019706,
+      "lng": 8.186593877315545,
+      "benzina_self": 1.738,
+      "benzina_servito": null,
+      "gasolio_self": 2.038,
+      "gasolio_servito": null,
+      "gpl_self": null,
+      "gpl_servito": null,
+      "metano_self": null,
+      "metano_servito": null,
+      "aggiornato": "22/04/2026 07:33:35",
+      "prezziDettaglio": [
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.738,
+          "isSelf": true,
+          "dtComu": "22/04/2026 07:33:35"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.038,
+          "isSelf": true,
+          "dtComu": "22/04/2026 07:33:35"
+        }
+      ]
+    },
+    {
+      "id": "11474",
+      "nome": "ASTI-CORSO ALBA 19",
+      "gestore": "SERVIZI & GESTIONI ITALIA S.R.L.",
+      "bandiera": "Q8",
+      "indirizzo": "CORSO ALBA 19 14100",
+      "comune": "ASTI",
+      "lat": 44.891550826243936,
+      "lng": 8.195586238098144,
+      "benzina_self": 1.729,
+      "benzina_servito": null,
+      "gasolio_self": 2.049,
+      "gasolio_servito": null,
+      "gpl_self": null,
+      "gpl_servito": null,
+      "metano_self": null,
+      "metano_servito": null,
+      "aggiornato": "23/04/2026 07:34:25",
+      "prezziDettaglio": [
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.729,
+          "isSelf": true,
+          "dtComu": "23/04/2026 07:34:25"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.049,
+          "isSelf": true,
+          "dtComu": "23/04/2026 07:34:25"
+        }
+      ]
+    },
+    {
+      "id": "11469",
+      "nome": "ASTI-CORSO ALESSANDRIA 380",
+      "gestore": "SERVIZI & GESTIONI ITALIA S.R.L.",
+      "bandiera": "Q8",
+      "indirizzo": "CORSO ALESSANDRIA 380 14100",
+      "comune": "ASTI",
+      "lat": 44.90602553804386,
+      "lng": 8.235853055572534,
+      "benzina_self": 1.749,
+      "benzina_servito": null,
+      "gasolio_self": 2.069,
+      "gasolio_servito": null,
+      "gpl_self": null,
+      "gpl_servito": null,
+      "metano_self": null,
+      "metano_servito": null,
+      "aggiornato": "22/04/2026 07:33:34",
+      "prezziDettaglio": [
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.749,
+          "isSelf": true,
+          "dtComu": "22/04/2026 07:33:34"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.069,
+          "isSelf": true,
+          "dtComu": "22/04/2026 07:33:34"
+        }
+      ]
+    },
+    {
+      "id": "11472",
+      "nome": "ASTI-CORSO SAVONA 156",
+      "gestore": "SERVIZI & GESTIONI ITALIA S.R.L.",
+      "bandiera": "Q8",
+      "indirizzo": "CORSO SAVONA 156 14100",
+      "comune": "ASTI",
+      "lat": 44.889971496304256,
+      "lng": 8.211141749668059,
+      "benzina_self": 1.719,
+      "benzina_servito": null,
+      "gasolio_self": 2.039,
+      "gasolio_servito": null,
+      "gpl_self": null,
+      "gpl_servito": null,
+      "metano_self": null,
+      "metano_servito": null,
+      "aggiornato": "22/04/2026 07:33:35",
+      "prezziDettaglio": [
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.719,
+          "isSelf": true,
+          "dtComu": "22/04/2026 07:33:35"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.039,
+          "isSelf": true,
+          "dtComu": "22/04/2026 07:33:35"
+        }
+      ]
+    },
+    {
+      "id": "11475",
+      "nome": "ASTI-VIA P. MICCA 2",
+      "gestore": "SERVIZI & GESTIONI ITALIA S.R.L.",
+      "bandiera": "Q8",
+      "indirizzo": "VIA P. MICCA 2 14100",
+      "comune": "ASTI",
+      "lat": 44.90318808151229,
+      "lng": 8.208883148479458,
+      "benzina_self": 1.699,
+      "benzina_servito": null,
+      "gasolio_self": 2.019,
+      "gasolio_servito": null,
+      "gpl_self": null,
+      "gpl_servito": null,
+      "metano_self": null,
+      "metano_servito": null,
+      "aggiornato": "22/04/2026 01:05:19",
+      "prezziDettaglio": [
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.699,
+          "isSelf": true,
+          "dtComu": "22/04/2026 01:05:19"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.019,
+          "isSelf": true,
+          "dtComu": "22/04/2026 01:05:19"
+        }
+      ]
+    },
+    {
+      "id": "11476",
+      "nome": "ASTI-VIA UGO FOSCOLO 3",
+      "gestore": "SERVIZI & GESTIONI ITALIA S.R.L.",
+      "bandiera": "Q8",
+      "indirizzo": "VIA UGO FOSCOLO 3 14100",
+      "comune": "ASTI",
+      "lat": 44.91176838299761,
+      "lng": 8.204469737434351,
+      "benzina_self": 1.739,
+      "benzina_servito": null,
+      "gasolio_self": 2.059,
+      "gasolio_servito": null,
+      "gpl_self": null,
+      "gpl_servito": null,
+      "metano_self": null,
+      "metano_servito": null,
+      "aggiornato": "22/04/2026 07:33:36",
+      "prezziDettaglio": [
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.739,
+          "isSelf": true,
+          "dtComu": "22/04/2026 07:33:36"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.059,
+          "isSelf": true,
+          "dtComu": "22/04/2026 07:33:36"
+        }
+      ]
+    },
+    {
+      "id": "42927",
+      "nome": "B+",
+      "gestore": "LAVAGNINO LUCA",
+      "bandiera": "B+",
+      "indirizzo": "VIA PORTACOMARO STAZIONE S.S.457 KM.33+217 217 14100, ASTI (AT) S.S.457 14100",
+      "comune": "ASTI",
+      "lat": 44.95273374153334,
+      "lng": 8.223065844808616,
+      "benzina_self": 1.695,
+      "benzina_servito": 1.695,
+      "gasolio_self": 2.019,
+      "gasolio_servito": 2.019,
+      "gpl_self": null,
+      "gpl_servito": 0.789,
+      "metano_self": null,
+      "metano_servito": null,
+      "aggiornato": "23/04/2026 07:24:03",
+      "prezziDettaglio": [
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.695,
+          "isSelf": false,
+          "dtComu": "23/04/2026 07:24:03"
+        },
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.695,
+          "isSelf": true,
+          "dtComu": "23/04/2026 07:24:03"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.019,
+          "isSelf": false,
+          "dtComu": "23/04/2026 07:24:03"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.019,
+          "isSelf": true,
+          "dtComu": "23/04/2026 07:24:03"
+        },
+        {
+          "carburante": "GPL",
+          "prezzo": 0.789,
+          "isSelf": false,
+          "dtComu": "23/04/2026 07:24:03"
+        }
+      ]
+    },
+    {
+      "id": "51732",
+      "nome": "B+ SESSANT",
+      "gestore": "BOCHICCHIO MARCO",
+      "bandiera": "B+",
+      "indirizzo": "SESSANT 277/A 14100",
+      "comune": "ASTI",
+      "lat": 44.93195136442301,
+      "lng": 8.162483721971512,
+      "benzina_self": 1.755,
+      "benzina_servito": 1.755,
+      "gasolio_self": 2.055,
+      "gasolio_servito": 2.055,
+      "gpl_self": null,
+      "gpl_servito": null,
+      "metano_self": null,
+      "metano_servito": null,
+      "aggiornato": "22/04/2026 22:04:33",
+      "prezziDettaglio": [
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.755,
+          "isSelf": false,
+          "dtComu": "22/04/2026 22:04:33"
+        },
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.755,
+          "isSelf": true,
+          "dtComu": "22/04/2026 22:04:33"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.055,
+          "isSelf": false,
+          "dtComu": "22/04/2026 22:04:33"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.055,
+          "isSelf": true,
+          "dtComu": "22/04/2026 22:04:33"
+        }
+      ]
+    },
+    {
+      "id": "50216",
+      "nome": "COIL - ASTI",
+      "gestore": "CRISTELLA PETROLI S.R.L.",
+      "bandiera": "COIL",
+      "indirizzo": "CORSO TORINO  143 14100",
+      "comune": "ASTI",
+      "lat": 44.90289156251378,
+      "lng": 8.190444017344351,
+      "benzina_self": 1.689,
+      "benzina_servito": 1.689,
+      "gasolio_self": 2.019,
+      "gasolio_servito": 2.019,
+      "gpl_self": null,
+      "gpl_servito": null,
+      "metano_self": null,
+      "metano_servito": null,
+      "aggiornato": "22/04/2026 23:11:45",
+      "prezziDettaglio": [
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.689,
+          "isSelf": false,
+          "dtComu": "22/04/2026 23:11:45"
+        },
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.689,
+          "isSelf": true,
+          "dtComu": "22/04/2026 23:11:45"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.019,
+          "isSelf": false,
+          "dtComu": "22/04/2026 23:11:45"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.019,
+          "isSelf": true,
+          "dtComu": "22/04/2026 23:11:45"
+        }
+      ]
+    },
+    {
+      "id": "57190",
+      "nome": "CPP-ASTI",
+      "gestore": "C.P.P. COMPAGNIA PETROLIFERA PIEMONTESE S.P.A.",
+      "bandiera": "Costantin",
+      "indirizzo": "CASALE 48/A 14100",
+      "comune": "ASTI",
+      "lat": 44.90567695093331,
+      "lng": 8.218721652692803,
+      "benzina_self": 1.699,
+      "benzina_servito": null,
+      "gasolio_self": 2.099,
+      "gasolio_servito": null,
+      "gpl_self": null,
+      "gpl_servito": null,
+      "metano_self": null,
+      "metano_servito": null,
+      "aggiornato": "22/04/2026 22:48:25",
+      "prezziDettaglio": [
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.699,
+          "isSelf": true,
+          "dtComu": "22/04/2026 22:48:25"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.099,
+          "isSelf": true,
+          "dtComu": "22/04/2026 22:48:25"
+        }
+      ]
+    },
+    {
+      "id": "36693",
+      "nome": "DIS CAR",
+      "gestore": "A.M.P. SAS DI DIRASCO MICHELE & C.",
+      "bandiera": "DIS-CAR",
+      "indirizzo": "STRADA STAT. 231 DIR KM6 + 112 112 14100, ASTI (AT) KM 6+112 14100",
+      "comune": "ASTI",
+      "lat": 44.86521481926581,
+      "lng": 8.205069154500961,
+      "benzina_self": 1.749,
+      "benzina_servito": 1.949,
+      "gasolio_self": 2.099,
+      "gasolio_servito": 2.299,
+      "gpl_self": null,
+      "gpl_servito": 0.779,
+      "metano_self": null,
+      "metano_servito": null,
+      "aggiornato": "21/04/2026 11:40:24",
+      "prezziDettaglio": [
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.949,
+          "isSelf": false,
+          "dtComu": "21/04/2026 11:40:24"
+        },
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.749,
+          "isSelf": true,
+          "dtComu": "21/04/2026 11:40:24"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.299,
+          "isSelf": false,
+          "dtComu": "21/04/2026 11:40:24"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.099,
+          "isSelf": true,
+          "dtComu": "21/04/2026 11:40:24"
+        },
+        {
+          "carburante": "GPL",
+          "prezzo": 0.779,
+          "isSelf": false,
+          "dtComu": "21/04/2026 11:40:24"
+        },
+        {
+          "carburante": "HVO",
+          "prezzo": 2.299,
+          "isSelf": false,
+          "dtComu": "21/04/2026 11:40:24"
+        },
+        {
+          "carburante": "HVO",
+          "prezzo": 2.099,
+          "isSelf": true,
+          "dtComu": "21/04/2026 11:40:24"
+        }
+      ]
+    },
+    {
+      "id": "59611",
+      "nome": "Enercoop Asti",
+      "gestore": "NOVA COOP SOCIETA' COOPERATIVA",
+      "bandiera": "Enercoop",
+      "indirizzo": "Via MONTI 2a 14100",
+      "comune": "ASTI",
+      "lat": 44.90563245651508,
+      "lng": 8.222057695770268,
+      "benzina_self": 1.679,
+      "benzina_servito": null,
+      "gasolio_self": 1.999,
+      "gasolio_servito": null,
+      "gpl_self": null,
+      "gpl_servito": 0.779,
+      "metano_self": null,
+      "metano_servito": 1.45,
+      "aggiornato": "23/04/2026 01:07:23",
+      "prezziDettaglio": [
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.679,
+          "isSelf": true,
+          "dtComu": "23/04/2026 01:07:23"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 1.999,
+          "isSelf": true,
+          "dtComu": "23/04/2026 01:07:24"
+        },
+        {
+          "carburante": "Metano",
+          "prezzo": 1.45,
+          "isSelf": false,
+          "dtComu": "23/04/2026 07:46:37"
+        },
+        {
+          "carburante": "GPL",
+          "prezzo": 0.779,
+          "isSelf": false,
+          "dtComu": "23/04/2026 07:46:39"
+        }
+      ]
+    },
+    {
+      "id": "42467",
+      "nome": "eni",
+      "gestore": "GAMBINO LUIGI",
+      "bandiera": "Agip Eni",
+      "indirizzo": "corso savona  527 14100",
+      "comune": "ASTI",
+      "lat": 44.877298808427724,
+      "lng": 8.214639946818352,
+      "benzina_self": null,
+      "benzina_servito": null,
+      "gasolio_self": null,
+      "gasolio_servito": null,
+      "gpl_self": null,
+      "gpl_servito": null,
+      "metano_self": null,
+      "metano_servito": null,
+      "aggiornato": null,
+      "prezziDettaglio": []
+    },
+    {
+      "id": "37623",
+      "nome": "Esso Corso Alessandria, 285",
+      "gestore": "PONASSI S.N.C. DI PONASSI MASSIMIGLIANO & C.",
+      "bandiera": "Esso",
+      "indirizzo": "Corso Alessandria 285 14100",
+      "comune": "ASTI",
+      "lat": 44.90570793098382,
+      "lng": 8.228194987219236,
+      "benzina_self": 1.739,
+      "benzina_servito": 1.949,
+      "gasolio_self": 2.099,
+      "gasolio_servito": 2.309,
+      "gpl_self": null,
+      "gpl_servito": null,
+      "metano_self": null,
+      "metano_servito": null,
+      "aggiornato": "22/04/2026 11:10:45",
+      "prezziDettaglio": [
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.949,
+          "isSelf": false,
+          "dtComu": "22/04/2026 11:10:45"
+        },
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.739,
+          "isSelf": true,
+          "dtComu": "22/04/2026 11:10:45"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.309,
+          "isSelf": false,
+          "dtComu": "22/04/2026 11:10:45"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.099,
+          "isSelf": true,
+          "dtComu": "22/04/2026 11:10:45"
+        },
+        {
+          "carburante": "Supreme Diesel",
+          "prezzo": 2.609,
+          "isSelf": false,
+          "dtComu": "22/04/2026 11:10:45"
+        },
+        {
+          "carburante": "Supreme Diesel",
+          "prezzo": 2.399,
+          "isSelf": true,
+          "dtComu": "22/04/2026 11:10:45"
+        }
+      ]
+    },
+    {
+      "id": "33695",
+      "nome": "EUROPAM",
+      "gestore": "NEGRISOLO LORIS",
+      "bandiera": "Europam",
+      "indirizzo": "S.S. 10 QUARTO INF.  14100",
+      "comune": "ASTI",
+      "lat": 44.90739158488497,
+      "lng": 8.281057476997375,
+      "benzina_self": 1.699,
+      "benzina_servito": 1.699,
+      "gasolio_self": 2.069,
+      "gasolio_servito": 2.069,
+      "gpl_self": null,
+      "gpl_servito": null,
+      "metano_self": null,
+      "metano_servito": null,
+      "aggiornato": "20/04/2026 07:00:55",
+      "prezziDettaglio": [
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.699,
+          "isSelf": false,
+          "dtComu": "20/04/2026 07:00:55"
+        },
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.699,
+          "isSelf": true,
+          "dtComu": "20/04/2026 07:00:55"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.069,
+          "isSelf": false,
+          "dtComu": "20/04/2026 07:00:55"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.069,
+          "isSelf": true,
+          "dtComu": "20/04/2026 07:00:55"
+        }
+      ]
+    },
+    {
+      "id": "41792",
+      "nome": "EUROPAM - ASTI",
+      "gestore": "EUROPAM S.P.A.",
+      "bandiera": "Europam",
+      "indirizzo": "Corso Alessandria 379 14100",
+      "comune": "ASTI",
+      "lat": 44.90559929730781,
+      "lng": 8.232023814715149,
+      "benzina_self": 1.687,
+      "benzina_servito": null,
+      "gasolio_self": 2.037,
+      "gasolio_servito": null,
+      "gpl_self": null,
+      "gpl_servito": null,
+      "metano_self": null,
+      "metano_servito": null,
+      "aggiornato": "22/04/2026 12:07:39",
+      "prezziDettaglio": [
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.687,
+          "isSelf": true,
+          "dtComu": "22/04/2026 12:07:39"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.037,
+          "isSelf": true,
+          "dtComu": "22/04/2026 12:07:39"
+        }
+      ]
+    },
+    {
+      "id": "32272",
+      "nome": "F.lli Amalberto s.r.l.",
+      "gestore": "F.LLI AMALBERTO S.R.L.",
+      "bandiera": "Pompe Bianche",
+      "indirizzo": "Corso Savona 126 14100",
+      "comune": "ASTI",
+      "lat": 44.891546143318045,
+      "lng": 8.210770189762115,
+      "benzina_self": 1.689,
+      "benzina_servito": null,
+      "gasolio_self": 2.01,
+      "gasolio_servito": null,
+      "gpl_self": null,
+      "gpl_servito": null,
+      "metano_self": null,
+      "metano_servito": null,
+      "aggiornato": "21/04/2026 09:51:28",
+      "prezziDettaglio": [
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.689,
+          "isSelf": true,
+          "dtComu": "21/04/2026 09:51:28"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.01,
+          "isSelf": true,
+          "dtComu": "21/04/2026 09:51:28"
+        }
+      ]
+    },
+    {
+      "id": "34092",
+      "nome": "F.LLI AMALBERTO S.R.L.",
+      "gestore": "F.LLI AMALBERTO S.R.L.",
+      "bandiera": "Pompe Bianche",
+      "indirizzo": "corso Alessandria 269 14100",
+      "comune": "ASTI",
+      "lat": 44.90547570903032,
+      "lng": 8.225921760431675,
+      "benzina_self": 1.689,
+      "benzina_servito": 1.839,
+      "gasolio_self": 2.01,
+      "gasolio_servito": 2.16,
+      "gpl_self": null,
+      "gpl_servito": null,
+      "metano_self": null,
+      "metano_servito": null,
+      "aggiornato": "21/04/2026 09:52:25",
+      "prezziDettaglio": [
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.839,
+          "isSelf": false,
+          "dtComu": "21/04/2026 09:52:25"
+        },
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.689,
+          "isSelf": true,
+          "dtComu": "21/04/2026 09:52:25"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.16,
+          "isSelf": false,
+          "dtComu": "21/04/2026 09:52:25"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.01,
+          "isSelf": true,
+          "dtComu": "21/04/2026 09:52:25"
+        }
+      ]
+    },
+    {
+      "id": "39138",
+      "nome": "gestione impianti sas",
+      "gestore": "GESTIONE IMPIANTI AMALBERTO FELICE E C. S.A.S.",
+      "bandiera": "Retitalia",
+      "indirizzo": "CORSO ALESSANDRIA 562/564 14100",
+      "comune": "ASTI",
+      "lat": 44.90696187750671,
+      "lng": 8.261506855487823,
+      "benzina_self": null,
+      "benzina_servito": null,
+      "gasolio_self": null,
+      "gasolio_servito": null,
+      "gpl_self": null,
+      "gpl_servito": null,
+      "metano_self": null,
+      "metano_servito": null,
+      "aggiornato": null,
+      "prezziDettaglio": []
+    },
+    {
+      "id": "46991",
+      "nome": "GO ASTI",
+      "gestore": "GO S.R.L.",
+      "bandiera": "GO",
+      "indirizzo": "CORSO CASALE 317 14100",
+      "comune": "ASTI",
+      "lat": 44.914819603446745,
+      "lng": 8.221965055819737,
+      "benzina_self": null,
+      "benzina_servito": null,
+      "gasolio_self": null,
+      "gasolio_servito": null,
+      "gpl_self": null,
+      "gpl_servito": null,
+      "metano_self": null,
+      "metano_servito": null,
+      "aggiornato": null,
+      "prezziDettaglio": []
+    },
+    {
+      "id": "43611",
+      "nome": "IMPIANTO VIA CONTE VERDE",
+      "gestore": "KURTALIJA SEAD",
+      "bandiera": "B+",
+      "indirizzo": "CONTE VERDE 71 14100",
+      "comune": "ASTI",
+      "lat": 44.90735587096216,
+      "lng": 8.198370337486267,
+      "benzina_self": 1.779,
+      "benzina_servito": 1.779,
+      "gasolio_self": 2.159,
+      "gasolio_servito": 2.159,
+      "gpl_self": null,
+      "gpl_servito": null,
+      "metano_self": null,
+      "metano_servito": null,
+      "aggiornato": "22/04/2026 14:37:03",
+      "prezziDettaglio": [
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.779,
+          "isSelf": false,
+          "dtComu": "22/04/2026 14:37:03"
+        },
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.779,
+          "isSelf": true,
+          "dtComu": "22/04/2026 14:37:03"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.159,
+          "isSelf": false,
+          "dtComu": "22/04/2026 14:37:03"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.159,
+          "isSelf": true,
+          "dtComu": "22/04/2026 14:37:03"
+        }
+      ]
+    },
+    {
+      "id": "7860",
+      "nome": "Inzirillo Salvatore Roberto",
+      "gestore": "INZIRILLO SALVATORE ROBERTO",
+      "bandiera": "Esso",
+      "indirizzo": "CORSO TORINO 442 14100",
+      "comune": "ASTI",
+      "lat": 44.90175650374798,
+      "lng": 8.166682720184326,
+      "benzina_self": 1.699,
+      "benzina_servito": 1.949,
+      "gasolio_self": 1.999,
+      "gasolio_servito": 2.249,
+      "gpl_self": null,
+      "gpl_servito": 0.759,
+      "metano_self": null,
+      "metano_servito": 1.799,
+      "aggiornato": "21/04/2026 17:03:06",
+      "prezziDettaglio": [
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.949,
+          "isSelf": false,
+          "dtComu": "21/04/2026 17:03:06"
+        },
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.699,
+          "isSelf": true,
+          "dtComu": "21/04/2026 17:03:06"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.249,
+          "isSelf": false,
+          "dtComu": "22/04/2026 18:57:05"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 1.999,
+          "isSelf": true,
+          "dtComu": "22/04/2026 18:57:05"
+        },
+        {
+          "carburante": "Metano",
+          "prezzo": 1.799,
+          "isSelf": false,
+          "dtComu": "21/04/2026 17:03:06"
+        },
+        {
+          "carburante": "GPL",
+          "prezzo": 0.759,
+          "isSelf": false,
+          "dtComu": "21/04/2026 17:03:06"
+        },
+        {
+          "carburante": "Gasolio Premium",
+          "prezzo": 2.039,
+          "isSelf": false,
+          "dtComu": "25/07/2025 09:40:30"
+        },
+        {
+          "carburante": "Gasolio Premium",
+          "prezzo": 1.789,
+          "isSelf": true,
+          "dtComu": "25/07/2025 09:40:30"
+        }
+      ]
+    },
+    {
+      "id": "50220",
+      "nome": "Lco La Combustoil",
+      "gestore": "NOIENERGY S.R.L.",
+      "bandiera": "Pompe Bianche",
+      "indirizzo": "Corso Alba  100 14100",
+      "comune": "ASTI",
+      "lat": 44.88868642181567,
+      "lng": 8.194479150513272,
+      "benzina_self": 1.709,
+      "benzina_servito": 1.709,
+      "gasolio_self": 2.029,
+      "gasolio_servito": 2.029,
+      "gpl_self": null,
+      "gpl_servito": null,
+      "metano_self": null,
+      "metano_servito": null,
+      "aggiornato": "22/04/2026 09:44:47",
+      "prezziDettaglio": [
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.709,
+          "isSelf": false,
+          "dtComu": "22/04/2026 09:44:47"
+        },
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.709,
+          "isSelf": true,
+          "dtComu": "22/04/2026 09:44:47"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.029,
+          "isSelf": false,
+          "dtComu": "22/04/2026 09:44:47"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.029,
+          "isSelf": true,
+          "dtComu": "22/04/2026 09:44:47"
+        }
+      ]
+    },
+    {
+      "id": "59790",
+      "nome": "SOCOGAS RETE ASTI PV AMA01",
+      "gestore": "SOCOGAS RETE S.R.L.",
+      "bandiera": "Pompe Bianche",
+      "indirizzo": "Corso Alessandria 562 14100",
+      "comune": "ASTI",
+      "lat": 44.906858577535196,
+      "lng": 8.261507497485635,
+      "benzina_self": 1.699,
+      "benzina_servito": 1.758,
+      "gasolio_self": 2.015,
+      "gasolio_servito": 2.074,
+      "gpl_self": null,
+      "gpl_servito": null,
+      "metano_self": null,
+      "metano_servito": null,
+      "aggiornato": "22/04/2026 10:10:10",
+      "prezziDettaglio": [
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.758,
+          "isSelf": false,
+          "dtComu": "22/04/2026 10:10:10"
+        },
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.699,
+          "isSelf": true,
+          "dtComu": "22/04/2026 10:10:10"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.074,
+          "isSelf": false,
+          "dtComu": "22/04/2026 19:14:13"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.015,
+          "isSelf": true,
+          "dtComu": "22/04/2026 19:14:13"
+        },
+        {
+          "carburante": "HVO",
+          "prezzo": 2.178,
+          "isSelf": false,
+          "dtComu": "22/04/2026 23:39:45"
+        },
+        {
+          "carburante": "HVO",
+          "prezzo": 2.119,
+          "isSelf": true,
+          "dtComu": "22/04/2026 23:39:45"
+        }
+      ]
+    },
+    {
+      "id": "44615",
+      "nome": "staroil ASTI",
+      "gestore": "GAVI SERVICE SOCIETA' IN NOME COLLETTIVO DI IEVA ERMANNO E IEVA V INCENZO",
+      "bandiera": "Pompe Bianche",
+      "indirizzo": "PIAZZA LEONARDO DA VINCI 40 14100",
+      "comune": "ASTI",
+      "lat": 44.897263000123,
+      "lng": 8.211204000123,
+      "benzina_self": 1.694,
+      "benzina_servito": 1.694,
+      "gasolio_self": 2.199,
+      "gasolio_servito": 2.199,
+      "gpl_self": null,
+      "gpl_servito": null,
+      "metano_self": null,
+      "metano_servito": null,
+      "aggiornato": "22/04/2026 23:26:20",
+      "prezziDettaglio": [
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.694,
+          "isSelf": false,
+          "dtComu": "22/04/2026 23:26:20"
+        },
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.694,
+          "isSelf": true,
+          "dtComu": "22/04/2026 23:26:20"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.199,
+          "isSelf": false,
+          "dtComu": "22/04/2026 23:26:20"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.199,
+          "isSelf": true,
+          "dtComu": "22/04/2026 23:26:20"
+        }
+      ]
+    },
+    {
+      "id": "39058",
+      "nome": "TAMOIL",
+      "gestore": "DRAGUS LIVIU",
+      "bandiera": "Tamoil",
+      "indirizzo": "Viale Partigiani 13 14100",
+      "comune": "ASTI",
+      "lat": 44.905140764499876,
+      "lng": 8.200716799891666,
+      "benzina_self": 1.699,
+      "benzina_servito": 1.699,
+      "gasolio_self": 2.059,
+      "gasolio_servito": 2.059,
+      "gpl_self": null,
+      "gpl_servito": null,
+      "metano_self": null,
+      "metano_servito": null,
+      "aggiornato": "21/04/2026 12:22:36",
+      "prezziDettaglio": [
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.699,
+          "isSelf": false,
+          "dtComu": "21/04/2026 12:22:36"
+        },
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.699,
+          "isSelf": true,
+          "dtComu": "21/04/2026 12:22:36"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.059,
+          "isSelf": false,
+          "dtComu": "21/04/2026 12:22:36"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.059,
+          "isSelf": true,
+          "dtComu": "21/04/2026 12:22:36"
+        }
+      ]
+    },
+    {
+      "id": "43262",
+      "nome": "TotalErg",
+      "gestore": "TOSCANO ENRICO",
+      "bandiera": "Api-Ip",
+      "indirizzo": "10 Padana Inferiore, Km. 48.405, ovest - 14011",
+      "comune": "BALDICHIERI D'ASTI",
+      "lat": 44.90383020042228,
+      "lng": 8.093326279762323,
+      "benzina_self": 1.729,
+      "benzina_servito": 1.919,
+      "gasolio_self": 2.099,
+      "gasolio_servito": 2.289,
+      "gpl_self": null,
+      "gpl_servito": 0.779,
+      "metano_self": null,
+      "metano_servito": null,
+      "aggiornato": "21/04/2026 10:17:20",
+      "prezziDettaglio": [
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.919,
+          "isSelf": false,
+          "dtComu": "21/04/2026 10:17:20"
+        },
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.729,
+          "isSelf": true,
+          "dtComu": "21/04/2026 10:17:20"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.289,
+          "isSelf": false,
+          "dtComu": "21/04/2026 10:17:20"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.099,
+          "isSelf": true,
+          "dtComu": "21/04/2026 10:17:20"
+        },
+        {
+          "carburante": "GPL",
+          "prezzo": 0.779,
+          "isSelf": false,
+          "dtComu": "21/04/2026 10:17:20"
+        }
+      ]
+    },
+    {
+      "id": "39651",
+      "nome": "IP BUBBIO",
+      "gestore": "IACOCARBURANTI DI IACOMINO LUIGI",
+      "bandiera": "Api-Ip",
+      "indirizzo": "S.P.25 Valle Bormida KM15",
+      "comune": "BUBBIO",
+      "lat": 44.6609876602154,
+      "lng": 8.302375674247742,
+      "benzina_self": 1.729,
+      "benzina_servito": 1.929,
+      "gasolio_self": 2.089,
+      "gasolio_servito": 2.289,
+      "gpl_self": null,
+      "gpl_servito": null,
+      "metano_self": null,
+      "metano_servito": null,
+      "aggiornato": "20/04/2026 10:43:01",
+      "prezziDettaglio": [
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.929,
+          "isSelf": false,
+          "dtComu": "20/04/2026 10:43:01"
+        },
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.729,
+          "isSelf": true,
+          "dtComu": "20/04/2026 10:43:01"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.289,
+          "isSelf": false,
+          "dtComu": "20/04/2026 10:43:01"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.089,
+          "isSelf": true,
+          "dtComu": "20/04/2026 10:43:01"
+        }
+      ]
+    },
+    {
+      "id": "50324",
+      "nome": "Sia Fuel Buttigliera d'Asti",
+      "gestore": "SIA FUEL SRL",
+      "bandiera": "Sia fuel",
+      "indirizzo": "VIA RIVA 32 14021",
+      "comune": "BUTTIGLIERA D'ASTI",
+      "lat": 45.01487616029893,
+      "lng": 7.935738880807804,
+      "benzina_self": 1.749,
+      "benzina_servito": 1.749,
+      "gasolio_self": 2.089,
+      "gasolio_servito": 2.089,
+      "gpl_self": null,
+      "gpl_servito": null,
+      "metano_self": null,
+      "metano_servito": null,
+      "aggiornato": "22/04/2026 17:08:53",
+      "prezziDettaglio": [
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.749,
+          "isSelf": false,
+          "dtComu": "22/04/2026 17:08:53"
+        },
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.749,
+          "isSelf": true,
+          "dtComu": "22/04/2026 17:08:53"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.089,
+          "isSelf": false,
+          "dtComu": "22/04/2026 17:08:53"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.089,
+          "isSelf": true,
+          "dtComu": "22/04/2026 17:08:53"
+        }
+      ]
+    },
+    {
+      "id": "17884",
+      "nome": "TAMOIL",
+      "gestore": "GAVRILOVA JOVANKA",
+      "bandiera": "Tamoil",
+      "indirizzo": "Statale 592 di Canelli, Km. 3+860, dir. OVEST  14042",
+      "comune": "CALAMANDRANA",
+      "lat": 44.7415057572251,
+      "lng": 8.342961519956589,
+      "benzina_self": 1.719,
+      "benzina_servito": 1.719,
+      "gasolio_self": 2.099,
+      "gasolio_servito": 2.099,
+      "gpl_self": null,
+      "gpl_servito": 0.829,
+      "metano_self": null,
+      "metano_servito": null,
+      "aggiornato": "22/04/2026 14:48:57",
+      "prezziDettaglio": [
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.719,
+          "isSelf": false,
+          "dtComu": "22/04/2026 14:48:57"
+        },
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.719,
+          "isSelf": true,
+          "dtComu": "22/04/2026 14:48:57"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.099,
+          "isSelf": false,
+          "dtComu": "22/04/2026 14:48:57"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.099,
+          "isSelf": true,
+          "dtComu": "22/04/2026 14:48:57"
+        },
+        {
+          "carburante": "GPL",
+          "prezzo": 0.829,
+          "isSelf": false,
+          "dtComu": "22/04/2026 14:48:57"
+        }
+      ]
+    },
+    {
+      "id": "50441",
+      "nome": "CALLIANO",
+      "gestore": "SIRTAM S.P.A.",
+      "bandiera": "Agip Eni",
+      "indirizzo": "S.P. 457 PER MONCALVO - LOC. PIRENTA  14033",
+      "comune": "CALLIANO MONFERRATO",
+      "lat": 44.9929678984625,
+      "lng": 8.229863415417435,
+      "benzina_self": 1.692,
+      "benzina_servito": 1.902,
+      "gasolio_self": 2.044,
+      "gasolio_servito": 2.254,
+      "gpl_self": null,
+      "gpl_servito": null,
+      "metano_self": null,
+      "metano_servito": 1.599,
+      "aggiornato": "20/04/2026 09:59:02",
+      "prezziDettaglio": [
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.902,
+          "isSelf": false,
+          "dtComu": "20/04/2026 09:59:02"
+        },
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.692,
+          "isSelf": true,
+          "dtComu": "20/04/2026 10:03:58"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.254,
+          "isSelf": false,
+          "dtComu": "20/04/2026 10:03:55"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.044,
+          "isSelf": true,
+          "dtComu": "20/04/2026 10:03:56"
+        },
+        {
+          "carburante": "Metano",
+          "prezzo": 1.599,
+          "isSelf": false,
+          "dtComu": "18/04/2026 08:06:34"
+        }
+      ]
+    },
+    {
+      "id": "45249",
+      "nome": "7095",
+      "gestore": "T.D.M. S.R.L.",
+      "bandiera": "Tamoil",
+      "indirizzo": "ITALIA 257 14053",
+      "comune": "CANELLI",
+      "lat": 44.731961830890356,
+      "lng": 8.29526110779102,
+      "benzina_self": 1.719,
+      "benzina_servito": null,
+      "gasolio_self": 2.049,
+      "gasolio_servito": null,
+      "gpl_self": null,
+      "gpl_servito": null,
+      "metano_self": null,
+      "metano_servito": null,
+      "aggiornato": "22/04/2026 22:40:42",
+      "prezziDettaglio": [
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.719,
+          "isSelf": true,
+          "dtComu": "22/04/2026 22:40:42"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.049,
+          "isSelf": true,
+          "dtComu": "22/04/2026 22:40:42"
+        }
+      ]
+    },
+    {
+      "id": "47837",
+      "nome": "Canelli - Viale Italia",
+      "gestore": "RETITALIA S.P.A.",
+      "bandiera": "Esso",
+      "indirizzo": "VIALE ITALIA 36 14053",
+      "comune": "CANELLI",
+      "lat": 44.72112454960217,
+      "lng": 8.29671293497085,
+      "benzina_self": 1.729,
+      "benzina_servito": null,
+      "gasolio_self": 2.059,
+      "gasolio_servito": null,
+      "gpl_self": null,
+      "gpl_servito": null,
+      "metano_self": null,
+      "metano_servito": null,
+      "aggiornato": "22/04/2026 11:04:07",
+      "prezziDettaglio": [
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.729,
+          "isSelf": true,
+          "dtComu": "22/04/2026 11:04:07"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.059,
+          "isSelf": true,
+          "dtComu": "22/04/2026 11:04:07"
+        }
+      ]
+    },
+    {
+      "id": "11477",
+      "nome": "CANELLI-VIALE ITALIA 12",
+      "gestore": "SERVIZI & GESTIONI ITALIA S.R.L.",
+      "bandiera": "Q8",
+      "indirizzo": "VIALE ITALIA 12 14053",
+      "comune": "CANELLI",
+      "lat": 44.72042769142002,
+      "lng": 8.295245597553276,
+      "benzina_self": 1.729,
+      "benzina_servito": null,
+      "gasolio_self": 2.059,
+      "gasolio_servito": null,
+      "gpl_self": null,
+      "gpl_servito": null,
+      "metano_self": null,
+      "metano_servito": null,
+      "aggiornato": "21/04/2026 15:35:32",
+      "prezziDettaglio": [
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.729,
+          "isSelf": true,
+          "dtComu": "21/04/2026 15:35:32"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.059,
+          "isSelf": true,
+          "dtComu": "21/04/2026 15:35:32"
+        }
+      ]
+    },
+    {
+      "id": "26056",
+      "nome": "PAGLIARINO MASSIMO",
+      "gestore": "PAGLIARINO MASSIMO",
+      "bandiera": "Api-Ip",
+      "indirizzo": "VIALE ITALIA 40 14053",
+      "comune": "CANELLI",
+      "lat": 44.721096142138784,
+      "lng": 8.296737670898438,
+      "benzina_self": 1.729,
+      "benzina_servito": 1.829,
+      "gasolio_self": 2.059,
+      "gasolio_servito": 2.159,
+      "gpl_self": null,
+      "gpl_servito": null,
+      "metano_self": null,
+      "metano_servito": null,
+      "aggiornato": "20/04/2026 15:17:05",
+      "prezziDettaglio": [
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.829,
+          "isSelf": false,
+          "dtComu": "20/04/2026 15:17:05"
+        },
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.729,
+          "isSelf": true,
+          "dtComu": "20/04/2026 15:17:05"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.159,
+          "isSelf": false,
+          "dtComu": "20/04/2026 15:17:05"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.059,
+          "isSelf": true,
+          "dtComu": "20/04/2026 15:17:05"
+        }
+      ]
+    },
+    {
+      "id": "57286",
+      "nome": "STAZIONE DI SERVIZIO B+ CANELLI",
+      "gestore": "BOCHICCHIO MARCO",
+      "bandiera": "B+",
+      "indirizzo": "Via Ottavio Riccadonna 126",
+      "comune": "CANELLI",
+      "lat": 44.7176518,
+      "lng": 8.2959852,
+      "benzina_self": 1.775,
+      "benzina_servito": 1.775,
+      "gasolio_self": 2.099,
+      "gasolio_servito": 2.099,
+      "gpl_self": null,
+      "gpl_servito": null,
+      "metano_self": null,
+      "metano_servito": null,
+      "aggiornato": "22/04/2026 22:04:43",
+      "prezziDettaglio": [
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.775,
+          "isSelf": false,
+          "dtComu": "22/04/2026 22:04:43"
+        },
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.775,
+          "isSelf": true,
+          "dtComu": "22/04/2026 22:04:43"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.099,
+          "isSelf": false,
+          "dtComu": "22/04/2026 22:04:43"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.099,
+          "isSelf": true,
+          "dtComu": "22/04/2026 22:04:43"
+        }
+      ]
+    },
+    {
+      "id": "27245",
+      "nome": "TAMOIL 7243",
+      "gestore": "TAMOIL",
+      "bandiera": "Tamoil",
+      "indirizzo": "VIALE ITALIA 8 14053",
+      "comune": "CANELLI",
+      "lat": 44.72005326912477,
+      "lng": 8.294662982225418,
+      "benzina_self": 1.729,
+      "benzina_servito": null,
+      "gasolio_self": 2.109,
+      "gasolio_servito": null,
+      "gpl_self": null,
+      "gpl_servito": null,
+      "metano_self": null,
+      "metano_servito": null,
+      "aggiornato": "23/04/2026 07:56:10",
+      "prezziDettaglio": [
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.729,
+          "isSelf": true,
+          "dtComu": "23/04/2026 07:56:10"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.109,
+          "isSelf": true,
+          "dtComu": "22/04/2026 15:14:11"
+        }
+      ]
+    },
+    {
+      "id": "56098",
+      "nome": "TAMOIL CANELLI VIA ASTI N. 2 (SP MONTEGROSSO)",
+      "gestore": "PAD MULTIENERGY S.P.A",
+      "bandiera": "Tamoil",
+      "indirizzo": "CORSI ASTI 2 14053",
+      "comune": "CANELLI",
+      "lat": 44.7212547095409,
+      "lng": 8.29210046333317,
+      "benzina_self": 1.729,
+      "benzina_servito": 1.729,
+      "gasolio_self": 2.039,
+      "gasolio_servito": 2.039,
+      "gpl_self": null,
+      "gpl_servito": null,
+      "metano_self": null,
+      "metano_servito": null,
+      "aggiornato": "23/04/2026 07:18:26",
+      "prezziDettaglio": [
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.729,
+          "isSelf": false,
+          "dtComu": "23/04/2026 07:18:26"
+        },
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.729,
+          "isSelf": true,
+          "dtComu": "23/04/2026 07:18:26"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.039,
+          "isSelf": false,
+          "dtComu": "23/04/2026 07:18:26"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.039,
+          "isSelf": true,
+          "dtComu": "23/04/2026 07:18:26"
+        }
+      ]
+    },
+    {
+      "id": "11478",
+      "nome": "CASTAGNOLE LANZE-FZ. S. BARTOLOMEO",
+      "gestore": "SERVIZI & GESTIONI ITALIA S.R.L.",
+      "bandiera": "Q8",
+      "indirizzo": "FZ. S. BARTOLOMEO S/N 14054",
+      "comune": "CASTAGNOLE DELLE LANZE",
+      "lat": 44.75076859477566,
+      "lng": 8.15187893807888,
+      "benzina_self": 1.719,
+      "benzina_servito": null,
+      "gasolio_self": 2.069,
+      "gasolio_servito": null,
+      "gpl_self": null,
+      "gpl_servito": null,
+      "metano_self": null,
+      "metano_servito": null,
+      "aggiornato": "23/04/2026 07:34:25",
+      "prezziDettaglio": [
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.719,
+          "isSelf": true,
+          "dtComu": "23/04/2026 07:34:25"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.069,
+          "isSelf": true,
+          "dtComu": "23/04/2026 07:34:25"
+        }
+      ]
+    },
+    {
+      "id": "57689",
+      "nome": "Tamoil",
+      "gestore": "CARWASH DI D'ASSENTE RUBEN",
+      "bandiera": "Tamoil",
+      "indirizzo": "F.LLI VICARI 197 14054",
+      "comune": "CASTAGNOLE DELLE LANZE",
+      "lat": 44.7446178023325,
+      "lng": 8.145816379925952,
+      "benzina_self": 1.719,
+      "benzina_servito": null,
+      "gasolio_self": 2.069,
+      "gasolio_servito": null,
+      "gpl_self": null,
+      "gpl_servito": null,
+      "metano_self": null,
+      "metano_servito": null,
+      "aggiornato": "22/04/2026 23:28:15",
+      "prezziDettaglio": [
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.719,
+          "isSelf": true,
+          "dtComu": "22/04/2026 23:28:15"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.069,
+          "isSelf": true,
+          "dtComu": "22/04/2026 15:10:16"
+        },
+        {
+          "carburante": "Benzina WR 100",
+          "prezzo": 1.869,
+          "isSelf": true,
+          "dtComu": "22/04/2026 23:28:15"
+        }
+      ]
+    },
+    {
+      "id": "54026",
+      "nome": "CASTEL BOGLIONE",
+      "gestore": "RETITALIA S.P.A.",
+      "bandiera": "Retitalia",
+      "indirizzo": "S.S. 456 FRAZIONE GIANOLA SN 14040",
+      "comune": "CASTEL BOGLIONE",
+      "lat": 44.742918,
+      "lng": 8.386726,
+      "benzina_self": 1.679,
+      "benzina_servito": null,
+      "gasolio_self": 2.059,
+      "gasolio_servito": null,
+      "gpl_self": null,
+      "gpl_servito": null,
+      "metano_self": null,
+      "metano_servito": null,
+      "aggiornato": "22/04/2026 11:04:04",
+      "prezziDettaglio": [
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.679,
+          "isSelf": true,
+          "dtComu": "22/04/2026 11:04:04"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.059,
+          "isSelf": true,
+          "dtComu": "22/04/2026 11:04:04"
+        }
+      ]
+    },
+    {
+      "id": "50589",
+      "nome": "CASTELL'ALFERO",
+      "gestore": "SIRTAM S.P.A.",
+      "bandiera": "Agip Eni",
+      "indirizzo": "S.P.457 PER MONCALVO  14033",
+      "comune": "CASTELL'ALFERO",
+      "lat": 44.97554918884501,
+      "lng": 8.228183842051088,
+      "benzina_self": 1.692,
+      "benzina_servito": 1.902,
+      "gasolio_self": 2.044,
+      "gasolio_servito": 2.254,
+      "gpl_self": null,
+      "gpl_servito": 0.752,
+      "metano_self": null,
+      "metano_servito": null,
+      "aggiornato": "20/04/2026 09:59:28",
+      "prezziDettaglio": [
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.902,
+          "isSelf": false,
+          "dtComu": "20/04/2026 09:59:28"
+        },
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.692,
+          "isSelf": true,
+          "dtComu": "20/04/2026 10:00:31"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.254,
+          "isSelf": false,
+          "dtComu": "20/04/2026 10:06:52"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.044,
+          "isSelf": true,
+          "dtComu": "20/04/2026 10:06:55"
+        },
+        {
+          "carburante": "GPL",
+          "prezzo": 0.752,
+          "isSelf": false,
+          "dtComu": "18/04/2026 08:07:05"
+        },
+        {
+          "carburante": "Blue Diesel",
+          "prezzo": 2.354,
+          "isSelf": false,
+          "dtComu": "20/04/2026 10:06:58"
+        },
+        {
+          "carburante": "Blue Diesel",
+          "prezzo": 2.144,
+          "isSelf": true,
+          "dtComu": "20/04/2026 10:07:00"
+        }
+      ]
+    },
+    {
+      "id": "59172",
+      "nome": "STAZIONE DI SERVIZIO B+ CALLIANETTO",
+      "gestore": "BOCHICCHIO MARCO",
+      "bandiera": "B+",
+      "indirizzo": "Via Lasca 25  14033",
+      "comune": "CASTELL'ALFERO",
+      "lat": 44.965167,
+      "lng": 8.192056,
+      "benzina_self": 1.775,
+      "benzina_servito": 1.775,
+      "gasolio_self": 2.099,
+      "gasolio_servito": 2.099,
+      "gpl_self": null,
+      "gpl_servito": null,
+      "metano_self": null,
+      "metano_servito": null,
+      "aggiornato": "22/04/2026 09:22:32",
+      "prezziDettaglio": [
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.775,
+          "isSelf": false,
+          "dtComu": "22/04/2026 09:22:32"
+        },
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.775,
+          "isSelf": true,
+          "dtComu": "22/04/2026 09:22:32"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.099,
+          "isSelf": false,
+          "dtComu": "22/04/2026 09:22:32"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.099,
+          "isSelf": true,
+          "dtComu": "22/04/2026 09:22:32"
+        }
+      ]
+    },
+    {
+      "id": "44834",
+      "nome": "7383",
+      "gestore": "T.D.M. S.R.L.",
+      "bandiera": "Tamoil",
+      "indirizzo": "S.S.N. 10 KM 69+155 SN 14034",
+      "comune": "CASTELLO DI ANNONE",
+      "lat": 44.877909092260516,
+      "lng": 8.321720428835988,
+      "benzina_self": 1.699,
+      "benzina_servito": null,
+      "gasolio_self": 2.039,
+      "gasolio_servito": null,
+      "gpl_self": null,
+      "gpl_servito": 0.779,
+      "metano_self": null,
+      "metano_servito": 1.449,
+      "aggiornato": "22/04/2026 18:18:04",
+      "prezziDettaglio": [
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.699,
+          "isSelf": true,
+          "dtComu": "22/04/2026 18:18:04"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.039,
+          "isSelf": true,
+          "dtComu": "22/04/2026 23:48:13"
+        },
+        {
+          "carburante": "Metano",
+          "prezzo": 1.449,
+          "isSelf": false,
+          "dtComu": "22/04/2026 23:48:13"
+        },
+        {
+          "carburante": "GPL",
+          "prezzo": 0.779,
+          "isSelf": false,
+          "dtComu": "22/04/2026 23:48:13"
+        },
+        {
+          "carburante": "HVO",
+          "prezzo": 2.039,
+          "isSelf": true,
+          "dtComu": "22/04/2026 23:48:13"
+        }
+      ]
+    },
+    {
+      "id": "38874",
+      "nome": "CROCETTA NORD",
+      "gestore": "SACCHI SEIDA",
+      "bandiera": "Q8",
+      "indirizzo": "Autostrada A21 TORINO-PIACENZA, Km. 48, dir. torino - 14034",
+      "comune": "CASTELLO DI ANNONE",
+      "lat": 44.90478783633836,
+      "lng": 8.363438844680786,
+      "benzina_self": 1.779,
+      "benzina_servito": 1.989,
+      "gasolio_self": 2.039,
+      "gasolio_servito": 2.249,
+      "gpl_self": null,
+      "gpl_servito": null,
+      "metano_self": null,
+      "metano_servito": null,
+      "aggiornato": "22/04/2026 14:05:08",
+      "prezziDettaglio": [
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.989,
+          "isSelf": false,
+          "dtComu": "22/04/2026 14:05:08"
+        },
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.779,
+          "isSelf": true,
+          "dtComu": "22/04/2026 14:05:08"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.249,
+          "isSelf": false,
+          "dtComu": "22/04/2026 14:05:08"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.039,
+          "isSelf": true,
+          "dtComu": "22/04/2026 14:05:08"
+        },
+        {
+          "carburante": "Hi-Q Diesel",
+          "prezzo": 2.469,
+          "isSelf": false,
+          "dtComu": "22/04/2026 20:15:19"
+        },
+        {
+          "carburante": "Hi-Q Diesel",
+          "prezzo": 2.339,
+          "isSelf": true,
+          "dtComu": "22/04/2026 14:05:08"
+        },
+        {
+          "carburante": "HiQ Perform+",
+          "prezzo": 2.259,
+          "isSelf": false,
+          "dtComu": "22/04/2026 20:15:19"
+        },
+        {
+          "carburante": "HiQ Perform+",
+          "prezzo": 2.079,
+          "isSelf": true,
+          "dtComu": "23/04/2026 07:30:17"
+        }
+      ]
+    },
+    {
+      "id": "41965",
+      "nome": "4318",
+      "gestore": "T.D.M. S.R.L.",
+      "bandiera": "Tamoil",
+      "indirizzo": "S.S. 456 REGIONE OPESSINA S.N. 14040",
+      "comune": "CASTELNUOVO CALCEA",
+      "lat": 44.77707711986588,
+      "lng": 8.280539124418056,
+      "benzina_self": 1.729,
+      "benzina_servito": null,
+      "gasolio_self": 2.079,
+      "gasolio_servito": null,
+      "gpl_self": null,
+      "gpl_servito": null,
+      "metano_self": null,
+      "metano_servito": null,
+      "aggiornato": "22/04/2026 23:47:58",
+      "prezziDettaglio": [
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.729,
+          "isSelf": true,
+          "dtComu": "22/04/2026 23:47:58"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.079,
+          "isSelf": true,
+          "dtComu": "22/04/2026 23:47:58"
+        },
+        {
+          "carburante": "HVO",
+          "prezzo": 2.079,
+          "isSelf": true,
+          "dtComu": "22/04/2026 23:47:58"
+        }
+      ]
+    },
+    {
+      "id": "62161",
+      "nome": "",
+      "gestore": "MARCHISIO SILVIA",
+      "bandiera": "Agip Eni",
+      "indirizzo": "VIA SAN GIOVANNI null, 14022 16 14022",
+      "comune": "CASTELNUOVO DON BOSCO",
+      "lat": 45.0351211,
+      "lng": 7.9741699,
+      "benzina_self": 1.725,
+      "benzina_servito": 1.935,
+      "gasolio_self": 2.064,
+      "gasolio_servito": 2.274,
+      "gpl_self": null,
+      "gpl_servito": null,
+      "metano_self": null,
+      "metano_servito": null,
+      "aggiornato": "23/04/2026 07:36:19",
+      "prezziDettaglio": [
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.935,
+          "isSelf": false,
+          "dtComu": "23/04/2026 07:36:19"
+        },
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.725,
+          "isSelf": true,
+          "dtComu": "23/04/2026 07:36:19"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.274,
+          "isSelf": false,
+          "dtComu": "23/04/2026 07:36:19"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.064,
+          "isSelf": true,
+          "dtComu": "23/04/2026 07:36:19"
+        },
+        {
+          "carburante": "Blue Diesel",
+          "prezzo": 2.374,
+          "isSelf": false,
+          "dtComu": "23/04/2026 07:36:19"
+        },
+        {
+          "carburante": "Blue Diesel",
+          "prezzo": 2.164,
+          "isSelf": true,
+          "dtComu": "23/04/2026 07:36:19"
+        },
+        {
+          "carburante": "HVOlution",
+          "prezzo": 2.274,
+          "isSelf": false,
+          "dtComu": "23/04/2026 07:36:19"
+        },
+        {
+          "carburante": "HVOlution",
+          "prezzo": 2.064,
+          "isSelf": true,
+          "dtComu": "23/04/2026 07:36:19"
+        }
+      ]
+    },
+    {
+      "id": "43325",
+      "nome": "M SELF H24",
+      "gestore": "MAGNONE PIU' S.R.L.",
+      "bandiera": "Pompe Bianche",
+      "indirizzo": "STRADA PROVINCIALE 16 KM 15+018  14022",
+      "comune": "CASTELNUOVO DON BOSCO",
+      "lat": 45.0279705827288,
+      "lng": 7.966313588954904,
+      "benzina_self": 1.669,
+      "benzina_servito": 1.739,
+      "gasolio_self": 1.999,
+      "gasolio_servito": 2.069,
+      "gpl_self": null,
+      "gpl_servito": 0.777,
+      "metano_self": null,
+      "metano_servito": null,
+      "aggiornato": "21/04/2026 12:01:33",
+      "prezziDettaglio": [
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.739,
+          "isSelf": false,
+          "dtComu": "21/04/2026 12:01:33"
+        },
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.669,
+          "isSelf": true,
+          "dtComu": "21/04/2026 12:01:33"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.069,
+          "isSelf": false,
+          "dtComu": "21/04/2026 12:01:33"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 1.999,
+          "isSelf": true,
+          "dtComu": "21/04/2026 12:01:33"
+        },
+        {
+          "carburante": "GPL",
+          "prezzo": 0.777,
+          "isSelf": false,
+          "dtComu": "21/04/2026 12:01:33"
+        },
+        {
+          "carburante": "HVO",
+          "prezzo": 2.117,
+          "isSelf": false,
+          "dtComu": "21/04/2026 12:01:33"
+        },
+        {
+          "carburante": "HVO",
+          "prezzo": 2.047,
+          "isSelf": true,
+          "dtComu": "21/04/2026 12:01:33"
+        }
+      ]
+    },
+    {
+      "id": "59110",
+      "nome": "6882",
+      "gestore": "T.D.M. S.R.L.",
+      "bandiera": "Tamoil",
+      "indirizzo": "V. Torino  30172",
+      "comune": "CERRETO D'ASTI",
+      "lat": 45.039576,
+      "lng": 8.031861,
+      "benzina_self": 1.699,
+      "benzina_servito": 1.799,
+      "gasolio_self": 1.999,
+      "gasolio_servito": 2.099,
+      "gpl_self": null,
+      "gpl_servito": 0.789,
+      "metano_self": null,
+      "metano_servito": null,
+      "aggiornato": "22/04/2026 15:04:11",
+      "prezziDettaglio": [
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.799,
+          "isSelf": false,
+          "dtComu": "22/04/2026 15:04:11"
+        },
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.699,
+          "isSelf": true,
+          "dtComu": "22/04/2026 12:36:16"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.099,
+          "isSelf": false,
+          "dtComu": "22/04/2026 15:04:11"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 1.999,
+          "isSelf": true,
+          "dtComu": "22/04/2026 12:42:05"
+        },
+        {
+          "carburante": "GPL",
+          "prezzo": 0.789,
+          "isSelf": false,
+          "dtComu": "22/04/2026 08:02:19"
+        },
+        {
+          "carburante": "HVO",
+          "prezzo": 2.099,
+          "isSelf": false,
+          "dtComu": "22/04/2026 15:04:11"
+        },
+        {
+          "carburante": "HVO",
+          "prezzo": 1.999,
+          "isSelf": true,
+          "dtComu": "22/04/2026 12:42:05"
+        }
+      ]
+    },
+    {
+      "id": "14776",
+      "nome": "STAZIONE SERVIZIO KEROPETROL",
+      "gestore": "NICOLOTTI FRANCO",
+      "bandiera": "KEROPETROL",
+      "indirizzo": "LOCALITA' CASE NUOVE  14050",
+      "comune": "CESSOLE",
+      "lat": 44.64459988809262,
+      "lng": 8.245810099988603,
+      "benzina_self": 1.749,
+      "benzina_servito": 1.749,
+      "gasolio_self": 2.099,
+      "gasolio_servito": 2.099,
+      "gpl_self": null,
+      "gpl_servito": null,
+      "metano_self": null,
+      "metano_servito": null,
+      "aggiornato": "22/04/2026 18:06:11",
+      "prezziDettaglio": [
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.749,
+          "isSelf": false,
+          "dtComu": "22/04/2026 18:06:11"
+        },
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.749,
+          "isSelf": true,
+          "dtComu": "22/04/2026 18:06:11"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.099,
+          "isSelf": false,
+          "dtComu": "22/04/2026 18:06:11"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.099,
+          "isSelf": true,
+          "dtComu": "22/04/2026 18:06:11"
+        },
+        {
+          "carburante": "Benzina speciale",
+          "prezzo": 1.859,
+          "isSelf": false,
+          "dtComu": "22/04/2026 18:06:11"
+        },
+        {
+          "carburante": "Benzina speciale",
+          "prezzo": 1.859,
+          "isSelf": true,
+          "dtComu": "22/04/2026 18:06:11"
+        }
+      ]
+    },
+    {
+      "id": "38695",
+      "nome": "paolo romanato",
+      "gestore": "ROMANATO PAOLO",
+      "bandiera": "B+",
+      "indirizzo": "via casale 1 c/o  distributore B+ 1 14010",
+      "comune": "CORTAZZONE",
+      "lat": 44.980214326318155,
+      "lng": 8.056557472391887,
+      "benzina_self": 1.759,
+      "benzina_servito": 1.759,
+      "gasolio_self": 2.139,
+      "gasolio_servito": 2.139,
+      "gpl_self": null,
+      "gpl_servito": 0.799,
+      "metano_self": null,
+      "metano_servito": null,
+      "aggiornato": "22/04/2026 18:34:10",
+      "prezziDettaglio": [
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.759,
+          "isSelf": false,
+          "dtComu": "22/04/2026 18:34:10"
+        },
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.759,
+          "isSelf": true,
+          "dtComu": "22/04/2026 18:34:10"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.139,
+          "isSelf": false,
+          "dtComu": "22/04/2026 18:34:10"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.139,
+          "isSelf": true,
+          "dtComu": "22/04/2026 18:34:10"
+        },
+        {
+          "carburante": "GPL",
+          "prezzo": 0.799,
+          "isSelf": false,
+          "dtComu": "22/04/2026 18:34:10"
+        }
+      ]
+    },
+    {
+      "id": "48963",
+      "nome": "costigliole",
+      "gestore": "EGI-2GO S.R.L.",
+      "bandiera": "Esso",
+      "indirizzo": "STRADA CANELLI 83 14055",
+      "comune": "COSTIGLIOLE D'ASTI",
+      "lat": 44.75982378679984,
+      "lng": 8.20351881363087,
+      "benzina_self": 1.729,
+      "benzina_servito": null,
+      "gasolio_self": 2.069,
+      "gasolio_servito": null,
+      "gpl_self": null,
+      "gpl_servito": null,
+      "metano_self": null,
+      "metano_servito": null,
+      "aggiornato": "22/04/2026 07:11:32",
+      "prezziDettaglio": [
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.729,
+          "isSelf": true,
+          "dtComu": "22/04/2026 07:11:32"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.069,
+          "isSelf": true,
+          "dtComu": "22/04/2026 07:11:32"
+        }
+      ]
+    },
+    {
+      "id": "11479",
+      "nome": "COSTIGLIOLE D'ASTI-S.P.59 KM 13+542 VIA ASTI 11/B",
+      "gestore": "SERVIZI & GESTIONI ITALIA S.R.L.",
+      "bandiera": "Q8",
+      "indirizzo": "S.P.59 KM 13+542 VIA ASTI 11/B 14055",
+      "comune": "COSTIGLIOLE D'ASTI",
+      "lat": 44.787595181387005,
+      "lng": 8.186667813491795,
+      "benzina_self": 1.719,
+      "benzina_servito": null,
+      "gasolio_self": 2.069,
+      "gasolio_servito": null,
+      "gpl_self": null,
+      "gpl_servito": null,
+      "metano_self": null,
+      "metano_servito": null,
+      "aggiornato": "23/04/2026 07:34:26",
+      "prezziDettaglio": [
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.719,
+          "isSelf": true,
+          "dtComu": "23/04/2026 07:34:26"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.069,
+          "isSelf": true,
+          "dtComu": "23/04/2026 07:34:26"
+        }
+      ]
+    },
+    {
+      "id": "38663",
+      "nome": "CPP - Costigliole d'Asti",
+      "gestore": "C.P.P. COMPAGNIA PETROLIFERA PIEMONTESE S.P.A.",
+      "bandiera": "Api-Ip",
+      "indirizzo": "Via Scotti, Fraz. Motta 111 14055",
+      "comune": "COSTIGLIOLE D'ASTI",
+      "lat": 44.80869810939859,
+      "lng": 8.146182596683502,
+      "benzina_self": 1.719,
+      "benzina_servito": null,
+      "gasolio_self": 2.069,
+      "gasolio_servito": null,
+      "gpl_self": null,
+      "gpl_servito": null,
+      "metano_self": null,
+      "metano_servito": null,
+      "aggiornato": "22/04/2026 11:02:12",
+      "prezziDettaglio": [
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.719,
+          "isSelf": true,
+          "dtComu": "22/04/2026 11:02:12"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.069,
+          "isSelf": true,
+          "dtComu": "22/04/2026 11:02:12"
+        }
+      ]
+    },
+    {
+      "id": "36096",
+      "nome": "Stazione di Servizio Dusino San Michele",
+      "gestore": "RUTIGLIANO FABRIZIO",
+      "bandiera": "Api-Ip",
+      "indirizzo": "Statale 10 Padana Inferiore, Km. 37+340, dir. Torino  14010",
+      "comune": "DUSINO SAN MICHELE",
+      "lat": 44.9247272456753,
+      "lng": 7.970871624328652,
+      "benzina_self": 1.719,
+      "benzina_servito": 1.869,
+      "gasolio_self": 2.079,
+      "gasolio_servito": 2.229,
+      "gpl_self": null,
+      "gpl_servito": null,
+      "metano_self": null,
+      "metano_servito": null,
+      "aggiornato": "21/04/2026 14:46:05",
+      "prezziDettaglio": [
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.869,
+          "isSelf": false,
+          "dtComu": "21/04/2026 14:46:05"
+        },
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.719,
+          "isSelf": true,
+          "dtComu": "21/04/2026 14:46:05"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.229,
+          "isSelf": false,
+          "dtComu": "21/04/2026 14:46:05"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.079,
+          "isSelf": true,
+          "dtComu": "21/04/2026 14:46:05"
+        }
+      ]
+    },
+    {
+      "id": "10623",
+      "nome": "Cherio Matteo",
+      "gestore": "CHERIO MATTEO",
+      "bandiera": "Q8",
+      "indirizzo": "S.P. Villanova - Govone Km 10+350  14012",
+      "comune": "FERRERE",
+      "lat": 44.87610612847085,
+      "lng": 8.009324222803116,
+      "benzina_self": 1.759,
+      "benzina_servito": 1.929,
+      "gasolio_self": 2.109,
+      "gasolio_servito": 2.279,
+      "gpl_self": null,
+      "gpl_servito": null,
+      "metano_self": null,
+      "metano_servito": null,
+      "aggiornato": "22/04/2026 23:28:31",
+      "prezziDettaglio": [
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.929,
+          "isSelf": false,
+          "dtComu": "22/04/2026 23:28:31"
+        },
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.759,
+          "isSelf": true,
+          "dtComu": "22/04/2026 23:28:31"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.279,
+          "isSelf": false,
+          "dtComu": "22/04/2026 23:28:31"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.109,
+          "isSelf": true,
+          "dtComu": "22/04/2026 23:28:31"
+        },
+        {
+          "carburante": "Hi-Q Diesel",
+          "prezzo": 2.659,
+          "isSelf": false,
+          "dtComu": "22/04/2026 23:28:31"
+        },
+        {
+          "carburante": "Hi-Q Diesel",
+          "prezzo": 2.489,
+          "isSelf": true,
+          "dtComu": "22/04/2026 23:28:31"
+        }
+      ]
+    },
+    {
+      "id": "61426",
+      "nome": "Economy srl - Ferrere d'Asti",
+      "gestore": "ECONOMY S.R.L.",
+      "bandiera": "Economy",
+      "indirizzo": "Via Torino 103  14012",
+      "comune": "FERRERE",
+      "lat": 44.883709891099556,
+      "lng": 7.99022362408122,
+      "benzina_self": 1.758,
+      "benzina_servito": null,
+      "gasolio_self": 2.098,
+      "gasolio_servito": null,
+      "gpl_self": null,
+      "gpl_servito": null,
+      "metano_self": null,
+      "metano_servito": null,
+      "aggiornato": "22/04/2026 17:22:41",
+      "prezziDettaglio": [
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.758,
+          "isSelf": true,
+          "dtComu": "22/04/2026 17:22:41"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.098,
+          "isSelf": true,
+          "dtComu": "22/04/2026 17:22:41"
+        }
+      ]
+    },
+    {
+      "id": "44616",
+      "nome": "staroil FRINCO",
+      "gestore": "GAVI SERVICE SOCIETA' IN NOME COLLETTIVO DI IEVA ERMANNO E IEVA V INCENZO",
+      "bandiera": "Pompe Bianche",
+      "indirizzo": "S.P. 22 KM 3+900  14030",
+      "comune": "FRINCO",
+      "lat": 45.008673000123,
+      "lng": 8.183205000123,
+      "benzina_self": 1.749,
+      "benzina_servito": null,
+      "gasolio_self": 2.099,
+      "gasolio_servito": null,
+      "gpl_self": null,
+      "gpl_servito": null,
+      "metano_self": null,
+      "metano_servito": null,
+      "aggiornato": "17/04/2026 16:38:59",
+      "prezziDettaglio": [
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.749,
+          "isSelf": true,
+          "dtComu": "17/04/2026 16:38:59"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.099,
+          "isSelf": true,
+          "dtComu": "17/04/2026 16:38:59"
+        }
+      ]
+    },
+    {
+      "id": "30847",
+      "nome": "speed-oil-service",
+      "gestore": "SPEED OIL SERVICE S.N.C. DI LICCHELLI ANDREA E C.",
+      "bandiera": "KEROPETROL",
+      "indirizzo": "VIA PRATA 23 14045",
+      "comune": "INCISA SCAPACCINO",
+      "lat": 44.7990292725219,
+      "lng": 8.376259803771973,
+      "benzina_self": null,
+      "benzina_servito": null,
+      "gasolio_self": null,
+      "gasolio_servito": null,
+      "gpl_self": null,
+      "gpl_servito": null,
+      "metano_self": null,
+      "metano_servito": null,
+      "aggiornato": null,
+      "prezziDettaglio": []
+    },
+    {
+      "id": "37933",
+      "nome": "CPP - Isola d'Asti",
+      "gestore": "C.P.P. COMPAGNIA PETROLIFERA PIEMONTESE S.P.A.",
+      "bandiera": "Api-Ip",
+      "indirizzo": "SS456 VALTIGLIONE-SP.3 KM9+995 S.N. 14057",
+      "comune": "ISOLA D'ASTI",
+      "lat": 44.82742465234149,
+      "lng": 8.190544898733492,
+      "benzina_self": 1.719,
+      "benzina_servito": null,
+      "gasolio_self": 2.049,
+      "gasolio_servito": null,
+      "gpl_self": null,
+      "gpl_servito": null,
+      "metano_self": null,
+      "metano_servito": null,
+      "aggiornato": "22/04/2026 23:19:12",
+      "prezziDettaglio": [
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.719,
+          "isSelf": true,
+          "dtComu": "22/04/2026 23:19:12"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.049,
+          "isSelf": true,
+          "dtComu": "22/04/2026 10:58:06"
+        }
+      ]
+    },
+    {
+      "id": "54937",
+      "nome": "ISOLA D'ASTI",
+      "gestore": "SYNERGY S.R.L.",
+      "bandiera": "Pompe Bianche",
+      "indirizzo": "S.S. N.231 KM 3+810 FRAZ CHIAPPA SNC",
+      "comune": "ISOLA D'ASTI",
+      "lat": 44.83053,
+      "lng": 8.17852,
+      "benzina_self": 1.784,
+      "benzina_servito": null,
+      "gasolio_self": 1.754,
+      "gasolio_servito": null,
+      "gpl_self": null,
+      "gpl_servito": null,
+      "metano_self": null,
+      "metano_servito": null,
+      "aggiornato": "22/04/2026 22:50:01",
+      "prezziDettaglio": [
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.784,
+          "isSelf": true,
+          "dtComu": "22/04/2026 22:50:01"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 1.754,
+          "isSelf": true,
+          "dtComu": "22/04/2026 22:50:01"
+        }
+      ]
+    },
+    {
+      "id": "21022",
+      "nome": "SCAGLIONE MARCO",
+      "gestore": "SCAGLIONE MARCO GIAN PIERO",
+      "bandiera": "Pompe Bianche",
+      "indirizzo": "REGIONE MOLINO 8 14050",
+      "comune": "MOASCA",
+      "lat": 44.76845804344314,
+      "lng": 8.269067332148552,
+      "benzina_self": 1.739,
+      "benzina_servito": 1.739,
+      "gasolio_self": 2.139,
+      "gasolio_servito": 2.139,
+      "gpl_self": null,
+      "gpl_servito": 0.799,
+      "metano_self": null,
+      "metano_servito": null,
+      "aggiornato": "18/04/2026 19:45:01",
+      "prezziDettaglio": [
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.739,
+          "isSelf": false,
+          "dtComu": "18/04/2026 19:45:01"
+        },
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.739,
+          "isSelf": true,
+          "dtComu": "18/04/2026 19:45:01"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.139,
+          "isSelf": false,
+          "dtComu": "18/04/2026 19:45:01"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.139,
+          "isSelf": true,
+          "dtComu": "18/04/2026 19:45:01"
+        },
+        {
+          "carburante": "GPL",
+          "prezzo": 0.799,
+          "isSelf": false,
+          "dtComu": "18/04/2026 19:45:01"
+        }
+      ]
+    },
+    {
+      "id": "34019",
+      "nome": "PV08 MOMBARUZZO",
+      "gestore": "SOGEDI S.R.L.",
+      "bandiera": "Ratti",
+      "indirizzo": "VIA PIAZZA DEL POPOLO, 5 5 14046, MOMBARUZZO (AT) 5 14046",
+      "comune": "MOMBARUZZO",
+      "lat": 44.77334,
+      "lng": 8.44889,
+      "benzina_self": 1.669,
+      "benzina_servito": null,
+      "gasolio_self": 2.019,
+      "gasolio_servito": null,
+      "gpl_self": null,
+      "gpl_servito": null,
+      "metano_self": null,
+      "metano_servito": null,
+      "aggiornato": "23/04/2026 07:09:56",
+      "prezziDettaglio": [
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.669,
+          "isSelf": true,
+          "dtComu": "23/04/2026 07:09:56"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.019,
+          "isSelf": true,
+          "dtComu": "23/04/2026 07:09:53"
+        },
+        {
+          "carburante": "Benzina speciale",
+          "prezzo": 1.719,
+          "isSelf": true,
+          "dtComu": "23/04/2026 07:09:58"
+        },
+        {
+          "carburante": "Gasolio speciale",
+          "prezzo": 2.069,
+          "isSelf": true,
+          "dtComu": "23/04/2026 07:09:54"
+        }
+      ]
+    },
+    {
+      "id": "62336",
+      "nome": "RESTIANI MOMBERCELLI",
+      "gestore": "RESTIANI - S.P.A.",
+      "bandiera": "Restiani",
+      "indirizzo": "Corso Asti 18  14047",
+      "comune": "MOMBERCELLI",
+      "lat": 44.8230363,
+      "lng": 8.293427699999999,
+      "benzina_self": 1.729,
+      "benzina_servito": null,
+      "gasolio_self": 2.049,
+      "gasolio_servito": null,
+      "gpl_self": null,
+      "gpl_servito": null,
+      "metano_self": null,
+      "metano_servito": null,
+      "aggiornato": "23/04/2026 00:27:54",
+      "prezziDettaglio": [
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.729,
+          "isSelf": true,
+          "dtComu": "23/04/2026 00:27:54"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.049,
+          "isSelf": true,
+          "dtComu": "23/04/2026 00:27:54"
+        },
+        {
+          "carburante": "HVO",
+          "prezzo": 2.029,
+          "isSelf": true,
+          "dtComu": "23/04/2026 00:27:54"
+        }
+      ]
+    },
+    {
+      "id": "57957",
+      "nome": "STAZIONE DI SERVIZIO B+ MOMBERCELLI",
+      "gestore": "BOCHICCHIO MARCO",
+      "bandiera": "B+",
+      "indirizzo": "Corso Asti 700  14047",
+      "comune": "MOMBERCELLI",
+      "lat": 44.8229097,
+      "lng": 8.2849124,
+      "benzina_self": 1.755,
+      "benzina_servito": 1.755,
+      "gasolio_self": 2.069,
+      "gasolio_servito": 2.069,
+      "gpl_self": null,
+      "gpl_servito": null,
+      "metano_self": null,
+      "metano_servito": null,
+      "aggiornato": "22/04/2026 09:20:17",
+      "prezziDettaglio": [
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.755,
+          "isSelf": false,
+          "dtComu": "22/04/2026 09:20:17"
+        },
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.755,
+          "isSelf": true,
+          "dtComu": "22/04/2026 09:20:17"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.069,
+          "isSelf": false,
+          "dtComu": "22/04/2026 09:20:17"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.069,
+          "isSelf": true,
+          "dtComu": "22/04/2026 09:20:17"
+        }
+      ]
+    },
+    {
+      "id": "60486",
+      "nome": "BECOJL MONASTERO",
+      "gestore": "BECOJL SRL",
+      "bandiera": "Kerotris",
+      "indirizzo": "Via Roma 98  14058",
+      "comune": "MONASTERO BORMIDA",
+      "lat": 44.6481031039618,
+      "lng": 8.32715943841274,
+      "benzina_self": 1.788,
+      "benzina_servito": null,
+      "gasolio_self": 2.088,
+      "gasolio_servito": null,
+      "gpl_self": null,
+      "gpl_servito": null,
+      "metano_self": null,
+      "metano_servito": null,
+      "aggiornato": "20/04/2026 12:12:59",
+      "prezziDettaglio": [
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.788,
+          "isSelf": true,
+          "dtComu": "20/04/2026 12:12:59"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.088,
+          "isSelf": true,
+          "dtComu": "20/04/2026 12:12:59"
+        }
+      ]
+    },
+    {
+      "id": "45777",
+      "nome": "6026",
+      "gestore": "T.D.M. S.R.L.",
+      "bandiera": "Tamoil",
+      "indirizzo": "STR. PER CASALE 45 14036",
+      "comune": "MONCALVO",
+      "lat": 45.06109004307515,
+      "lng": 8.278842858160829,
+      "benzina_self": 1.719,
+      "benzina_servito": null,
+      "gasolio_self": 2.019,
+      "gasolio_servito": null,
+      "gpl_self": null,
+      "gpl_servito": null,
+      "metano_self": null,
+      "metano_servito": null,
+      "aggiornato": "22/04/2026 07:32:09",
+      "prezziDettaglio": [
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.719,
+          "isSelf": true,
+          "dtComu": "22/04/2026 07:32:09"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.019,
+          "isSelf": true,
+          "dtComu": "22/04/2026 12:24:39"
+        }
+      ]
+    },
+    {
+      "id": "53306",
+      "nome": "CPP - MONCALVO",
+      "gestore": "C.P.P. COMPAGNIA PETROLIFERA PIEMONTESE S.P.A.",
+      "bandiera": "Q8",
+      "indirizzo": "STATALE 457 KM 20 396 SNC 14036",
+      "comune": "MONCALVO",
+      "lat": 45.0604858262363,
+      "lng": 8.278450852382662,
+      "benzina_self": 1.719,
+      "benzina_servito": null,
+      "gasolio_self": 2.039,
+      "gasolio_servito": null,
+      "gpl_self": null,
+      "gpl_servito": null,
+      "metano_self": null,
+      "metano_servito": null,
+      "aggiornato": "22/04/2026 23:11:39",
+      "prezziDettaglio": [
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.719,
+          "isSelf": true,
+          "dtComu": "22/04/2026 23:11:39"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.039,
+          "isSelf": true,
+          "dtComu": "22/04/2026 23:11:39"
+        },
+        {
+          "carburante": "Hi-Q Diesel",
+          "prezzo": 2.289,
+          "isSelf": true,
+          "dtComu": "22/04/2026 23:11:39"
+        }
+      ]
+    },
+    {
+      "id": "7916",
+      "nome": "deambrogi gianluca",
+      "gestore": "DEAMBROGI GIANLUCA",
+      "bandiera": "Q8",
+      "indirizzo": "STRADA CASALE 37 14036",
+      "comune": "MONCALVO",
+      "lat": 45.06045272918674,
+      "lng": 8.278462439775467,
+      "benzina_self": null,
+      "benzina_servito": null,
+      "gasolio_self": null,
+      "gasolio_servito": null,
+      "gpl_self": null,
+      "gpl_servito": null,
+      "metano_self": null,
+      "metano_servito": null,
+      "aggiornato": null,
+      "prezziDettaglio": []
+    },
+    {
+      "id": "11470",
+      "nome": "MONCALVO-LOC. QUADRIVIO REGIONE S. GIOVANNI",
+      "gestore": "SERVIZI & GESTIONI ITALIA S.R.L.",
+      "bandiera": "Q8",
+      "indirizzo": "LOC. QUADRIVIO REGIONE S. GIOVANNI S/N 14036",
+      "comune": "MONCALVO",
+      "lat": 45.059001632049686,
+      "lng": 8.277583345770836,
+      "benzina_self": 1.719,
+      "benzina_servito": null,
+      "gasolio_self": 2.019,
+      "gasolio_servito": null,
+      "gpl_self": null,
+      "gpl_servito": null,
+      "metano_self": null,
+      "metano_servito": null,
+      "aggiornato": "21/04/2026 07:41:08",
+      "prezziDettaglio": [
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.719,
+          "isSelf": true,
+          "dtComu": "21/04/2026 07:41:08"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.019,
+          "isSelf": true,
+          "dtComu": "21/04/2026 07:41:08"
+        }
+      ]
+    },
+    {
+      "id": "36342",
+      "nome": "PV 1472",
+      "gestore": "GESTIONI INNOVATIVE ITALIA S.R.L.",
+      "bandiera": "Agip Eni",
+      "indirizzo": "CORSO XXV APRILE 134 14036",
+      "comune": "MONCALVO",
+      "lat": 45.04540829020908,
+      "lng": 8.268720103041005,
+      "benzina_self": 1.687,
+      "benzina_servito": null,
+      "gasolio_self": 2.039,
+      "gasolio_servito": null,
+      "gpl_self": null,
+      "gpl_servito": null,
+      "metano_self": null,
+      "metano_servito": null,
+      "aggiornato": "22/04/2026 23:16:12",
+      "prezziDettaglio": [
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.687,
+          "isSelf": true,
+          "dtComu": "22/04/2026 23:16:12"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.039,
+          "isSelf": true,
+          "dtComu": "22/04/2026 23:16:12"
+        },
+        {
+          "carburante": "Blue Diesel",
+          "prezzo": 2.139,
+          "isSelf": true,
+          "dtComu": "22/04/2026 23:16:12"
+        }
+      ]
+    },
+    {
+      "id": "8958",
+      "nome": "LISTAUTO S.N.C.",
+      "gestore": "LISTAUTO SNC DI LISTA VINCENZO E C.",
+      "bandiera": "B+",
+      "indirizzo": "STAZIONE 28 14025",
+      "comune": "MONTECHIARO D'ASTI",
+      "lat": 44.996045813763374,
+      "lng": 8.113885283622722,
+      "benzina_self": 1.859,
+      "benzina_servito": null,
+      "gasolio_self": 2.199,
+      "gasolio_servito": null,
+      "gpl_self": null,
+      "gpl_servito": null,
+      "metano_self": null,
+      "metano_servito": null,
+      "aggiornato": "22/04/2026 10:27:49",
+      "prezziDettaglio": [
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.859,
+          "isSelf": true,
+          "dtComu": "22/04/2026 10:27:49"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.199,
+          "isSelf": true,
+          "dtComu": "22/04/2026 10:27:49"
+        }
+      ]
+    },
+    {
+      "id": "37621",
+      "nome": "6036",
+      "gestore": "T.D.M. S.R.L.",
+      "bandiera": "Tamoil",
+      "indirizzo": "NIZZA 2 14048",
+      "comune": "MONTEGROSSO D'ASTI",
+      "lat": 44.81613806710762,
+      "lng": 8.241086527705193,
+      "benzina_self": 1.729,
+      "benzina_servito": null,
+      "gasolio_self": 2.049,
+      "gasolio_servito": null,
+      "gpl_self": null,
+      "gpl_servito": null,
+      "metano_self": null,
+      "metano_servito": null,
+      "aggiornato": "22/04/2026 23:40:26",
+      "prezziDettaglio": [
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.729,
+          "isSelf": true,
+          "dtComu": "22/04/2026 23:40:26"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.049,
+          "isSelf": true,
+          "dtComu": "22/04/2026 23:40:26"
+        }
+      ]
+    },
+    {
+      "id": "11123",
+      "nome": "API-IP",
+      "gestore": "MARASCO GIUSEPPE",
+      "bandiera": "Api-Ip",
+      "indirizzo": "CORSO ASTI 100 14049",
+      "comune": "NIZZA MONFERRATO",
+      "lat": 44.7728424658874,
+      "lng": 8.349747802238431,
+      "benzina_self": null,
+      "benzina_servito": 1.736,
+      "gasolio_self": null,
+      "gasolio_servito": 2.076,
+      "gpl_self": null,
+      "gpl_servito": null,
+      "metano_self": null,
+      "metano_servito": null,
+      "aggiornato": "23/04/2026 07:31:40",
+      "prezziDettaglio": [
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.736,
+          "isSelf": false,
+          "dtComu": "23/04/2026 07:31:40"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.076,
+          "isSelf": false,
+          "dtComu": "23/04/2026 07:31:40"
+        }
+      ]
+    },
+    {
+      "id": "62652",
+      "nome": "IP Gruppo API",
+      "gestore": "GIOVINE EZIO",
+      "bandiera": "Api-Ip",
+      "indirizzo": "Strada Canelli 12/A 14049",
+      "comune": "NIZZA MONFERRATO",
+      "lat": 44.7655848,
+      "lng": 8.3525874,
+      "benzina_self": 1.706,
+      "benzina_servito": 2.017,
+      "gasolio_self": 2.046,
+      "gasolio_servito": 2.357,
+      "gpl_self": null,
+      "gpl_servito": 0.838,
+      "metano_self": null,
+      "metano_servito": null,
+      "aggiornato": "21/04/2026 15:45:33",
+      "prezziDettaglio": [
+        {
+          "carburante": "Benzina",
+          "prezzo": 2.017,
+          "isSelf": false,
+          "dtComu": "21/04/2026 15:45:33"
+        },
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.706,
+          "isSelf": true,
+          "dtComu": "21/04/2026 15:45:33"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.357,
+          "isSelf": false,
+          "dtComu": "21/04/2026 15:45:33"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.046,
+          "isSelf": true,
+          "dtComu": "21/04/2026 15:45:33"
+        },
+        {
+          "carburante": "GPL",
+          "prezzo": 0.838,
+          "isSelf": false,
+          "dtComu": "21/04/2026 15:45:33"
+        }
+      ]
+    },
+    {
+      "id": "54857",
+      "nome": "IP Nizza Via Canelli",
+      "gestore": "RUTIGLIANO FABRIZIO",
+      "bandiera": "Api-Ip",
+      "indirizzo": "VIA STRADA CANELLI 31 14049, NIZZA MONFERRATO (AT) 33/4 14049",
+      "comune": "NIZZA MONFERRATO",
+      "lat": 44.761442520825746,
+      "lng": 8.352353474865737,
+      "benzina_self": null,
+      "benzina_servito": null,
+      "gasolio_self": 2.139,
+      "gasolio_servito": null,
+      "gpl_self": null,
+      "gpl_servito": null,
+      "metano_self": null,
+      "metano_servito": null,
+      "aggiornato": "17/04/2026 18:18:25",
+      "prezziDettaglio": [
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.139,
+          "isSelf": true,
+          "dtComu": "17/04/2026 18:18:25"
+        }
+      ]
+    },
+    {
+      "id": "58485",
+      "nome": "NIZZA MONFERRATO",
+      "gestore": "RETITALIA S.P.A.",
+      "bandiera": "Tamoil",
+      "indirizzo": "S.P.27 KM 15+165 SN",
+      "comune": "NIZZA MONFERRATO",
+      "lat": 44.77888024516427,
+      "lng": 8.367612361907959,
+      "benzina_self": 1.719,
+      "benzina_servito": null,
+      "gasolio_self": 2.089,
+      "gasolio_servito": null,
+      "gpl_self": null,
+      "gpl_servito": null,
+      "metano_self": null,
+      "metano_servito": null,
+      "aggiornato": "22/04/2026 11:04:22",
+      "prezziDettaglio": [
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.719,
+          "isSelf": true,
+          "dtComu": "22/04/2026 11:04:22"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.089,
+          "isSelf": true,
+          "dtComu": "22/04/2026 11:04:22"
+        }
+      ]
+    },
+    {
+      "id": "25342",
+      "nome": "NIZZA MONFERRATO",
+      "gestore": "\"IP SERVICES S.R.L.\"",
+      "bandiera": "Api-Ip",
+      "indirizzo": "VIA CIRIO  14049",
+      "comune": "NIZZA MONFERRATO",
+      "lat": 44.775386671800256,
+      "lng": 8.360626822090126,
+      "benzina_self": 1.699,
+      "benzina_servito": null,
+      "gasolio_self": 2.039,
+      "gasolio_servito": null,
+      "gpl_self": null,
+      "gpl_servito": null,
+      "metano_self": null,
+      "metano_servito": null,
+      "aggiornato": "22/04/2026 09:07:58",
+      "prezziDettaglio": [
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.699,
+          "isSelf": true,
+          "dtComu": "22/04/2026 09:07:58"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.039,
+          "isSelf": true,
+          "dtComu": "22/04/2026 09:07:58"
+        }
+      ]
+    },
+    {
+      "id": "36683",
+      "nome": "PV 1490",
+      "gestore": "GESTIONI INNOVATIVE ITALIA S.R.L.",
+      "bandiera": "Agip Eni",
+      "indirizzo": "VIA ASTI 156 14049",
+      "comune": "NIZZA MONFERRATO",
+      "lat": 44.77203654905228,
+      "lng": 8.346093679098544,
+      "benzina_self": 1.687,
+      "benzina_servito": null,
+      "gasolio_self": 2.039,
+      "gasolio_servito": null,
+      "gpl_self": null,
+      "gpl_servito": null,
+      "metano_self": null,
+      "metano_servito": null,
+      "aggiornato": "22/04/2026 23:47:04",
+      "prezziDettaglio": [
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.687,
+          "isSelf": true,
+          "dtComu": "22/04/2026 23:47:04"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.039,
+          "isSelf": true,
+          "dtComu": "22/04/2026 23:47:04"
+        },
+        {
+          "carburante": "Blue Diesel",
+          "prezzo": 2.139,
+          "isSelf": true,
+          "dtComu": "22/04/2026 23:47:04"
+        }
+      ]
+    },
+    {
+      "id": "56099",
+      "nome": "SHELL NIZZA MONFERRATO STRADA ALESSANDRIA N.40 (SP 28 PER ALESSANDRIA KM 25+896)",
+      "gestore": "PAD MULTIENERGY S.P.A",
+      "bandiera": "Shell",
+      "indirizzo": "S.P.NIZZA-MONFERRATO KM 25+896 SN 14049",
+      "comune": "NIZZA MONFERRATO",
+      "lat": 44.7713054445533,
+      "lng": 8.37024940207686,
+      "benzina_self": 1.699,
+      "benzina_servito": 1.899,
+      "gasolio_self": 2.039,
+      "gasolio_servito": 2.239,
+      "gpl_self": null,
+      "gpl_servito": 0.838,
+      "metano_self": null,
+      "metano_servito": null,
+      "aggiornato": "23/04/2026 07:20:11",
+      "prezziDettaglio": [
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.899,
+          "isSelf": false,
+          "dtComu": "23/04/2026 07:20:11"
+        },
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.699,
+          "isSelf": true,
+          "dtComu": "23/04/2026 07:20:11"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.239,
+          "isSelf": false,
+          "dtComu": "23/04/2026 07:20:11"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.039,
+          "isSelf": true,
+          "dtComu": "23/04/2026 07:20:11"
+        },
+        {
+          "carburante": "GPL",
+          "prezzo": 0.838,
+          "isSelf": false,
+          "dtComu": "23/04/2026 07:20:11"
+        }
+      ]
+    },
+    {
+      "id": "54283",
+      "nome": "CA' 'D BARBRIN-A DI BARRERA SECONDINO",
+      "gestore": "EASY FUEL",
+      "bandiera": "Pompe Bianche",
+      "indirizzo": "ASTI 13 14026",
+      "comune": "PIOVÀ MASSAIA",
+      "lat": 45.04407,
+      "lng": 8.04237,
+      "benzina_self": null,
+      "benzina_servito": null,
+      "gasolio_self": null,
+      "gasolio_servito": null,
+      "gpl_self": null,
+      "gpl_servito": null,
+      "metano_self": null,
+      "metano_servito": null,
+      "aggiornato": null,
+      "prezziDettaglio": []
+    },
+    {
+      "id": "7206",
+      "nome": "tamoil",
+      "gestore": "BIGONI MARCO",
+      "bandiera": "Tamoil",
+      "indirizzo": "S.P. 21 KM 42 S.N. 14020",
+      "comune": "ROBELLA",
+      "lat": 45.092792136593545,
+      "lng": 8.089529733599079,
+      "benzina_self": null,
+      "benzina_servito": null,
+      "gasolio_self": null,
+      "gasolio_servito": null,
+      "gpl_self": null,
+      "gpl_servito": null,
+      "metano_self": null,
+      "metano_servito": null,
+      "aggiornato": null,
+      "prezziDettaglio": []
+    },
+    {
+      "id": "43082",
+      "nome": "SCONFIENZA ROBERTA MARIANGELA",
+      "gestore": "SCONFIENZA ROBERTA MARIANGELA",
+      "bandiera": "B+",
+      "indirizzo": "VIA GARIBALDI 35 14030",
+      "comune": "ROCCA D'ARAZZO",
+      "lat": 44.872392979345406,
+      "lng": 8.28487796502975,
+      "benzina_self": 1.769,
+      "benzina_servito": 1.769,
+      "gasolio_self": 2.159,
+      "gasolio_servito": 2.159,
+      "gpl_self": null,
+      "gpl_servito": null,
+      "metano_self": null,
+      "metano_servito": null,
+      "aggiornato": "22/04/2026 16:26:55",
+      "prezziDettaglio": [
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.769,
+          "isSelf": false,
+          "dtComu": "22/04/2026 16:26:55"
+        },
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.769,
+          "isSelf": true,
+          "dtComu": "22/04/2026 16:26:55"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.159,
+          "isSelf": false,
+          "dtComu": "22/04/2026 16:26:55"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.159,
+          "isSelf": true,
+          "dtComu": "22/04/2026 16:26:55"
+        }
+      ]
+    },
+    {
+      "id": "58978",
+      "nome": "B+ ROCCHETTA TANARO",
+      "gestore": "BOCHICCHIO MARCO",
+      "bandiera": "B+",
+      "indirizzo": "Strada Provinciale 27",
+      "comune": "ROCCHETTA TANARO",
+      "lat": 44.85966902496725,
+      "lng": 8.346686804893476,
+      "benzina_self": 1.775,
+      "benzina_servito": 1.775,
+      "gasolio_self": 2.139,
+      "gasolio_servito": 2.139,
+      "gpl_self": null,
+      "gpl_servito": null,
+      "metano_self": null,
+      "metano_servito": null,
+      "aggiornato": "22/04/2026 22:04:52",
+      "prezziDettaglio": [
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.775,
+          "isSelf": false,
+          "dtComu": "22/04/2026 22:04:52"
+        },
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.775,
+          "isSelf": true,
+          "dtComu": "22/04/2026 22:04:52"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.139,
+          "isSelf": false,
+          "dtComu": "22/04/2026 22:04:52"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.139,
+          "isSelf": true,
+          "dtComu": "22/04/2026 22:04:52"
+        }
+      ]
+    },
+    {
+      "id": "41367",
+      "nome": "7274",
+      "gestore": "T.D.M. S.R.L.",
+      "bandiera": "Tamoil",
+      "indirizzo": "45 VILLANOVA/SAN DAMIANO S.N. 14015",
+      "comune": "SAN DAMIANO D'ASTI",
+      "lat": 44.84444799824974,
+      "lng": 8.070452436745882,
+      "benzina_self": 1.749,
+      "benzina_servito": null,
+      "gasolio_self": 2.079,
+      "gasolio_servito": null,
+      "gpl_self": 0.769,
+      "gpl_servito": null,
+      "metano_self": null,
+      "metano_servito": null,
+      "aggiornato": "22/04/2026 13:16:18",
+      "prezziDettaglio": [
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.749,
+          "isSelf": true,
+          "dtComu": "22/04/2026 13:16:18"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.079,
+          "isSelf": true,
+          "dtComu": "22/04/2026 23:16:44"
+        },
+        {
+          "carburante": "GPL",
+          "prezzo": 0.769,
+          "isSelf": true,
+          "dtComu": "22/04/2026 23:16:44"
+        }
+      ]
+    },
+    {
+      "id": "33058",
+      "nome": "San Damiano D'Asti",
+      "gestore": "RETITALIA S.P.A.",
+      "bandiera": "Retitalia",
+      "indirizzo": "Regione san vincenzo 3 14015",
+      "comune": "SAN DAMIANO D'ASTI",
+      "lat": 44.823891765664854,
+      "lng": 8.055342882871628,
+      "benzina_self": 1.699,
+      "benzina_servito": null,
+      "gasolio_self": 2.079,
+      "gasolio_servito": null,
+      "gpl_self": null,
+      "gpl_servito": null,
+      "metano_self": null,
+      "metano_servito": null,
+      "aggiornato": "22/04/2026 11:03:43",
+      "prezziDettaglio": [
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.699,
+          "isSelf": true,
+          "dtComu": "22/04/2026 11:03:43"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.079,
+          "isSelf": true,
+          "dtComu": "22/04/2026 11:03:43"
+        }
+      ]
+    },
+    {
+      "id": "52262",
+      "nome": "San Damiano D'Asti - Via Asti",
+      "gestore": "RETITALIA S.P.A.",
+      "bandiera": "Retitalia",
+      "indirizzo": "VIA ASTI 7 14015",
+      "comune": "SAN DAMIANO D'ASTI",
+      "lat": 44.83680914752431,
+      "lng": 8.067821711770994,
+      "benzina_self": 1.699,
+      "benzina_servito": null,
+      "gasolio_self": 2.079,
+      "gasolio_servito": null,
+      "gpl_self": null,
+      "gpl_servito": null,
+      "metano_self": null,
+      "metano_servito": null,
+      "aggiornato": "22/04/2026 11:04:11",
+      "prezziDettaglio": [
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.699,
+          "isSelf": true,
+          "dtComu": "22/04/2026 11:04:11"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.079,
+          "isSelf": true,
+          "dtComu": "22/04/2026 11:04:11"
+        }
+      ]
+    },
+    {
+      "id": "35697",
+      "nome": "IP SAN MARZANO",
+      "gestore": "IACOCARBURANTI DI IACOMINO LUIGI",
+      "bandiera": "Api-Ip",
+      "indirizzo": "Regione Leiso 46 14050",
+      "comune": "SAN MARZANO OLIVETO",
+      "lat": 44.756927567688095,
+      "lng": 8.281711265444756,
+      "benzina_self": 1.719,
+      "benzina_servito": 1.919,
+      "gasolio_self": 2.259,
+      "gasolio_servito": 2.289,
+      "gpl_self": null,
+      "gpl_servito": null,
+      "metano_self": null,
+      "metano_servito": null,
+      "aggiornato": "20/04/2026 10:43:42",
+      "prezziDettaglio": [
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.919,
+          "isSelf": false,
+          "dtComu": "20/04/2026 10:43:42"
+        },
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.719,
+          "isSelf": true,
+          "dtComu": "20/04/2026 10:43:42"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.289,
+          "isSelf": false,
+          "dtComu": "20/04/2026 10:43:42"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.259,
+          "isSelf": true,
+          "dtComu": "20/04/2026 10:43:42"
+        }
+      ]
+    },
+    {
+      "id": "45087",
+      "nome": "Ruggiero Andrea",
+      "gestore": "RUGGIERO ANDREA",
+      "bandiera": "B+",
+      "indirizzo": "VIA DEL PIANO 21 14010",
+      "comune": "SAN PAOLO SOLBRITO",
+      "lat": 44.95072878347645,
+      "lng": 7.96920850872993,
+      "benzina_self": 1.765,
+      "benzina_servito": 1.765,
+      "gasolio_self": 2.099,
+      "gasolio_servito": 2.099,
+      "gpl_self": null,
+      "gpl_servito": null,
+      "metano_self": null,
+      "metano_servito": null,
+      "aggiornato": "23/04/2026 08:00:34",
+      "prezziDettaglio": [
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.765,
+          "isSelf": false,
+          "dtComu": "23/04/2026 08:00:34"
+        },
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.765,
+          "isSelf": true,
+          "dtComu": "23/04/2026 08:00:34"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.099,
+          "isSelf": false,
+          "dtComu": "23/04/2026 08:00:34"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.099,
+          "isSelf": true,
+          "dtComu": "23/04/2026 08:00:34"
+        }
+      ]
+    },
+    {
+      "id": "40999",
+      "nome": "Europam",
+      "gestore": "\"F.LLI PARCESEPE S.N.C. DI PARCESEPE ANTONIO E GIUSEPPE & C.\" SIGLABILE \"F.LLI PARCESEPE S.N.C.\"",
+      "bandiera": "Europam",
+      "indirizzo": "STRADA CARLO ALBERTO 10 14017",
+      "comune": "VALFENERA",
+      "lat": 44.908834746911204,
+      "lng": 7.963440343737602,
+      "benzina_self": null,
+      "benzina_servito": null,
+      "gasolio_self": null,
+      "gasolio_servito": null,
+      "gpl_self": null,
+      "gpl_servito": null,
+      "metano_self": null,
+      "metano_servito": null,
+      "aggiornato": null,
+      "prezziDettaglio": []
+    },
+    {
+      "id": "62163",
+      "nome": "EUROPAM - VALFENERA",
+      "gestore": "EUROPAM S.P.A.",
+      "bandiera": "Europam",
+      "indirizzo": "Via Villanova 55  14017",
+      "comune": "VALFENERA",
+      "lat": 44.9088807,
+      "lng": 7.9632408,
+      "benzina_self": 1.697,
+      "benzina_servito": null,
+      "gasolio_self": 2.027,
+      "gasolio_servito": null,
+      "gpl_self": null,
+      "gpl_servito": null,
+      "metano_self": null,
+      "metano_servito": null,
+      "aggiornato": "22/04/2026 12:11:44",
+      "prezziDettaglio": [
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.697,
+          "isSelf": true,
+          "dtComu": "22/04/2026 12:11:44"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.027,
+          "isSelf": true,
+          "dtComu": "22/04/2026 12:11:44"
+        }
+      ]
+    },
+    {
+      "id": "39607",
+      "nome": "DALLE VIGLIANO D'ASTI",
+      "gestore": "DALLE S.A.S. DI DALLE ALBERTO E C.",
+      "bandiera": "Dalle petroli",
+      "indirizzo": "S.P. 456 VIA ASTI MARE  14040",
+      "comune": "VIGLIANO D'ASTI",
+      "lat": 44.82663179842431,
+      "lng": 8.211780874205033,
+      "benzina_self": 1.704,
+      "benzina_servito": null,
+      "gasolio_self": 2.024,
+      "gasolio_servito": null,
+      "gpl_self": null,
+      "gpl_servito": 0.779,
+      "metano_self": null,
+      "metano_servito": null,
+      "aggiornato": "23/04/2026 07:57:11",
+      "prezziDettaglio": [
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.704,
+          "isSelf": true,
+          "dtComu": "23/04/2026 07:57:11"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.024,
+          "isSelf": true,
+          "dtComu": "23/04/2026 07:57:11"
+        },
+        {
+          "carburante": "GPL",
+          "prezzo": 0.779,
+          "isSelf": false,
+          "dtComu": "23/04/2026 07:57:11"
+        },
+        {
+          "carburante": "L-GNC",
+          "prezzo": 1.4,
+          "isSelf": false,
+          "dtComu": "23/04/2026 07:57:11"
+        },
+        {
+          "carburante": "GNL",
+          "prezzo": 1.4,
+          "isSelf": false,
+          "dtComu": "23/04/2026 07:57:11"
+        },
+        {
+          "carburante": "HVO",
+          "prezzo": 2.024,
+          "isSelf": true,
+          "dtComu": "23/04/2026 07:57:11"
+        }
+      ]
+    },
+    {
+      "id": "42671",
+      "nome": "eni cafe",
+      "gestore": "LINDA'S CAFFE' DI LUKAJ LINDITE & C. SOCIETA' IN ACCOMANDITA SEMP LICE",
+      "bandiera": "Agip Eni",
+      "indirizzo": "PIEVE 47 14018",
+      "comune": "VILLAFRANCA D'ASTI",
+      "lat": 44.91175954810604,
+      "lng": 8.040437228277028,
+      "benzina_self": 1.737,
+      "benzina_servito": 1.947,
+      "gasolio_self": 2.069,
+      "gasolio_servito": 2.279,
+      "gpl_self": null,
+      "gpl_servito": 0.778,
+      "metano_self": null,
+      "metano_servito": null,
+      "aggiornato": "23/04/2026 07:40:07",
+      "prezziDettaglio": [
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.947,
+          "isSelf": false,
+          "dtComu": "23/04/2026 07:40:07"
+        },
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.737,
+          "isSelf": true,
+          "dtComu": "23/04/2026 06:22:04"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.279,
+          "isSelf": false,
+          "dtComu": "23/04/2026 07:40:07"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.069,
+          "isSelf": true,
+          "dtComu": "23/04/2026 06:22:04"
+        },
+        {
+          "carburante": "GPL",
+          "prezzo": 0.778,
+          "isSelf": false,
+          "dtComu": "22/04/2026 23:11:14"
+        },
+        {
+          "carburante": "Blue Super",
+          "prezzo": 2.077,
+          "isSelf": false,
+          "dtComu": "22/04/2026 23:11:14"
+        },
+        {
+          "carburante": "Blue Super",
+          "prezzo": 1.887,
+          "isSelf": true,
+          "dtComu": "23/04/2026 06:22:04"
+        },
+        {
+          "carburante": "HVOlution",
+          "prezzo": 2.279,
+          "isSelf": false,
+          "dtComu": "23/04/2026 07:40:07"
+        },
+        {
+          "carburante": "HVOlution",
+          "prezzo": 2.069,
+          "isSelf": true,
+          "dtComu": "23/04/2026 06:22:04"
+        }
+      ]
+    },
+    {
+      "id": "42977",
+      "nome": "TotalErg",
+      "gestore": "MASSASSO GIANPIERO",
+      "bandiera": "Api-Ip",
+      "indirizzo": "10 Padana Inferiore, Km. 43, Torino - 14018",
+      "comune": "VILLAFRANCA D'ASTI",
+      "lat": 44.91286893018711,
+      "lng": 8.038207512897543,
+      "benzina_self": null,
+      "benzina_servito": 1.799,
+      "gasolio_self": null,
+      "gasolio_servito": 2.199,
+      "gpl_self": null,
+      "gpl_servito": null,
+      "metano_self": null,
+      "metano_servito": null,
+      "aggiornato": "20/04/2026 16:22:47",
+      "prezziDettaglio": [
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.799,
+          "isSelf": false,
+          "dtComu": "20/04/2026 16:22:47"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.199,
+          "isSelf": false,
+          "dtComu": "20/04/2026 16:22:47"
+        }
+      ]
+    },
+    {
+      "id": "37279",
+      "nome": "11488 MONTANELLA & C SNC",
+      "gestore": "MONTANELLA & C. SNC DI MONTANELLA LUIGI & FRANCA & C.",
+      "bandiera": "Agip Eni",
+      "indirizzo": "Statale 10 Padana Inferiore, Km. 26, dir. CHIERI - 14019",
+      "comune": "VILLANOVA D'ASTI",
+      "lat": 44.943412685300714,
+      "lng": 7.931611239910126,
+      "benzina_self": 1.717,
+      "benzina_servito": null,
+      "gasolio_self": 2.049,
+      "gasolio_servito": null,
+      "gpl_self": null,
+      "gpl_servito": null,
+      "metano_self": null,
+      "metano_servito": null,
+      "aggiornato": "22/04/2026 22:48:52",
+      "prezziDettaglio": [
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.717,
+          "isSelf": true,
+          "dtComu": "22/04/2026 22:48:52"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.049,
+          "isSelf": true,
+          "dtComu": "22/04/2026 22:48:52"
+        },
+        {
+          "carburante": "Blue Diesel",
+          "prezzo": 2.149,
+          "isSelf": true,
+          "dtComu": "22/04/2026 22:48:52"
+        }
+      ]
+    },
+    {
+      "id": "52823",
+      "nome": "DISCAR VILLANOVA D'ASTI",
+      "gestore": "DIS-CAR DI SARRA PAOLO & C. S.N.C.",
+      "bandiera": "DIS-CAR",
+      "indirizzo": "STRADA EX S.S. N. 10 PADANA INFERIORE KM. 35+100 S.N. 14019, VILLANOVA D'ASTI (AT) +100 14019",
+      "comune": "VILLANOVA D'ASTI",
+      "lat": 44.936763559936885,
+      "lng": 7.948329683447253,
+      "benzina_self": 1.699,
+      "benzina_servito": 1.859,
+      "gasolio_self": 2.029,
+      "gasolio_servito": 2.159,
+      "gpl_self": null,
+      "gpl_servito": 0.755,
+      "metano_self": null,
+      "metano_servito": 1.999,
+      "aggiornato": "22/04/2026 23:46:55",
+      "prezziDettaglio": [
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.859,
+          "isSelf": false,
+          "dtComu": "22/04/2026 23:46:55"
+        },
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.699,
+          "isSelf": true,
+          "dtComu": "22/04/2026 23:46:55"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.159,
+          "isSelf": false,
+          "dtComu": "22/04/2026 23:46:55"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.029,
+          "isSelf": true,
+          "dtComu": "22/04/2026 23:46:55"
+        },
+        {
+          "carburante": "Metano",
+          "prezzo": 1.999,
+          "isSelf": false,
+          "dtComu": "22/04/2026 23:46:55"
+        },
+        {
+          "carburante": "GPL",
+          "prezzo": 0.755,
+          "isSelf": false,
+          "dtComu": "22/04/2026 23:46:55"
+        },
+        {
+          "carburante": "HVO",
+          "prezzo": 2.099,
+          "isSelf": false,
+          "dtComu": "22/04/2026 23:46:55"
+        },
+        {
+          "carburante": "HVO",
+          "prezzo": 2.029,
+          "isSelf": true,
+          "dtComu": "22/04/2026 23:46:55"
+        }
+      ]
+    },
+    {
+      "id": "62892",
+      "nome": "TAMOIL VILLANOVA D'ASTI",
+      "gestore": "LA TORRE S.N.C. DI SPADAVECCHIA RICCARDO & C.",
+      "bandiera": "Tamoil",
+      "indirizzo": "PROVINCIALE 2 PER BUTTIGLIERA snc 14019",
+      "comune": "VILLANOVA D'ASTI",
+      "lat": 44.95888140227513,
+      "lng": 7.947216838937004,
+      "benzina_self": 1.699,
+      "benzina_servito": 1.889,
+      "gasolio_self": 2.049,
+      "gasolio_servito": 2.239,
+      "gpl_self": 0.759,
+      "gpl_servito": 0.759,
+      "metano_self": null,
+      "metano_servito": null,
+      "aggiornato": "20/04/2026 11:50:41",
+      "prezziDettaglio": [
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.889,
+          "isSelf": false,
+          "dtComu": "20/04/2026 11:50:41"
+        },
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.699,
+          "isSelf": true,
+          "dtComu": "20/04/2026 11:50:41"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.239,
+          "isSelf": false,
+          "dtComu": "20/04/2026 11:50:41"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.049,
+          "isSelf": true,
+          "dtComu": "20/04/2026 11:50:41"
+        },
+        {
+          "carburante": "GPL",
+          "prezzo": 0.759,
+          "isSelf": false,
+          "dtComu": "20/04/2026 11:50:41"
+        },
+        {
+          "carburante": "GPL",
+          "prezzo": 0.759,
+          "isSelf": true,
+          "dtComu": "20/04/2026 11:50:41"
+        }
+      ]
+    },
+    {
+      "id": "29647",
+      "nome": "VILLANOVA D'ASTI",
+      "gestore": "SIRTAM S.P.A.",
+      "bandiera": "Tamoil",
+      "indirizzo": "S.P. PER POIRINO 44 14019",
+      "comune": "VILLANOVA D'ASTI",
+      "lat": 44.941073899594166,
+      "lng": 7.921306863427162,
+      "benzina_self": 1.739,
+      "benzina_servito": 1.889,
+      "gasolio_self": 2.099,
+      "gasolio_servito": 2.249,
+      "gpl_self": null,
+      "gpl_servito": 0.759,
+      "metano_self": null,
+      "metano_servito": null,
+      "aggiornato": "20/04/2026 12:32:36",
+      "prezziDettaglio": [
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.889,
+          "isSelf": false,
+          "dtComu": "20/04/2026 12:32:36"
+        },
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.739,
+          "isSelf": true,
+          "dtComu": "20/04/2026 12:32:33"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.249,
+          "isSelf": false,
+          "dtComu": "20/04/2026 12:32:39"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.099,
+          "isSelf": true,
+          "dtComu": "20/04/2026 12:32:37"
+        },
+        {
+          "carburante": "GPL",
+          "prezzo": 0.759,
+          "isSelf": false,
+          "dtComu": "18/04/2026 08:04:01"
+        },
+        {
+          "carburante": "Benzina WR 100",
+          "prezzo": 2.109,
+          "isSelf": false,
+          "dtComu": "20/04/2026 12:32:43"
+        },
+        {
+          "carburante": "Benzina WR 100",
+          "prezzo": 1.959,
+          "isSelf": true,
+          "dtComu": "20/04/2026 12:32:42"
+        }
+      ]
+    },
+    {
+      "id": "53736",
+      "nome": "VILLANOVA NORD",
+      "gestore": "LONGSTONE SRL",
+      "bandiera": "Api-Ip",
+      "indirizzo": "Autostrada A21 TORINO-PIACENZA, dir. TORINO 14019",
+      "comune": "VILLANOVA D'ASTI",
+      "lat": 44.950642822945696,
+      "lng": 7.951682622473157,
+      "benzina_self": 1.784,
+      "benzina_servito": 2.179,
+      "gasolio_self": 2.184,
+      "gasolio_servito": 2.558,
+      "gpl_self": null,
+      "gpl_servito": 0.921,
+      "metano_self": null,
+      "metano_servito": null,
+      "aggiornato": "22/04/2026 06:21:34",
+      "prezziDettaglio": [
+        {
+          "carburante": "Benzina",
+          "prezzo": 2.179,
+          "isSelf": false,
+          "dtComu": "22/04/2026 06:21:34"
+        },
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.784,
+          "isSelf": true,
+          "dtComu": "22/04/2026 06:21:34"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.558,
+          "isSelf": false,
+          "dtComu": "22/04/2026 06:21:34"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.184,
+          "isSelf": true,
+          "dtComu": "22/04/2026 06:21:34"
+        },
+        {
+          "carburante": "GPL",
+          "prezzo": 0.921,
+          "isSelf": false,
+          "dtComu": "22/04/2026 06:21:34"
+        }
+      ]
+    },
+    {
+      "id": "3843",
+      "nome": "VILLANOVA SUD",
+      "gestore": "ENIMOOV S.P.A.",
+      "bandiera": "Agip Eni",
+      "indirizzo": "Autostrada A21 TORINO-PIACENZA,  Km. 13.052, dir. Est 14019",
+      "comune": "VILLANOVA D'ASTI",
+      "lat": 44.9496,
+      "lng": 7.95183,
+      "benzina_self": 1.687,
+      "benzina_servito": 1.907,
+      "gasolio_self": 2.019,
+      "gasolio_servito": 2.239,
+      "gpl_self": null,
+      "gpl_servito": 0.88,
+      "metano_self": null,
+      "metano_servito": null,
+      "aggiornato": "23/04/2026 07:04:18",
+      "prezziDettaglio": [
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.907,
+          "isSelf": false,
+          "dtComu": "23/04/2026 07:04:18"
+        },
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.687,
+          "isSelf": true,
+          "dtComu": "23/04/2026 07:04:18"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.239,
+          "isSelf": false,
+          "dtComu": "23/04/2026 07:04:18"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.019,
+          "isSelf": true,
+          "dtComu": "23/04/2026 07:04:18"
+        },
+        {
+          "carburante": "GPL",
+          "prezzo": 0.88,
+          "isSelf": false,
+          "dtComu": "22/04/2026 23:11:52"
+        },
+        {
+          "carburante": "Blue Super",
+          "prezzo": 1.992,
+          "isSelf": false,
+          "dtComu": "22/04/2026 23:11:52"
+        },
+        {
+          "carburante": "Blue Super",
+          "prezzo": 1.867,
+          "isSelf": true,
+          "dtComu": "22/04/2026 23:11:52"
+        },
+        {
+          "carburante": "Blue Diesel",
+          "prezzo": 2.339,
+          "isSelf": false,
+          "dtComu": "23/04/2026 07:04:18"
+        },
+        {
+          "carburante": "Blue Diesel",
+          "prezzo": 2.119,
+          "isSelf": true,
+          "dtComu": "23/04/2026 07:04:18"
+        },
+        {
+          "carburante": "HVOlution",
+          "prezzo": 2.239,
+          "isSelf": false,
+          "dtComu": "23/04/2026 07:04:18"
+        },
+        {
+          "carburante": "HVOlution",
+          "prezzo": 2.019,
+          "isSelf": true,
+          "dtComu": "23/04/2026 07:04:18"
+        }
+      ]
+    }
+  ]
 }

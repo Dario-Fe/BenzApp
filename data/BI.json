@@ -1,6 +1,3282 @@
 {
-  "extractionDate": "1970-01-01",
-  "generatedAt": "2026-04-24T18:51:22.359Z",
-  "totale": 0,
-  "distributori": []
+  "extractionDate": "2026-04-23",
+  "generatedAt": "2026-04-24T19:33:12.220Z",
+  "totale": 79,
+  "distributori": [
+    {
+      "id": "45917",
+      "nome": "8529",
+      "gestore": "T.D.M. S.R.L.",
+      "bandiera": "Tamoil",
+      "indirizzo": "G. CANTONO 3 13811",
+      "comune": "ANDORNO MICCA",
+      "lat": 45.6067823943347,
+      "lng": 8.056009387672134,
+      "benzina_self": 1.699,
+      "benzina_servito": null,
+      "gasolio_self": 2.049,
+      "gasolio_servito": null,
+      "gpl_self": null,
+      "gpl_servito": null,
+      "metano_self": null,
+      "metano_servito": null,
+      "aggiornato": "22/04/2026 12:24:17",
+      "prezziDettaglio": [
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.699,
+          "isSelf": true,
+          "dtComu": "22/04/2026 12:24:17"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.049,
+          "isSelf": true,
+          "dtComu": "22/04/2026 22:58:25"
+        }
+      ]
+    },
+    {
+      "id": "27337",
+      "nome": "ENI 101",
+      "gestore": "BETTINELLI FABIO",
+      "bandiera": "Agip Eni",
+      "indirizzo": "VIA CANTONO 22 13811",
+      "comune": "ANDORNO MICCA",
+      "lat": 45.605051320149045,
+      "lng": 8.05558830499649,
+      "benzina_self": 1.717,
+      "benzina_servito": 1.937,
+      "gasolio_self": 2.069,
+      "gasolio_servito": 2.289,
+      "gpl_self": null,
+      "gpl_servito": null,
+      "metano_self": null,
+      "metano_servito": null,
+      "aggiornato": "23/04/2026 06:54:02",
+      "prezziDettaglio": [
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.937,
+          "isSelf": false,
+          "dtComu": "23/04/2026 06:54:02"
+        },
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.717,
+          "isSelf": true,
+          "dtComu": "23/04/2026 06:54:02"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.289,
+          "isSelf": false,
+          "dtComu": "23/04/2026 06:54:02"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.069,
+          "isSelf": true,
+          "dtComu": "23/04/2026 06:54:02"
+        },
+        {
+          "carburante": "Blue Super",
+          "prezzo": 2.087,
+          "isSelf": false,
+          "dtComu": "23/04/2026 06:54:02"
+        },
+        {
+          "carburante": "Blue Super",
+          "prezzo": 1.867,
+          "isSelf": true,
+          "dtComu": "23/04/2026 06:54:02"
+        },
+        {
+          "carburante": "Blue Diesel",
+          "prezzo": 2.389,
+          "isSelf": false,
+          "dtComu": "23/04/2026 06:54:02"
+        },
+        {
+          "carburante": "Blue Diesel",
+          "prezzo": 2.169,
+          "isSelf": true,
+          "dtComu": "23/04/2026 06:54:02"
+        }
+      ]
+    },
+    {
+      "id": "53495",
+      "nome": "IP ANDORNO",
+      "gestore": "DELPIANO ENRICO",
+      "bandiera": "Api-Ip",
+      "indirizzo": "VIA VIA CAV. V. VENETO 23 13811, ANDORNO MICCA (BI) 23 13811",
+      "comune": "ANDORNO MICCA",
+      "lat": 45.558527085451665,
+      "lng": 8.042498609332394,
+      "benzina_self": 1.729,
+      "benzina_servito": null,
+      "gasolio_self": 2.059,
+      "gasolio_servito": null,
+      "gpl_self": null,
+      "gpl_servito": null,
+      "metano_self": null,
+      "metano_servito": null,
+      "aggiornato": "20/04/2026 16:10:39",
+      "prezziDettaglio": [
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.729,
+          "isSelf": true,
+          "dtComu": "20/04/2026 16:10:39"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.059,
+          "isSelf": true,
+          "dtComu": "20/04/2026 16:10:39"
+        }
+      ]
+    },
+    {
+      "id": "46683",
+      "nome": "(7)PREALPINA DISTRIBUZIONE CARBURANTI SRL - VIA GALIMBERTI",
+      "gestore": "PREALPINA DISTRIBUZIONE CARBURANTI S.R.L.",
+      "bandiera": "Pompe Bianche",
+      "indirizzo": "VIA GALIMBERTI 36/A 13900",
+      "comune": "BIELLA",
+      "lat": 45.55432081106892,
+      "lng": 8.055451512336731,
+      "benzina_self": 1.678,
+      "benzina_servito": null,
+      "gasolio_self": 2.009,
+      "gasolio_servito": null,
+      "gpl_self": null,
+      "gpl_servito": null,
+      "metano_self": null,
+      "metano_servito": null,
+      "aggiornato": "22/04/2026 17:48:49",
+      "prezziDettaglio": [
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.678,
+          "isSelf": true,
+          "dtComu": "22/04/2026 17:48:49"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.009,
+          "isSelf": true,
+          "dtComu": "22/04/2026 17:48:49"
+        }
+      ]
+    },
+    {
+      "id": "46684",
+      "nome": "(8)PREALPINA DISTRIBUZIONE CARBURANTI SRL - TOLLEGNO",
+      "gestore": "PREALPINA DISTRIBUZIONE CARBURANTI S.R.L.",
+      "bandiera": "Pompe Bianche",
+      "indirizzo": "VIA PER TOLLEGNO 11 13900",
+      "comune": "BIELLA",
+      "lat": 45.579049114462514,
+      "lng": 8.050989715405649,
+      "benzina_self": 1.729,
+      "benzina_servito": 1.729,
+      "gasolio_self": 2.089,
+      "gasolio_servito": 2.089,
+      "gpl_self": null,
+      "gpl_servito": null,
+      "metano_self": null,
+      "metano_servito": null,
+      "aggiornato": "22/04/2026 17:48:34",
+      "prezziDettaglio": [
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.729,
+          "isSelf": false,
+          "dtComu": "22/04/2026 17:48:34"
+        },
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.729,
+          "isSelf": true,
+          "dtComu": "22/04/2026 17:48:34"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.089,
+          "isSelf": false,
+          "dtComu": "22/04/2026 17:48:34"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.089,
+          "isSelf": true,
+          "dtComu": "22/04/2026 17:48:34"
+        }
+      ]
+    },
+    {
+      "id": "60574",
+      "nome": "BEAUTY CAR SRLS",
+      "gestore": "BEAUTY CAR S.R.L.S.",
+      "bandiera": "Agip Eni",
+      "indirizzo": "MILANO 40 13900",
+      "comune": "BIELLA",
+      "lat": 45.56979952043452,
+      "lng": 8.069994478874595,
+      "benzina_self": 1.717,
+      "benzina_servito": 1.937,
+      "gasolio_self": 2.069,
+      "gasolio_servito": 2.289,
+      "gpl_self": null,
+      "gpl_servito": null,
+      "metano_self": null,
+      "metano_servito": null,
+      "aggiornato": "23/04/2026 07:56:19",
+      "prezziDettaglio": [
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.937,
+          "isSelf": false,
+          "dtComu": "23/04/2026 07:56:19"
+        },
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.717,
+          "isSelf": true,
+          "dtComu": "23/04/2026 07:50:17"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.289,
+          "isSelf": false,
+          "dtComu": "23/04/2026 07:56:19"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.069,
+          "isSelf": true,
+          "dtComu": "23/04/2026 07:50:17"
+        },
+        {
+          "carburante": "Blue Diesel",
+          "prezzo": 2.389,
+          "isSelf": false,
+          "dtComu": "23/04/2026 07:56:19"
+        },
+        {
+          "carburante": "Blue Diesel",
+          "prezzo": 2.169,
+          "isSelf": true,
+          "dtComu": "23/04/2026 07:50:17"
+        }
+      ]
+    },
+    {
+      "id": "60308",
+      "nome": "BIELLA",
+      "gestore": "SPAZIO S.R.L.",
+      "bandiera": "Pompe Bianche",
+      "indirizzo": "Via Tripoli 5  13900",
+      "comune": "BIELLA",
+      "lat": 45.5599969,
+      "lng": 8.0581806,
+      "benzina_self": 1.695,
+      "benzina_servito": null,
+      "gasolio_self": 2.046,
+      "gasolio_servito": null,
+      "gpl_self": null,
+      "gpl_servito": null,
+      "metano_self": null,
+      "metano_servito": null,
+      "aggiornato": "22/04/2026 22:39:07",
+      "prezziDettaglio": [
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.695,
+          "isSelf": true,
+          "dtComu": "22/04/2026 22:39:07"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.046,
+          "isSelf": true,
+          "dtComu": "22/04/2026 22:39:07"
+        }
+      ]
+    },
+    {
+      "id": "10098",
+      "nome": "Biella",
+      "gestore": "\"IP SERVICES S.R.L.\"",
+      "bandiera": "Api-Ip",
+      "indirizzo": "Via Trossi   13900",
+      "comune": "BIELLA",
+      "lat": 45.555327313698605,
+      "lng": 8.06793987751007,
+      "benzina_self": 1.719,
+      "benzina_servito": null,
+      "gasolio_self": 2.059,
+      "gasolio_servito": null,
+      "gpl_self": null,
+      "gpl_servito": null,
+      "metano_self": null,
+      "metano_servito": null,
+      "aggiornato": "22/04/2026 09:16:01",
+      "prezziDettaglio": [
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.719,
+          "isSelf": true,
+          "dtComu": "22/04/2026 09:16:01"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.059,
+          "isSelf": true,
+          "dtComu": "22/04/2026 09:16:01"
+        }
+      ]
+    },
+    {
+      "id": "9955",
+      "nome": "BIELLA VIA MILANO 32 LOC.CHIAVAZZA",
+      "gestore": "SERVIZI & GESTIONI ITALIA S.R.L.",
+      "bandiera": "Q8",
+      "indirizzo": "VIA MILANO LOC.CHIAVAZZA 32 13900",
+      "comune": "BIELLA",
+      "lat": 45.570056129366016,
+      "lng": 8.067931927018321,
+      "benzina_self": 1.689,
+      "benzina_servito": null,
+      "gasolio_self": 2.019,
+      "gasolio_servito": null,
+      "gpl_self": null,
+      "gpl_servito": null,
+      "metano_self": null,
+      "metano_servito": null,
+      "aggiornato": "23/04/2026 01:04:23",
+      "prezziDettaglio": [
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.689,
+          "isSelf": true,
+          "dtComu": "23/04/2026 01:04:23"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.019,
+          "isSelf": true,
+          "dtComu": "23/04/2026 01:04:23"
+        }
+      ]
+    },
+    {
+      "id": "6415",
+      "nome": "BIELLA VIA POLLONE",
+      "gestore": "SERVIZI & GESTIONI ITALIA S.R.L.",
+      "bandiera": "Q8",
+      "indirizzo": "VIA POLLONE SNC 13051",
+      "comune": "BIELLA",
+      "lat": 45.550980948965126,
+      "lng": 8.031966090202332,
+      "benzina_self": 1.689,
+      "benzina_servito": null,
+      "gasolio_self": 2.019,
+      "gasolio_servito": null,
+      "gpl_self": null,
+      "gpl_servito": null,
+      "metano_self": null,
+      "metano_servito": null,
+      "aggiornato": "23/04/2026 01:04:25",
+      "prezziDettaglio": [
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.689,
+          "isSelf": true,
+          "dtComu": "23/04/2026 01:04:25"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.019,
+          "isSelf": true,
+          "dtComu": "23/04/2026 01:04:25"
+        }
+      ]
+    },
+    {
+      "id": "22106",
+      "nome": "BIELLA Via Torino",
+      "gestore": "\"IP SERVICES S.R.L.\"",
+      "bandiera": "Api-Ip",
+      "indirizzo": "Via Torino 70 13900",
+      "comune": "BIELLA",
+      "lat": 45.556291484214924,
+      "lng": 8.062221944705243,
+      "benzina_self": 1.719,
+      "benzina_servito": null,
+      "gasolio_self": 2.059,
+      "gasolio_servito": null,
+      "gpl_self": null,
+      "gpl_servito": null,
+      "metano_self": null,
+      "metano_servito": null,
+      "aggiornato": "22/04/2026 09:15:59",
+      "prezziDettaglio": [
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.719,
+          "isSelf": true,
+          "dtComu": "22/04/2026 09:15:59"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.059,
+          "isSelf": true,
+          "dtComu": "22/04/2026 09:15:59"
+        }
+      ]
+    },
+    {
+      "id": "11501",
+      "nome": "BIELLA-C.SO EUROPA 6",
+      "gestore": "SERVIZI & GESTIONI ITALIA S.R.L.",
+      "bandiera": "Q8",
+      "indirizzo": "C.SO EUROPA 6 13900",
+      "comune": "BIELLA",
+      "lat": 45.55344783064023,
+      "lng": 8.068803548812866,
+      "benzina_self": 1.689,
+      "benzina_servito": null,
+      "gasolio_self": 2.019,
+      "gasolio_servito": null,
+      "gpl_self": null,
+      "gpl_servito": null,
+      "metano_self": null,
+      "metano_servito": null,
+      "aggiornato": "23/04/2026 01:04:24",
+      "prezziDettaglio": [
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.689,
+          "isSelf": true,
+          "dtComu": "23/04/2026 01:04:24"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.019,
+          "isSelf": true,
+          "dtComu": "23/04/2026 01:04:24"
+        }
+      ]
+    },
+    {
+      "id": "11503",
+      "nome": "BIELLA-VIA CANDELO",
+      "gestore": "SERVIZI & GESTIONI ITALIA S.R.L.",
+      "bandiera": "Q8",
+      "indirizzo": "VIA CANDELO S/N 13900",
+      "comune": "BIELLA",
+      "lat": 45.55089004003186,
+      "lng": 8.085340037941933,
+      "benzina_self": 1.679,
+      "benzina_servito": null,
+      "gasolio_self": 2.019,
+      "gasolio_servito": null,
+      "gpl_self": null,
+      "gpl_servito": null,
+      "metano_self": null,
+      "metano_servito": null,
+      "aggiornato": "21/04/2026 15:35:38",
+      "prezziDettaglio": [
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.679,
+          "isSelf": true,
+          "dtComu": "21/04/2026 15:35:38"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.019,
+          "isSelf": true,
+          "dtComu": "21/04/2026 15:35:38"
+        }
+      ]
+    },
+    {
+      "id": "11499",
+      "nome": "BIELLA-VIA MACALLE' 20",
+      "gestore": "SERVIZI & GESTIONI ITALIA S.R.L.",
+      "bandiera": "Q8",
+      "indirizzo": "VIA MACALLE' 20 13051",
+      "comune": "BIELLA",
+      "lat": 45.55443614236867,
+      "lng": 8.058625305557257,
+      "benzina_self": 1.699,
+      "benzina_servito": null,
+      "gasolio_self": 2.029,
+      "gasolio_servito": null,
+      "gpl_self": null,
+      "gpl_servito": null,
+      "metano_self": null,
+      "metano_servito": null,
+      "aggiornato": "23/04/2026 07:34:33",
+      "prezziDettaglio": [
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.699,
+          "isSelf": true,
+          "dtComu": "23/04/2026 07:34:33"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.029,
+          "isSelf": true,
+          "dtComu": "23/04/2026 07:34:33"
+        }
+      ]
+    },
+    {
+      "id": "11500",
+      "nome": "BIELLA-VIA TROSSI",
+      "gestore": "SERVIZI & GESTIONI ITALIA S.R.L.",
+      "bandiera": "Q8",
+      "indirizzo": "VIA TROSSI S/N 13051",
+      "comune": "BIELLA",
+      "lat": 45.555753986013876,
+      "lng": 8.067472419643423,
+      "benzina_self": 1.699,
+      "benzina_servito": null,
+      "gasolio_self": 2.029,
+      "gasolio_servito": null,
+      "gpl_self": null,
+      "gpl_servito": null,
+      "metano_self": null,
+      "metano_servito": null,
+      "aggiornato": "23/04/2026 07:34:33",
+      "prezziDettaglio": [
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.699,
+          "isSelf": true,
+          "dtComu": "23/04/2026 07:34:33"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.029,
+          "isSelf": true,
+          "dtComu": "23/04/2026 07:34:33"
+        }
+      ]
+    },
+    {
+      "id": "45204",
+      "nome": "COIL",
+      "gestore": "TRASPORTI ROVEGLIA DAVIDE",
+      "bandiera": "Pompe Bianche",
+      "indirizzo": "CORSO BLOTTO BALDO BRUNO S.N. 13900",
+      "comune": "BIELLA",
+      "lat": 45.54587878169485,
+      "lng": 8.036469691733146,
+      "benzina_self": 1.7,
+      "benzina_servito": 1.7,
+      "gasolio_self": 2.029,
+      "gasolio_servito": 2.029,
+      "gpl_self": null,
+      "gpl_servito": null,
+      "metano_self": null,
+      "metano_servito": null,
+      "aggiornato": "22/04/2026 10:13:40",
+      "prezziDettaglio": [
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.7,
+          "isSelf": false,
+          "dtComu": "22/04/2026 10:13:40"
+        },
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.7,
+          "isSelf": true,
+          "dtComu": "22/04/2026 10:13:40"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.029,
+          "isSelf": false,
+          "dtComu": "22/04/2026 10:13:40"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.029,
+          "isSelf": true,
+          "dtComu": "22/04/2026 10:13:40"
+        },
+        {
+          "carburante": "HVO",
+          "prezzo": 1.951,
+          "isSelf": false,
+          "dtComu": "22/04/2026 10:13:40"
+        },
+        {
+          "carburante": "HVO",
+          "prezzo": 1.951,
+          "isSelf": true,
+          "dtComu": "22/04/2026 10:13:40"
+        }
+      ]
+    },
+    {
+      "id": "54215",
+      "nome": "Distributore Esso ILARY S.N.C.",
+      "gestore": "ILARY S.N.C. DI NAPIORKOWSKI R. & BOTTINELLI V.",
+      "bandiera": "Esso",
+      "indirizzo": "TROSSI SNC 13900",
+      "comune": "BIELLA",
+      "lat": 45.55004232610444,
+      "lng": 8.07215285156425,
+      "benzina_self": 1.719,
+      "benzina_servito": 1.919,
+      "gasolio_self": 2.099,
+      "gasolio_servito": 2.299,
+      "gpl_self": null,
+      "gpl_servito": 0.789,
+      "metano_self": null,
+      "metano_servito": null,
+      "aggiornato": "20/04/2026 10:34:24",
+      "prezziDettaglio": [
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.919,
+          "isSelf": false,
+          "dtComu": "20/04/2026 10:34:24"
+        },
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.719,
+          "isSelf": true,
+          "dtComu": "20/04/2026 10:34:24"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.299,
+          "isSelf": false,
+          "dtComu": "20/04/2026 10:34:24"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.099,
+          "isSelf": true,
+          "dtComu": "20/04/2026 10:34:24"
+        },
+        {
+          "carburante": "GPL",
+          "prezzo": 0.789,
+          "isSelf": false,
+          "dtComu": "20/04/2026 10:34:24"
+        },
+        {
+          "carburante": "Supreme Diesel",
+          "prezzo": 2.449,
+          "isSelf": false,
+          "dtComu": "20/04/2026 10:34:24"
+        },
+        {
+          "carburante": "Supreme Diesel",
+          "prezzo": 2.249,
+          "isSelf": true,
+          "dtComu": "20/04/2026 10:34:24"
+        }
+      ]
+    },
+    {
+      "id": "20209",
+      "nome": "Enercoop Biella",
+      "gestore": "NOVA COOP SOCIETA' COOPERATIVA",
+      "bandiera": "Enercoop",
+      "indirizzo": "VIALE CLAUDIO VILLA 2 13900",
+      "comune": "BIELLA",
+      "lat": 45.5493291633965,
+      "lng": 8.075541257858276,
+      "benzina_self": 1.659,
+      "benzina_servito": null,
+      "gasolio_self": 1.999,
+      "gasolio_servito": null,
+      "gpl_self": null,
+      "gpl_servito": 0.789,
+      "metano_self": null,
+      "metano_servito": 1.45,
+      "aggiornato": "23/04/2026 01:07:28",
+      "prezziDettaglio": [
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.659,
+          "isSelf": true,
+          "dtComu": "23/04/2026 01:07:28"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 1.999,
+          "isSelf": true,
+          "dtComu": "23/04/2026 01:07:26"
+        },
+        {
+          "carburante": "Metano",
+          "prezzo": 1.45,
+          "isSelf": false,
+          "dtComu": "22/04/2026 11:26:40"
+        },
+        {
+          "carburante": "GPL",
+          "prezzo": 0.789,
+          "isSelf": false,
+          "dtComu": "23/04/2026 07:46:40"
+        }
+      ]
+    },
+    {
+      "id": "17501",
+      "nome": "eni 00125",
+      "gestore": "GIARRATANA FABRIZIO",
+      "bandiera": "Agip Eni",
+      "indirizzo": "corso europa   13900",
+      "comune": "BIELLA",
+      "lat": 45.549199557968784,
+      "lng": 8.07222604751587,
+      "benzina_self": 1.717,
+      "benzina_servito": 1.937,
+      "gasolio_self": 2.069,
+      "gasolio_servito": 2.289,
+      "gpl_self": null,
+      "gpl_servito": null,
+      "metano_self": null,
+      "metano_servito": null,
+      "aggiornato": "23/04/2026 07:10:50",
+      "prezziDettaglio": [
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.937,
+          "isSelf": false,
+          "dtComu": "23/04/2026 07:10:50"
+        },
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.717,
+          "isSelf": true,
+          "dtComu": "23/04/2026 07:10:50"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.289,
+          "isSelf": false,
+          "dtComu": "23/04/2026 07:10:50"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.069,
+          "isSelf": true,
+          "dtComu": "23/04/2026 07:10:50"
+        },
+        {
+          "carburante": "Blue Diesel",
+          "prezzo": 2.389,
+          "isSelf": false,
+          "dtComu": "23/04/2026 07:10:50"
+        },
+        {
+          "carburante": "Blue Diesel",
+          "prezzo": 2.169,
+          "isSelf": true,
+          "dtComu": "23/04/2026 07:10:50"
+        },
+        {
+          "carburante": "HVOlution",
+          "prezzo": 2.289,
+          "isSelf": false,
+          "dtComu": "23/04/2026 07:10:50"
+        },
+        {
+          "carburante": "HVOlution",
+          "prezzo": 2.069,
+          "isSelf": true,
+          "dtComu": "23/04/2026 07:10:50"
+        }
+      ]
+    },
+    {
+      "id": "52170",
+      "nome": "IP",
+      "gestore": "DELPIANO ALESSANDRO",
+      "bandiera": "Api-Ip",
+      "indirizzo": "VIA VIA IVREA 15 13900, BIELLA (BI) 15 13900",
+      "comune": "BIELLA",
+      "lat": 45.558616784796314,
+      "lng": 8.042715787887568,
+      "benzina_self": 1.729,
+      "benzina_servito": 1.929,
+      "gasolio_self": 2.069,
+      "gasolio_servito": 2.269,
+      "gpl_self": null,
+      "gpl_servito": null,
+      "metano_self": null,
+      "metano_servito": null,
+      "aggiornato": "21/04/2026 15:48:00",
+      "prezziDettaglio": [
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.929,
+          "isSelf": false,
+          "dtComu": "21/04/2026 15:48:00"
+        },
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.729,
+          "isSelf": true,
+          "dtComu": "21/04/2026 15:48:00"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.269,
+          "isSelf": false,
+          "dtComu": "21/04/2026 15:48:00"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.069,
+          "isSelf": true,
+          "dtComu": "21/04/2026 15:48:00"
+        }
+      ]
+    },
+    {
+      "id": "56339",
+      "nome": "IP",
+      "gestore": "DESA DI SAIANO GIOVANNI",
+      "bandiera": "Api-Ip",
+      "indirizzo": "Via Filippo Juvarra 28  13900",
+      "comune": "BIELLA",
+      "lat": 46.1111296,
+      "lng": 8.2804736,
+      "benzina_self": null,
+      "benzina_servito": null,
+      "gasolio_self": null,
+      "gasolio_servito": null,
+      "gpl_self": null,
+      "gpl_servito": null,
+      "metano_self": null,
+      "metano_servito": null,
+      "aggiornato": null,
+      "prezziDettaglio": []
+    },
+    {
+      "id": "48586",
+      "nome": "PAPA ENRICO",
+      "gestore": "PAPA ENRICO",
+      "bandiera": "Tamoil",
+      "indirizzo": "POLLONE 76 13900",
+      "comune": "BIELLA",
+      "lat": 45.561599012478794,
+      "lng": 8.024809360504145,
+      "benzina_self": 1.719,
+      "benzina_servito": 1.719,
+      "gasolio_self": 2.069,
+      "gasolio_servito": 2.069,
+      "gpl_self": null,
+      "gpl_servito": null,
+      "metano_self": null,
+      "metano_servito": null,
+      "aggiornato": "22/04/2026 11:19:24",
+      "prezziDettaglio": [
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.719,
+          "isSelf": false,
+          "dtComu": "22/04/2026 11:19:24"
+        },
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.719,
+          "isSelf": true,
+          "dtComu": "22/04/2026 11:19:24"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.069,
+          "isSelf": false,
+          "dtComu": "22/04/2026 11:19:24"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.069,
+          "isSelf": true,
+          "dtComu": "22/04/2026 11:19:24"
+        }
+      ]
+    },
+    {
+      "id": "62623",
+      "nome": "RETITALIA 80034 BIELLA",
+      "gestore": "SP GROUP SRLS",
+      "bandiera": "Retitalia",
+      "indirizzo": "Via S. Giuseppe Cottolengo 43 13900",
+      "comune": "BIELLA",
+      "lat": 45.5520502,
+      "lng": 8.0651599,
+      "benzina_self": 1.719,
+      "benzina_servito": null,
+      "gasolio_self": 2.089,
+      "gasolio_servito": null,
+      "gpl_self": null,
+      "gpl_servito": null,
+      "metano_self": null,
+      "metano_servito": null,
+      "aggiornato": "21/04/2026 14:51:10",
+      "prezziDettaglio": [
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.719,
+          "isSelf": true,
+          "dtComu": "21/04/2026 14:51:10"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.089,
+          "isSelf": true,
+          "dtComu": "21/04/2026 14:51:10"
+        }
+      ]
+    },
+    {
+      "id": "11352",
+      "nome": "stazione di servizio ESSO Enoch&c snc",
+      "gestore": "ENOCH & C. S.N.C. DI ENOCH DAVIDE, ENOCH SARA E ENOCH EMANUELA",
+      "bandiera": "Esso",
+      "indirizzo": "VIA IVREA 12 13900",
+      "comune": "BIELLA",
+      "lat": 45.5598248951114,
+      "lng": 8.045518841139256,
+      "benzina_self": 1.709,
+      "benzina_servito": 1.919,
+      "gasolio_self": 2.059,
+      "gasolio_servito": 2.269,
+      "gpl_self": null,
+      "gpl_servito": null,
+      "metano_self": null,
+      "metano_servito": null,
+      "aggiornato": "23/04/2026 07:53:15",
+      "prezziDettaglio": [
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.919,
+          "isSelf": false,
+          "dtComu": "23/04/2026 07:53:15"
+        },
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.709,
+          "isSelf": true,
+          "dtComu": "23/04/2026 07:53:15"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.269,
+          "isSelf": false,
+          "dtComu": "23/04/2026 07:53:15"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.059,
+          "isSelf": true,
+          "dtComu": "23/04/2026 07:53:15"
+        },
+        {
+          "carburante": "Gasolio Premium",
+          "prezzo": 2.469,
+          "isSelf": false,
+          "dtComu": "23/04/2026 07:53:15"
+        },
+        {
+          "carburante": "Gasolio Premium",
+          "prezzo": 2.259,
+          "isSelf": true,
+          "dtComu": "23/04/2026 07:53:15"
+        }
+      ]
+    },
+    {
+      "id": "29692",
+      "nome": "STAZIONE DI SERVIZIO ESSO MAXEMY SNC BIELLA",
+      "gestore": "MAXEMY SNC DI BORTOLAN EMILE & C.",
+      "bandiera": "Esso",
+      "indirizzo": "VIALE MACALLE' 50, 13900",
+      "comune": "BIELLA",
+      "lat": 45.553006076305905,
+      "lng": 8.054051399230957,
+      "benzina_self": 1.729,
+      "benzina_servito": 1.939,
+      "gasolio_self": 2.089,
+      "gasolio_servito": 2.299,
+      "gpl_self": null,
+      "gpl_servito": null,
+      "metano_self": null,
+      "metano_servito": null,
+      "aggiornato": "22/04/2026 07:53:23",
+      "prezziDettaglio": [
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.939,
+          "isSelf": false,
+          "dtComu": "22/04/2026 07:53:23"
+        },
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.729,
+          "isSelf": true,
+          "dtComu": "22/04/2026 07:53:23"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.299,
+          "isSelf": false,
+          "dtComu": "22/04/2026 07:53:23"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.089,
+          "isSelf": true,
+          "dtComu": "22/04/2026 07:53:23"
+        },
+        {
+          "carburante": "Supreme Diesel",
+          "prezzo": 2.499,
+          "isSelf": false,
+          "dtComu": "22/04/2026 07:53:23"
+        },
+        {
+          "carburante": "Supreme Diesel",
+          "prezzo": 2.289,
+          "isSelf": true,
+          "dtComu": "22/04/2026 07:53:23"
+        }
+      ]
+    },
+    {
+      "id": "17824",
+      "nome": "Tamoil",
+      "gestore": "BOTTIGELLA FRANCESCO",
+      "bandiera": "Tamoil",
+      "indirizzo": "VIA CANDELO 50 13900",
+      "comune": "BIELLA",
+      "lat": 45.5538730504302,
+      "lng": 8.070062635669615,
+      "benzina_self": null,
+      "benzina_servito": 1.689,
+      "gasolio_self": null,
+      "gasolio_servito": 2.029,
+      "gpl_self": null,
+      "gpl_servito": null,
+      "metano_self": null,
+      "metano_servito": null,
+      "aggiornato": "22/04/2026 19:04:53",
+      "prezziDettaglio": [
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.689,
+          "isSelf": false,
+          "dtComu": "22/04/2026 19:04:53"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.029,
+          "isSelf": false,
+          "dtComu": "22/04/2026 19:04:53"
+        }
+      ]
+    },
+    {
+      "id": "61555",
+      "nome": "BRUSNENGO",
+      "gestore": "RETITALIA S.P.A.",
+      "bandiera": "Tamoil",
+      "indirizzo": "VIA C. VERZONE 2 13862",
+      "comune": "BRUSNENGO",
+      "lat": 45.594319000815545,
+      "lng": 8.24978206102669,
+      "benzina_self": 1.739,
+      "benzina_servito": null,
+      "gasolio_self": 2.119,
+      "gasolio_servito": null,
+      "gpl_self": null,
+      "gpl_servito": null,
+      "metano_self": null,
+      "metano_servito": null,
+      "aggiornato": "22/04/2026 11:04:14",
+      "prezziDettaglio": [
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.739,
+          "isSelf": true,
+          "dtComu": "22/04/2026 11:04:14"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.119,
+          "isSelf": true,
+          "dtComu": "22/04/2026 11:04:14"
+        }
+      ]
+    },
+    {
+      "id": "21273",
+      "nome": "IGAS",
+      "gestore": "IGAS S.R.L.",
+      "bandiera": "Pompe Bianche",
+      "indirizzo": "TORINO 12 13862",
+      "comune": "BRUSNENGO",
+      "lat": 45.57933059708864,
+      "lng": 8.259285986423492,
+      "benzina_self": 1.729,
+      "benzina_servito": null,
+      "gasolio_self": 2.059,
+      "gasolio_servito": null,
+      "gpl_self": null,
+      "gpl_servito": 0.799,
+      "metano_self": null,
+      "metano_servito": null,
+      "aggiornato": "23/04/2026 07:47:00",
+      "prezziDettaglio": [
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.729,
+          "isSelf": true,
+          "dtComu": "23/04/2026 07:47:00"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.059,
+          "isSelf": true,
+          "dtComu": "23/04/2026 07:46:58"
+        },
+        {
+          "carburante": "GPL",
+          "prezzo": 0.799,
+          "isSelf": false,
+          "dtComu": "22/04/2026 07:56:35"
+        }
+      ]
+    },
+    {
+      "id": "11502",
+      "nome": "CAMBURZANO-SS 338 KM 4+778",
+      "gestore": "SERVIZI & GESTIONI ITALIA S.R.L.",
+      "bandiera": "Q8",
+      "indirizzo": "SS 338 KM 4+778 S/N 13866",
+      "comune": "CAMBURZANO",
+      "lat": 45.54378103231462,
+      "lng": 8.013263046741486,
+      "benzina_self": 1.699,
+      "benzina_servito": null,
+      "gasolio_self": 2.029,
+      "gasolio_servito": null,
+      "gpl_self": null,
+      "gpl_servito": null,
+      "metano_self": null,
+      "metano_servito": null,
+      "aggiornato": "23/04/2026 07:34:33",
+      "prezziDettaglio": [
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.699,
+          "isSelf": true,
+          "dtComu": "23/04/2026 07:34:33"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.029,
+          "isSelf": true,
+          "dtComu": "23/04/2026 07:34:33"
+        }
+      ]
+    },
+    {
+      "id": "12166",
+      "nome": "TAMOIL",
+      "gestore": "TRASPORTI ROVEGLIA DAVIDE",
+      "bandiera": "Pompe Bianche",
+      "indirizzo": "VIA IV NOVEMBRE 6 13878",
+      "comune": "CANDELO",
+      "lat": 45.5413757202959,
+      "lng": 8.111219331622124,
+      "benzina_self": 1.689,
+      "benzina_servito": 1.689,
+      "gasolio_self": 2.079,
+      "gasolio_servito": 2.079,
+      "gpl_self": null,
+      "gpl_servito": null,
+      "metano_self": null,
+      "metano_servito": null,
+      "aggiornato": "22/04/2026 10:15:41",
+      "prezziDettaglio": [
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.689,
+          "isSelf": false,
+          "dtComu": "22/04/2026 10:15:41"
+        },
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.689,
+          "isSelf": true,
+          "dtComu": "22/04/2026 10:15:41"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.079,
+          "isSelf": false,
+          "dtComu": "22/04/2026 10:15:41"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.079,
+          "isSelf": true,
+          "dtComu": "22/04/2026 10:15:41"
+        }
+      ]
+    },
+    {
+      "id": "28656",
+      "nome": "distributore ip",
+      "gestore": "NEGRI MARA",
+      "bandiera": "Api-Ip",
+      "indirizzo": "via per buronzo 15 13851",
+      "comune": "CASTELLETTO CERVO",
+      "lat": 45.50505886574665,
+      "lng": 8.243596404790878,
+      "benzina_self": 1.729,
+      "benzina_servito": 1.929,
+      "gasolio_self": 2.059,
+      "gasolio_servito": 2.259,
+      "gpl_self": null,
+      "gpl_servito": null,
+      "metano_self": null,
+      "metano_servito": null,
+      "aggiornato": "22/04/2026 16:24:29",
+      "prezziDettaglio": [
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.929,
+          "isSelf": false,
+          "dtComu": "22/04/2026 16:24:29"
+        },
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.729,
+          "isSelf": true,
+          "dtComu": "22/04/2026 16:24:29"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.259,
+          "isSelf": false,
+          "dtComu": "22/04/2026 16:24:29"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.059,
+          "isSelf": true,
+          "dtComu": "22/04/2026 16:24:29"
+        }
+      ]
+    },
+    {
+      "id": "62378",
+      "nome": "italiana petroli S.p.A",
+      "gestore": "HASSANEIN MOUSTAFA IBRAHIM MOUSTAFA IBRA",
+      "bandiera": "Itala Petroli",
+      "indirizzo": "Via Avvocato Ferdinando Rondolino 121  13881",
+      "comune": "CAVAGLIÀ",
+      "lat": 45.415691,
+      "lng": 8.0976468,
+      "benzina_self": 1.819,
+      "benzina_servito": 2.009,
+      "gasolio_self": 2.129,
+      "gasolio_servito": 2.319,
+      "gpl_self": null,
+      "gpl_servito": null,
+      "metano_self": null,
+      "metano_servito": null,
+      "aggiornato": "22/04/2026 08:28:03",
+      "prezziDettaglio": [
+        {
+          "carburante": "Benzina",
+          "prezzo": 2.009,
+          "isSelf": false,
+          "dtComu": "22/04/2026 08:28:03"
+        },
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.819,
+          "isSelf": true,
+          "dtComu": "22/04/2026 08:28:03"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.319,
+          "isSelf": false,
+          "dtComu": "22/04/2026 08:28:03"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.129,
+          "isSelf": true,
+          "dtComu": "22/04/2026 08:28:03"
+        }
+      ]
+    },
+    {
+      "id": "9572",
+      "nome": "STAZ.SERV. EUROPAM  LACCHIA&CERVINO",
+      "gestore": "LACCHIA E CERVINO & C. - S.N.C.",
+      "bandiera": "Europam",
+      "indirizzo": "Statale 593 di Borgo d'Ale, Km. 1, dir. TORINO",
+      "comune": "CAVAGLIÀ",
+      "lat": 45.401193607328736,
+      "lng": 8.09191346168518,
+      "benzina_self": 1.719,
+      "benzina_servito": 1.719,
+      "gasolio_self": 2.099,
+      "gasolio_servito": 2.099,
+      "gpl_self": null,
+      "gpl_servito": null,
+      "metano_self": null,
+      "metano_servito": null,
+      "aggiornato": "17/04/2026 07:58:41",
+      "prezziDettaglio": [
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.719,
+          "isSelf": false,
+          "dtComu": "17/04/2026 07:58:41"
+        },
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.719,
+          "isSelf": true,
+          "dtComu": "17/04/2026 07:58:41"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.099,
+          "isSelf": false,
+          "dtComu": "17/04/2026 07:58:41"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.099,
+          "isSelf": true,
+          "dtComu": "17/04/2026 07:58:41"
+        }
+      ]
+    },
+    {
+      "id": "43254",
+      "nome": "Totalerg",
+      "gestore": "MAURIZIO TORTA & C. S.N.C.",
+      "bandiera": "Api-Ip",
+      "indirizzo": "143 Vercellese, Km. 14+456, biella - 13881",
+      "comune": "CAVAGLIÀ",
+      "lat": 45.41569037443159,
+      "lng": 8.097670514688957,
+      "benzina_self": null,
+      "benzina_servito": null,
+      "gasolio_self": null,
+      "gasolio_servito": null,
+      "gpl_self": null,
+      "gpl_servito": null,
+      "metano_self": null,
+      "metano_servito": null,
+      "aggiornato": null,
+      "prezziDettaglio": []
+    },
+    {
+      "id": "60375",
+      "nome": "Biella - Cerrione",
+      "gestore": "BEYFIN S.P.A. SOCIETA' BENEFIT",
+      "bandiera": "Beyfin",
+      "indirizzo": "S.P. 143 KM 20+580 SNC 13882",
+      "comune": "CERRIONE",
+      "lat": 45.464571241253374,
+      "lng": 8.101259922230573,
+      "benzina_self": 1.689,
+      "benzina_servito": 1.789,
+      "gasolio_self": 2.019,
+      "gasolio_servito": 2.119,
+      "gpl_self": null,
+      "gpl_servito": 0.809,
+      "metano_self": null,
+      "metano_servito": null,
+      "aggiornato": "23/04/2026 07:50:13",
+      "prezziDettaglio": [
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.789,
+          "isSelf": false,
+          "dtComu": "23/04/2026 07:50:13"
+        },
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.689,
+          "isSelf": true,
+          "dtComu": "23/04/2026 07:50:13"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.119,
+          "isSelf": false,
+          "dtComu": "23/04/2026 07:50:13"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.019,
+          "isSelf": true,
+          "dtComu": "23/04/2026 07:50:13"
+        },
+        {
+          "carburante": "GPL",
+          "prezzo": 0.809,
+          "isSelf": false,
+          "dtComu": "22/04/2026 23:00:18"
+        }
+      ]
+    },
+    {
+      "id": "33710",
+      "nome": "STAZIONE DI SERVIZIO ESSO MAXEMY SNC CERRIONE",
+      "gestore": "MAXEMY SNC DI BORTOLAN EMILE & C.",
+      "bandiera": "Esso",
+      "indirizzo": "Statale 143 Vercellese, Km. 21, dir. BIELLA - 13882",
+      "comune": "CERRIONE",
+      "lat": 45.47369978304362,
+      "lng": 8.094959110021591,
+      "benzina_self": 1.729,
+      "benzina_servito": null,
+      "gasolio_self": 2.089,
+      "gasolio_servito": null,
+      "gpl_self": null,
+      "gpl_servito": null,
+      "metano_self": null,
+      "metano_servito": null,
+      "aggiornato": "22/04/2026 07:53:38",
+      "prezziDettaglio": [
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.729,
+          "isSelf": true,
+          "dtComu": "22/04/2026 07:53:38"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.089,
+          "isSelf": true,
+          "dtComu": "22/04/2026 07:53:38"
+        }
+      ]
+    },
+    {
+      "id": "5437",
+      "nome": "120 COSSATO",
+      "gestore": "ENIMOOV S.P.A.",
+      "bandiera": "Agip Eni",
+      "indirizzo": "Via Mazzini SNC 13836",
+      "comune": "COSSATO",
+      "lat": 45.56576971163891,
+      "lng": 8.17255344047544,
+      "benzina_self": 1.697,
+      "benzina_servito": 1.917,
+      "gasolio_self": 2.049,
+      "gasolio_servito": 2.269,
+      "gpl_self": null,
+      "gpl_servito": null,
+      "metano_self": null,
+      "metano_servito": null,
+      "aggiornato": "22/04/2026 23:17:38",
+      "prezziDettaglio": [
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.917,
+          "isSelf": false,
+          "dtComu": "22/04/2026 23:17:38"
+        },
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.697,
+          "isSelf": true,
+          "dtComu": "22/04/2026 23:17:38"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.269,
+          "isSelf": false,
+          "dtComu": "22/04/2026 23:17:38"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.049,
+          "isSelf": true,
+          "dtComu": "22/04/2026 23:17:38"
+        },
+        {
+          "carburante": "Blue Super",
+          "prezzo": 1.847,
+          "isSelf": true,
+          "dtComu": "22/04/2026 23:17:38"
+        },
+        {
+          "carburante": "Blue Diesel",
+          "prezzo": 2.369,
+          "isSelf": false,
+          "dtComu": "22/04/2026 23:17:38"
+        },
+        {
+          "carburante": "Blue Diesel",
+          "prezzo": 2.149,
+          "isSelf": true,
+          "dtComu": "22/04/2026 23:17:38"
+        },
+        {
+          "carburante": "HVOlution",
+          "prezzo": 2.049,
+          "isSelf": true,
+          "dtComu": "22/04/2026 23:17:38"
+        }
+      ]
+    },
+    {
+      "id": "59624",
+      "nome": "COMMERCIALE PAGANONI COSSATO",
+      "gestore": "COMMERCIALE PAGANONI S.P.A.",
+      "bandiera": "Pompe Bianche",
+      "indirizzo": "S.S.232 KM6+700 S.N. 13836",
+      "comune": "COSSATO",
+      "lat": 45.523869330655884,
+      "lng": 8.196352358707427,
+      "benzina_self": 1.685,
+      "benzina_servito": null,
+      "gasolio_self": 2.035,
+      "gasolio_servito": null,
+      "gpl_self": null,
+      "gpl_servito": null,
+      "metano_self": null,
+      "metano_servito": null,
+      "aggiornato": "22/04/2026 23:46:46",
+      "prezziDettaglio": [
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.685,
+          "isSelf": true,
+          "dtComu": "22/04/2026 23:46:46"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.035,
+          "isSelf": true,
+          "dtComu": "22/04/2026 23:46:46"
+        },
+        {
+          "carburante": "HVO",
+          "prezzo": 2.035,
+          "isSelf": true,
+          "dtComu": "22/04/2026 23:46:46"
+        }
+      ]
+    },
+    {
+      "id": "38852",
+      "nome": "FRATELLI GREMMO SNC",
+      "gestore": "FRATELLI GREMMO - S.N.C.",
+      "bandiera": "Esso",
+      "indirizzo": "VIA MAZZINI 3 13855",
+      "comune": "COSSATO",
+      "lat": 45.566759020426716,
+      "lng": 8.174497288954854,
+      "benzina_self": 1.739,
+      "benzina_servito": null,
+      "gasolio_self": 2.089,
+      "gasolio_servito": null,
+      "gpl_self": null,
+      "gpl_servito": null,
+      "metano_self": null,
+      "metano_servito": null,
+      "aggiornato": "20/04/2026 10:22:56",
+      "prezziDettaglio": [
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.739,
+          "isSelf": true,
+          "dtComu": "20/04/2026 10:22:56"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.089,
+          "isSelf": true,
+          "dtComu": "20/04/2026 10:22:56"
+        },
+        {
+          "carburante": "Gasolio Premium",
+          "prezzo": 2.289,
+          "isSelf": true,
+          "dtComu": "20/04/2026 10:22:56"
+        }
+      ]
+    },
+    {
+      "id": "58507",
+      "nome": "Italiana petroli",
+      "gestore": "DESA DI SAIANO GIOVANNI",
+      "bandiera": "Api-Ip",
+      "indirizzo": "XXV APRILE 56 13836",
+      "comune": "COSSATO",
+      "lat": 45.4885376,
+      "lng": 12.20608,
+      "benzina_self": 1.779,
+      "benzina_servito": 2.029,
+      "gasolio_self": 2.089,
+      "gasolio_servito": 2.339,
+      "gpl_self": null,
+      "gpl_servito": null,
+      "metano_self": null,
+      "metano_servito": null,
+      "aggiornato": "22/04/2026 23:09:18",
+      "prezziDettaglio": [
+        {
+          "carburante": "Benzina",
+          "prezzo": 2.029,
+          "isSelf": false,
+          "dtComu": "22/04/2026 23:09:18"
+        },
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.779,
+          "isSelf": true,
+          "dtComu": "22/04/2026 23:09:18"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.339,
+          "isSelf": false,
+          "dtComu": "22/04/2026 23:09:18"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.089,
+          "isSelf": true,
+          "dtComu": "22/04/2026 23:09:18"
+        }
+      ]
+    },
+    {
+      "id": "14810",
+      "nome": "STAZIONE IP",
+      "gestore": "MO FEDERICO",
+      "bandiera": "Api-Ip",
+      "indirizzo": "VIA VALSESIA 5 13864",
+      "comune": "CREVACUORE",
+      "lat": 45.68188941495221,
+      "lng": 8.249985426664352,
+      "benzina_self": 1.759,
+      "benzina_servito": 1.959,
+      "gasolio_self": 2.089,
+      "gasolio_servito": 2.289,
+      "gpl_self": null,
+      "gpl_servito": null,
+      "metano_self": null,
+      "metano_servito": null,
+      "aggiornato": "22/04/2026 16:25:09",
+      "prezziDettaglio": [
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.959,
+          "isSelf": false,
+          "dtComu": "22/04/2026 16:25:09"
+        },
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.759,
+          "isSelf": true,
+          "dtComu": "22/04/2026 16:25:09"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.289,
+          "isSelf": false,
+          "dtComu": "22/04/2026 16:25:09"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.089,
+          "isSelf": true,
+          "dtComu": "22/04/2026 16:25:09"
+        }
+      ]
+    },
+    {
+      "id": "52635",
+      "nome": "MC PETROLI DORZANO",
+      "gestore": "M.C. PETROLI SRL",
+      "bandiera": "MC petroli",
+      "indirizzo": "Regione Sello 33 13881",
+      "comune": "DORZANO",
+      "lat": 45.42598394387151,
+      "lng": 8.106204324400425,
+      "benzina_self": 1.679,
+      "benzina_servito": null,
+      "gasolio_self": 1.999,
+      "gasolio_servito": null,
+      "gpl_self": null,
+      "gpl_servito": null,
+      "metano_self": null,
+      "metano_servito": null,
+      "aggiornato": "21/04/2026 23:33:16",
+      "prezziDettaglio": [
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.679,
+          "isSelf": true,
+          "dtComu": "21/04/2026 23:33:16"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 1.999,
+          "isSelf": true,
+          "dtComu": "21/04/2026 23:33:16"
+        },
+        {
+          "carburante": "HVO",
+          "prezzo": 1.099,
+          "isSelf": true,
+          "dtComu": "21/04/2026 23:33:16"
+        }
+      ]
+    },
+    {
+      "id": "5553",
+      "nome": "GAGLIANICO",
+      "gestore": "\"IP SERVICES S.R.L.\"",
+      "bandiera": "Api-Ip",
+      "indirizzo": "Via Gramsci 133 13894",
+      "comune": "GAGLIANICO",
+      "lat": 45.54383738383883,
+      "lng": 8.070123131282799,
+      "benzina_self": 1.719,
+      "benzina_servito": null,
+      "gasolio_self": 2.059,
+      "gasolio_servito": null,
+      "gpl_self": null,
+      "gpl_servito": null,
+      "metano_self": null,
+      "metano_servito": null,
+      "aggiornato": "22/04/2026 09:17:01",
+      "prezziDettaglio": [
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.719,
+          "isSelf": true,
+          "dtComu": "22/04/2026 09:17:01"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.059,
+          "isSelf": true,
+          "dtComu": "22/04/2026 09:17:01"
+        }
+      ]
+    },
+    {
+      "id": "11498",
+      "nome": "MASSERANO-LOC.ROLLINO VIA 2 GIUGNO",
+      "gestore": "SERVIZI & GESTIONI ITALIA S.R.L.",
+      "bandiera": "Q8",
+      "indirizzo": "LOC.ROLLINO VIA 2 GIUGNO S/N 13866",
+      "comune": "MASSERANO",
+      "lat": 45.56353004581195,
+      "lng": 8.240808804893504,
+      "benzina_self": 1.799,
+      "benzina_servito": null,
+      "gasolio_self": 2.119,
+      "gasolio_servito": null,
+      "gpl_self": null,
+      "gpl_servito": null,
+      "metano_self": null,
+      "metano_servito": null,
+      "aggiornato": "23/04/2026 07:37:16",
+      "prezziDettaglio": [
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.799,
+          "isSelf": true,
+          "dtComu": "23/04/2026 07:37:16"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.119,
+          "isSelf": true,
+          "dtComu": "23/04/2026 07:37:16"
+        }
+      ]
+    },
+    {
+      "id": "62641",
+      "nome": "RETITALIA MASSERANO",
+      "gestore": "SP GROUP SRLS",
+      "bandiera": "Retitalia",
+      "indirizzo": "V. II Giugno 18 13866",
+      "comune": "MASSERANO",
+      "lat": 45.5704536,
+      "lng": 8.2491276,
+      "benzina_self": 1.729,
+      "benzina_servito": null,
+      "gasolio_self": 2.069,
+      "gasolio_servito": null,
+      "gpl_self": null,
+      "gpl_servito": null,
+      "metano_self": null,
+      "metano_servito": null,
+      "aggiornato": "21/04/2026 14:50:34",
+      "prezziDettaglio": [
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.729,
+          "isSelf": true,
+          "dtComu": "21/04/2026 14:50:34"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.069,
+          "isSelf": true,
+          "dtComu": "21/04/2026 14:50:34"
+        }
+      ]
+    },
+    {
+      "id": "4134",
+      "nome": "Vargas s.r.l. - Masserano",
+      "gestore": "VARGAS SRL",
+      "bandiera": "Pompe Bianche",
+      "indirizzo": "VIA 4 NOVEMBRE 24 13866",
+      "comune": "MASSERANO",
+      "lat": 45.55915929898186,
+      "lng": 8.240990793640094,
+      "benzina_self": 1.729,
+      "benzina_servito": 1.799,
+      "gasolio_self": 2.059,
+      "gasolio_servito": 2.129,
+      "gpl_self": null,
+      "gpl_servito": 0.799,
+      "metano_self": null,
+      "metano_servito": null,
+      "aggiornato": "23/04/2026 07:34:27",
+      "prezziDettaglio": [
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.799,
+          "isSelf": false,
+          "dtComu": "23/04/2026 07:34:27"
+        },
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.729,
+          "isSelf": true,
+          "dtComu": "22/04/2026 19:10:13"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.129,
+          "isSelf": false,
+          "dtComu": "23/04/2026 07:34:27"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.059,
+          "isSelf": true,
+          "dtComu": "22/04/2026 19:10:13"
+        },
+        {
+          "carburante": "GPL",
+          "prezzo": 0.799,
+          "isSelf": false,
+          "dtComu": "22/04/2026 23:01:35"
+        }
+      ]
+    },
+    {
+      "id": "60309",
+      "nome": "MONGRANDO",
+      "gestore": "SPAZIO S.R.L.",
+      "bandiera": "Pompe Bianche",
+      "indirizzo": "Via Roma 31  13888",
+      "comune": "MONGRANDO",
+      "lat": 45.5197254,
+      "lng": 8.0076293,
+      "benzina_self": 1.695,
+      "benzina_servito": null,
+      "gasolio_self": 2.046,
+      "gasolio_servito": null,
+      "gpl_self": null,
+      "gpl_servito": null,
+      "metano_self": null,
+      "metano_servito": null,
+      "aggiornato": "22/04/2026 22:50:10",
+      "prezziDettaglio": [
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.695,
+          "isSelf": true,
+          "dtComu": "22/04/2026 22:50:10"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.046,
+          "isSelf": true,
+          "dtComu": "22/04/2026 22:50:10"
+        }
+      ]
+    },
+    {
+      "id": "26238",
+      "nome": "PV 109",
+      "gestore": "GESTIONI INNOVATIVE ITALIA S.R.L.",
+      "bandiera": "Agip Eni",
+      "indirizzo": "S.P.338 KM.6+785 FRAZ.CURANOVA SN 13888",
+      "comune": "MONGRANDO",
+      "lat": 45.52565788144383,
+      "lng": 8.010552674531937,
+      "benzina_self": 1.687,
+      "benzina_servito": null,
+      "gasolio_self": 2.039,
+      "gasolio_servito": null,
+      "gpl_self": null,
+      "gpl_servito": null,
+      "metano_self": null,
+      "metano_servito": null,
+      "aggiornato": "22/04/2026 23:12:04",
+      "prezziDettaglio": [
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.687,
+          "isSelf": true,
+          "dtComu": "22/04/2026 23:12:04"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.039,
+          "isSelf": true,
+          "dtComu": "22/04/2026 23:12:04"
+        },
+        {
+          "carburante": "Blue Diesel",
+          "prezzo": 2.139,
+          "isSelf": true,
+          "dtComu": "22/04/2026 23:12:04"
+        }
+      ]
+    },
+    {
+      "id": "58426",
+      "nome": "OCCHIEPPO INFERIORE",
+      "gestore": "RETITALIA S.P.A.",
+      "bandiera": "Tamoil",
+      "indirizzo": "Via Martiri Libertà 18  13897",
+      "comune": "OCCHIEPPO INFERIORE",
+      "lat": 45.55589715783594,
+      "lng": 8.026337859783931,
+      "benzina_self": 1.719,
+      "benzina_servito": null,
+      "gasolio_self": 2.069,
+      "gasolio_servito": null,
+      "gpl_self": null,
+      "gpl_servito": null,
+      "metano_self": null,
+      "metano_servito": null,
+      "aggiornato": "22/04/2026 11:04:25",
+      "prezziDettaglio": [
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.719,
+          "isSelf": true,
+          "dtComu": "22/04/2026 11:04:25"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.069,
+          "isSelf": true,
+          "dtComu": "22/04/2026 11:04:25"
+        }
+      ]
+    },
+    {
+      "id": "60067",
+      "nome": "OCCHIEPPO SUPERIORE",
+      "gestore": "GESTIONE ITALIA S.A.S. DI AURA BLU SERVICE S.R.L.",
+      "bandiera": "Esso",
+      "indirizzo": "Via Provinciale 71  13898",
+      "comune": "OCCHIEPPO SUPERIORE",
+      "lat": 45.56118199999999,
+      "lng": 8.011229999999998,
+      "benzina_self": 1.689,
+      "benzina_servito": 1.889,
+      "gasolio_self": 2.029,
+      "gasolio_servito": 2.229,
+      "gpl_self": null,
+      "gpl_servito": null,
+      "metano_self": null,
+      "metano_servito": null,
+      "aggiornato": "23/04/2026 07:42:44",
+      "prezziDettaglio": [
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.889,
+          "isSelf": false,
+          "dtComu": "23/04/2026 07:42:44"
+        },
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.689,
+          "isSelf": true,
+          "dtComu": "23/04/2026 07:42:44"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.229,
+          "isSelf": false,
+          "dtComu": "23/04/2026 07:42:44"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.029,
+          "isSelf": true,
+          "dtComu": "23/04/2026 07:42:44"
+        },
+        {
+          "carburante": "Supreme Diesel",
+          "prezzo": 2.429,
+          "isSelf": false,
+          "dtComu": "23/04/2026 07:42:44"
+        },
+        {
+          "carburante": "Supreme Diesel",
+          "prezzo": 2.229,
+          "isSelf": true,
+          "dtComu": "23/04/2026 07:42:44"
+        }
+      ]
+    },
+    {
+      "id": "26730",
+      "nome": "Serena",
+      "gestore": "SERENA S.N.C. DI FOSCI EMANUELE, CONDELLI MICHELA & C.",
+      "bandiera": "Esso",
+      "indirizzo": "via provinciale 71 13898",
+      "comune": "OCCHIEPPO SUPERIORE",
+      "lat": 45.560406317577765,
+      "lng": 8.012296065699047,
+      "benzina_self": null,
+      "benzina_servito": null,
+      "gasolio_self": null,
+      "gasolio_servito": null,
+      "gpl_self": null,
+      "gpl_servito": null,
+      "metano_self": null,
+      "metano_servito": null,
+      "aggiornato": null,
+      "prezziDettaglio": []
+    },
+    {
+      "id": "54322",
+      "nome": "6883",
+      "gestore": "T.D.M. S.R.L.",
+      "bandiera": "Tamoil",
+      "indirizzo": "S.P. 400/A KM 2+950 S.N. 13875",
+      "comune": "PONDERANO",
+      "lat": 45.531541,
+      "lng": 8.0414,
+      "benzina_self": 1.719,
+      "benzina_servito": 1.819,
+      "gasolio_self": 2.059,
+      "gasolio_servito": 2.159,
+      "gpl_self": null,
+      "gpl_servito": 0.789,
+      "metano_self": null,
+      "metano_servito": 1.399,
+      "aggiornato": "22/04/2026 14:10:11",
+      "prezziDettaglio": [
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.819,
+          "isSelf": false,
+          "dtComu": "22/04/2026 14:10:11"
+        },
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.719,
+          "isSelf": true,
+          "dtComu": "22/04/2026 13:02:03"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.159,
+          "isSelf": false,
+          "dtComu": "22/04/2026 14:10:11"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.059,
+          "isSelf": true,
+          "dtComu": "22/04/2026 13:02:03"
+        },
+        {
+          "carburante": "Metano",
+          "prezzo": 1.399,
+          "isSelf": false,
+          "dtComu": "22/04/2026 23:09:55"
+        },
+        {
+          "carburante": "GPL",
+          "prezzo": 0.789,
+          "isSelf": false,
+          "dtComu": "22/04/2026 07:38:11"
+        },
+        {
+          "carburante": "Benzina WR 100",
+          "prezzo": 1.969,
+          "isSelf": false,
+          "dtComu": "22/04/2026 14:10:11"
+        },
+        {
+          "carburante": "Benzina WR 100",
+          "prezzo": 1.869,
+          "isSelf": true,
+          "dtComu": "22/04/2026 13:02:03"
+        },
+        {
+          "carburante": "HVO",
+          "prezzo": 2.159,
+          "isSelf": false,
+          "dtComu": "22/04/2026 14:10:11"
+        },
+        {
+          "carburante": "HVO",
+          "prezzo": 2.059,
+          "isSelf": true,
+          "dtComu": "22/04/2026 13:02:03"
+        }
+      ]
+    },
+    {
+      "id": "59185",
+      "nome": "Esso",
+      "gestore": "CINQUE STELLE SERVIZI DI BOKHARY SYED ALI HAIDER E C. S.N.C.",
+      "bandiera": "Esso",
+      "indirizzo": "STATALE 143 SNC 13875",
+      "comune": "PONDERANO",
+      "lat": 45.545894934055184,
+      "lng": 8.06954435105319,
+      "benzina_self": 1.719,
+      "benzina_servito": 1.929,
+      "gasolio_self": 2.079,
+      "gasolio_servito": 2.289,
+      "gpl_self": null,
+      "gpl_servito": null,
+      "metano_self": null,
+      "metano_servito": null,
+      "aggiornato": "22/04/2026 12:32:38",
+      "prezziDettaglio": [
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.929,
+          "isSelf": false,
+          "dtComu": "22/04/2026 12:32:38"
+        },
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.719,
+          "isSelf": true,
+          "dtComu": "22/04/2026 12:32:38"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.289,
+          "isSelf": false,
+          "dtComu": "22/04/2026 12:32:38"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.079,
+          "isSelf": true,
+          "dtComu": "22/04/2026 12:32:38"
+        },
+        {
+          "carburante": "Supreme Diesel",
+          "prezzo": 2.489,
+          "isSelf": false,
+          "dtComu": "22/04/2026 12:32:38"
+        },
+        {
+          "carburante": "Supreme Diesel",
+          "prezzo": 2.279,
+          "isSelf": true,
+          "dtComu": "22/04/2026 12:32:38"
+        }
+      ]
+    },
+    {
+      "id": "21275",
+      "nome": "esso extras",
+      "gestore": "F.LLI GRANO DI GRANO GIOVANNI & C. S.N.C.",
+      "bandiera": "Esso",
+      "indirizzo": "Statale 143 Vercellese, Km. 29+942, dir. santhia' - 13058",
+      "comune": "PONDERANO",
+      "lat": 45.545765093040984,
+      "lng": 8.068916872143745,
+      "benzina_self": null,
+      "benzina_servito": null,
+      "gasolio_self": null,
+      "gasolio_servito": null,
+      "gpl_self": null,
+      "gpl_servito": null,
+      "metano_self": null,
+      "metano_servito": null,
+      "aggiornato": null,
+      "prezziDettaglio": []
+    },
+    {
+      "id": "48386",
+      "nome": "ESSO",
+      "gestore": "ANGELINO GIORZET RAFFAELE",
+      "bandiera": "Esso",
+      "indirizzo": "VIA B. SELLA 19 13867",
+      "comune": "PRAY",
+      "lat": 45.6753145384902,
+      "lng": 8.213896670552256,
+      "benzina_self": 1.719,
+      "benzina_servito": 1.919,
+      "gasolio_self": 2.089,
+      "gasolio_servito": 2.289,
+      "gpl_self": null,
+      "gpl_servito": null,
+      "metano_self": null,
+      "metano_servito": null,
+      "aggiornato": "23/04/2026 06:45:29",
+      "prezziDettaglio": [
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.919,
+          "isSelf": false,
+          "dtComu": "23/04/2026 06:45:29"
+        },
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.719,
+          "isSelf": true,
+          "dtComu": "23/04/2026 06:45:29"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.289,
+          "isSelf": false,
+          "dtComu": "23/04/2026 06:45:29"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.089,
+          "isSelf": true,
+          "dtComu": "23/04/2026 06:45:29"
+        },
+        {
+          "carburante": "Supreme Diesel",
+          "prezzo": 1.679,
+          "isSelf": false,
+          "dtComu": "23/04/2026 06:45:29"
+        },
+        {
+          "carburante": "Supreme Diesel",
+          "prezzo": 1.749,
+          "isSelf": true,
+          "dtComu": "23/04/2026 06:45:29"
+        }
+      ]
+    },
+    {
+      "id": "42405",
+      "nome": "EUROPAM",
+      "gestore": "FERRARA GIROLAMO",
+      "bandiera": "Pompe Bianche",
+      "indirizzo": "VIA BIELLA FRAZ. PIANCERI 2 13867",
+      "comune": "PRAY",
+      "lat": 45.67221530683118,
+      "lng": 8.21981929242611,
+      "benzina_self": null,
+      "benzina_servito": 1.729,
+      "gasolio_self": null,
+      "gasolio_servito": 2.049,
+      "gpl_self": null,
+      "gpl_servito": null,
+      "metano_self": null,
+      "metano_servito": null,
+      "aggiornato": "18/04/2026 20:32:48",
+      "prezziDettaglio": [
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.729,
+          "isSelf": false,
+          "dtComu": "18/04/2026 20:32:48"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.049,
+          "isSelf": false,
+          "dtComu": "18/04/2026 20:32:48"
+        }
+      ]
+    },
+    {
+      "id": "28618",
+      "nome": "CERRETO CASTELLO-BIELLA-COSSATO",
+      "gestore": "\"IP SERVICES S.R.L.\"",
+      "bandiera": "Api-Ip",
+      "indirizzo": "CERRETO CASTELLO - S.P.BIELLA/COSSATO KM. 8,420  13060",
+      "comune": "QUAREGNA CERRETO",
+      "lat": 45.56401925266314,
+      "lng": 8.153385830688421,
+      "benzina_self": 1.769,
+      "benzina_servito": null,
+      "gasolio_self": 2.079,
+      "gasolio_servito": null,
+      "gpl_self": null,
+      "gpl_servito": null,
+      "metano_self": null,
+      "metano_servito": null,
+      "aggiornato": "22/04/2026 09:03:34",
+      "prezziDettaglio": [
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.769,
+          "isSelf": true,
+          "dtComu": "22/04/2026 09:03:34"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.079,
+          "isSelf": true,
+          "dtComu": "22/04/2026 09:03:34"
+        }
+      ]
+    },
+    {
+      "id": "58451",
+      "nome": "QUAREGNA CERRETO",
+      "gestore": "RETITALIA S.P.A.",
+      "bandiera": "Tamoil",
+      "indirizzo": "Via Martiri della Libertà 11  13854",
+      "comune": "QUAREGNA CERRETO",
+      "lat": 45.564766727524564,
+      "lng": 8.16452133939514,
+      "benzina_self": 1.699,
+      "benzina_servito": null,
+      "gasolio_self": 2.049,
+      "gasolio_servito": null,
+      "gpl_self": null,
+      "gpl_servito": null,
+      "metano_self": null,
+      "metano_servito": null,
+      "aggiornato": "22/04/2026 11:04:32",
+      "prezziDettaglio": [
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.699,
+          "isSelf": true,
+          "dtComu": "22/04/2026 11:04:32"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.049,
+          "isSelf": true,
+          "dtComu": "22/04/2026 11:04:32"
+        }
+      ]
+    },
+    {
+      "id": "17300",
+      "nome": "GUGLIELMINOTTI PAOLO",
+      "gestore": "GUGLIELMINOTTI PAOLO",
+      "bandiera": "Tamoil",
+      "indirizzo": "VIA ROMA  13845",
+      "comune": "RONCO BIELLESE",
+      "lat": 45.57913141154521,
+      "lng": 8.094035759568214,
+      "benzina_self": 1.719,
+      "benzina_servito": 1.719,
+      "gasolio_self": 2.089,
+      "gasolio_servito": 2.089,
+      "gpl_self": null,
+      "gpl_servito": null,
+      "metano_self": null,
+      "metano_servito": null,
+      "aggiornato": "22/04/2026 07:59:06",
+      "prezziDettaglio": [
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.719,
+          "isSelf": false,
+          "dtComu": "22/04/2026 07:59:06"
+        },
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.719,
+          "isSelf": true,
+          "dtComu": "22/04/2026 07:59:06"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.089,
+          "isSelf": false,
+          "dtComu": "22/04/2026 07:59:06"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.089,
+          "isSelf": true,
+          "dtComu": "22/04/2026 07:59:06"
+        }
+      ]
+    },
+    {
+      "id": "6414",
+      "nome": "SALUSSOLA SS 143 KM 19 435",
+      "gestore": "SERVIZI & GESTIONI ITALIA S.R.L.",
+      "bandiera": "Q8",
+      "indirizzo": "SS 143 KM 19 435 SNC 13885",
+      "comune": "SALUSSOLA",
+      "lat": 45.45548766709072,
+      "lng": 8.108793490212975,
+      "benzina_self": 1.699,
+      "benzina_servito": null,
+      "gasolio_self": 2.019,
+      "gasolio_servito": null,
+      "gpl_self": null,
+      "gpl_servito": null,
+      "metano_self": null,
+      "metano_servito": null,
+      "aggiornato": "23/04/2026 01:04:24",
+      "prezziDettaglio": [
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.699,
+          "isSelf": true,
+          "dtComu": "23/04/2026 01:04:24"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.019,
+          "isSelf": true,
+          "dtComu": "23/04/2026 01:04:24"
+        }
+      ]
+    },
+    {
+      "id": "46629",
+      "nome": "2483",
+      "gestore": "T.D.M. S.R.L.",
+      "bandiera": "Tamoil",
+      "indirizzo": "S.S. 143 KM 24+447 SN 13876",
+      "comune": "SANDIGLIANO",
+      "lat": 45.49776539881739,
+      "lng": 8.085867411045115,
+      "benzina_self": 1.699,
+      "benzina_servito": null,
+      "gasolio_self": 2.019,
+      "gasolio_servito": null,
+      "gpl_self": null,
+      "gpl_servito": 0.789,
+      "metano_self": null,
+      "metano_servito": 1.399,
+      "aggiornato": "22/04/2026 22:49:20",
+      "prezziDettaglio": [
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.699,
+          "isSelf": true,
+          "dtComu": "22/04/2026 22:49:20"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.019,
+          "isSelf": true,
+          "dtComu": "22/04/2026 22:49:20"
+        },
+        {
+          "carburante": "Metano",
+          "prezzo": 1.399,
+          "isSelf": false,
+          "dtComu": "22/04/2026 22:49:20"
+        },
+        {
+          "carburante": "GPL",
+          "prezzo": 0.789,
+          "isSelf": false,
+          "dtComu": "22/04/2026 08:04:09"
+        },
+        {
+          "carburante": "HVO",
+          "prezzo": 2.019,
+          "isSelf": true,
+          "dtComu": "22/04/2026 22:49:20"
+        }
+      ]
+    },
+    {
+      "id": "48688",
+      "nome": "Distributore Europam di Zampese Davide",
+      "gestore": "ZAMPESE DAVIDE",
+      "bandiera": "Europam",
+      "indirizzo": "VIA GRAMSCI 49 13876",
+      "comune": "SANDIGLIANO",
+      "lat": 45.52202688269508,
+      "lng": 8.075759150591532,
+      "benzina_self": 1.719,
+      "benzina_servito": 1.719,
+      "gasolio_self": 2.089,
+      "gasolio_servito": 2.089,
+      "gpl_self": null,
+      "gpl_servito": null,
+      "metano_self": null,
+      "metano_servito": null,
+      "aggiornato": "22/04/2026 19:26:52",
+      "prezziDettaglio": [
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.719,
+          "isSelf": false,
+          "dtComu": "22/04/2026 19:26:52"
+        },
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.719,
+          "isSelf": true,
+          "dtComu": "22/04/2026 19:26:52"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.089,
+          "isSelf": false,
+          "dtComu": "22/04/2026 19:26:52"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.089,
+          "isSelf": true,
+          "dtComu": "22/04/2026 19:26:52"
+        }
+      ]
+    },
+    {
+      "id": "26237",
+      "nome": "PV 114",
+      "gestore": "GESTIONI INNOVATIVE ITALIA S.R.L.",
+      "bandiera": "Agip Eni",
+      "indirizzo": "VIA GRAMSCI 10 13876",
+      "comune": "SANDIGLIANO",
+      "lat": 45.527260379224856,
+      "lng": 8.074696362018585,
+      "benzina_self": 1.687,
+      "benzina_servito": null,
+      "gasolio_self": 2.039,
+      "gasolio_servito": null,
+      "gpl_self": null,
+      "gpl_servito": null,
+      "metano_self": null,
+      "metano_servito": null,
+      "aggiornato": "22/04/2026 22:59:26",
+      "prezziDettaglio": [
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.687,
+          "isSelf": true,
+          "dtComu": "22/04/2026 22:59:26"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.039,
+          "isSelf": true,
+          "dtComu": "22/04/2026 22:59:26"
+        },
+        {
+          "carburante": "Blue Diesel",
+          "prezzo": 2.139,
+          "isSelf": true,
+          "dtComu": "22/04/2026 22:59:26"
+        }
+      ]
+    },
+    {
+      "id": "22209",
+      "nome": "FRATELLI GREMMO SNC",
+      "gestore": "FRATELLI GREMMO - S.N.C.",
+      "bandiera": "Esso",
+      "indirizzo": "Q. SELLA 63 13855",
+      "comune": "VALDENGO",
+      "lat": 45.56296643086004,
+      "lng": 8.134371531352144,
+      "benzina_self": 1.739,
+      "benzina_servito": 1.968,
+      "gasolio_self": 2.089,
+      "gasolio_servito": 2.318,
+      "gpl_self": null,
+      "gpl_servito": null,
+      "metano_self": null,
+      "metano_servito": null,
+      "aggiornato": "20/04/2026 10:24:02",
+      "prezziDettaglio": [
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.968,
+          "isSelf": false,
+          "dtComu": "20/04/2026 10:24:02"
+        },
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.739,
+          "isSelf": true,
+          "dtComu": "20/04/2026 10:24:02"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.318,
+          "isSelf": false,
+          "dtComu": "20/04/2026 10:24:02"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.089,
+          "isSelf": true,
+          "dtComu": "20/04/2026 10:24:02"
+        },
+        {
+          "carburante": "Gasolio Premium",
+          "prezzo": 2.518,
+          "isSelf": false,
+          "dtComu": "20/04/2026 10:24:02"
+        },
+        {
+          "carburante": "Gasolio Premium",
+          "prezzo": 2.289,
+          "isSelf": true,
+          "dtComu": "20/04/2026 10:24:02"
+        }
+      ]
+    },
+    {
+      "id": "61368",
+      "nome": "RETITALIA 72299",
+      "gestore": "SP GROUP SRLS",
+      "bandiera": "Retitalia",
+      "indirizzo": "strada statale 142 km 8+255 snc 13855",
+      "comune": "VALDENGO",
+      "lat": 45.553502126588,
+      "lng": 8.1502640987834,
+      "benzina_self": 1.719,
+      "benzina_servito": 1.909,
+      "gasolio_self": 2.049,
+      "gasolio_servito": 2.239,
+      "gpl_self": null,
+      "gpl_servito": 0.799,
+      "metano_self": null,
+      "metano_servito": null,
+      "aggiornato": "22/04/2026 18:25:21",
+      "prezziDettaglio": [
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.909,
+          "isSelf": false,
+          "dtComu": "22/04/2026 18:25:21"
+        },
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.719,
+          "isSelf": true,
+          "dtComu": "22/04/2026 18:25:21"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.239,
+          "isSelf": false,
+          "dtComu": "22/04/2026 18:25:21"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.049,
+          "isSelf": true,
+          "dtComu": "22/04/2026 18:25:21"
+        },
+        {
+          "carburante": "GPL",
+          "prezzo": 0.799,
+          "isSelf": false,
+          "dtComu": "22/04/2026 18:25:20"
+        },
+        {
+          "carburante": "HVO",
+          "prezzo": 2.049,
+          "isSelf": true,
+          "dtComu": "22/04/2026 18:25:21"
+        }
+      ]
+    },
+    {
+      "id": "43495",
+      "nome": "VALDENGO - 8639",
+      "gestore": "CORO S.R.L.",
+      "bandiera": "Api-Ip",
+      "indirizzo": "Via Roma  51 13060",
+      "comune": "VALDENGO",
+      "lat": 45.56635738884196,
+      "lng": 8.131582752149598,
+      "benzina_self": 1.829,
+      "benzina_servito": 1.829,
+      "gasolio_self": 2.129,
+      "gasolio_servito": 2.129,
+      "gpl_self": null,
+      "gpl_servito": 0.819,
+      "metano_self": null,
+      "metano_servito": null,
+      "aggiornato": "22/04/2026 23:27:22",
+      "prezziDettaglio": [
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.829,
+          "isSelf": false,
+          "dtComu": "22/04/2026 23:27:22"
+        },
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.829,
+          "isSelf": true,
+          "dtComu": "22/04/2026 23:27:22"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.129,
+          "isSelf": false,
+          "dtComu": "22/04/2026 07:28:09"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.129,
+          "isSelf": true,
+          "dtComu": "22/04/2026 07:28:09"
+        },
+        {
+          "carburante": "GPL",
+          "prezzo": 0.819,
+          "isSelf": false,
+          "dtComu": "22/04/2026 14:24:10"
+        }
+      ]
+    },
+    {
+      "id": "48874",
+      "nome": "GM RACING di Griffa Michele - Stazione Europam Mosso",
+      "gestore": "GM RACING DI GRIFFA MICHELE",
+      "bandiera": "Europam",
+      "indirizzo": "via quintino sella  2 13835",
+      "comune": "VALDILANA",
+      "lat": 45.648706369273064,
+      "lng": 8.138658182243702,
+      "benzina_self": 1.759,
+      "benzina_servito": 1.759,
+      "gasolio_self": 2.099,
+      "gasolio_servito": 2.099,
+      "gpl_self": null,
+      "gpl_servito": null,
+      "metano_self": null,
+      "metano_servito": null,
+      "aggiornato": "22/04/2026 06:54:45",
+      "prezziDettaglio": [
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.759,
+          "isSelf": false,
+          "dtComu": "22/04/2026 06:54:45"
+        },
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.759,
+          "isSelf": true,
+          "dtComu": "22/04/2026 06:54:45"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.099,
+          "isSelf": false,
+          "dtComu": "22/04/2026 06:54:45"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.099,
+          "isSelf": true,
+          "dtComu": "22/04/2026 06:54:45"
+        },
+        {
+          "carburante": "Gasolio speciale",
+          "prezzo": 2.099,
+          "isSelf": false,
+          "dtComu": "22/04/2026 06:54:45"
+        },
+        {
+          "carburante": "Gasolio speciale",
+          "prezzo": 2.099,
+          "isSelf": true,
+          "dtComu": "22/04/2026 06:54:45"
+        }
+      ]
+    },
+    {
+      "id": "60738",
+      "nome": "GM RACING di Griffa Michele - Stazione IP Ponzone",
+      "gestore": "GM RACING DI GRIFFA MICHELE",
+      "bandiera": "Api-Ip",
+      "indirizzo": "Via Provinciale 174 13835",
+      "comune": "VALDILANA",
+      "lat": 45.65,
+      "lng": 8.18,
+      "benzina_self": 1.759,
+      "benzina_servito": 1.759,
+      "gasolio_self": 2.089,
+      "gasolio_servito": 2.089,
+      "gpl_self": null,
+      "gpl_servito": null,
+      "metano_self": null,
+      "metano_servito": null,
+      "aggiornato": "22/04/2026 17:09:16",
+      "prezziDettaglio": [
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.759,
+          "isSelf": false,
+          "dtComu": "22/04/2026 17:09:16"
+        },
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.759,
+          "isSelf": true,
+          "dtComu": "22/04/2026 17:09:16"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.089,
+          "isSelf": false,
+          "dtComu": "22/04/2026 17:09:16"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.089,
+          "isSelf": true,
+          "dtComu": "22/04/2026 17:09:16"
+        }
+      ]
+    },
+    {
+      "id": "17482",
+      "nome": "Mancin Stazione Q8",
+      "gestore": "MANCIN ROBERTO & C. - S.N.C. DI MANCIN EMANUELE E PAOLA",
+      "bandiera": "Q8",
+      "indirizzo": "Statale 232 Panoramica Zegna, Km. 24, dir. Panoramica Zegna - 13835",
+      "comune": "VALDILANA",
+      "lat": 45.64039904289027,
+      "lng": 8.154146252873943,
+      "benzina_self": 1.729,
+      "benzina_servito": 1.729,
+      "gasolio_self": 2.079,
+      "gasolio_servito": 2.079,
+      "gpl_self": null,
+      "gpl_servito": null,
+      "metano_self": null,
+      "metano_servito": null,
+      "aggiornato": "23/04/2026 07:37:24",
+      "prezziDettaglio": [
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.729,
+          "isSelf": false,
+          "dtComu": "23/04/2026 07:37:24"
+        },
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.729,
+          "isSelf": true,
+          "dtComu": "23/04/2026 07:37:24"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.079,
+          "isSelf": false,
+          "dtComu": "23/04/2026 07:37:24"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.079,
+          "isSelf": true,
+          "dtComu": "23/04/2026 07:37:24"
+        }
+      ]
+    },
+    {
+      "id": "61553",
+      "nome": "VALDILANA",
+      "gestore": "RETITALIA S.P.A.",
+      "bandiera": "Tamoil",
+      "indirizzo": "VIA FALCERO 16 13825",
+      "comune": "VALDILANA",
+      "lat": 45.627806356205575,
+      "lng": 8.1499747883579,
+      "benzina_self": 1.719,
+      "benzina_servito": null,
+      "gasolio_self": 2.069,
+      "gasolio_servito": null,
+      "gpl_self": null,
+      "gpl_servito": null,
+      "metano_self": null,
+      "metano_servito": null,
+      "aggiornato": "22/04/2026 11:04:47",
+      "prezziDettaglio": [
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.719,
+          "isSelf": true,
+          "dtComu": "22/04/2026 11:04:47"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.069,
+          "isSelf": true,
+          "dtComu": "22/04/2026 11:04:47"
+        }
+      ]
+    },
+    {
+      "id": "30056",
+      "nome": "(3)PREALPINA DISTRIBUZIONE CARBURANTI SRL - VERRONE",
+      "gestore": "PREALPINA DISTRIBUZIONE CARBURANTI S.R.L.",
+      "bandiera": "Pompe Bianche",
+      "indirizzo": "Statale 230 di Massazza, Km. 230, dir. MASAZZA  13871",
+      "comune": "VERRONE",
+      "lat": 45.50683845963288,
+      "lng": 8.118454590439796,
+      "benzina_self": 1.729,
+      "benzina_servito": 1.729,
+      "gasolio_self": 2.089,
+      "gasolio_servito": 2.089,
+      "gpl_self": null,
+      "gpl_servito": null,
+      "metano_self": null,
+      "metano_servito": null,
+      "aggiornato": "22/04/2026 17:48:20",
+      "prezziDettaglio": [
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.729,
+          "isSelf": false,
+          "dtComu": "22/04/2026 17:48:20"
+        },
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.729,
+          "isSelf": true,
+          "dtComu": "22/04/2026 17:48:20"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.089,
+          "isSelf": false,
+          "dtComu": "22/04/2026 17:48:20"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.089,
+          "isSelf": true,
+          "dtComu": "22/04/2026 17:48:20"
+        }
+      ]
+    },
+    {
+      "id": "34224",
+      "nome": "2488",
+      "gestore": "T.D.M. S.R.L.",
+      "bandiera": "Tamoil",
+      "indirizzo": "MILANO 7 13856",
+      "comune": "VIGLIANO BIELLESE",
+      "lat": 45.56546084543841,
+      "lng": 8.093970715999603,
+      "benzina_self": 1.689,
+      "benzina_servito": null,
+      "gasolio_self": 2.029,
+      "gasolio_servito": null,
+      "gpl_self": null,
+      "gpl_servito": null,
+      "metano_self": null,
+      "metano_servito": null,
+      "aggiornato": "22/04/2026 22:48:15",
+      "prezziDettaglio": [
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.689,
+          "isSelf": true,
+          "dtComu": "22/04/2026 22:48:15"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.029,
+          "isSelf": true,
+          "dtComu": "22/04/2026 12:24:27"
+        }
+      ]
+    },
+    {
+      "id": "27843",
+      "nome": "PV 108",
+      "gestore": "GESTIONI INNOVATIVE ITALIA S.R.L.",
+      "bandiera": "Agip Eni",
+      "indirizzo": "STRADA DELLA TOLLEGNA SN 13856",
+      "comune": "VIGLIANO BIELLESE",
+      "lat": 45.55467691103092,
+      "lng": 8.129040598869324,
+      "benzina_self": 1.687,
+      "benzina_servito": null,
+      "gasolio_self": 2.039,
+      "gasolio_servito": null,
+      "gpl_self": null,
+      "gpl_servito": null,
+      "metano_self": null,
+      "metano_servito": null,
+      "aggiornato": "22/04/2026 23:57:54",
+      "prezziDettaglio": [
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.687,
+          "isSelf": true,
+          "dtComu": "22/04/2026 23:57:54"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.039,
+          "isSelf": true,
+          "dtComu": "22/04/2026 23:57:54"
+        },
+        {
+          "carburante": "Blue Diesel",
+          "prezzo": 2.139,
+          "isSelf": true,
+          "dtComu": "22/04/2026 23:57:54"
+        }
+      ]
+    },
+    {
+      "id": "36664",
+      "nome": "PV 181",
+      "gestore": "GESTIONI INNOVATIVE ITALIA S.R.L.",
+      "bandiera": "Agip Eni",
+      "indirizzo": "VIA MILANO 447 13856",
+      "comune": "VIGLIANO BIELLESE",
+      "lat": 45.56293869921625,
+      "lng": 8.127684742212296,
+      "benzina_self": 1.687,
+      "benzina_servito": null,
+      "gasolio_self": 2.039,
+      "gasolio_servito": null,
+      "gpl_self": null,
+      "gpl_servito": null,
+      "metano_self": null,
+      "metano_servito": null,
+      "aggiornato": "22/04/2026 23:16:41",
+      "prezziDettaglio": [
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.687,
+          "isSelf": true,
+          "dtComu": "22/04/2026 23:16:41"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.039,
+          "isSelf": true,
+          "dtComu": "22/04/2026 23:16:41"
+        },
+        {
+          "carburante": "Blue Diesel",
+          "prezzo": 2.139,
+          "isSelf": true,
+          "dtComu": "22/04/2026 23:16:41"
+        }
+      ]
+    },
+    {
+      "id": "32151",
+      "nome": "VIGLIANO BIELLESE - SS 142 KM 6.625",
+      "gestore": "\"IP SERVICES S.R.L.\"",
+      "bandiera": "Api-Ip",
+      "indirizzo": "S.S. 142 KM. 6,625  13069",
+      "comune": "VIGLIANO BIELLESE",
+      "lat": 45.55545634400619,
+      "lng": 8.131575101852377,
+      "benzina_self": 1.739,
+      "benzina_servito": null,
+      "gasolio_self": 2.079,
+      "gasolio_servito": null,
+      "gpl_self": null,
+      "gpl_servito": null,
+      "metano_self": null,
+      "metano_servito": null,
+      "aggiornato": "22/04/2026 09:06:20",
+      "prezziDettaglio": [
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.739,
+          "isSelf": true,
+          "dtComu": "22/04/2026 09:06:20"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.079,
+          "isSelf": true,
+          "dtComu": "22/04/2026 09:06:20"
+        }
+      ]
+    },
+    {
+      "id": "10110",
+      "nome": "VIGLIANO BIELLESE VIA MILANO 2",
+      "gestore": "SERVIZI & GESTIONI ITALIA S.R.L.",
+      "bandiera": "Q8",
+      "indirizzo": "VIA MILANO 2 13856",
+      "comune": "VIGLIANO BIELLESE",
+      "lat": 45.5660773116182,
+      "lng": 8.088916871827678,
+      "benzina_self": 1.689,
+      "benzina_servito": null,
+      "gasolio_self": 2.019,
+      "gasolio_servito": null,
+      "gpl_self": null,
+      "gpl_servito": null,
+      "metano_self": null,
+      "metano_servito": null,
+      "aggiornato": "23/04/2026 01:04:25",
+      "prezziDettaglio": [
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.689,
+          "isSelf": true,
+          "dtComu": "23/04/2026 01:04:25"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.019,
+          "isSelf": true,
+          "dtComu": "23/04/2026 01:04:25"
+        }
+      ]
+    },
+    {
+      "id": "11497",
+      "nome": "VILLANOVA BIELLESE-LOCALITA' DONNA",
+      "gestore": "SERVIZI & GESTIONI ITALIA S.R.L.",
+      "bandiera": "Q8",
+      "indirizzo": "LOCALITA' DONNA S/N 13030",
+      "comune": "VILLANOVA BIELLESE",
+      "lat": 45.469613166997966,
+      "lng": 8.211475860118867,
+      "benzina_self": 1.699,
+      "benzina_servito": null,
+      "gasolio_self": 2.039,
+      "gasolio_servito": null,
+      "gpl_self": null,
+      "gpl_servito": null,
+      "metano_self": null,
+      "metano_servito": null,
+      "aggiornato": "23/04/2026 07:34:34",
+      "prezziDettaglio": [
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.699,
+          "isSelf": true,
+          "dtComu": "23/04/2026 07:34:34"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.039,
+          "isSelf": true,
+          "dtComu": "23/04/2026 07:34:34"
+        }
+      ]
+    },
+    {
+      "id": "46700",
+      "nome": "6254",
+      "gestore": "T.D.M. S.R.L.",
+      "bandiera": "Tamoil",
+      "indirizzo": "PROVINCIALE 65 13886",
+      "comune": "VIVERONE",
+      "lat": 45.42344896507911,
+      "lng": 8.050920585700851,
+      "benzina_self": 1.699,
+      "benzina_servito": null,
+      "gasolio_self": 1.999,
+      "gasolio_servito": null,
+      "gpl_self": null,
+      "gpl_servito": null,
+      "metano_self": null,
+      "metano_servito": null,
+      "aggiornato": "22/04/2026 12:24:16",
+      "prezziDettaglio": [
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.699,
+          "isSelf": true,
+          "dtComu": "22/04/2026 12:24:16"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 1.999,
+          "isSelf": true,
+          "dtComu": "22/04/2026 12:24:16"
+        }
+      ]
+    },
+    {
+      "id": "52737",
+      "nome": "Nautica Zola di Zola Fausto Zola",
+      "gestore": "ZOLA FAUSTO",
+      "bandiera": "Pompe Bianche",
+      "indirizzo": "COMUNA 2 13886",
+      "comune": "VIVERONE",
+      "lat": 45.40917753205206,
+      "lng": 8.053656811301835,
+      "benzina_self": null,
+      "benzina_servito": 1.95,
+      "gasolio_self": null,
+      "gasolio_servito": null,
+      "gpl_self": null,
+      "gpl_servito": null,
+      "metano_self": null,
+      "metano_servito": null,
+      "aggiornato": "20/04/2026 08:22:21",
+      "prezziDettaglio": [
+        {
+          "carburante": "Benzina",
+          "prezzo": 1.95,
+          "isSelf": false,
+          "dtComu": "20/04/2026 08:22:21"
+        }
+      ]
+    }
+  ]
 }
