@@ -18,30 +18,16 @@ jobs:
         run: |
           node -e "
           const fs = require('fs');
-          const https = require('https');
 
           const PROVINCES = ['AL', 'AT', 'BI', 'CN', 'NO', 'TO', 'VB', 'VC'];
           const ANAGRAFICA_URL = 'https://www.mimit.gov.it/images/exportCSV/anagrafica_impianti_attivi.csv';
           const PREZZI_URL = 'https://www.mimit.gov.it/images/exportCSV/prezzo_alle_8.csv';
 
-          async function fetchWithRetry(url, method = 'GET') {
-            return new Promise((resolve, reject) => {
-              const req = https.request(url, { method }, (res) => {
-                if (method === 'HEAD') {
-                  resolve(res.headers);
-                  return;
-                }
-                let data = '';
-                res.on('data', (chunk) => (data += chunk));
-                res.on('end', () => resolve(data));
-              });
-              req.on('error', reject);
-              req.end();
-            });
-          }
-
           function parseCSV(text) {
+            if (!text) return { lines: [], extractionDate: null };
             const lines = text.split('\n').filter((l) => l.trim());
+            if (lines.length === 0) return { lines: [], extractionDate: null };
+            
             const dataLine = lines[0]; // e.g. 'Estrazione del 2026-03-30'
             const dateMatch = dataLine.match(/(\d{4}-\d{2}-\d{2})/);
             const extractionDate = dateMatch ? dateMatch[1] : null;
@@ -53,40 +39,57 @@ jobs:
             const today = new Date().toISOString().split('T')[0];
 
             // 1. Controllo Last-Modified MIMIT
-            const headers = await fetchWithRetry(ANAGRAFICA_URL, 'HEAD');
-            const lastModified = headers['last-modified'];
-            // mimitDate è la data di pubblicazione del file (oggi se aggiornato)
-            const mimitPubDate = lastModified ? new Date(lastModified).toISOString().split('T')[0] : null;
-            
-            console.log(\`Data pubblicazione MIMIT (Last-Modified): \${mimitPubDate}\`);
-            console.log(\`Data di oggi (UTC): \${today}\`);
+            console.log('Controllo Last-Modified MIMIT...');
+            try {
+              const headRes = await fetch(ANAGRAFICA_URL, { method: 'HEAD' });
+              const lastModified = headRes.headers.get('last-modified');
+              const mimitPubDate = lastModified ? new Date(lastModified).toISOString().split('T')[0] : null;
+              
+              console.log(\`Data pubblicazione MIMIT (Last-Modified): \${mimitPubDate}\`);
+              console.log(\`Data di oggi (UTC): \${today}\`);
 
-            if (mimitPubDate !== today) {
-              console.log('MIMIT non ancora aggiornato per la data odierna. Termino.');
-              return;
+              if (mimitPubDate !== today) {
+                console.log('MIMIT non ancora aggiornato per la data odierna. Termino.');
+                return;
+              }
+            } catch (e) {
+              console.error('Errore durante il controllo HEAD MIMIT:', e.message);
+              // Procediamo comunque per vedere se i dati sono cambiati nel file stesso
             }
 
-            // 2. Download CSV per leggere la extractionDate interna
-            console.log('Download CSV per verifica data interna...');
-            const anagraficaText = await fetchWithRetry(ANAGRAFICA_URL);
+            // 2. Download CSV Anagrafica
+            console.log('Download Anagrafica CSV...');
+            const anagraficaRes = await fetch(ANAGRAFICA_URL);
+            if (!anagraficaRes.ok) {
+              throw new Error(\`Impossibile scaricare anagrafica: \${anagraficaRes.status} \${anagraficaRes.statusText}\`);
+            }
+            const anagraficaText = await anagraficaRes.text();
             const { lines: aLines, extractionDate } = parseCSV(anagraficaText);
             
             console.log(\`Data di estrazione nel file MIMIT: \${extractionDate}\`);
+
+            if (!extractionDate) {
+              throw new Error('Impossibile determinare la data di estrazione dal file MIMIT.');
+            }
 
             // 3. Controllo se abbiamo già processato questa specifica extractionDate
             try {
               const currentData = JSON.parse(fs.readFileSync('data/VB.json', 'utf8'));
               if (currentData.extractionDate === extractionDate && extractionDate !== '1970-01-01') {
-                console.log('Dati con questa extractionDate già presenti. Termino.');
+                console.log('Dati con questa extractionDate già presenti nel repository. Termino.');
                 return;
               }
             } catch (e) {
-              console.log('File locale non trovato o extractionDate diversa. Procedo.');
+              console.log('File locale non trovato o extractionDate diversa. Procedo alla generazione.');
             }
 
             // 4. Download Prezzi
-            console.log('Download prezzi in corso...');
-            const prezziText = await fetchWithRetry(PREZZI_URL);
+            console.log('Download Prezzi CSV...');
+            const prezziRes = await fetch(PREZZI_URL);
+            if (!prezziRes.ok) {
+              throw new Error(\`Impossibile scaricare prezzi: \${prezziRes.status} \${prezziRes.statusText}\`);
+            }
+            const prezziText = await prezziRes.text();
             const { lines: pLines } = parseCSV(prezziText);
 
             // 5. Parsing Prezzi
@@ -129,8 +132,8 @@ jobs:
                     bandiera: cols[2].trim(),
                     indirizzo: cols[5].trim(),
                     comune: cols[6].trim(),
-                    lat: parseFloat(cols[8].trim()),
-                    lng: parseFloat(cols[9].trim()),
+                    lat: parseFloat(cols[8].trim()) || 0,
+                    lng: parseFloat(cols[9].trim()) || 0,
                     benzina_self: p.benzina_self?.prezzo ?? null,
                     benzina_servito: p.benzina_servito?.prezzo ?? null,
                     gasolio_self: p.gasolio_self?.prezzo ?? null,
@@ -156,11 +159,11 @@ jobs:
               console.log(\`✓ \${prov}: \${distributori.length} distributori\`);
             }
             
-            console.log(\`Completato alle: \${timestamp}\`);
+            console.log(\`Completato con successo alle: \${timestamp}\`);
           }
 
           run().catch(err => {
-            console.error('Errore critico:', err);
+            console.error('ERRORE CRITICO:', err.message);
             process.exit(1);
           });
           "
