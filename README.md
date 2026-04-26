@@ -29,7 +29,7 @@ benzup/
 
 ## ⚙️ Come funziona
 
-1. **Generazione Dati**: Una **GitHub Action** gira ogni 30 minuti (dalle 08:00 alle 14:00 UTC). Controlla se il MIMIT ha pubblicato nuovi dati, scarica i CSV, li processa e genera file JSON statici per ogni provincia piemontese.
+1. **Generazione Dati**: Una **GitHub Action** gira ogni 30 minuti (dalle 06:00 alle 14:00 UTC). Controlla se il MIMIT ha pubblicato nuovi dati, scarica i CSV, li processa e genera file JSON statici per ogni provincia piemontese.
 2. **Distribuzione**: I file JSON vengono salvati nella cartella `data/` del repository. Netlify serve questi file direttamente tramite la sua CDN globale.
 3. **Frontend**: L'utente apre `index.html`. La pagina rileva la provincia e scarica il file corrispondente (es. `/data/VB.json`).
 4. **Freshness**: Viene applicato un parametro di cache-busting `?v=YYYY-MM-DD` per garantire che il browser scarichi la versione più recente una volta al giorno.
