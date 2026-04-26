@@ -1,0 +1,167 @@
+const fs = require('fs');
+
+const PROVINCES = ['AL', 'AT', 'BI', 'CN', 'NO', 'TO', 'VB', 'VC'];
+const ANAGRAFICA_URL = 'https://www.mimit.gov.it/images/exportCSV/anagrafica_impianti_attivi.csv';
+const PREZZI_URL = 'https://www.mimit.gov.it/images/exportCSV/prezzo_alle_8.csv';
+
+function parseCSV(text) {
+  if (!text) return { lines: [], extractionDate: null };
+  const lines = text.split('\n').filter((l) => l.trim());
+  if (lines.length === 0) return { lines: [], extractionDate: null };
+
+  const dataLine = lines[0]; // e.g. 'Estrazione del 2026-03-30'
+  const dateMatch = dataLine.match(/(\d{4}-\d{2}-\d{2})/);
+  const extractionDate = dateMatch ? dateMatch[1] : null;
+  return { lines, extractionDate };
+}
+
+async function fetchWithTimeout(url, options = {}) {
+  const { timeout = 30000 } = options;
+  const controller = new AbortController();
+  const id = setTimeout(() => controller.abort(), timeout);
+  try {
+    const response = await fetch(url, { ...options, signal: controller.signal });
+    return response;
+  } finally {
+    clearTimeout(id);
+  }
+}
+
+async function run() {
+  console.log('--- Inizio Generazione JSON BenzUp ---');
+  const today = new Date().toISOString().split('T')[0];
+
+  // 0. INTERRUTTORE PREVENTIVO: Verifica se abbiamo già lavorato oggi
+  console.log('Verifica stato locale...');
+  try {
+    if (fs.existsSync('data/VB.json')) {
+      const localData = JSON.parse(fs.readFileSync('data/VB.json', 'utf8'));
+      const lastGeneratedDate = localData.generatedAt ? localData.generatedAt.split('T')[0] : null;
+
+      if (lastGeneratedDate === today) {
+        console.log(`[INTERRUTTORE] Lavoro già completato per oggi (${today}). Termino l'esecuzione.`);
+        return;
+      }
+    }
+  } catch (e) {
+    console.log('Nessun dato locale valido trovato, procedo con la ricerca...');
+  }
+
+  // 1. Controllo pubblicazione MIMIT
+  console.log('Verifica pubblicazione MIMIT (HEAD)...');
+  try {
+    const headRes = await fetchWithTimeout(ANAGRAFICA_URL, { method: 'HEAD' });
+    const lastModified = headRes.headers.get('last-modified');
+    const mimitPubDate = lastModified ? new Date(lastModified).toISOString().split('T')[0] : null;
+
+    console.log(`Data pubblicazione MIMIT: ${mimitPubDate}`);
+    console.log(`Data odierna (UTC): ${today}`);
+
+    if (mimitPubDate !== today) {
+      console.log('Il MIMIT non ha ancora pubblicato il file di oggi. Riprovo alla prossima schedulazione.');
+      return;
+    }
+  } catch (e) {
+    console.error('Errore durante il controllo HEAD MIMIT:', e.message);
+  }
+
+  // 2. Download e verifica data estrazione
+  console.log('Download CSV Anagrafica...');
+  const anagraficaRes = await fetchWithTimeout(ANAGRAFICA_URL);
+  if (!anagraficaRes.ok) throw new Error(`Status anagrafica: ${anagraficaRes.status}`);
+  const anagraficaText = await anagraficaRes.text();
+  const { lines: aLines, extractionDate } = parseCSV(anagraficaText);
+
+  console.log(`Data estrazione interna MIMIT: ${extractionDate}`);
+
+  if (!extractionDate) throw new Error('Data di estrazione non trovata nel CSV.');
+
+  // Controllo ridondante sulla extractionDate
+  try {
+    const currentData = JSON.parse(fs.readFileSync('data/VB.json', 'utf8'));
+    if (currentData.extractionDate === extractionDate && extractionDate !== '1970-01-01') {
+      console.log('I dati con questa extractionDate sono già presenti nel repository.');
+      return;
+    }
+  } catch (e) {}
+
+  // 3. Download Prezzi
+  console.log('Download CSV Prezzi...');
+  const prezziRes = await fetchWithTimeout(PREZZI_URL);
+  if (!prezziRes.ok) throw new Error(`Status prezzi: ${prezziRes.status}`);
+  const prezziText = await prezziRes.text();
+  const { lines: pLines } = parseCSV(prezziText);
+
+  // 4. Parsing Prezzi
+  console.log('Parsing dati prezzi...');
+  const prezzi = {};
+  for (let i = 2; i < pLines.length; i++) {
+    const cols = pLines[i].split('|');
+    if (cols.length >= 5) {
+      const id = cols[0].trim();
+      let carburante = cols[1].trim().toLowerCase();
+      if (carburante.includes('gpl')) carburante = 'gpl';
+      if (carburante.includes('metano')) carburante = 'metano';
+
+      const prezzo = parseFloat(cols[2].trim());
+      const isSelf = cols[3].trim() === '1';
+      const dtComu = cols[4].trim();
+
+      if (!prezzi[id]) prezzi[id] = { all: [] };
+      const key = isSelf ? `${carburante}_self` : `${carburante}_servito`;
+      prezzi[id][key] = { prezzo, dtComu };
+      prezzi[id].all.push({
+        carburante: cols[1].trim(),
+        prezzo,
+        isSelf: isSelf ? 1 : 0,
+        dtComu
+      });
+    }
+  }
+
+  // 5. Generazione JSON per provincia
+  console.log('Generazione file JSON...');
+  const timestamp = new Date().toISOString();
+
+  for (const prov of PROVINCES) {
+    const distributori = [];
+    for (let i = 2; i < aLines.length; i++) {
+      const cols = aLines[i].split('|');
+      if (cols.length >= 10 && cols[7].trim() === prov) {
+        const id = cols[0].trim();
+        const p = prezzi[id] || {};
+        distributori.push({
+          id,
+          nome: cols[4].trim(),
+          gestore: cols[1].trim(),
+          bandiera: cols[2].trim(),
+          indirizzo: cols[5].trim(),
+          comune: cols[6].trim(),
+          lat: parseFloat(cols[8].trim()) || 0,
+          lng: parseFloat(cols[9].trim()) || 0,
+          benzina_self: p.benzina_self?.prezzo ?? null,
+          benzina_servito: p.benzina_servito?.prezzo ?? null,
+          gasolio_self: p.gasolio_self?.prezzo ?? null,
+          gasolio_servito: p.gasolio_servito?.prezzo ?? null,
+          gpl_self: p.gpl_self?.prezzo ?? null,
+          gpl_servito: p.gpl_servito?.prezzo ?? null,
+          metano_self: p.metano_self?.prezzo ?? null,
+          metano_servito: p.metano_servito?.prezzo ?? null,
+          aggiornato: p.all?.[0]?.dtComu ?? null,
+          prezziDettaglio: p.all ?? []
+        });
+      }
+    }
+
+    const result = { extractionDate, generatedAt: timestamp, totale: distributori.length, distributori };
+    fs.writeFileSync(`data/${prov}.json`, JSON.stringify(result, null, 2));
+    console.log(`✓ ${prov}: ${distributori.length} distributori`);
+  }
+
+  console.log(`Completato con successo alle: ${timestamp}`);
+}
+
+run().catch(err => {
+  console.error('ERRORE CRITICO:', err.message);
+  process.exit(1);
+});

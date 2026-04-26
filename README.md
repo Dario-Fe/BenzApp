@@ -16,6 +16,8 @@ benzup/
 ├── .github/
 │   └── workflows/
 │       └── warmup.yml    # GitHub Action per la generazione dei JSON
+├── scripts/
+│   └── generate_data.js  # Script di elaborazione CSV → JSON
 ├── data/
 │   ├── VB.json           # Dati statici per provincia
 │   └── ...               # Altre province (AL, AT, BI, CN, NO, TO, VC)

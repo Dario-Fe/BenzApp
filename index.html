@@ -595,8 +595,7 @@
 <body>
 
 <!-- Netlify Forms Hidden Skeleton (for build detection) -->
-<form name="segnalazioni" data-netlify="true" hidden>
-  <input type="hidden" name="form-name" value="segnalazioni">
+<form name="segnalazioni" data-netlify="true" action="/" method="POST" hidden>
   <input type="hidden" name="id-impianto">
   <input type="hidden" name="nome-impianto">
   <input type="hidden" name="indirizzo">
@@ -921,7 +920,7 @@
       <button class="report-btn" onclick="toggleReportForm()">Segnala un problema</button>
 
       <div class="report-form-container" id="report-container">
-        <form name="segnalazioni" data-netlify="true" id="report-form" onsubmit="handleReportSubmit(event)">
+        <form name="segnalazioni" id="report-form" onsubmit="handleReportSubmit(event)">
           <input type="hidden" name="form-name" value="segnalazioni">
           <input type="hidden" name="id-impianto" value="${d.id}">
           <input type="hidden" name="nome-impianto" value="${escHtml(d.nome)}">
