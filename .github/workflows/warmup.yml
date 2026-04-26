@@ -5,6 +5,9 @@ on:
     - cron: '*/30 8-14 * * *' # Ogni 30 minuti dalle 08:00 alle 14:00 UTC
   workflow_dispatch: # Permette l'avvio manuale
 
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
 jobs:
   generate:
     runs-on: ubuntu-latest
