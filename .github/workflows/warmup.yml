@@ -2,11 +2,8 @@ name: JSON Data Generator
 
 on:
   schedule:
-    - cron: '*/30 6-13 * * *' # Ogni 30 minuti dalle 06:00 alle 13:00 UTC
+    - cron: '*/30 6-13 * * *' # Ogni 30 minuti dalle 08:00 alle 14:00 UTC
   workflow_dispatch: # Permette l'avvio manuale
-
-env:
-  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
 
 jobs:
   generate:
@@ -37,84 +34,85 @@ jobs:
             return { lines, extractionDate };
           }
 
+          async function fetchWithTimeout(url, options = {}) {
+            const { timeout = 30000 } = options;
+            const controller = new AbortController();
+            const id = setTimeout(() => controller.abort(), timeout);
+            try {
+              const response = await fetch(url, { ...options, signal: controller.signal });
+              return response;
+            } finally {
+              clearTimeout(id);
+            }
+          }
+
           async function run() {
-            console.log('--- Inizio Generazione JSON ---');
+            console.log('--- Inizio Generazione JSON BenzUp ---');
             const today = new Date().toISOString().split('T')[0];
 
-            // --- NUOVO CONTROLLO: Verifica se abbiamo già aggiornato i dati oggi ---
+            // 0. INTERRUTTORE PREVENTIVO: Verifica se abbiamo già lavorato oggi
+            console.log('Verifica stato locale...');
             try {
               if (fs.existsSync('data/VB.json')) {
                 const localData = JSON.parse(fs.readFileSync('data/VB.json', 'utf8'));
-                // Estraiamo solo la data (YYYY-MM-DD) dal timestamp di generazione
                 const lastGeneratedDate = localData.generatedAt ? localData.generatedAt.split('T')[0] : null;
                 
                 if (lastGeneratedDate === today) {
-                  console.log(\`[STOP] Il lavoro per oggi (\${today}) è già stato completato con successo. Esco dal ciclo.\`);
-                  return; // Lo script si ferma qui e non interroga il MIMIT
+                  console.log(\`[INTERRUTTORE] Lavoro già completato per oggi (\${today}). Termino l'esecuzione.\`);
+                  return;
                 }
               }
             } catch (e) {
-              console.log('Dati locali non trovati o incompleti, procedo con la ricerca di nuovi dati dal MIMIT...');
+              console.log('Nessun dato locale valido trovato, procedo con la ricerca...');
             }
-            // -----------------------------------------------------------------------
 
-            // 1. Controllo Last-Modified MIMIT
-            console.log('Controllo Last-Modified MIMIT...');
+            // 1. Controllo pubblicazione MIMIT
+            console.log('Verifica pubblicazione MIMIT (HEAD)...');
             try {
-              const headRes = await fetch(ANAGRAFICA_URL, { method: 'HEAD' });
+              const headRes = await fetchWithTimeout(ANAGRAFICA_URL, { method: 'HEAD' });
               const lastModified = headRes.headers.get('last-modified');
               const mimitPubDate = lastModified ? new Date(lastModified).toISOString().split('T')[0] : null;
               
-              console.log(\`Data pubblicazione MIMIT (Last-Modified): \${mimitPubDate}\`);
-              console.log(\`Data di oggi (UTC): \${today}\`);
+              console.log(\`Data pubblicazione MIMIT: \${mimitPubDate}\`);
+              console.log(\`Data odierna (UTC): \${today}\`);
 
               if (mimitPubDate !== today) {
-                console.log('MIMIT non ancora aggiornato per la data odierna. Termino.');
+                console.log('Il MIMIT non ha ancora pubblicato il file di oggi. Riprovo alla prossima schedulazione.');
                 return;
               }
             } catch (e) {
               console.error('Errore durante il controllo HEAD MIMIT:', e.message);
-              // Procediamo comunque per vedere se i dati sono cambiati nel file stesso
             }
 
-            // 2. Download CSV Anagrafica
-            console.log('Download Anagrafica CSV...');
-            const anagraficaRes = await fetch(ANAGRAFICA_URL);
-            if (!anagraficaRes.ok) {
-              throw new Error(\`Impossibile scaricare anagrafica: \${anagraficaRes.status} \${anagraficaRes.statusText}\`);
-            }
+            // 2. Download e verifica data estrazione
+            console.log('Download CSV Anagrafica...');
+            const anagraficaRes = await fetchWithTimeout(ANAGRAFICA_URL);
+            if (!anagraficaRes.ok) throw new Error(\`Status anagrafica: \${anagraficaRes.status}\`);
             const anagraficaText = await anagraficaRes.text();
             const { lines: aLines, extractionDate } = parseCSV(anagraficaText);
             
-            console.log(\`Data di estrazione nel file MIMIT: \${extractionDate}\`);
+            console.log(\`Data estrazione interna MIMIT: \${extractionDate}\`);
 
-            if (!extractionDate) {
-              throw new Error('Impossibile determinare la data di estrazione dal file MIMIT.');
-            }
+            if (!extractionDate) throw new Error('Data di estrazione non trovata nel CSV.');
 
-            // 3. Controllo se abbiamo già processato questa specifica extractionDate
-            // Nota: questo controllo è un backup nel caso in cui il controllo generatedAt fallisca o venga rimosso
+            // Controllo ridondante sulla extractionDate
             try {
               const currentData = JSON.parse(fs.readFileSync('data/VB.json', 'utf8'));
               if (currentData.extractionDate === extractionDate && extractionDate !== '1970-01-01') {
-                console.log('Dati con questa extractionDate già presenti nel repository. Termino.');
+                console.log('I dati con questa extractionDate sono già presenti nel repository.');
                 return;
               }
-            } catch (e) {
-              console.log('File locale non trovato o extractionDate diversa. Procedo alla generazione.');
-            }
+            } catch (e) {}
 
-            // 4. Download Prezzi
-            console.log('Download Prezzi CSV...');
-            const prezziRes = await fetch(PREZZI_URL);
-            if (!prezziRes.ok) {
-              throw new Error(\`Impossibile scaricare prezzi: \${prezziRes.status} \${prezziRes.statusText}\`);
-            }
+            // 3. Download Prezzi
+            console.log('Download CSV Prezzi...');
+            const prezziRes = await fetchWithTimeout(PREZZI_URL);
+            if (!prezziRes.ok) throw new Error(\`Status prezzi: \${prezziRes.status}\`);
             const prezziText = await prezziRes.text();
             const { lines: pLines } = parseCSV(prezziText);
 
-            // 5. Parsing Prezzi
-            console.log('Parsing prezzi...');
+            // 4. Parsing Prezzi
+            console.log('Parsing dati prezzi...');
             const prezzi = {};
             for (let i = 2; i < pLines.length; i++) {
               const cols = pLines[i].split('|');
@@ -135,8 +133,8 @@ jobs:
               }
             }
 
-            // 6. Generazione JSON per provincia
-            console.log('Generazione file per provincia...');
+            // 5. Generazione JSON per provincia
+            console.log('Generazione file JSON...');
             const timestamp = new Date().toISOString();
             
             for (const prov of PROVINCES) {
@@ -169,13 +167,7 @@ jobs:
                 }
               }
 
-              const result = {
-                extractionDate,
-                generatedAt: timestamp,
-                totale: distributori.length,
-                distributori
-              };
-
+              const result = { extractionDate, generatedAt: timestamp, totale: distributori.length, distributori };
               fs.writeFileSync(\`data/\${prov}.json\`, JSON.stringify(result, null, 2));
               console.log(\`✓ \${prov}: \${distributori.length} distributori\`);
             }
