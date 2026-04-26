@@ -501,6 +501,79 @@
       text-decoration: none;
     }
 
+    .report-btn {
+      display: block;
+      width: 100%;
+      margin-top: 10px;
+      padding: 12px;
+      background: transparent;
+      color: var(--text);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      font-family: 'DM Sans', sans-serif;
+      font-size: 14px;
+      font-weight: 500;
+      cursor: pointer;
+      text-align: center;
+      transition: background 0.2s;
+    }
+    .report-btn:active { background: var(--surface2); }
+
+    .report-form-container {
+      display: none;
+      margin-top: 20px;
+      padding-top: 20px;
+      border-top: 1px dashed var(--border);
+      animation: fadeIn 0.3s ease;
+    }
+    @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+
+    .report-textarea {
+      width: 100%;
+      min-height: 100px;
+      padding: 12px;
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      font-family: inherit;
+      font-size: 14px;
+      resize: vertical;
+      background: var(--surface2);
+      outline: none;
+    }
+    .report-textarea:focus { border-color: var(--text-light); }
+
+    .char-counter {
+      font-size: 11px;
+      color: var(--text-light);
+      text-align: right;
+      margin-top: 4px;
+    }
+
+    .submit-btn {
+      width: 100%;
+      margin-top: 16px;
+      padding: 14px;
+      background: var(--border);
+      color: var(--text);
+      border: none;
+      border-radius: var(--radius);
+      font-family: 'DM Sans', sans-serif;
+      font-size: 15px;
+      font-weight: 600;
+      cursor: pointer;
+    }
+    .submit-btn:disabled { opacity: 0.5; cursor: not-allowed; }
+
+    .form-status {
+      margin-top: 16px;
+      font-size: 14px;
+      text-align: center;
+      font-weight: 500;
+      display: none;
+    }
+    .form-status.success { color: var(--accent-cheap); display: block; }
+    .form-status.error { color: var(--accent-expensive); display: block; }
+
     /* ── FOOTER ── */
     .footer {
       text-align: center;
@@ -833,6 +906,32 @@
         </svg>
         Apri in Maps
       </a>
+
+      <button class="report-btn" onclick="toggleReportForm()">Segnala un problema</button>
+
+      <div class="report-form-container" id="report-container">
+        <form name="segnalazioni" data-netlify="true" id="report-form" onsubmit="handleReportSubmit(event)">
+          <input type="hidden" name="form-name" value="segnalazioni">
+          <input type="hidden" name="id-impianto" value="${d.id}">
+          <input type="hidden" name="nome-impianto" value="${escHtml(d.nome)}">
+          <input type="hidden" name="indirizzo" value="${escHtml(d.indirizzo)}">
+          <input type="hidden" name="comune" value="${escHtml(d.comune)}">
+          <input type="hidden" name="provincia" value="${currentProvince}">
+
+          <textarea
+            name="messaggio"
+            class="report-textarea"
+            placeholder="Descrivi il problema (es. prezzo non aggiornato, impianto chiuso...)"
+            maxlength="200"
+            required
+            oninput="updateCharCount(this)"
+          ></textarea>
+          <div class="char-counter"><span id="char-count">0</span>/200</div>
+
+          <button type="submit" class="submit-btn" id="submit-report">Invia segnalazione</button>
+          <div id="form-status" class="form-status"></div>
+        </form>
+      </div>
     `;
 
     document.getElementById('overlay').classList.add('open');
@@ -844,6 +943,60 @@
     document.getElementById('overlay').classList.remove('open');
     document.getElementById('detail-panel').classList.remove('open');
     document.body.style.overflow = '';
+  }
+
+  function toggleReportForm() {
+    const container = document.getElementById('report-container');
+    const isOpen = container.style.display === 'block';
+    container.style.display = isOpen ? 'none' : 'block';
+
+    if (!isOpen) {
+      setTimeout(() => {
+        container.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+      }, 100);
+    }
+  }
+
+  function updateCharCount(textarea) {
+    document.getElementById('char-count').textContent = textarea.value.length;
+  }
+
+  async function handleReportSubmit(e) {
+    e.preventDefault();
+    const form = e.target;
+    const status = document.getElementById('form-status');
+    const btn = document.getElementById('submit-report');
+
+    btn.disabled = true;
+    btn.textContent = 'Invio in corso...';
+    status.className = 'form-status';
+    status.textContent = '';
+
+    const formData = new FormData(form);
+
+    try {
+      const response = await fetch('/', {
+        method: 'POST',
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: new URLSearchParams(formData).toString()
+      });
+
+      if (response.ok) {
+        status.textContent = 'Segnalazione inviata, grazie!';
+        status.classList.add('success');
+        form.reset();
+        setTimeout(() => {
+          form.style.display = 'none';
+        }, 2000);
+      } else {
+        throw new Error();
+      }
+    } catch (err) {
+      status.textContent = 'Errore nell\'invio, riprova.';
+      status.classList.add('error');
+      btn.disabled = false;
+      btn.textContent = 'Invia segnalazione';
+    }
   }
 
   // Swipe down to close
