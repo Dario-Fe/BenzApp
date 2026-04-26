@@ -21,7 +21,7 @@
 
 ### Data Generation (DevOps)
 - **GitHub Action** (`.github/workflows/warmup.yml`):
-    - **Schedule**: Every 30 minutes from 08:00 to 14:00 UTC.
+    - **Schedule**: Every 30 minutes from 06:00 to 14:00 UTC.
     - **Intelligent Check**: First verifies local data freshness via `generatedAt` field to avoid redundant MIMIT requests and commits.
     - **Process**: Downloads CSVs, parses data for 8 Piedmont provinces, and updates repository static assets.
 

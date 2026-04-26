@@ -2,7 +2,7 @@ name: JSON Data Generator
 
 on:
   schedule:
-    - cron: '*/30 6-13 * * *' # Ogni 30 minuti dalle 08:00 alle 14:00 UTC
+    - cron: '*/30 6-13 * * *' # Ogni 30 minuti dalle 06:00 alle 14:00 UTC
   workflow_dispatch: # Permette l'avvio manuale
 
 jobs:
