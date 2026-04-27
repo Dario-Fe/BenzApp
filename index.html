@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Classifica prezzi carburanti Piemonte</title>
+  <title>Classifica prezzi carburanti VCO</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
   
@@ -101,21 +101,9 @@
       color: var(--text-light);
     }
 
-    /* ── SELECTS ── */
-    .header-selectors {
-      display: flex;
-      gap: 8px;
-      margin-top: 8px;
-    }
+    /* ── PROVINCE SELECT ── */
     .province-select {
-      flex: 0 0 40%;
-      min-width: 0;
-    }
-    .comune-select {
-      flex: 0 0 60%;
-      min-width: 0;
-    }
-    .province-select, .comune-select {
+      margin-top: 8px;
       padding: 6px 10px;
       border: 1px solid var(--border);
       border-radius: 8px;
@@ -124,8 +112,8 @@
       font-size: 12px;
       color: var(--text);
       cursor: pointer;
+      width: 100%;
       outline: none;
-      height: 34px;
     }
 
     /* ── FUEL TOGGLE ── */
@@ -140,8 +128,6 @@
       padding-right: 20px;
     }
     .fuel-toggle::-webkit-scrollbar { display: none; }
-
-
     .toggle-btn {
       flex: 1;
       padding: 10px 0;
@@ -624,21 +610,16 @@
     <div>
       <div class="app-title"><img src="icon.svg" class="app-logo" alt="Logo BenzUp"> BenzUp</div>
       <div class="app-subtitle" id="app-subtitle">Classifica prezzi carburanti</div>
-      <div class="header-selectors">
-        <select class="province-select" id="province-select" onchange="changeProvince(this.value)">
-          <option value="AL">Alessandria (AL)</option>
-          <option value="AT">Asti (AT)</option>
-          <option value="BI">Biella (BI)</option>
-          <option value="CN">Cuneo (CN)</option>
-          <option value="NO">Novara (NO)</option>
-          <option value="TO">Torino (TO)</option>
-          <option value="VB">VCO (VB)</option>
-          <option value="VC">Vercelli (VC)</option>
-        </select>
-        <select class="comune-select" id="comune-select" onchange="changeComune(this.value)">
-          <option value="">Tutti i comuni</option>
-        </select>
-      </div>
+      <select class="province-select" id="province-select" onchange="changeProvince(this.value)">
+        <option value="AL">Alessandria (AL)</option>
+        <option value="AT">Asti (AT)</option>
+        <option value="BI">Biella (BI)</option>
+        <option value="CN">Cuneo (CN)</option>
+        <option value="NO">Novara (NO)</option>
+        <option value="TO">Torino (TO)</option>
+        <option value="VB">VCO (VB)</option>
+        <option value="VC">Vercelli (VC)</option>
+      </select>
     </div>
     <div class="meta-badge">
       <div class="meta-date" id="meta-date">—</div>
@@ -663,7 +644,7 @@
   </div>
   <div class="footer">
     Dati aggiornati quotidianamente tra le 8.00 e le 11.00<br>
-    Ministero delle Imprese e del Made in Italy<br><br>
+    Ministero delle Imprese e del Made in Italy (MIMIT)<br><br>
     <a href="infoutili.html" style="color: var(--text-muted); text-decoration: underline;">Info utili</a>
     &nbsp;&bull;&nbsp;
     <a href="mailto:info@verbanianotizie.it" style="color: var(--text-muted); text-decoration: underline;">Contatti</a>
@@ -681,7 +662,6 @@
   let allData = null;
   let currentFuel = 'benzina';
   let currentProvince = localStorage.getItem('selectedProvince') || 'VB';
-  let currentComune = localStorage.getItem('lastComune') || '';
 
   function updateHeader() {
     const select = document.getElementById('province-select');
@@ -692,9 +672,6 @@
   function changeProvince(prov) {
     currentProvince = prov;
     localStorage.setItem('selectedProvince', prov);
-    // Reset comune filter on province change
-    currentComune = '';
-    localStorage.setItem('lastComune', '');
     updateHeader();
     loadData();
   }
@@ -719,14 +696,6 @@
       if (!res.ok) throw new Error('HTTP ' + res.status);
       allData = await res.json();
       
-      // Update/Reset Comune Filter
-      const comuni = [...new Set(allData.distributori.map(d => d.comune))].sort();
-      if (currentComune !== '' && !comuni.includes(currentComune)) {
-        currentComune = '';
-        localStorage.setItem('lastComune', '');
-      }
-      renderComuneSelect(comuni);
-
       if (allData.extractionDate) {
         const d = new Date(allData.extractionDate);
         document.getElementById('meta-date').textContent =
@@ -752,24 +721,6 @@
     renderList();
   }
 
-  function renderComuneSelect(comuni) {
-    const select = document.getElementById('comune-select');
-    if (!select) return;
-
-    let html = `<option value="">Tutti i comuni</option>`;
-    comuni.forEach(c => {
-      html += `<option value="${escHtml(c)}" ${currentComune === c ? 'selected' : ''}>${escHtml(c)}</option>`;
-    });
-    select.innerHTML = html;
-    select.value = currentComune;
-  }
-
-  function changeComune(comune) {
-    currentComune = comune;
-    localStorage.setItem('lastComune', comune);
-    renderList();
-  }
-
   function fmt(val) {
     if (val === null || val === undefined || isNaN(val)) return null;
     return val.toFixed(3);
@@ -784,17 +735,12 @@
     const selfKey = currentFuel + '_self';
     const servitoKey = currentFuel + '_servito';
 
-    // 1. Filter by fuel availability
+    // Filter distributors that have at least self or servito price
     let list = allData.distributori.filter(d =>
       d[selfKey] !== null || d[servitoKey] !== null
     );
 
-    // 2. Filter by selected commune
-    if (currentComune !== '') {
-      list = list.filter(d => d.comune === currentComune);
-    }
-
-    // 3. Sort by price (self preferred)
+    // Sort by self (preferred), fallback to servito
     list.sort((a, b) => {
       const pa = a[selfKey] ?? a[servitoKey] ?? 9999;
       const pb = b[selfKey] ?? b[servitoKey] ?? 9999;
