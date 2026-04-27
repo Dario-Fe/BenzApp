@@ -105,7 +105,8 @@
     .header-selectors {
       display: flex;
       gap: 8px;
-      margin-top: 8px;
+      margin-top: 4px;
+      margin-bottom: 16px;
     }
     .province-select {
       flex: 1 1 40%;
@@ -624,27 +625,27 @@
     <div>
       <div class="app-title"><img src="icon.svg" class="app-logo" alt="Logo BenzUp"> BenzUp</div>
       <div class="app-subtitle" id="app-subtitle">Classifica prezzi carburanti</div>
-      <div class="header-selectors">
-        <select class="province-select" id="province-select" onchange="changeProvince(this.value)">
-          <option value="AL">Alessandria (AL)</option>
-          <option value="AT">Asti (AT)</option>
-          <option value="BI">Biella (BI)</option>
-          <option value="CN">Cuneo (CN)</option>
-          <option value="NO">Novara (NO)</option>
-          <option value="TO">Torino (TO)</option>
-          <option value="VB">VCO (VB)</option>
-          <option value="VC">Vercelli (VC)</option>
-        </select>
-        <select class="comune-select" id="comune-select" onchange="changeComune(this.value)">
-          <option value="">Tutti i comuni</option>
-        </select>
-      </div>
     </div>
     <div class="meta-badge">
       <div class="meta-date" id="meta-date">—</div>
       <div class="meta-source">Fonte: MIMIT Open Data</div>
       <a href="infoutili.html" class="meta-source" style="text-decoration: underline; color: var(--text-muted);">Come funziona BenzUp</a>
     </div>
+  </div>
+  <div class="header-selectors">
+    <select class="province-select" id="province-select" onchange="changeProvince(this.value)">
+      <option value="AL">Alessandria (AL)</option>
+      <option value="AT">Asti (AT)</option>
+      <option value="BI">Biella (BI)</option>
+      <option value="CN">Cuneo (CN)</option>
+      <option value="NO">Novara (NO)</option>
+      <option value="TO">Torino (TO)</option>
+      <option value="VB">VCO (VB)</option>
+      <option value="VC">Vercelli (VC)</option>
+    </select>
+    <select class="comune-select" id="comune-select" onchange="changeComune(this.value)">
+      <option value="">Tutti i comuni</option>
+    </select>
   </div>
   <div class="fuel-toggle">
     <button class="toggle-btn active" data-fuel="benzina" onclick="switchFuel('benzina')">🟢 Benzina</button>
