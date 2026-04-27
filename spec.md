@@ -17,6 +17,7 @@
 - **Tech Stack**: HTML5, CSS3, Vanilla JavaScript.
 - **Data Loading**: Fetches static JSON files from `/data/{PROVINCIA}.json`.
 - **Cache Busting**: Uses a `?v=YYYY-MM-DD` (UTC) query parameter to ensure daily freshness.
+- **Commune Filter**: Dynamic horizontal scrolling chips to filter the list by municipality.
 - **Interaction**: Includes a reporting system integrated with Netlify Forms.
 
 ### Data Generation (DevOps)
@@ -49,6 +50,11 @@
     - `id-impianto`, `nome-impianto`, `indirizzo`, `comune`, `provincia` (hidden, auto-filled).
     - `messaggio` (Textarea, max 200 chars).
 - **Submission**: AJAX via `fetch` API using `application/x-www-form-urlencoded`.
+
+### Commune Filter (Chip System)
+- **Logic**: Extracts unique municipalities from the data, sorts them alphabetically, and prepends "Tutti" (All).
+- **Persistence**: Saves the last selected municipality in `localStorage` (`lastComune`).
+- **Reset**: Resets to "Tutti" when the selected province changes.
 
 ### Reliability Indicator (Traffic Light System)
 - 🟢 **Green**: Updated today.
