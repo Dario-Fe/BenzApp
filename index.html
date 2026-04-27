@@ -101,9 +101,21 @@
       color: var(--text-light);
     }
 
-    /* ── PROVINCE SELECT ── */
-    .province-select {
+    /* ── SELECTS ── */
+    .header-selectors {
+      display: flex;
+      gap: 8px;
       margin-top: 8px;
+    }
+    .province-select {
+      flex: 0 0 40%;
+      min-width: 0;
+    }
+    .comune-select {
+      flex: 0 0 60%;
+      min-width: 0;
+    }
+    .province-select, .comune-select {
       padding: 6px 10px;
       border: 1px solid var(--border);
       border-radius: 8px;
@@ -112,8 +124,8 @@
       font-size: 12px;
       color: var(--text);
       cursor: pointer;
-      width: 100%;
       outline: none;
+      height: 34px;
     }
 
     /* ── FUEL TOGGLE ── */
@@ -129,33 +141,6 @@
     }
     .fuel-toggle::-webkit-scrollbar { display: none; }
 
-    .comune-chips {
-      display: flex;
-      gap: 8px;
-      overflow-x: auto;
-      padding: 0 0 14px 0;
-      scrollbar-width: none;
-      -webkit-overflow-scrolling: touch;
-    }
-    .comune-chips::-webkit-scrollbar { display: none; }
-    .comune-chip {
-      flex-shrink: 0;
-      border-radius: 20px;
-      padding: 6px 14px;
-      font-size: 13px;
-      font-family: 'DM Sans', sans-serif;
-      border: 1px solid var(--border);
-      background: var(--surface2);
-      color: var(--text-muted);
-      cursor: pointer;
-      white-space: nowrap;
-      transition: all 0.2s;
-    }
-    .comune-chip.active {
-      background: var(--text);
-      color: white;
-      border-color: var(--text);
-    }
 
     .toggle-btn {
       flex: 1;
@@ -639,16 +624,21 @@
     <div>
       <div class="app-title"><img src="icon.svg" class="app-logo" alt="Logo BenzUp"> BenzUp</div>
       <div class="app-subtitle" id="app-subtitle">Classifica prezzi carburanti</div>
-      <select class="province-select" id="province-select" onchange="changeProvince(this.value)">
-        <option value="AL">Alessandria (AL)</option>
-        <option value="AT">Asti (AT)</option>
-        <option value="BI">Biella (BI)</option>
-        <option value="CN">Cuneo (CN)</option>
-        <option value="NO">Novara (NO)</option>
-        <option value="TO">Torino (TO)</option>
-        <option value="VB">VCO (VB)</option>
-        <option value="VC">Vercelli (VC)</option>
-      </select>
+      <div class="header-selectors">
+        <select class="province-select" id="province-select" onchange="changeProvince(this.value)">
+          <option value="AL">Alessandria (AL)</option>
+          <option value="AT">Asti (AT)</option>
+          <option value="BI">Biella (BI)</option>
+          <option value="CN">Cuneo (CN)</option>
+          <option value="NO">Novara (NO)</option>
+          <option value="TO">Torino (TO)</option>
+          <option value="VB">VCO (VB)</option>
+          <option value="VC">Vercelli (VC)</option>
+        </select>
+        <select class="comune-select" id="comune-select" onchange="changeComune(this.value)">
+          <option value="">Tutti i comuni</option>
+        </select>
+      </div>
     </div>
     <div class="meta-badge">
       <div class="meta-date" id="meta-date">—</div>
@@ -662,7 +652,6 @@
     <button class="toggle-btn" data-fuel="gpl" onclick="switchFuel('gpl')">🟣 GPL</button>
     <button class="toggle-btn" data-fuel="metano" onclick="switchFuel('metano')">🟠 Metano</button>
   </div>
-  <div class="comune-chips"></div>
 </div>
 
 <main>
@@ -673,7 +662,7 @@
     </div>
   </div>
   <div class="footer">
-    Dati aggiornati quotidianamente tra le 8:00 e le 11:00<br>
+    Dati aggiornati quotidianamente tra le 8.00 e le 11.00<br>
     Ministero delle Imprese e del Made in Italy<br><br>
     <a href="infoutili.html" style="color: var(--text-muted); text-decoration: underline;">Info utili</a>
     &nbsp;&bull;&nbsp;
@@ -692,7 +681,7 @@
   let allData = null;
   let currentFuel = 'benzina';
   let currentProvince = localStorage.getItem('selectedProvince') || 'VB';
-  let currentComune = localStorage.getItem('lastComune') || 'Tutti';
+  let currentComune = localStorage.getItem('lastComune') || '';
 
   function updateHeader() {
     const select = document.getElementById('province-select');
@@ -704,8 +693,8 @@
     currentProvince = prov;
     localStorage.setItem('selectedProvince', prov);
     // Reset comune filter on province change
-    currentComune = 'Tutti';
-    localStorage.setItem('lastComune', 'Tutti');
+    currentComune = '';
+    localStorage.setItem('lastComune', '');
     updateHeader();
     loadData();
   }
@@ -732,11 +721,11 @@
       
       // Update/Reset Comune Filter
       const comuni = [...new Set(allData.distributori.map(d => d.comune))].sort();
-      if (currentComune !== 'Tutti' && !comuni.includes(currentComune)) {
-        currentComune = 'Tutti';
-        localStorage.setItem('lastComune', 'Tutti');
+      if (currentComune !== '' && !comuni.includes(currentComune)) {
+        currentComune = '';
+        localStorage.setItem('lastComune', '');
       }
-      renderComuneChips(comuni);
+      renderComuneSelect(comuni);
 
       if (allData.extractionDate) {
         const d = new Date(allData.extractionDate);
@@ -763,29 +752,21 @@
     renderList();
   }
 
-  function renderComuneChips(comuni) {
-    const container = document.querySelector('.comune-chips');
-    if (!container) return;
+  function renderComuneSelect(comuni) {
+    const select = document.getElementById('comune-select');
+    if (!select) return;
 
-    let html = `<button class="comune-chip ${currentComune === 'Tutti' ? 'active' : ''}" onclick="filterByComune('Tutti')">Tutti</button>`;
+    let html = `<option value="">Tutti i comuni</option>`;
     comuni.forEach(c => {
-      html += `<button class="comune-chip ${currentComune === c ? 'active' : ''}" onclick="filterByComune('${c.replace(/'/g, "\\'")}')">${c}</button>`;
+      html += `<option value="${escHtml(c)}" ${currentComune === c ? 'selected' : ''}>${escHtml(c)}</option>`;
     });
-    container.innerHTML = html;
-
-    // Scroll to active chip
-    const active = container.querySelector('.active');
-    if (active) {
-      container.scrollTo({ left: active.offsetLeft - 20, behavior: 'smooth' });
-    }
+    select.innerHTML = html;
+    select.value = currentComune;
   }
 
-  function filterByComune(comune) {
+  function changeComune(comune) {
     currentComune = comune;
     localStorage.setItem('lastComune', comune);
-    document.querySelectorAll('.comune-chip').forEach(c => {
-      c.classList.toggle('active', c.textContent === comune);
-    });
     renderList();
   }
 
@@ -809,7 +790,7 @@
     );
 
     // 2. Filter by selected commune
-    if (currentComune !== 'Tutti') {
+    if (currentComune !== '') {
       list = list.filter(d => d.comune === currentComune);
     }
 

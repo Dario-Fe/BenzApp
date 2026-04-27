@@ -3,7 +3,7 @@
 Web app per confrontare i prezzi dei carburanti nelle province del **Piemonte**, ordinati dal più conveniente al meno conveniente.
 
 **Fonte dati:** Ministero delle Imprese e del Made in Italy (MIMIT) — Open Data ufficiali  
-**Aggiornamento:** Quotidiano (pomeriggio)  
+**Aggiornamento:** Quotidiano (automatico)  
 **Province supportate:** VCO, Novara, Torino, Vercelli, Biella, Alessandria, Asti, Cuneo.  
 **Caratteristiche:** Ultra-leggera, installabile come App (PWA), privacy-first.
 
@@ -39,7 +39,7 @@ benzup/
 - **PWA Support**: Installabile su smartphone come app nativa.
 - **Static Architecture**: Massima velocità di caricamento e affidabilità.
 - **4 Carburanti**: Supporto completo per **Benzina**, **Gasolio**, **GPL** e **Metano**.
-- **Filtro Comuni**: Navigazione rapida tramite chip scorrevoli per filtrare i distributori per singolo comune.
+- **Filtro Comuni**: Menu a discesa per filtrare rapidamente i distributori per singolo comune.
 - **Indicatore Attendibilità (Semaforo)**: Sistema a colori basato sulla data di comunicazione del prezzo al Ministero.
 - **Segnalazione Problemi**: Modulo integrato via **Netlify Forms** per segnalare impianti chiusi o prezzi errati direttamente dalla scheda di dettaglio.
 
