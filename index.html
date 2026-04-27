@@ -128,6 +128,35 @@
       padding-right: 20px;
     }
     .fuel-toggle::-webkit-scrollbar { display: none; }
+
+    .comune-chips {
+      display: flex;
+      gap: 8px;
+      overflow-x: auto;
+      padding: 0 0 14px 0;
+      scrollbar-width: none;
+      -webkit-overflow-scrolling: touch;
+    }
+    .comune-chips::-webkit-scrollbar { display: none; }
+    .comune-chip {
+      flex-shrink: 0;
+      border-radius: 20px;
+      padding: 6px 14px;
+      font-size: 13px;
+      font-family: 'DM Sans', sans-serif;
+      border: 1px solid var(--border);
+      background: var(--surface2);
+      color: var(--text-muted);
+      cursor: pointer;
+      white-space: nowrap;
+      transition: all 0.2s;
+    }
+    .comune-chip.active {
+      background: var(--text);
+      color: white;
+      border-color: var(--text);
+    }
+
     .toggle-btn {
       flex: 1;
       padding: 10px 0;
@@ -633,6 +662,7 @@
     <button class="toggle-btn" data-fuel="gpl" onclick="switchFuel('gpl')">🟣 GPL</button>
     <button class="toggle-btn" data-fuel="metano" onclick="switchFuel('metano')">🟠 Metano</button>
   </div>
+  <div class="comune-chips"></div>
 </div>
 
 <main>
@@ -662,6 +692,7 @@
   let allData = null;
   let currentFuel = 'benzina';
   let currentProvince = localStorage.getItem('selectedProvince') || 'VB';
+  let currentComune = localStorage.getItem('lastComune') || 'Tutti';
 
   function updateHeader() {
     const select = document.getElementById('province-select');
@@ -672,6 +703,9 @@
   function changeProvince(prov) {
     currentProvince = prov;
     localStorage.setItem('selectedProvince', prov);
+    // Reset comune filter on province change
+    currentComune = 'Tutti';
+    localStorage.setItem('lastComune', 'Tutti');
     updateHeader();
     loadData();
   }
@@ -696,6 +730,14 @@
       if (!res.ok) throw new Error('HTTP ' + res.status);
       allData = await res.json();
       
+      // Update/Reset Comune Filter
+      const comuni = [...new Set(allData.distributori.map(d => d.comune))].sort();
+      if (currentComune !== 'Tutti' && !comuni.includes(currentComune)) {
+        currentComune = 'Tutti';
+        localStorage.setItem('lastComune', 'Tutti');
+      }
+      renderComuneChips(comuni);
+
       if (allData.extractionDate) {
         const d = new Date(allData.extractionDate);
         document.getElementById('meta-date').textContent =
@@ -721,6 +763,32 @@
     renderList();
   }
 
+  function renderComuneChips(comuni) {
+    const container = document.querySelector('.comune-chips');
+    if (!container) return;
+
+    let html = `<button class="comune-chip ${currentComune === 'Tutti' ? 'active' : ''}" onclick="filterByComune('Tutti')">Tutti</button>`;
+    comuni.forEach(c => {
+      html += `<button class="comune-chip ${currentComune === c ? 'active' : ''}" onclick="filterByComune('${c.replace(/'/g, "\\'")}')">${c}</button>`;
+    });
+    container.innerHTML = html;
+
+    // Scroll to active chip
+    const active = container.querySelector('.active');
+    if (active) {
+      container.scrollTo({ left: active.offsetLeft - 20, behavior: 'smooth' });
+    }
+  }
+
+  function filterByComune(comune) {
+    currentComune = comune;
+    localStorage.setItem('lastComune', comune);
+    document.querySelectorAll('.comune-chip').forEach(c => {
+      c.classList.toggle('active', c.textContent === comune);
+    });
+    renderList();
+  }
+
   function fmt(val) {
     if (val === null || val === undefined || isNaN(val)) return null;
     return val.toFixed(3);
@@ -735,12 +803,17 @@
     const selfKey = currentFuel + '_self';
     const servitoKey = currentFuel + '_servito';
 
-    // Filter distributors that have at least self or servito price
+    // 1. Filter by fuel availability
     let list = allData.distributori.filter(d =>
       d[selfKey] !== null || d[servitoKey] !== null
     );
 
-    // Sort by self (preferred), fallback to servito
+    // 2. Filter by selected commune
+    if (currentComune !== 'Tutti') {
+      list = list.filter(d => d.comune === currentComune);
+    }
+
+    // 3. Sort by price (self preferred)
     list.sort((a, b) => {
       const pa = a[selfKey] ?? a[servitoKey] ?? 9999;
       const pb = b[selfKey] ?? b[servitoKey] ?? 9999;
