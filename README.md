@@ -3,7 +3,7 @@
 Web app per confrontare i prezzi dei carburanti nelle province del **Piemonte**, ordinati dal più conveniente al meno conveniente.
 
 **Fonte dati:** Ministero delle Imprese e del Made in Italy (MIMIT) — Open Data ufficiali  
-**Aggiornamento:** Quotidiano (pomeriggio)  
+**Aggiornamento:** Quotidiano (automatico)
 **Province supportate:** VCO, Novara, Torino, Vercelli, Biella, Alessandria, Asti, Cuneo.  
 **Caratteristiche:** Ultra-leggera, installabile come App (PWA), privacy-first.
 

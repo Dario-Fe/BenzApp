@@ -52,8 +52,8 @@
 - **Submission**: AJAX via `fetch` API using `application/x-www-form-urlencoded`.
 
 ### Commune Filter (Dropdown System)
-- **Logic**: Extracts unique municipalities from the data, sorts them alphabetically, and prepends "Tutti i comuni".
-- **UI**: Positioned alongside the province selector in a 40/60 flex row.
+- **Logic**: Extracts unique municipalities from the data, sorts them alphabetically, and prepends "Tutti i comuni" (empty value).
+- **UI**: Positioned alongside the province selector in a flex container (`.header-selectors`) with a 40/60 width split.
 - **Persistence**: Saves the last selected municipality in `localStorage` (`lastComune`).
 - **Reset**: Resets to "Tutti i comuni" (empty value) when the selected province changes.
 
