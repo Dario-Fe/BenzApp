@@ -5,6 +5,11 @@ on:
     - cron: '5,35 8-13 * * *' # Alle :05 e :35 di ogni ora dalle 08:00 alle 13:59 UTC
   workflow_dispatch: # Permette l'avvio manuale
 
+# Impedisce esecuzioni sovrapposte se GitHub è lento o in ritardo
+concurrency:
+  group: data-generation
+  cancel-in-progress: true
+
 jobs:
   generate:
     runs-on: ubuntu-latest
