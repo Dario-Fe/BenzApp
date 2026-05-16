@@ -18,6 +18,7 @@ benzup/
 │       └── warmup.yml    # GitHub Action per la generazione dei JSON
 ├── data/
 │   ├── VB.json           # Dati statici per provincia
+│   ├── overrides.json    # Correzioni manuali per impianti (GPS, nomi, ecc.)
 │   └── ...               # Altre province (AL, AT, BI, CN, NO, TO, VC)
 ├── index.html            # App principale (Frontend statico)
 ├── infoutili.html        # Pagina informativa (Fonte dati e disclaimers)
@@ -42,6 +43,25 @@ benzup/
 - **Filtro Comuni**: Menu a discesa per filtrare rapidamente i distributori per singolo comune.
 - **Indicatore Attendibilità (Semaforo)**: Sistema a colori basato sulla data di comunicazione del prezzo al Ministero.
 - **Segnalazione Problemi**: Modulo integrato via **Netlify Forms** per segnalare impianti chiusi o prezzi errati direttamente dalla scheda di dettaglio.
+- **Sistema di Override**: Possibilità di correggere manualmente dati errati alla fonte (es. coordinate GPS sbagliate nel database MIMIT) tramite il file `data/overrides.json`.
+
+---
+
+## 🛠️ Correzione dati (Overrides)
+
+Se un impianto ha dati errati (es. posizione sulla mappa sbagliata), è possibile forzare i valori corretti aggiungendo l'ID Impianto nel file `data/overrides.json`:
+
+```json
+{
+  "54337": {
+    "lat": 45.910938,
+    "lng": 8.504121,
+    "nome": "Nome Corretto"
+  }
+}
+```
+
+I campi specificati nell'override sovrascriveranno quelli provenienti dal CSV ufficiale durante la successiva generazione dei dati. Per forzare l'aggiornamento immediato, avviare manualmente la GitHub Action tramite il tasto **Run workflow**.
 
 ---
 
