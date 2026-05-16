@@ -54,12 +54,19 @@ Se un impianto ha dati errati (es. posizione sulla mappa sbagliata), è possibil
 ```json
 {
   "54337": {
-    "lat": 45.910938,
-    "lng": 8.504121,
-    "nome": "Nome Corretto"
+    "nome": "STAZIONE ENI STRESA",
+    "indirizzo": "SEMPIONE NORD S.S.33 40",
+    "lat": 45.91093828024478,
+    "lng": 8.504121672259629,
+    "benzina_self": 1.750,
+    "gasolio_self": 1.650,
+    "gpl_self": null,
+    "metano_self": null
   }
 }
 ```
+
+È possibile sovrascrivere qualsiasi campo presente nell'oggetto distributore (incluso `gestore`, `bandiera`, `comune`, `aggiornato`, ecc.).
 
 I campi specificati nell'override sovrascriveranno quelli provenienti dal CSV ufficiale durante la successiva generazione dei dati. Per forzare l'aggiornamento immediato, avviare manualmente la GitHub Action tramite il tasto **Run workflow**.
 
