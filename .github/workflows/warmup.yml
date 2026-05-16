@@ -133,7 +133,18 @@ jobs:
               }
             }
 
-            // 5. Generazione JSON per provincia
+            // 5. Caricamento Overrides
+            let overrides = {};
+            try {
+              if (fs.existsSync('data/overrides.json')) {
+                overrides = JSON.parse(fs.readFileSync('data/overrides.json', 'utf8'));
+                console.log(`Caricati ${Object.keys(overrides).length} overrides.`);
+              }
+            } catch (e) {
+              console.log('Errore durante il caricamento degli overrides:', e.message);
+            }
+
+            // 6. Generazione JSON per provincia
             console.log('Generazione file JSON...');
             const timestamp = new Date().toISOString();
             
@@ -144,7 +155,7 @@ jobs:
                 if (cols.length >= 10 && cols[7].trim() === prov) {
                   const id = cols[0].trim();
                   const p = prezzi[id] || {};
-                  distributori.push({
+                  const d = {
                     id,
                     nome: cols[4].trim(),
                     gestore: cols[1].trim(),
@@ -163,7 +174,12 @@ jobs:
                     metano_servito: p.metano_servito?.prezzo ?? null,
                     aggiornato: p.all?.[0]?.dtComu ?? null,
                     prezziDettaglio: p.all ?? []
-                  });
+                  };
+
+                  if (overrides[id]) {
+                    Object.assign(d, overrides[id]);
+                  }
+                  distributori.push(d);
                 }
               }
 
