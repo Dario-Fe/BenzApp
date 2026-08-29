@@ -1,6 +1,6 @@
 {
-  "extractionDate": "2026-08-27",
-  "generatedAt": "2026-08-28T12:21:26.955Z",
+  "extractionDate": "2026-08-28",
+  "generatedAt": "2026-08-29T12:15:16.898Z",
   "totale": 94,
   "distributori": [
     {
@@ -96,45 +96,45 @@
       "comune": "BORGO VERCELLI",
       "lat": 45.347667856065954,
       "lng": 8.454266272109635,
-      "benzina_self": 1.989,
+      "benzina_self": 1.979,
       "benzina_servito": 1.989,
-      "gasolio_self": 2.059,
-      "gasolio_servito": 2.079,
+      "gasolio_self": 2.049,
+      "gasolio_servito": 2.059,
       "gpl_self": null,
       "gpl_servito": 0.659,
       "metano_self": null,
       "metano_servito": null,
-      "aggiornato": "25/08/2026 08:52:05",
+      "aggiornato": "27/08/2026 11:44:06",
       "prezziDettaglio": [
         {
           "carburante": "Benzina",
           "prezzo": 1.989,
           "isSelf": false,
-          "dtComu": "25/08/2026 08:52:05"
+          "dtComu": "27/08/2026 11:44:06"
         },
         {
           "carburante": "Benzina",
-          "prezzo": 1.989,
+          "prezzo": 1.979,
           "isSelf": true,
-          "dtComu": "24/08/2026 14:06:46"
-        },
-        {
-          "carburante": "Gasolio",
-          "prezzo": 2.079,
-          "isSelf": false,
-          "dtComu": "24/08/2026 09:08:26"
+          "dtComu": "27/08/2026 14:07:19"
         },
         {
           "carburante": "Gasolio",
           "prezzo": 2.059,
+          "isSelf": false,
+          "dtComu": "27/08/2026 08:52:12"
+        },
+        {
+          "carburante": "Gasolio",
+          "prezzo": 2.049,
           "isSelf": true,
-          "dtComu": "26/08/2026 14:02:17"
+          "dtComu": "27/08/2026 14:07:19"
         },
         {
           "carburante": "GPL",
           "prezzo": 0.659,
           "isSelf": false,
-          "dtComu": "24/08/2026 09:08:26"
+          "dtComu": "27/08/2026 08:52:12"
         }
       ]
     },
@@ -147,27 +147,27 @@
       "comune": "BORGOSESIA",
       "lat": 45.71376446489995,
       "lng": 8.28096507472992,
-      "benzina_self": 2.039,
+      "benzina_self": 2.029,
       "benzina_servito": null,
-      "gasolio_self": 2.159,
+      "gasolio_self": 2.149,
       "gasolio_servito": null,
       "gpl_self": null,
       "gpl_servito": null,
       "metano_self": null,
       "metano_servito": null,
-      "aggiornato": "27/08/2026 07:22:26",
+      "aggiornato": "28/08/2026 07:22:11",
       "prezziDettaglio": [
         {
           "carburante": "Benzina",
-          "prezzo": 2.039,
+          "prezzo": 2.029,
           "isSelf": true,
-          "dtComu": "27/08/2026 07:22:26"
+          "dtComu": "28/08/2026 07:22:11"
         },
         {
           "carburante": "Gasolio",
-          "prezzo": 2.159,
+          "prezzo": 2.149,
           "isSelf": true,
-          "dtComu": "27/08/2026 07:22:26"
+          "dtComu": "28/08/2026 07:22:11"
         }
       ]
     },
@@ -188,49 +188,49 @@
       "gpl_servito": null,
       "metano_self": null,
       "metano_servito": null,
-      "aggiornato": "25/08/2026 07:35:18",
+      "aggiornato": "27/08/2026 08:53:02",
       "prezziDettaglio": [
         {
           "carburante": "Benzina",
           "prezzo": 2.249,
           "isSelf": false,
-          "dtComu": "25/08/2026 07:35:18"
+          "dtComu": "27/08/2026 08:53:02"
         },
         {
           "carburante": "Benzina",
           "prezzo": 2.029,
           "isSelf": true,
-          "dtComu": "25/08/2026 07:35:18"
+          "dtComu": "27/08/2026 08:53:02"
         },
         {
           "carburante": "Gasolio",
           "prezzo": 2.369,
           "isSelf": false,
-          "dtComu": "25/08/2026 07:35:18"
+          "dtComu": "27/08/2026 08:53:02"
         },
         {
           "carburante": "Gasolio",
           "prezzo": 2.149,
           "isSelf": true,
-          "dtComu": "25/08/2026 07:35:18"
+          "dtComu": "27/08/2026 08:53:02"
         },
         {
           "carburante": "Blue Diesel",
           "prezzo": 2.469,
           "isSelf": false,
-          "dtComu": "25/08/2026 07:35:18"
+          "dtComu": "27/08/2026 08:53:02"
         },
         {
           "carburante": "Blue Diesel",
           "prezzo": 2.249,
           "isSelf": true,
-          "dtComu": "25/08/2026 07:35:18"
+          "dtComu": "27/08/2026 08:53:02"
         },
         {
           "carburante": "HVOlution",
           "prezzo": 2.149,
           "isSelf": true,
-          "dtComu": "25/08/2026 07:35:18"
+          "dtComu": "27/08/2026 08:53:02"
         }
       ]
     },
@@ -329,19 +329,19 @@
       "gpl_servito": null,
       "metano_self": null,
       "metano_servito": null,
-      "aggiornato": "27/08/2026 07:40:55",
+      "aggiornato": "28/08/2026 07:39:47",
       "prezziDettaglio": [
         {
           "carburante": "Benzina",
           "prezzo": 2.019,
           "isSelf": true,
-          "dtComu": "27/08/2026 07:40:55"
+          "dtComu": "28/08/2026 07:39:47"
         },
         {
           "carburante": "Gasolio",
           "prezzo": 2.139,
           "isSelf": true,
-          "dtComu": "27/08/2026 07:40:55"
+          "dtComu": "28/08/2026 07:39:47"
         }
       ]
     },
@@ -399,27 +399,27 @@
       "comune": "CARISIO",
       "lat": 45.44338964969156,
       "lng": 8.229165131282798,
-      "benzina_self": 1.979,
+      "benzina_self": 1.959,
       "benzina_servito": null,
-      "gasolio_self": 2.119,
+      "gasolio_self": 2.069,
       "gasolio_servito": null,
       "gpl_self": null,
       "gpl_servito": null,
       "metano_self": null,
       "metano_servito": null,
-      "aggiornato": "27/08/2026 01:38:53",
+      "aggiornato": "28/08/2026 01:10:08",
       "prezziDettaglio": [
         {
           "carburante": "Benzina",
-          "prezzo": 1.979,
+          "prezzo": 1.959,
           "isSelf": true,
-          "dtComu": "27/08/2026 01:38:53"
+          "dtComu": "28/08/2026 01:10:08"
         },
         {
           "carburante": "Gasolio",
-          "prezzo": 2.119,
+          "prezzo": 2.069,
           "isSelf": true,
-          "dtComu": "27/08/2026 01:38:53"
+          "dtComu": "28/08/2026 01:10:08"
         }
       ]
     },
@@ -432,39 +432,39 @@
       "comune": "CARISIO",
       "lat": 45.451531427869995,
       "lng": 8.228324577212334,
-      "benzina_self": 1.989,
+      "benzina_self": 1.979,
       "benzina_servito": null,
-      "gasolio_self": 2.119,
+      "gasolio_self": 2.109,
       "gasolio_servito": null,
       "gpl_self": null,
       "gpl_servito": 0.769,
       "metano_self": null,
       "metano_servito": null,
-      "aggiornato": "26/08/2026 10:19:59",
+      "aggiornato": "27/08/2026 15:38:14",
       "prezziDettaglio": [
         {
           "carburante": "Benzina",
-          "prezzo": 1.989,
+          "prezzo": 1.979,
           "isSelf": true,
-          "dtComu": "26/08/2026 10:19:59"
+          "dtComu": "27/08/2026 15:38:14"
         },
         {
           "carburante": "Gasolio",
-          "prezzo": 2.119,
+          "prezzo": 2.109,
           "isSelf": true,
-          "dtComu": "26/08/2026 10:19:59"
+          "dtComu": "27/08/2026 15:38:14"
         },
         {
           "carburante": "GPL",
           "prezzo": 0.769,
           "isSelf": false,
-          "dtComu": "26/08/2026 10:19:59"
+          "dtComu": "27/08/2026 15:38:14"
         },
         {
           "carburante": "HVO",
-          "prezzo": 2.109,
+          "prezzo": 2.099,
           "isSelf": true,
-          "dtComu": "26/08/2026 10:19:59"
+          "dtComu": "27/08/2026 15:38:14"
         }
       ]
     },
@@ -485,31 +485,31 @@
       "gpl_servito": null,
       "metano_self": null,
       "metano_servito": null,
-      "aggiornato": "26/08/2026 14:59:00",
+      "aggiornato": "27/08/2026 12:43:01",
       "prezziDettaglio": [
         {
           "carburante": "Benzina",
           "prezzo": 2.439,
           "isSelf": false,
-          "dtComu": "26/08/2026 14:59:00"
+          "dtComu": "27/08/2026 12:43:01"
         },
         {
           "carburante": "Benzina",
           "prezzo": 2.089,
           "isSelf": true,
-          "dtComu": "26/08/2026 14:59:00"
+          "dtComu": "27/08/2026 12:43:00"
         },
         {
           "carburante": "Gasolio",
           "prezzo": 2.519,
           "isSelf": false,
-          "dtComu": "26/08/2026 14:59:00"
+          "dtComu": "27/08/2026 12:43:00"
         },
         {
           "carburante": "Gasolio",
           "prezzo": 2.189,
           "isSelf": true,
-          "dtComu": "26/08/2026 14:59:00"
+          "dtComu": "27/08/2026 12:43:00"
         }
       ]
     },
@@ -530,61 +530,61 @@
       "gpl_servito": 0.739,
       "metano_self": null,
       "metano_servito": null,
-      "aggiornato": "25/08/2026 08:14:18",
+      "aggiornato": "27/08/2026 08:16:47",
       "prezziDettaglio": [
         {
           "carburante": "Benzina",
           "prezzo": 2.255,
           "isSelf": false,
-          "dtComu": "25/08/2026 08:14:18"
+          "dtComu": "27/08/2026 08:16:47"
         },
         {
           "carburante": "Benzina",
           "prezzo": 2.045,
           "isSelf": true,
-          "dtComu": "25/08/2026 08:14:18"
+          "dtComu": "27/08/2026 08:16:47"
         },
         {
           "carburante": "Gasolio",
           "prezzo": 2.364,
           "isSelf": false,
-          "dtComu": "25/08/2026 08:14:18"
+          "dtComu": "27/08/2026 08:16:47"
         },
         {
           "carburante": "Gasolio",
           "prezzo": 2.154,
           "isSelf": true,
-          "dtComu": "25/08/2026 08:14:18"
+          "dtComu": "27/08/2026 08:16:47"
         },
         {
           "carburante": "GPL",
           "prezzo": 0.739,
           "isSelf": false,
-          "dtComu": "25/08/2026 08:14:18"
+          "dtComu": "27/08/2026 08:16:47"
         },
         {
           "carburante": "Blue Diesel",
           "prezzo": 2.464,
           "isSelf": false,
-          "dtComu": "25/08/2026 08:14:18"
+          "dtComu": "27/08/2026 08:16:47"
         },
         {
           "carburante": "Blue Diesel",
           "prezzo": 2.254,
           "isSelf": true,
-          "dtComu": "25/08/2026 08:14:18"
+          "dtComu": "27/08/2026 08:16:47"
         },
         {
           "carburante": "HVOlution",
           "prezzo": 2.364,
           "isSelf": false,
-          "dtComu": "25/08/2026 08:14:18"
+          "dtComu": "27/08/2026 08:16:47"
         },
         {
           "carburante": "HVOlution",
           "prezzo": 2.154,
           "isSelf": true,
-          "dtComu": "25/08/2026 08:14:18"
+          "dtComu": "27/08/2026 08:16:47"
         }
       ]
     },
@@ -617,51 +617,51 @@
       "comune": "CRESCENTINO",
       "lat": 45.19314779904249,
       "lng": 8.095642318956642,
-      "benzina_self": 2.024,
+      "benzina_self": 2.034,
       "benzina_servito": 2.214,
-      "gasolio_self": 2.134,
+      "gasolio_self": 2.144,
       "gasolio_servito": 2.324,
       "gpl_self": null,
       "gpl_servito": null,
       "metano_self": null,
       "metano_servito": null,
-      "aggiornato": "23/08/2026 21:42:54",
+      "aggiornato": "27/08/2026 21:55:44",
       "prezziDettaglio": [
         {
           "carburante": "Benzina",
           "prezzo": 2.214,
           "isSelf": false,
-          "dtComu": "23/08/2026 21:42:54"
+          "dtComu": "27/08/2026 21:55:44"
         },
         {
           "carburante": "Benzina",
-          "prezzo": 2.024,
+          "prezzo": 2.034,
           "isSelf": true,
-          "dtComu": "25/08/2026 21:53:47"
+          "dtComu": "27/08/2026 08:09:52"
         },
         {
           "carburante": "Gasolio",
           "prezzo": 2.324,
           "isSelf": false,
-          "dtComu": "23/08/2026 21:42:54"
+          "dtComu": "27/08/2026 21:55:44"
         },
         {
           "carburante": "Gasolio",
-          "prezzo": 2.134,
+          "prezzo": 2.144,
           "isSelf": true,
-          "dtComu": "25/08/2026 21:53:47"
+          "dtComu": "27/08/2026 08:09:52"
         },
         {
           "carburante": "Blue Diesel",
           "prezzo": 2.424,
           "isSelf": false,
-          "dtComu": "23/08/2026 21:42:54"
+          "dtComu": "27/08/2026 21:55:44"
         },
         {
           "carburante": "Blue Diesel",
-          "prezzo": 2.234,
+          "prezzo": 2.244,
           "isSelf": true,
-          "dtComu": "25/08/2026 21:53:47"
+          "dtComu": "27/08/2026 08:09:52"
         }
       ]
     },
@@ -738,7 +738,7 @@
       "gpl_self": null,
       "gpl_servito": 0.699,
       "metano_self": null,
-      "metano_servito": 1.449,
+      "metano_servito": 1.659,
       "aggiornato": "26/08/2026 14:42:04",
       "prezziDettaglio": [
         {
@@ -767,9 +767,9 @@
         },
         {
           "carburante": "Metano",
-          "prezzo": 1.449,
+          "prezzo": 1.659,
           "isSelf": false,
-          "dtComu": "26/08/2026 06:48:11"
+          "dtComu": "27/08/2026 14:46:13"
         },
         {
           "carburante": "GPL",
@@ -788,33 +788,33 @@
       "comune": "DESANA",
       "lat": 45.252425558830794,
       "lng": 8.344687457672135,
-      "benzina_self": 1.969,
+      "benzina_self": 1.959,
       "benzina_servito": null,
-      "gasolio_self": 2.079,
+      "gasolio_self": 2.069,
       "gasolio_servito": null,
       "gpl_self": null,
       "gpl_servito": null,
       "metano_self": null,
       "metano_servito": null,
-      "aggiornato": "24/08/2026 13:31:03",
+      "aggiornato": "27/08/2026 13:41:32",
       "prezziDettaglio": [
         {
           "carburante": "Benzina",
-          "prezzo": 1.969,
+          "prezzo": 1.959,
           "isSelf": true,
-          "dtComu": "24/08/2026 13:31:03"
+          "dtComu": "27/08/2026 13:41:32"
         },
         {
           "carburante": "Gasolio",
-          "prezzo": 2.079,
+          "prezzo": 2.069,
           "isSelf": true,
-          "dtComu": "26/08/2026 13:30:06"
+          "dtComu": "27/08/2026 13:41:32"
         },
         {
           "carburante": "HVO",
-          "prezzo": 2.049,
+          "prezzo": 2.039,
           "isSelf": true,
-          "dtComu": "26/08/2026 13:30:06"
+          "dtComu": "27/08/2026 13:41:32"
         }
       ]
     },
@@ -978,19 +978,19 @@
       "gpl_servito": null,
       "metano_self": null,
       "metano_servito": null,
-      "aggiornato": "26/08/2026 06:02:04",
+      "aggiornato": "28/08/2026 07:52:04",
       "prezziDettaglio": [
         {
           "carburante": "Benzina",
           "prezzo": 1.987,
           "isSelf": true,
-          "dtComu": "26/08/2026 06:02:04"
+          "dtComu": "28/08/2026 07:52:04"
         },
         {
           "carburante": "Gasolio",
           "prezzo": 2.077,
           "isSelf": true,
-          "dtComu": "26/08/2026 06:02:04"
+          "dtComu": "28/08/2026 07:52:04"
         }
       ]
     },
@@ -1003,39 +1003,39 @@
       "comune": "GREGGIO",
       "lat": 45.468791,
       "lng": 8.386298,
-      "benzina_self": 1.999,
+      "benzina_self": 1.989,
       "benzina_servito": null,
-      "gasolio_self": 2.079,
+      "gasolio_self": 2.069,
       "gasolio_servito": null,
       "gpl_self": null,
       "gpl_servito": null,
       "metano_self": null,
       "metano_servito": null,
-      "aggiornato": "26/08/2026 13:34:19",
+      "aggiornato": "27/08/2026 13:38:17",
       "prezziDettaglio": [
         {
           "carburante": "Benzina",
-          "prezzo": 1.999,
+          "prezzo": 1.989,
           "isSelf": true,
-          "dtComu": "26/08/2026 13:34:19"
+          "dtComu": "27/08/2026 13:38:17"
         },
         {
           "carburante": "Gasolio",
-          "prezzo": 2.079,
+          "prezzo": 2.069,
           "isSelf": true,
-          "dtComu": "26/08/2026 13:40:08"
+          "dtComu": "27/08/2026 13:38:17"
         },
         {
           "carburante": "Benzina WR 100",
-          "prezzo": 2.149,
+          "prezzo": 2.139,
           "isSelf": true,
-          "dtComu": "26/08/2026 13:34:19"
+          "dtComu": "27/08/2026 13:38:17"
         },
         {
           "carburante": "HVO",
-          "prezzo": 2.049,
+          "prezzo": 2.039,
           "isSelf": true,
-          "dtComu": "26/08/2026 13:40:08"
+          "dtComu": "27/08/2026 13:38:17"
         }
       ]
     },
@@ -1140,13 +1140,13 @@
       "gpl_servito": 0.699,
       "metano_self": null,
       "metano_servito": null,
-      "aggiornato": "24/08/2026 07:40:15",
+      "aggiornato": "27/08/2026 08:37:35",
       "prezziDettaglio": [
         {
           "carburante": "Benzina",
           "prezzo": 2.199,
           "isSelf": false,
-          "dtComu": "24/08/2026 07:40:15"
+          "dtComu": "27/08/2026 08:37:35"
         },
         {
           "carburante": "Benzina",
@@ -1158,7 +1158,7 @@
           "carburante": "Gasolio",
           "prezzo": 2.299,
           "isSelf": false,
-          "dtComu": "24/08/2026 07:40:15"
+          "dtComu": "27/08/2026 08:37:35"
         },
         {
           "carburante": "Gasolio",
@@ -1170,7 +1170,7 @@
           "carburante": "GPL",
           "prezzo": 0.699,
           "isSelf": false,
-          "dtComu": "24/08/2026 07:40:15"
+          "dtComu": "27/08/2026 08:37:35"
         },
         {
           "carburante": "HVO",
@@ -1328,31 +1328,31 @@
       "gpl_servito": 0.739,
       "metano_self": null,
       "metano_servito": null,
-      "aggiornato": "25/08/2026 12:22:14",
+      "aggiornato": "27/08/2026 15:22:19",
       "prezziDettaglio": [
         {
           "carburante": "Benzina",
           "prezzo": 2.25,
           "isSelf": false,
-          "dtComu": "25/08/2026 12:22:14"
+          "dtComu": "27/08/2026 15:22:19"
         },
         {
           "carburante": "Benzina",
           "prezzo": 2.04,
           "isSelf": true,
-          "dtComu": "25/08/2026 12:22:14"
+          "dtComu": "27/08/2026 12:28:09"
         },
         {
           "carburante": "Gasolio",
           "prezzo": 2.359,
           "isSelf": false,
-          "dtComu": "25/08/2026 12:22:14"
+          "dtComu": "27/08/2026 15:22:19"
         },
         {
           "carburante": "Gasolio",
           "prezzo": 2.149,
           "isSelf": true,
-          "dtComu": "25/08/2026 12:22:14"
+          "dtComu": "27/08/2026 12:28:09"
         },
         {
           "carburante": "GPL",
@@ -1364,13 +1364,13 @@
           "carburante": "Blue Diesel",
           "prezzo": 2.459,
           "isSelf": false,
-          "dtComu": "25/08/2026 12:22:14"
+          "dtComu": "27/08/2026 15:22:19"
         },
         {
           "carburante": "Blue Diesel",
           "prezzo": 2.249,
           "isSelf": true,
-          "dtComu": "25/08/2026 12:22:14"
+          "dtComu": "27/08/2026 12:28:09"
         }
       ]
     },
@@ -1643,31 +1643,31 @@
       "gpl_servito": null,
       "metano_self": null,
       "metano_servito": null,
-      "aggiornato": "26/08/2026 19:01:02",
+      "aggiornato": "27/08/2026 19:01:02",
       "prezziDettaglio": [
         {
           "carburante": "Benzina",
           "prezzo": 2.069,
           "isSelf": false,
-          "dtComu": "26/08/2026 19:01:02"
+          "dtComu": "27/08/2026 19:01:02"
         },
         {
           "carburante": "Benzina",
           "prezzo": 1.999,
           "isSelf": true,
-          "dtComu": "26/08/2026 19:01:02"
+          "dtComu": "27/08/2026 19:01:02"
         },
         {
           "carburante": "Gasolio",
           "prezzo": 2.209,
           "isSelf": false,
-          "dtComu": "26/08/2026 19:01:02"
+          "dtComu": "27/08/2026 19:01:02"
         },
         {
           "carburante": "Gasolio",
           "prezzo": 2.139,
           "isSelf": true,
-          "dtComu": "26/08/2026 19:01:02"
+          "dtComu": "27/08/2026 19:01:02"
         }
       ]
     },
@@ -1682,25 +1682,25 @@
       "lng": 8.260061144828796,
       "benzina_self": 2.029,
       "benzina_servito": null,
-      "gasolio_self": 2.169,
+      "gasolio_self": 2.099,
       "gasolio_servito": null,
       "gpl_self": null,
       "gpl_servito": null,
       "metano_self": null,
       "metano_servito": null,
-      "aggiornato": "21/08/2026 17:39:27",
+      "aggiornato": "27/08/2026 17:58:11",
       "prezziDettaglio": [
         {
           "carburante": "Benzina",
           "prezzo": 2.029,
           "isSelf": true,
-          "dtComu": "21/08/2026 17:39:27"
+          "dtComu": "27/08/2026 17:58:11"
         },
         {
           "carburante": "Gasolio",
-          "prezzo": 2.169,
+          "prezzo": 2.099,
           "isSelf": true,
-          "dtComu": "21/08/2026 17:39:27"
+          "dtComu": "27/08/2026 17:58:11"
         }
       ]
     },
@@ -1713,7 +1713,7 @@
       "comune": "RIVA VALDOBBIA",
       "lat": 45.84306742632645,
       "lng": 7.941881418228149,
-      "benzina_self": 1.97,
+      "benzina_self": 1.99,
       "benzina_servito": null,
       "gasolio_self": 2.09,
       "gasolio_servito": null,
@@ -1721,19 +1721,19 @@
       "gpl_servito": null,
       "metano_self": null,
       "metano_servito": null,
-      "aggiornato": "26/08/2026 17:07:18",
+      "aggiornato": "27/08/2026 15:47:54",
       "prezziDettaglio": [
         {
           "carburante": "Benzina",
-          "prezzo": 1.97,
+          "prezzo": 1.99,
           "isSelf": true,
-          "dtComu": "26/08/2026 17:07:18"
+          "dtComu": "27/08/2026 15:47:54"
         },
         {
           "carburante": "Gasolio",
           "prezzo": 2.09,
           "isSelf": true,
-          "dtComu": "26/08/2026 17:07:18"
+          "dtComu": "27/08/2026 15:47:54"
         }
       ]
     },
@@ -1836,27 +1836,27 @@
       "comune": "SANTHIÀ",
       "lat": 45.368085524924105,
       "lng": 8.16581099883606,
-      "benzina_self": 1.999,
+      "benzina_self": 1.989,
       "benzina_servito": 2.149,
-      "gasolio_self": 2.139,
+      "gasolio_self": 2.129,
       "gasolio_servito": 2.289,
       "gpl_self": null,
       "gpl_servito": null,
       "metano_self": null,
       "metano_servito": null,
-      "aggiornato": "24/08/2026 21:46:40",
+      "aggiornato": "27/08/2026 21:53:34",
       "prezziDettaglio": [
         {
           "carburante": "Benzina",
           "prezzo": 2.149,
           "isSelf": false,
-          "dtComu": "24/08/2026 21:46:40"
+          "dtComu": "27/08/2026 21:53:34"
         },
         {
           "carburante": "Benzina",
-          "prezzo": 1.999,
+          "prezzo": 1.989,
           "isSelf": true,
-          "dtComu": "25/08/2026 12:10:09"
+          "dtComu": "27/08/2026 13:41:42"
         },
         {
           "carburante": "Gasolio",
@@ -1866,9 +1866,9 @@
         },
         {
           "carburante": "Gasolio",
-          "prezzo": 2.139,
+          "prezzo": 2.129,
           "isSelf": true,
-          "dtComu": "26/08/2026 12:22:22"
+          "dtComu": "27/08/2026 13:41:42"
         }
       ]
     },
@@ -1991,43 +1991,43 @@
       "gpl_servito": null,
       "metano_self": null,
       "metano_servito": null,
-      "aggiornato": "26/08/2026 13:00:20",
+      "aggiornato": "27/08/2026 15:30:15",
       "prezziDettaglio": [
         {
           "carburante": "Benzina",
           "prezzo": 2.299,
           "isSelf": false,
-          "dtComu": "26/08/2026 13:00:20"
+          "dtComu": "27/08/2026 15:30:15"
         },
         {
           "carburante": "Benzina",
           "prezzo": 2.099,
           "isSelf": true,
-          "dtComu": "26/08/2026 13:00:19"
+          "dtComu": "27/08/2026 15:30:14"
         },
         {
           "carburante": "Gasolio",
           "prezzo": 2.459,
           "isSelf": false,
-          "dtComu": "26/08/2026 13:00:21"
+          "dtComu": "27/08/2026 15:30:16"
         },
         {
           "carburante": "Gasolio",
           "prezzo": 2.259,
           "isSelf": true,
-          "dtComu": "26/08/2026 13:00:20"
+          "dtComu": "27/08/2026 15:30:14"
         },
         {
           "carburante": "Gasolio speciale",
-          "prezzo": 2.459,
+          "prezzo": 2.599,
           "isSelf": false,
-          "dtComu": "26/08/2026 13:00:22"
+          "dtComu": "27/08/2026 15:30:16"
         },
         {
           "carburante": "Gasolio speciale",
-          "prezzo": 2.259,
+          "prezzo": 2.399,
           "isSelf": true,
-          "dtComu": "26/08/2026 13:00:21"
+          "dtComu": "27/08/2026 15:30:15"
         }
       ]
     },
@@ -2151,7 +2151,7 @@
           "carburante": "Gasolio",
           "prezzo": 2.129,
           "isSelf": true,
-          "dtComu": "24/08/2026 12:28:15"
+          "dtComu": "27/08/2026 21:55:18"
         },
         {
           "carburante": "GPL",
@@ -2178,19 +2178,19 @@
       "gpl_servito": null,
       "metano_self": null,
       "metano_servito": null,
-      "aggiornato": "24/08/2026 07:12:25",
+      "aggiornato": "27/08/2026 14:08:24",
       "prezziDettaglio": [
         {
           "carburante": "L-GNC",
           "prezzo": 1.548,
           "isSelf": true,
-          "dtComu": "24/08/2026 07:12:25"
+          "dtComu": "27/08/2026 14:08:24"
         },
         {
           "carburante": "GNL",
           "prezzo": 1.498,
           "isSelf": false,
-          "dtComu": "24/08/2026 07:12:25"
+          "dtComu": "27/08/2026 14:08:24"
         }
       ]
     },
@@ -2223,7 +2223,7 @@
           "carburante": "Benzina",
           "prezzo": 1.999,
           "isSelf": true,
-          "dtComu": "23/08/2026 21:42:13"
+          "dtComu": "27/08/2026 21:52:12"
         },
         {
           "carburante": "Gasolio",
@@ -2280,31 +2280,31 @@
       "gpl_servito": null,
       "metano_self": null,
       "metano_servito": null,
-      "aggiornato": "27/08/2026 07:40:31",
+      "aggiornato": "28/08/2026 07:39:09",
       "prezziDettaglio": [
         {
           "carburante": "Benzina",
           "prezzo": 2.199,
           "isSelf": false,
-          "dtComu": "27/08/2026 07:40:31"
+          "dtComu": "28/08/2026 07:39:09"
         },
         {
           "carburante": "Benzina",
           "prezzo": 1.999,
           "isSelf": true,
-          "dtComu": "27/08/2026 07:40:31"
+          "dtComu": "28/08/2026 07:39:09"
         },
         {
           "carburante": "Gasolio",
           "prezzo": 2.339,
           "isSelf": false,
-          "dtComu": "27/08/2026 07:40:31"
+          "dtComu": "28/08/2026 07:39:09"
         },
         {
           "carburante": "Gasolio",
           "prezzo": 2.139,
           "isSelf": true,
-          "dtComu": "27/08/2026 07:40:31"
+          "dtComu": "28/08/2026 07:39:09"
         }
       ]
     },
@@ -2325,31 +2325,31 @@
       "gpl_servito": null,
       "metano_self": null,
       "metano_servito": null,
-      "aggiornato": "21/08/2026 21:04:28",
+      "aggiornato": "27/08/2026 16:38:28",
       "prezziDettaglio": [
         {
           "carburante": "Benzina",
           "prezzo": 2.099,
           "isSelf": false,
-          "dtComu": "21/08/2026 21:04:28"
+          "dtComu": "27/08/2026 16:38:28"
         },
         {
           "carburante": "Benzina",
           "prezzo": 1.999,
           "isSelf": true,
-          "dtComu": "21/08/2026 21:04:28"
+          "dtComu": "27/08/2026 16:38:28"
         },
         {
           "carburante": "Gasolio",
           "prezzo": 2.219,
           "isSelf": false,
-          "dtComu": "21/08/2026 21:04:28"
+          "dtComu": "27/08/2026 16:38:28"
         },
         {
           "carburante": "Gasolio",
           "prezzo": 2.119,
           "isSelf": true,
-          "dtComu": "21/08/2026 21:04:28"
+          "dtComu": "27/08/2026 16:38:28"
         }
       ]
     },
@@ -2362,39 +2362,39 @@
       "comune": "SERRAVALLE SESIA",
       "lat": 45.69235506322406,
       "lng": 8.299306752149572,
-      "benzina_self": 1.999,
-      "benzina_servito": 2.099,
-      "gasolio_self": 2.129,
-      "gasolio_servito": 2.229,
+      "benzina_self": 1.989,
+      "benzina_servito": 2.089,
+      "gasolio_self": 2.119,
+      "gasolio_servito": 2.219,
       "gpl_self": null,
       "gpl_servito": 0.749,
       "metano_self": null,
       "metano_servito": 1.659,
-      "aggiornato": "26/08/2026 07:36:13",
+      "aggiornato": "27/08/2026 15:02:22",
       "prezziDettaglio": [
         {
           "carburante": "Benzina",
-          "prezzo": 2.099,
+          "prezzo": 2.089,
           "isSelf": false,
-          "dtComu": "26/08/2026 07:36:13"
+          "dtComu": "27/08/2026 15:02:22"
         },
         {
           "carburante": "Benzina",
-          "prezzo": 1.999,
+          "prezzo": 1.989,
           "isSelf": true,
-          "dtComu": "25/08/2026 12:36:19"
+          "dtComu": "27/08/2026 13:41:40"
         },
         {
           "carburante": "Gasolio",
-          "prezzo": 2.229,
+          "prezzo": 2.219,
           "isSelf": false,
-          "dtComu": "27/08/2026 07:34:11"
+          "dtComu": "27/08/2026 15:02:22"
         },
         {
           "carburante": "Gasolio",
-          "prezzo": 2.129,
+          "prezzo": 2.119,
           "isSelf": true,
-          "dtComu": "26/08/2026 07:36:13"
+          "dtComu": "27/08/2026 13:41:40"
         },
         {
           "carburante": "Metano",
@@ -2406,31 +2406,31 @@
           "carburante": "GPL",
           "prezzo": 0.749,
           "isSelf": false,
-          "dtComu": "26/08/2026 07:36:13"
+          "dtComu": "28/08/2026 07:42:08"
         },
         {
           "carburante": "Benzina WR 100",
-          "prezzo": 2.249,
+          "prezzo": 2.239,
           "isSelf": false,
-          "dtComu": "26/08/2026 07:36:13"
+          "dtComu": "27/08/2026 15:02:22"
         },
         {
           "carburante": "Benzina WR 100",
-          "prezzo": 2.149,
+          "prezzo": 2.139,
           "isSelf": true,
-          "dtComu": "25/08/2026 12:36:19"
+          "dtComu": "27/08/2026 13:41:40"
         },
         {
           "carburante": "HVO",
-          "prezzo": 2.199,
+          "prezzo": 2.189,
           "isSelf": false,
-          "dtComu": "27/08/2026 07:34:11"
+          "dtComu": "27/08/2026 15:02:22"
         },
         {
           "carburante": "HVO",
-          "prezzo": 2.099,
+          "prezzo": 2.089,
           "isSelf": true,
-          "dtComu": "26/08/2026 07:36:13"
+          "dtComu": "27/08/2026 13:41:40"
         }
       ]
     },
@@ -2451,43 +2451,43 @@
       "gpl_servito": null,
       "metano_self": null,
       "metano_servito": null,
-      "aggiornato": "26/08/2026 08:05:55",
+      "aggiornato": "27/08/2026 08:06:10",
       "prezziDettaglio": [
         {
           "carburante": "Benzina",
           "prezzo": 2.019,
           "isSelf": false,
-          "dtComu": "26/08/2026 08:05:55"
+          "dtComu": "27/08/2026 08:06:10"
         },
         {
           "carburante": "Benzina",
           "prezzo": 2.019,
           "isSelf": true,
-          "dtComu": "26/08/2026 08:05:55"
+          "dtComu": "27/08/2026 08:06:10"
         },
         {
           "carburante": "Gasolio",
           "prezzo": 2.149,
           "isSelf": false,
-          "dtComu": "26/08/2026 08:05:55"
+          "dtComu": "27/08/2026 08:06:10"
         },
         {
           "carburante": "Gasolio",
           "prezzo": 2.149,
           "isSelf": true,
-          "dtComu": "26/08/2026 08:05:55"
+          "dtComu": "27/08/2026 08:06:10"
         },
         {
           "carburante": "Gasolio Premium",
           "prezzo": 2.249,
           "isSelf": false,
-          "dtComu": "26/08/2026 08:05:55"
+          "dtComu": "27/08/2026 08:06:10"
         },
         {
           "carburante": "Gasolio Premium",
           "prezzo": 2.249,
           "isSelf": true,
-          "dtComu": "26/08/2026 08:05:55"
+          "dtComu": "27/08/2026 08:06:10"
         }
       ]
     },
@@ -2508,55 +2508,55 @@
       "gpl_servito": null,
       "metano_self": null,
       "metano_servito": null,
-      "aggiornato": "25/08/2026 07:02:56",
+      "aggiornato": "27/08/2026 08:21:39",
       "prezziDettaglio": [
         {
           "carburante": "Benzina",
           "prezzo": 2.239,
           "isSelf": false,
-          "dtComu": "25/08/2026 07:02:56"
+          "dtComu": "27/08/2026 08:21:39"
         },
         {
           "carburante": "Benzina",
           "prezzo": 2.029,
           "isSelf": true,
-          "dtComu": "25/08/2026 06:56:19"
+          "dtComu": "27/08/2026 08:21:39"
         },
         {
           "carburante": "Gasolio",
           "prezzo": 2.359,
           "isSelf": false,
-          "dtComu": "25/08/2026 07:02:56"
+          "dtComu": "27/08/2026 08:21:39"
         },
         {
           "carburante": "Gasolio",
           "prezzo": 2.149,
           "isSelf": true,
-          "dtComu": "25/08/2026 06:56:19"
+          "dtComu": "27/08/2026 08:21:39"
         },
         {
           "carburante": "Blue Super",
           "prezzo": 2.389,
           "isSelf": false,
-          "dtComu": "25/08/2026 07:02:56"
+          "dtComu": "27/08/2026 08:21:39"
         },
         {
           "carburante": "Blue Super",
           "prezzo": 2.179,
           "isSelf": true,
-          "dtComu": "25/08/2026 06:56:19"
+          "dtComu": "27/08/2026 08:21:39"
         },
         {
           "carburante": "Blue Diesel",
           "prezzo": 2.459,
           "isSelf": false,
-          "dtComu": "25/08/2026 07:02:56"
+          "dtComu": "27/08/2026 08:21:39"
         },
         {
           "carburante": "Blue Diesel",
           "prezzo": 2.249,
           "isSelf": true,
-          "dtComu": "25/08/2026 06:56:19"
+          "dtComu": "27/08/2026 08:21:39"
         }
       ]
     },
@@ -2571,19 +2571,19 @@
       "lng": 8.447856211415,
       "benzina_self": null,
       "benzina_servito": null,
-      "gasolio_self": 2.199,
+      "gasolio_self": 2.169,
       "gasolio_servito": null,
       "gpl_self": null,
       "gpl_servito": null,
       "metano_self": null,
       "metano_servito": null,
-      "aggiornato": "26/08/2026 14:52:11",
+      "aggiornato": "27/08/2026 14:09:13",
       "prezziDettaglio": [
         {
           "carburante": "Gasolio",
-          "prezzo": 2.199,
+          "prezzo": 2.169,
           "isSelf": true,
-          "dtComu": "26/08/2026 14:52:11"
+          "dtComu": "27/08/2026 14:09:13"
         }
       ]
     },
@@ -2598,8 +2598,8 @@
       "lng": 8.447856211415,
       "benzina_self": 2.098,
       "benzina_servito": 2.298,
-      "gasolio_self": 2.259,
-      "gasolio_servito": 2.459,
+      "gasolio_self": 2.199,
+      "gasolio_servito": 2.399,
       "gpl_self": null,
       "gpl_servito": 0.899,
       "metano_self": null,
@@ -2620,15 +2620,15 @@
         },
         {
           "carburante": "Gasolio",
-          "prezzo": 2.459,
+          "prezzo": 2.399,
           "isSelf": false,
-          "dtComu": "26/08/2026 15:00:54"
+          "dtComu": "27/08/2026 13:30:07"
         },
         {
           "carburante": "Gasolio",
-          "prezzo": 2.259,
+          "prezzo": 2.199,
           "isSelf": true,
-          "dtComu": "26/08/2026 15:00:53"
+          "dtComu": "27/08/2026 13:30:07"
         },
         {
           "carburante": "GPL",
@@ -2732,25 +2732,25 @@
       "gpl_servito": null,
       "metano_self": null,
       "metano_servito": null,
-      "aggiornato": "25/08/2026 06:15:17",
+      "aggiornato": "27/08/2026 21:04:13",
       "prezziDettaglio": [
         {
           "carburante": "Benzina",
           "prezzo": 1.999,
           "isSelf": true,
-          "dtComu": "25/08/2026 06:15:17"
+          "dtComu": "27/08/2026 21:04:13"
         },
         {
           "carburante": "Gasolio",
           "prezzo": 2.094,
           "isSelf": true,
-          "dtComu": "25/08/2026 06:15:17"
+          "dtComu": "27/08/2026 21:04:13"
         },
         {
           "carburante": "Blue Diesel",
           "prezzo": 2.194,
           "isSelf": true,
-          "dtComu": "25/08/2026 06:15:17"
+          "dtComu": "27/08/2026 21:04:13"
         }
       ]
     },
@@ -2895,51 +2895,51 @@
       "comune": "VALDUGGIA",
       "lat": 45.72306300443579,
       "lng": 8.323331773281097,
-      "benzina_self": 2.029,
-      "benzina_servito": 2.029,
-      "gasolio_self": 2.099,
-      "gasolio_servito": 2.099,
+      "benzina_self": 2.019,
+      "benzina_servito": 2.019,
+      "gasolio_self": 2.089,
+      "gasolio_servito": 2.089,
       "gpl_self": null,
       "gpl_servito": null,
       "metano_self": null,
       "metano_servito": null,
-      "aggiornato": "26/08/2026 14:30:11",
+      "aggiornato": "27/08/2026 14:26:10",
       "prezziDettaglio": [
         {
           "carburante": "Benzina",
-          "prezzo": 2.029,
+          "prezzo": 2.019,
           "isSelf": false,
-          "dtComu": "26/08/2026 14:30:11"
+          "dtComu": "27/08/2026 14:26:10"
         },
         {
           "carburante": "Benzina",
-          "prezzo": 2.029,
+          "prezzo": 2.019,
           "isSelf": true,
-          "dtComu": "26/08/2026 18:52:03"
+          "dtComu": "27/08/2026 14:02:13"
         },
         {
           "carburante": "Gasolio",
-          "prezzo": 2.099,
+          "prezzo": 2.089,
           "isSelf": false,
-          "dtComu": "26/08/2026 14:30:11"
+          "dtComu": "27/08/2026 14:26:10"
         },
         {
           "carburante": "Gasolio",
-          "prezzo": 2.099,
+          "prezzo": 2.089,
           "isSelf": true,
-          "dtComu": "26/08/2026 14:04:08"
+          "dtComu": "27/08/2026 14:02:13"
         },
         {
           "carburante": "Benzina WR 100",
-          "prezzo": 2.179,
+          "prezzo": 2.169,
           "isSelf": false,
-          "dtComu": "26/08/2026 14:30:11"
+          "dtComu": "27/08/2026 14:26:10"
         },
         {
           "carburante": "Benzina WR 100",
-          "prezzo": 2.179,
+          "prezzo": 2.169,
           "isSelf": true,
-          "dtComu": "26/08/2026 18:52:03"
+          "dtComu": "27/08/2026 14:02:13"
         }
       ]
     },
@@ -2993,31 +2993,31 @@
       "gpl_servito": 0.784,
       "metano_self": null,
       "metano_servito": null,
-      "aggiornato": "25/08/2026 07:48:13",
+      "aggiornato": "27/08/2026 08:56:09",
       "prezziDettaglio": [
         {
           "carburante": "Benzina",
           "prezzo": 2.259,
           "isSelf": false,
-          "dtComu": "25/08/2026 07:48:13"
+          "dtComu": "27/08/2026 08:56:09"
         },
         {
           "carburante": "Benzina",
           "prezzo": 2.039,
           "isSelf": true,
-          "dtComu": "25/08/2026 07:48:13"
+          "dtComu": "27/08/2026 08:56:09"
         },
         {
           "carburante": "Gasolio",
           "prezzo": 2.369,
           "isSelf": false,
-          "dtComu": "25/08/2026 07:48:13"
+          "dtComu": "27/08/2026 08:56:09"
         },
         {
           "carburante": "Gasolio",
           "prezzo": 2.149,
           "isSelf": true,
-          "dtComu": "25/08/2026 07:48:13"
+          "dtComu": "27/08/2026 08:56:09"
         },
         {
           "carburante": "GPL",
@@ -3029,13 +3029,13 @@
           "carburante": "Blue Diesel",
           "prezzo": 2.469,
           "isSelf": false,
-          "dtComu": "25/08/2026 07:48:13"
+          "dtComu": "27/08/2026 08:56:09"
         },
         {
           "carburante": "Blue Diesel",
           "prezzo": 2.249,
           "isSelf": true,
-          "dtComu": "25/08/2026 07:48:13"
+          "dtComu": "27/08/2026 08:56:09"
         }
       ]
     },
@@ -3146,33 +3146,33 @@
       "comune": "VERCELLI",
       "lat": 45.315854438033575,
       "lng": 8.409305289387703,
-      "benzina_self": 1.959,
+      "benzina_self": 1.949,
       "benzina_servito": null,
-      "gasolio_self": 2.049,
+      "gasolio_self": 2.039,
       "gasolio_servito": null,
       "gpl_self": null,
       "gpl_servito": null,
       "metano_self": null,
       "metano_servito": null,
-      "aggiornato": "26/08/2026 13:30:07",
+      "aggiornato": "27/08/2026 13:37:44",
       "prezziDettaglio": [
         {
           "carburante": "Benzina",
-          "prezzo": 1.959,
+          "prezzo": 1.949,
           "isSelf": true,
-          "dtComu": "26/08/2026 13:30:07"
+          "dtComu": "27/08/2026 13:37:44"
         },
         {
           "carburante": "Gasolio",
-          "prezzo": 2.049,
+          "prezzo": 2.039,
           "isSelf": true,
-          "dtComu": "26/08/2026 13:38:14"
+          "dtComu": "27/08/2026 13:37:44"
         },
         {
           "carburante": "HVO",
-          "prezzo": 2.019,
+          "prezzo": 2.009,
           "isSelf": true,
-          "dtComu": "26/08/2026 13:38:14"
+          "dtComu": "27/08/2026 13:37:44"
         }
       ]
     },
@@ -3219,26 +3219,26 @@
       "lat": 45.325166436411436,
       "lng": 8.433970009192649,
       "benzina_self": null,
-      "benzina_servito": 1.969,
+      "benzina_servito": 1.959,
       "gasolio_self": null,
-      "gasolio_servito": 2.069,
+      "gasolio_servito": 2.049,
       "gpl_self": null,
       "gpl_servito": null,
       "metano_self": null,
       "metano_servito": null,
-      "aggiornato": "27/08/2026 07:30:33",
+      "aggiornato": "28/08/2026 07:38:49",
       "prezziDettaglio": [
         {
           "carburante": "Benzina",
-          "prezzo": 1.969,
+          "prezzo": 1.959,
           "isSelf": false,
-          "dtComu": "27/08/2026 07:30:33"
+          "dtComu": "28/08/2026 07:38:49"
         },
         {
           "carburante": "Gasolio",
-          "prezzo": 2.069,
+          "prezzo": 2.049,
           "isSelf": false,
-          "dtComu": "27/08/2026 07:30:33"
+          "dtComu": "28/08/2026 07:38:49"
         }
       ]
     },
@@ -3292,31 +3292,31 @@
       "gpl_servito": 0.659,
       "metano_self": null,
       "metano_servito": 1.69,
-      "aggiornato": "27/08/2026 01:01:57",
+      "aggiornato": "28/08/2026 01:06:18",
       "prezziDettaglio": [
         {
           "carburante": "Benzina",
           "prezzo": 1.939,
           "isSelf": true,
-          "dtComu": "27/08/2026 01:01:57"
+          "dtComu": "28/08/2026 01:06:18"
         },
         {
           "carburante": "Gasolio",
           "prezzo": 2.039,
           "isSelf": true,
-          "dtComu": "27/08/2026 01:01:55"
+          "dtComu": "28/08/2026 01:06:16"
         },
         {
           "carburante": "Metano",
           "prezzo": 1.69,
           "isSelf": false,
-          "dtComu": "26/08/2026 22:53:17"
+          "dtComu": "27/08/2026 22:57:14"
         },
         {
           "carburante": "GPL",
           "prezzo": 0.659,
           "isSelf": false,
-          "dtComu": "26/08/2026 08:21:14"
+          "dtComu": "27/08/2026 08:25:16"
         }
       ]
     },
@@ -3329,33 +3329,33 @@
       "comune": "VERCELLI",
       "lat": 45.321316875082665,
       "lng": 8.425733881545252,
-      "benzina_self": 1.989,
+      "benzina_self": 1.999,
       "benzina_servito": null,
-      "gasolio_self": 2.084,
+      "gasolio_self": 2.094,
       "gasolio_servito": null,
       "gpl_self": null,
       "gpl_servito": null,
       "metano_self": null,
       "metano_servito": null,
-      "aggiornato": "25/08/2026 21:53:56",
+      "aggiornato": "27/08/2026 09:28:09",
       "prezziDettaglio": [
         {
           "carburante": "Benzina",
-          "prezzo": 1.989,
+          "prezzo": 1.999,
           "isSelf": true,
-          "dtComu": "25/08/2026 21:53:56"
+          "dtComu": "27/08/2026 09:28:09"
         },
         {
           "carburante": "Gasolio",
-          "prezzo": 2.084,
+          "prezzo": 2.094,
           "isSelf": true,
-          "dtComu": "25/08/2026 21:53:56"
+          "dtComu": "27/08/2026 09:28:09"
         },
         {
           "carburante": "Blue Diesel",
-          "prezzo": 2.184,
+          "prezzo": 2.194,
           "isSelf": true,
-          "dtComu": "25/08/2026 21:53:56"
+          "dtComu": "27/08/2026 09:28:09"
         }
       ]
     },
@@ -3370,31 +3370,31 @@
       "lng": 8.392957,
       "benzina_self": 1.958,
       "benzina_servito": null,
-      "gasolio_self": 2.079,
+      "gasolio_self": 2.058,
       "gasolio_servito": null,
       "gpl_self": null,
       "gpl_servito": 0.65,
       "metano_self": null,
       "metano_servito": null,
-      "aggiornato": "25/08/2026 18:37:47",
+      "aggiornato": "27/08/2026 15:39:14",
       "prezziDettaglio": [
         {
           "carburante": "Benzina",
           "prezzo": 1.958,
           "isSelf": true,
-          "dtComu": "25/08/2026 18:37:47"
+          "dtComu": "27/08/2026 15:39:14"
         },
         {
           "carburante": "Gasolio",
-          "prezzo": 2.079,
+          "prezzo": 2.058,
           "isSelf": true,
-          "dtComu": "25/08/2026 18:37:47"
+          "dtComu": "27/08/2026 15:39:14"
         },
         {
           "carburante": "GPL",
           "prezzo": 0.65,
           "isSelf": false,
-          "dtComu": "25/08/2026 18:37:47"
+          "dtComu": "27/08/2026 15:39:14"
         }
       ]
     },
@@ -3464,39 +3464,39 @@
       "comune": "VERCELLI",
       "lat": 45.321154028854515,
       "lng": 8.390297144651413,
-      "benzina_self": 1.979,
-      "benzina_servito": 1.979,
-      "gasolio_self": 2.069,
-      "gasolio_servito": 2.069,
+      "benzina_self": 1.969,
+      "benzina_servito": 1.969,
+      "gasolio_self": 2.059,
+      "gasolio_servito": 2.059,
       "gpl_self": null,
       "gpl_servito": 0.649,
       "metano_self": null,
       "metano_servito": null,
-      "aggiornato": "26/08/2026 15:08:16",
+      "aggiornato": "27/08/2026 14:46:11",
       "prezziDettaglio": [
         {
           "carburante": "Benzina",
-          "prezzo": 1.979,
+          "prezzo": 1.969,
           "isSelf": false,
-          "dtComu": "26/08/2026 15:08:16"
+          "dtComu": "27/08/2026 14:46:11"
         },
         {
           "carburante": "Benzina",
-          "prezzo": 1.979,
+          "prezzo": 1.969,
           "isSelf": true,
-          "dtComu": "26/08/2026 16:24:10"
+          "dtComu": "27/08/2026 14:06:15"
         },
         {
           "carburante": "Gasolio",
-          "prezzo": 2.069,
+          "prezzo": 2.059,
           "isSelf": false,
-          "dtComu": "26/08/2026 14:36:04"
+          "dtComu": "27/08/2026 14:46:11"
         },
         {
           "carburante": "Gasolio",
-          "prezzo": 2.069,
+          "prezzo": 2.059,
           "isSelf": true,
-          "dtComu": "26/08/2026 14:04:06"
+          "dtComu": "27/08/2026 14:06:15"
         },
         {
           "carburante": "GPL",
@@ -3506,15 +3506,15 @@
         },
         {
           "carburante": "Benzina WR 100",
-          "prezzo": 2.129,
+          "prezzo": 2.119,
           "isSelf": false,
-          "dtComu": "26/08/2026 15:08:16"
+          "dtComu": "27/08/2026 14:46:11"
         },
         {
           "carburante": "Benzina WR 100",
-          "prezzo": 2.129,
+          "prezzo": 2.119,
           "isSelf": true,
-          "dtComu": "26/08/2026 16:24:10"
+          "dtComu": "27/08/2026 14:06:15"
         }
       ]
     },
@@ -3527,39 +3527,39 @@
       "comune": "VERCELLI",
       "lat": 45.323553666147674,
       "lng": 8.415352140934544,
-      "benzina_self": 1.979,
-      "benzina_servito": 1.979,
-      "gasolio_self": 2.069,
-      "gasolio_servito": 2.079,
+      "benzina_self": 1.969,
+      "benzina_servito": 1.969,
+      "gasolio_self": 2.059,
+      "gasolio_servito": 2.059,
       "gpl_self": null,
       "gpl_servito": null,
       "metano_self": null,
       "metano_servito": null,
-      "aggiornato": "24/08/2026 14:05:32",
+      "aggiornato": "27/08/2026 18:08:06",
       "prezziDettaglio": [
         {
           "carburante": "Benzina",
-          "prezzo": 1.979,
+          "prezzo": 1.969,
           "isSelf": false,
-          "dtComu": "24/08/2026 14:05:32"
+          "dtComu": "27/08/2026 18:08:06"
         },
         {
           "carburante": "Benzina",
-          "prezzo": 1.979,
+          "prezzo": 1.969,
           "isSelf": true,
-          "dtComu": "26/08/2026 17:44:08"
+          "dtComu": "27/08/2026 14:08:42"
         },
         {
           "carburante": "Gasolio",
-          "prezzo": 2.079,
+          "prezzo": 2.059,
           "isSelf": false,
-          "dtComu": "26/08/2026 21:40:10"
+          "dtComu": "27/08/2026 18:08:06"
         },
         {
           "carburante": "Gasolio",
-          "prezzo": 2.069,
+          "prezzo": 2.059,
           "isSelf": true,
-          "dtComu": "26/08/2026 14:04:18"
+          "dtComu": "27/08/2026 14:08:42"
         }
       ]
     },
@@ -3629,27 +3629,27 @@
       "comune": "VERCELLI",
       "lat": 45.317867858483226,
       "lng": 8.430920541286469,
-      "benzina_self": 1.959,
+      "benzina_self": 1.949,
       "benzina_servito": null,
-      "gasolio_self": 2.059,
+      "gasolio_self": 2.039,
       "gasolio_servito": null,
       "gpl_self": null,
       "gpl_servito": null,
       "metano_self": null,
       "metano_servito": null,
-      "aggiornato": "26/08/2026 09:14:25",
+      "aggiornato": "27/08/2026 17:10:33",
       "prezziDettaglio": [
         {
           "carburante": "Benzina",
-          "prezzo": 1.959,
+          "prezzo": 1.949,
           "isSelf": true,
-          "dtComu": "26/08/2026 09:14:25"
+          "dtComu": "27/08/2026 17:10:33"
         },
         {
           "carburante": "Gasolio",
-          "prezzo": 2.059,
+          "prezzo": 2.039,
           "isSelf": true,
-          "dtComu": "26/08/2026 13:09:41"
+          "dtComu": "27/08/2026 17:10:33"
         }
       ]
     },
@@ -3662,27 +3662,27 @@
       "comune": "VERCELLI",
       "lat": 45.325125458513384,
       "lng": 8.431146938657776,
-      "benzina_self": 1.969,
+      "benzina_self": 1.959,
       "benzina_servito": null,
-      "gasolio_self": 2.069,
+      "gasolio_self": 2.049,
       "gasolio_servito": null,
       "gpl_self": null,
       "gpl_servito": null,
       "metano_self": null,
       "metano_servito": null,
-      "aggiornato": "26/08/2026 09:08:21",
+      "aggiornato": "27/08/2026 17:05:27",
       "prezziDettaglio": [
         {
           "carburante": "Benzina",
-          "prezzo": 1.969,
+          "prezzo": 1.959,
           "isSelf": true,
-          "dtComu": "26/08/2026 09:08:21"
+          "dtComu": "27/08/2026 17:05:27"
         },
         {
           "carburante": "Gasolio",
-          "prezzo": 2.069,
+          "prezzo": 2.049,
           "isSelf": true,
-          "dtComu": "26/08/2026 13:04:46"
+          "dtComu": "27/08/2026 17:05:27"
         }
       ]
     },
@@ -3695,27 +3695,27 @@
       "comune": "VERCELLI",
       "lat": 45.312052815039024,
       "lng": 8.438794635581985,
-      "benzina_self": 1.959,
+      "benzina_self": 1.949,
       "benzina_servito": null,
-      "gasolio_self": 2.059,
+      "gasolio_self": 2.039,
       "gasolio_servito": null,
       "gpl_self": null,
       "gpl_servito": null,
       "metano_self": null,
       "metano_servito": null,
-      "aggiornato": "26/08/2026 09:07:28",
+      "aggiornato": "27/08/2026 17:04:58",
       "prezziDettaglio": [
         {
           "carburante": "Benzina",
-          "prezzo": 1.959,
+          "prezzo": 1.949,
           "isSelf": true,
-          "dtComu": "26/08/2026 09:07:28"
+          "dtComu": "27/08/2026 17:04:58"
         },
         {
           "carburante": "Gasolio",
-          "prezzo": 2.059,
+          "prezzo": 2.039,
           "isSelf": true,
-          "dtComu": "26/08/2026 13:04:16"
+          "dtComu": "27/08/2026 17:04:58"
         }
       ]
     },
@@ -3730,25 +3730,25 @@
       "lng": 8.407752127647427,
       "benzina_self": 1.949,
       "benzina_servito": null,
-      "gasolio_self": 2.069,
+      "gasolio_self": 2.059,
       "gasolio_servito": null,
       "gpl_self": null,
       "gpl_servito": null,
       "metano_self": null,
       "metano_servito": null,
-      "aggiornato": "26/08/2026 01:38:36",
+      "aggiornato": "28/08/2026 01:10:08",
       "prezziDettaglio": [
         {
           "carburante": "Benzina",
           "prezzo": 1.949,
           "isSelf": true,
-          "dtComu": "26/08/2026 01:38:36"
+          "dtComu": "28/08/2026 01:10:08"
         },
         {
           "carburante": "Gasolio",
-          "prezzo": 2.069,
+          "prezzo": 2.059,
           "isSelf": true,
-          "dtComu": "26/08/2026 01:38:36"
+          "dtComu": "28/08/2026 01:10:08"
         }
       ]
     },
@@ -3763,25 +3763,25 @@
       "lng": 8.426893438028742,
       "benzina_self": 1.949,
       "benzina_servito": null,
-      "gasolio_self": 2.069,
+      "gasolio_self": 2.059,
       "gasolio_servito": null,
       "gpl_self": null,
       "gpl_servito": null,
       "metano_self": null,
       "metano_servito": null,
-      "aggiornato": "26/08/2026 01:38:37",
+      "aggiornato": "28/08/2026 01:10:09",
       "prezziDettaglio": [
         {
           "carburante": "Benzina",
           "prezzo": 1.949,
           "isSelf": true,
-          "dtComu": "26/08/2026 01:38:37"
+          "dtComu": "28/08/2026 01:10:09"
         },
         {
           "carburante": "Gasolio",
-          "prezzo": 2.069,
+          "prezzo": 2.059,
           "isSelf": true,
-          "dtComu": "26/08/2026 01:38:37"
+          "dtComu": "28/08/2026 01:10:09"
         },
         {
           "carburante": "Hi-Q Diesel",
@@ -3800,33 +3800,33 @@
       "comune": "VERCELLI",
       "lat": 45.3002863335823,
       "lng": 8.391966908598306,
-      "benzina_self": 1.959,
+      "benzina_self": 1.949,
       "benzina_servito": null,
-      "gasolio_self": 2.059,
+      "gasolio_self": 2.039,
       "gasolio_servito": null,
       "gpl_self": null,
       "gpl_servito": 0.688,
       "metano_self": null,
       "metano_servito": null,
-      "aggiornato": "26/08/2026 09:11:06",
+      "aggiornato": "27/08/2026 17:07:20",
       "prezziDettaglio": [
         {
           "carburante": "Benzina",
-          "prezzo": 1.959,
+          "prezzo": 1.949,
           "isSelf": true,
-          "dtComu": "26/08/2026 09:11:06"
+          "dtComu": "27/08/2026 17:07:20"
         },
         {
           "carburante": "Gasolio",
-          "prezzo": 2.059,
+          "prezzo": 2.039,
           "isSelf": true,
-          "dtComu": "26/08/2026 13:06:30"
+          "dtComu": "27/08/2026 17:07:20"
         },
         {
           "carburante": "GPL",
           "prezzo": 0.688,
           "isSelf": false,
-          "dtComu": "26/08/2026 09:11:06"
+          "dtComu": "27/08/2026 09:10:17"
         }
       ]
     },
@@ -3839,27 +3839,27 @@
       "comune": "VERCELLI",
       "lat": 45.31629863734204,
       "lng": 8.395105004310608,
-      "benzina_self": 1.959,
+      "benzina_self": 1.949,
       "benzina_servito": null,
-      "gasolio_self": 2.059,
+      "gasolio_self": 2.039,
       "gasolio_servito": null,
       "gpl_self": null,
       "gpl_servito": null,
       "metano_self": null,
       "metano_servito": null,
-      "aggiornato": "26/08/2026 09:15:31",
+      "aggiornato": "27/08/2026 17:11:40",
       "prezziDettaglio": [
         {
           "carburante": "Benzina",
-          "prezzo": 1.959,
+          "prezzo": 1.949,
           "isSelf": true,
-          "dtComu": "26/08/2026 09:15:31"
+          "dtComu": "27/08/2026 17:11:40"
         },
         {
           "carburante": "Gasolio",
-          "prezzo": 2.059,
+          "prezzo": 2.039,
           "isSelf": true,
-          "dtComu": "26/08/2026 13:10:49"
+          "dtComu": "27/08/2026 17:11:40"
         }
       ]
     },
@@ -3874,25 +3874,25 @@
       "lng": 8.405681982803344,
       "benzina_self": 1.959,
       "benzina_servito": null,
-      "gasolio_self": 2.079,
+      "gasolio_self": 2.069,
       "gasolio_servito": null,
       "gpl_self": null,
       "gpl_servito": null,
       "metano_self": null,
       "metano_servito": null,
-      "aggiornato": "27/08/2026 07:22:27",
+      "aggiornato": "28/08/2026 07:22:12",
       "prezziDettaglio": [
         {
           "carburante": "Benzina",
           "prezzo": 1.959,
           "isSelf": true,
-          "dtComu": "27/08/2026 07:22:27"
+          "dtComu": "28/08/2026 07:22:12"
         },
         {
           "carburante": "Gasolio",
-          "prezzo": 2.079,
+          "prezzo": 2.069,
           "isSelf": true,
-          "dtComu": "27/08/2026 07:22:27"
+          "dtComu": "28/08/2026 07:22:12"
         }
       ]
     },
@@ -3993,32 +3993,32 @@
       "gpl_self": null,
       "gpl_servito": 0.839,
       "metano_self": null,
-      "metano_servito": 1.559,
-      "aggiornato": "26/08/2026 13:07:43",
+      "metano_servito": 1.599,
+      "aggiornato": "27/08/2026 09:12:01",
       "prezziDettaglio": [
         {
           "carburante": "Benzina",
           "prezzo": 2.039,
           "isSelf": true,
-          "dtComu": "26/08/2026 13:07:43"
+          "dtComu": "27/08/2026 09:12:01"
         },
         {
           "carburante": "Gasolio",
           "prezzo": 2.169,
           "isSelf": true,
-          "dtComu": "26/08/2026 13:07:43"
+          "dtComu": "27/08/2026 09:12:01"
         },
         {
           "carburante": "Metano",
-          "prezzo": 1.559,
+          "prezzo": 1.599,
           "isSelf": false,
-          "dtComu": "26/08/2026 09:12:38"
+          "dtComu": "27/08/2026 09:12:01"
         },
         {
           "carburante": "GPL",
           "prezzo": 0.839,
           "isSelf": false,
-          "dtComu": "26/08/2026 09:12:38"
+          "dtComu": "27/08/2026 09:12:01"
         }
       ]
     }
