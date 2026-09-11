@@ -2,6 +2,8 @@
 
 Web app per confrontare i prezzi dei carburanti nelle province del **Piemonte**, ordinati dal più conveniente al meno conveniente.
 
+Consultabile su: [https://benzup.netlify.app/](https://benzup.netlify.app/)
+
 **Fonte dati:** Ministero delle Imprese e del Made in Italy (MIMIT) — Open Data ufficiali  
 **Aggiornamento:** Quotidiano (automatico)  
 **Province supportate:** VCO, Novara, Torino, Vercelli, Biella, Alessandria, Asti, Cuneo.  
