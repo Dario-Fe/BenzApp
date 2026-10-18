@@ -145,7 +145,7 @@ jobs:
             try {
               if (fs.existsSync('data/overrides.json')) {
                 overrides = JSON.parse(fs.readFileSync('data/overrides.json', 'utf8'));
-                console.log(`Caricati ${Object.keys(overrides).length} overrides.`);
+                console.log(\`Caricati \${Object.keys(overrides).length} overrides.\`);
               }
             } catch (e) {
               console.log('Errore durante il caricamento degli overrides:', e.message);
